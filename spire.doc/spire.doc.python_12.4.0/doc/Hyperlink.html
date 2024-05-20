@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyperlink module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Hyperlink module</a><ul>
+<li><a class="reference internal" href="#Hyperlink.Hyperlink"><code class="docutils literal notranslate"><span class="pre">Hyperlink</span></code></a><ul>
+<li><a class="reference internal" href="#Hyperlink.Hyperlink.BookmarkName"><code class="docutils literal notranslate"><span class="pre">Hyperlink.BookmarkName</span></code></a></li>
+<li><a class="reference internal" href="#Hyperlink.Hyperlink.Dispose"><code class="docutils literal notranslate"><span class="pre">Hyperlink.Dispose()</span></code></a></li>
+<li><a class="reference internal" href="#Hyperlink.Hyperlink.FilePath"><code class="docutils literal notranslate"><span class="pre">Hyperlink.FilePath</span></code></a></li>
+<li><a class="reference internal" href="#Hyperlink.Hyperlink.PictureToDisplay"><code class="docutils literal notranslate"><span class="pre">Hyperlink.PictureToDisplay</span></code></a></li>
+<li><a class="reference internal" href="#Hyperlink.Hyperlink.TextToDisplay"><code class="docutils literal notranslate"><span class="pre">Hyperlink.TextToDisplay</span></code></a></li>
+<li><a class="reference internal" href="#Hyperlink.Hyperlink.Type"><code class="docutils literal notranslate"><span class="pre">Hyperlink.Type</span></code></a></li>
+<li><a class="reference internal" href="#Hyperlink.Hyperlink.Uri"><code class="docutils literal notranslate"><span class="pre">Hyperlink.Uri</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Hyperlink module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Hyperlink.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Hyperlink">
+<span id="hyperlink-module"></span><h1>Hyperlink module<a class="headerlink" href="#module-Hyperlink" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Hyperlink.Hyperlink">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Hyperlink.</span></span><span class="sig-name descname"><span class="pre">Hyperlink</span></span><a class="headerlink" href="#Hyperlink.Hyperlink" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SpireObject</span></code></p>
+<p>Represents a hyperlink in a document.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="Hyperlink.Hyperlink.BookmarkName">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BookmarkName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Hyperlink.Hyperlink.BookmarkName" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the bookmark of the hyperlink.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Hyperlink.Hyperlink.Dispose">
+<span class="sig-name descname"><span class="pre">Dispose</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Hyperlink.Hyperlink.Dispose" title="Link to this definition"></a></dt>
+<dd><p>Disposes the hyperlink object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Hyperlink.Hyperlink.FilePath">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FilePath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Hyperlink.Hyperlink.FilePath" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the file path of the hyperlink.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Hyperlink.Hyperlink.PictureToDisplay">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PictureToDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeObject</span></em><a class="headerlink" href="#Hyperlink.Hyperlink.PictureToDisplay" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the image that will be displayed in place of the hyperlink.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Hyperlink.Hyperlink.TextToDisplay">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextToDisplay</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Hyperlink.Hyperlink.TextToDisplay" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the visible text of the hyperlink in a document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Hyperlink.Hyperlink.Type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HyperlinkType</span></em><a class="headerlink" href="#Hyperlink.Hyperlink.Type" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the type of the hyperlink.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Hyperlink.Hyperlink.Uri">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Uri</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Hyperlink.Hyperlink.Uri" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the URL link of the hyperlink.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

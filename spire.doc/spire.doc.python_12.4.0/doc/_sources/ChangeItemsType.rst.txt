@@ -1,0 +1,7 @@
+ChangeItemsType module
+======================
+
+.. automodule:: ChangeItemsType
+   :members:
+   :undoc-members:
+   :show-inheritance:

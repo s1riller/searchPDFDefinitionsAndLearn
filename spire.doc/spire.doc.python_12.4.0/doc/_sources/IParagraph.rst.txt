@@ -1,0 +1,7 @@
+IParagraph module
+=================
+
+.. automodule:: IParagraph
+   :members:
+   :undoc-members:
+   :show-inheritance:

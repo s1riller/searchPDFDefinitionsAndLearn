@@ -1,0 +1,7 @@
+BuiltinStyleLoader module
+=========================
+
+.. automodule:: BuiltinStyleLoader
+   :members:
+   :undoc-members:
+   :show-inheritance:

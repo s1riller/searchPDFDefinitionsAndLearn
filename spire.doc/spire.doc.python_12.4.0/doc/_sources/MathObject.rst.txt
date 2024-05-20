@@ -1,0 +1,7 @@
+MathObject module
+=================
+
+.. automodule:: MathObject
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+VerticalRelation module
+=======================
+
+.. automodule:: VerticalRelation
+   :members:
+   :undoc-members:
+   :show-inheritance:

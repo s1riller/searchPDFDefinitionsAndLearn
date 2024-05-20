@@ -1,0 +1,7 @@
+DocumentBase module
+===================
+
+.. automodule:: DocumentBase
+   :members:
+   :undoc-members:
+   :show-inheritance:

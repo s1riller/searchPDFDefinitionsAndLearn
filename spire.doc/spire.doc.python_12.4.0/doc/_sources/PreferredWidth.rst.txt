@@ -1,0 +1,7 @@
+PreferredWidth module
+=====================
+
+.. automodule:: PreferredWidth
+   :members:
+   :undoc-members:
+   :show-inheritance:

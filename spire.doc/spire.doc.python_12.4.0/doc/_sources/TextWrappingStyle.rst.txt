@@ -1,0 +1,7 @@
+TextWrappingStyle module
+========================
+
+.. automodule:: TextWrappingStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

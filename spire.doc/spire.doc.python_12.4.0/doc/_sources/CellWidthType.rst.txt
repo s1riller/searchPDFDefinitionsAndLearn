@@ -1,0 +1,7 @@
+CellWidthType module
+====================
+
+.. automodule:: CellWidthType
+   :members:
+   :undoc-members:
+   :show-inheritance:

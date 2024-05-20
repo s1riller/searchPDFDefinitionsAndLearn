@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FormField module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">FormField module</a><ul>
+<li><a class="reference internal" href="#FormField.FormField"><code class="docutils literal notranslate"><span class="pre">FormField</span></code></a><ul>
+<li><a class="reference internal" href="#FormField.FormField.CalculateOnExit"><code class="docutils literal notranslate"><span class="pre">FormField.CalculateOnExit</span></code></a></li>
+<li><a class="reference internal" href="#FormField.FormField.Enabled"><code class="docutils literal notranslate"><span class="pre">FormField.Enabled</span></code></a></li>
+<li><a class="reference internal" href="#FormField.FormField.FormFieldType"><code class="docutils literal notranslate"><span class="pre">FormField.FormFieldType</span></code></a></li>
+<li><a class="reference internal" href="#FormField.FormField.Help"><code class="docutils literal notranslate"><span class="pre">FormField.Help</span></code></a></li>
+<li><a class="reference internal" href="#FormField.FormField.MacroOnEnd"><code class="docutils literal notranslate"><span class="pre">FormField.MacroOnEnd</span></code></a></li>
+<li><a class="reference internal" href="#FormField.FormField.MacroOnStart"><code class="docutils literal notranslate"><span class="pre">FormField.MacroOnStart</span></code></a></li>
+<li><a class="reference internal" href="#FormField.FormField.Name"><code class="docutils literal notranslate"><span class="pre">FormField.Name</span></code></a></li>
+<li><a class="reference internal" href="#FormField.FormField.StatusBarHelp"><code class="docutils literal notranslate"><span class="pre">FormField.StatusBarHelp</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">FormField module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/FormField.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-FormField">
+<span id="formfield-module"></span><h1>FormField module<a class="headerlink" href="#module-FormField" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="FormField.FormField">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FormField.</span></span><span class="sig-name descname"><span class="pre">FormField</span></span><a class="headerlink" href="#FormField.FormField" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Field</span></code></p>
+<p>Represents a form field.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="FormField.FormField.CalculateOnExit">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CalculateOnExit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#FormField.FormField.CalculateOnExit" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the calculate on exit property.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="FormField.FormField.Enabled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Enabled</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#FormField.FormField.Enabled" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the Enabled property (true if form field enabled).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="FormField.FormField.FormFieldType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FormFieldType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FormFieldType</span></em><a class="headerlink" href="#FormField.FormField.FormFieldType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of this form field.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="FormField.FormField.Help">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Help</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#FormField.FormField.Help" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the form field help.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="FormField.FormField.MacroOnEnd">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MacroOnEnd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#FormField.FormField.MacroOnEnd" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets the name of macros on end.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="FormField.FormField.MacroOnStart">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MacroOnStart</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#FormField.FormField.MacroOnStart" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets the name of macros on start.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="FormField.FormField.Name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#FormField.FormField.Name" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the form field title name (bookmark name).
+The name is unique in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="FormField.FormField.StatusBarHelp">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StatusBarHelp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#FormField.FormField.StatusBarHelp" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the status bar help.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+OdsoRecipientDataCollection module
+==================================
+
+.. automodule:: OdsoRecipientDataCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

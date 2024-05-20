@@ -1,0 +1,7 @@
+CheckBoxSizeType module
+=======================
+
+.. automodule:: CheckBoxSizeType
+   :members:
+   :undoc-members:
+   :show-inheritance:

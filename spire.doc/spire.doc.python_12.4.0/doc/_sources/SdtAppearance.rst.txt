@@ -1,0 +1,7 @@
+SdtAppearance module
+====================
+
+.. automodule:: SdtAppearance
+   :members:
+   :undoc-members:
+   :show-inheritance:

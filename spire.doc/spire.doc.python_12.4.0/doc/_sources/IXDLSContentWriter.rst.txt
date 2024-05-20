@@ -1,0 +1,7 @@
+IXDLSContentWriter module
+=========================
+
+.. automodule:: IXDLSContentWriter
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+DotfuscatorAttribute module
+===========================
+
+.. automodule:: DotfuscatorAttribute
+   :members:
+   :undoc-members:
+   :show-inheritance:

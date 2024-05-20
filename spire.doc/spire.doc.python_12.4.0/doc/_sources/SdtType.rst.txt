@@ -1,0 +1,7 @@
+SdtType module
+==============
+
+.. automodule:: SdtType
+   :members:
+   :undoc-members:
+   :show-inheritance:

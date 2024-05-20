@@ -1,0 +1,7 @@
+Emphasis module
+===============
+
+.. automodule:: Emphasis
+   :members:
+   :undoc-members:
+   :show-inheritance:

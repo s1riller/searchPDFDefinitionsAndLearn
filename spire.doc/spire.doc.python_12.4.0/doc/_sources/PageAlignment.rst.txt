@@ -1,0 +1,7 @@
+PageAlignment module
+====================
+
+.. automodule:: PageAlignment
+   :members:
+   :undoc-members:
+   :show-inheritance:

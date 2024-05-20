@@ -1,0 +1,7 @@
+MailMerge module
+================
+
+.. automodule:: MailMerge
+   :members:
+   :undoc-members:
+   :show-inheritance:

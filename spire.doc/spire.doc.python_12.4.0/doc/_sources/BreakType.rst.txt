@@ -1,0 +1,7 @@
+BreakType module
+================
+
+.. automodule:: BreakType
+   :members:
+   :undoc-members:
+   :show-inheritance:

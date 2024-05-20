@@ -1,0 +1,7 @@
+DifferRevisions module
+======================
+
+.. automodule:: DifferRevisions
+   :members:
+   :undoc-members:
+   :show-inheritance:

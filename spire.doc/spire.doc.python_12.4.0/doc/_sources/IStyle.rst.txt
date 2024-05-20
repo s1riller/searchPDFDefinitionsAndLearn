@@ -1,0 +1,7 @@
+IStyle module
+=============
+
+.. automodule:: IStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

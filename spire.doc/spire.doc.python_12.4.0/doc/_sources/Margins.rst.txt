@@ -1,0 +1,7 @@
+Margins module
+==============
+
+.. automodule:: Margins
+   :members:
+   :undoc-members:
+   :show-inheritance:

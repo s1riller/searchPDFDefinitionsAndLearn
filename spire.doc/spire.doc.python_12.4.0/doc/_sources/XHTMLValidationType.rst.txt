@@ -1,0 +1,7 @@
+XHTMLValidationType module
+==========================
+
+.. automodule:: XHTMLValidationType
+   :members:
+   :undoc-members:
+   :show-inheritance:

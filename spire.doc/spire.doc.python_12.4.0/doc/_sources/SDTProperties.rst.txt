@@ -1,0 +1,7 @@
+SDTProperties module
+====================
+
+.. automodule:: SDTProperties
+   :members:
+   :undoc-members:
+   :show-inheritance:

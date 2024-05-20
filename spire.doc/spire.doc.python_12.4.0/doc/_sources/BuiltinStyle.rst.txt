@@ -1,0 +1,7 @@
+BuiltinStyle module
+===================
+
+.. automodule:: BuiltinStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TableCell module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">TableCell module</a><ul>
+<li><a class="reference internal" href="#TableCell.TableCell"><code class="docutils literal notranslate"><span class="pre">TableCell</span></code></a><ul>
+<li><a class="reference internal" href="#TableCell.TableCell.CellFormat"><code class="docutils literal notranslate"><span class="pre">TableCell.CellFormat</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.CellWidthType"><code class="docutils literal notranslate"><span class="pre">TableCell.CellWidthType</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.Clone"><code class="docutils literal notranslate"><span class="pre">TableCell.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">TableCell.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.GetCellIndex"><code class="docutils literal notranslate"><span class="pre">TableCell.GetCellIndex()</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.GetCellWidth"><code class="docutils literal notranslate"><span class="pre">TableCell.GetCellWidth()</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.GetCellWidthType"><code class="docutils literal notranslate"><span class="pre">TableCell.GetCellWidthType()</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.GridSpan"><code class="docutils literal notranslate"><span class="pre">TableCell.GridSpan</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.OwnerRow"><code class="docutils literal notranslate"><span class="pre">TableCell.OwnerRow</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.Scaling"><code class="docutils literal notranslate"><span class="pre">TableCell.Scaling</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.SetCellWidth"><code class="docutils literal notranslate"><span class="pre">TableCell.SetCellWidth()</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.SplitCell"><code class="docutils literal notranslate"><span class="pre">TableCell.SplitCell()</span></code></a></li>
+<li><a class="reference internal" href="#TableCell.TableCell.Width"><code class="docutils literal notranslate"><span class="pre">TableCell.Width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">TableCell module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/TableCell.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-TableCell">
+<span id="tablecell-module"></span><h1>TableCell module<a class="headerlink" href="#module-TableCell" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="TableCell.TableCell">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TableCell.</span></span><span class="sig-name descname"><span class="pre">TableCell</span></span><a class="headerlink" href="#TableCell.TableCell" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Body</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IDocumentObject</span></code></p>
+<p>Represents a cell in a table.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="TableCell.TableCell.CellFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CellFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CellFormat</span></em><a class="headerlink" href="#TableCell.TableCell.CellFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the cell format.
+:returns: The cell format.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableCell.TableCell.CellWidthType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CellWidthType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CellWidthType</span></em><a class="headerlink" href="#TableCell.TableCell.CellWidthType" title="Link to this definition"></a></dt>
+<dd><p>Gets the width type of the cell.
+:returns: The width type of the cell.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TableCell.TableCell.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DocumentObject</span></span></span><a class="headerlink" href="#TableCell.TableCell.Clone" title="Link to this definition"></a></dt>
+<dd><p>Creates a new TableCell object that is a copy of the current instance.
+:returns: A new TableCell object that is a copy of this instance.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableCell.TableCell.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#TableCell.TableCell.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.
+:returns: The type of the document object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TableCell.TableCell.GetCellIndex">
+<span class="sig-name descname"><span class="pre">GetCellIndex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#TableCell.TableCell.GetCellIndex" title="Link to this definition"></a></dt>
+<dd><p>Gets the index of the cell in the row.
+:returns: The index of the cell in the row.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TableCell.TableCell.GetCellWidth">
+<span class="sig-name descname"><span class="pre">GetCellWidth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#TableCell.TableCell.GetCellWidth" title="Link to this definition"></a></dt>
+<dd><p>Gets the width of the cell.
+:returns: The width of the cell.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TableCell.TableCell.GetCellWidthType">
+<span class="sig-name descname"><span class="pre">GetCellWidthType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">CellWidthType</span></span></span><a class="headerlink" href="#TableCell.TableCell.GetCellWidthType" title="Link to this definition"></a></dt>
+<dd><p>Gets the width type of the cell.
+:returns: The width type of the cell.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableCell.TableCell.GridSpan">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GridSpan</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#TableCell.TableCell.GridSpan" title="Link to this definition"></a></dt>
+<dd><p>Gets the number of columns that the cell spans.
+:returns: The number of columns that the cell spans.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableCell.TableCell.OwnerRow">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OwnerRow</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableRow</span></em><a class="headerlink" href="#TableCell.TableCell.OwnerRow" title="Link to this definition"></a></dt>
+<dd><p>Gets the owner row of the cell.
+:returns: The owner row of the cell.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableCell.TableCell.Scaling">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Scaling</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#TableCell.TableCell.Scaling" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the cell scaling.
+:returns: The cell scaling.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TableCell.TableCell.SetCellWidth">
+<span class="sig-name descname"><span class="pre">SetCellWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">widthType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CellWidthType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TableCell.TableCell.SetCellWidth" title="Link to this definition"></a></dt>
+<dd><p>Sets the width and type of the cell.
+:param width: The width of the cell.
+:param widthType: The width type of the cell.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TableCell.TableCell.SplitCell">
+<span class="sig-name descname"><span class="pre">SplitCell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columnNum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rowNum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TableCell.TableCell.SplitCell" title="Link to this definition"></a></dt>
+<dd><p>Splits the cell into two or more cells.
+:param columnNum: The number of columns to split. Must be greater than or equal to 1.
+:param rowNum: The number of rows to split. Must be greater than or equal to 1.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableCell.TableCell.Width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#TableCell.TableCell.Width" title="Link to this definition"></a></dt>
+<dd><p>Gets the width of the cell.
+:returns: The width of the cell.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

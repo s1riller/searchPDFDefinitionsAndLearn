@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDocument module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">IDocument module</a><ul>
+<li><a class="reference internal" href="#IDocument.IDocument"><code class="docutils literal notranslate"><span class="pre">IDocument</span></code></a><ul>
+<li><a class="reference internal" href="#IDocument.IDocument.AddListStyle"><code class="docutils literal notranslate"><span class="pre">IDocument.AddListStyle()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.AddParagraphStyle"><code class="docutils literal notranslate"><span class="pre">IDocument.AddParagraphStyle()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.AddSection"><code class="docutils literal notranslate"><span class="pre">IDocument.AddSection()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.AddStyle"><code class="docutils literal notranslate"><span class="pre">IDocument.AddStyle()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Background"><code class="docutils literal notranslate"><span class="pre">IDocument.Background</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Bookmarks"><code class="docutils literal notranslate"><span class="pre">IDocument.Bookmarks</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.BuiltinDocumentProperties"><code class="docutils literal notranslate"><span class="pre">IDocument.BuiltinDocumentProperties</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Clone"><code class="docutils literal notranslate"><span class="pre">IDocument.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Comments"><code class="docutils literal notranslate"><span class="pre">IDocument.Comments</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.CreateMinialDocument"><code class="docutils literal notranslate"><span class="pre">IDocument.CreateMinialDocument()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.CreateParagraph"><code class="docutils literal notranslate"><span class="pre">IDocument.CreateParagraph()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.CustomDocumentProperties"><code class="docutils literal notranslate"><span class="pre">IDocument.CustomDocumentProperties</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Encrypt"><code class="docutils literal notranslate"><span class="pre">IDocument.Encrypt()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.FindString"><code class="docutils literal notranslate"><span class="pre">IDocument.FindString</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.GetProtectionType"><code class="docutils literal notranslate"><span class="pre">IDocument.GetProtectionType()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.GetText"><code class="docutils literal notranslate"><span class="pre">IDocument.GetText()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.HasChanges"><code class="docutils literal notranslate"><span class="pre">IDocument.HasChanges</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.ImportContent"><code class="docutils literal notranslate"><span class="pre">IDocument.ImportContent</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.IsUpdateFields"><code class="docutils literal notranslate"><span class="pre">IDocument.IsUpdateFields</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.LastParagraph"><code class="docutils literal notranslate"><span class="pre">IDocument.LastParagraph</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.LastSection"><code class="docutils literal notranslate"><span class="pre">IDocument.LastSection</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.ListStyles"><code class="docutils literal notranslate"><span class="pre">IDocument.ListStyles</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.LoadFromFile"><code class="docutils literal notranslate"><span class="pre">IDocument.LoadFromFile</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.LoadFromFileInReadMode"><code class="docutils literal notranslate"><span class="pre">IDocument.LoadFromFileInReadMode()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.LoadFromStream"><code class="docutils literal notranslate"><span class="pre">IDocument.LoadFromStream()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.MailMerge"><code class="docutils literal notranslate"><span class="pre">IDocument.MailMerge</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Properties"><code class="docutils literal notranslate"><span class="pre">IDocument.Properties</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Protect"><code class="docutils literal notranslate"><span class="pre">IDocument.Protect</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.RemoveEncryption"><code class="docutils literal notranslate"><span class="pre">IDocument.RemoveEncryption()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Replace"><code class="docutils literal notranslate"><span class="pre">IDocument.Replace</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.ReplaceInLine"><code class="docutils literal notranslate"><span class="pre">IDocument.ReplaceInLine</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.ResetFindState"><code class="docutils literal notranslate"><span class="pre">IDocument.ResetFindState()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.SaveToFile"><code class="docutils literal notranslate"><span class="pre">IDocument.SaveToFile</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Sections"><code class="docutils literal notranslate"><span class="pre">IDocument.Sections</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.SetProtectionType"><code class="docutils literal notranslate"><span class="pre">IDocument.SetProtectionType()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Styles"><code class="docutils literal notranslate"><span class="pre">IDocument.Styles</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.TOC"><code class="docutils literal notranslate"><span class="pre">IDocument.TOC</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.TextBoxes"><code class="docutils literal notranslate"><span class="pre">IDocument.TextBoxes</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.UpdateWordCount"><code class="docutils literal notranslate"><span class="pre">IDocument.UpdateWordCount()</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Variables"><code class="docutils literal notranslate"><span class="pre">IDocument.Variables</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.ViewSetup"><code class="docutils literal notranslate"><span class="pre">IDocument.ViewSetup</span></code></a></li>
+<li><a class="reference internal" href="#IDocument.IDocument.Watermark"><code class="docutils literal notranslate"><span class="pre">IDocument.Watermark</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">IDocument module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/IDocument.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-IDocument">
+<span id="idocument-module"></span><h1>IDocument module<a class="headerlink" href="#module-IDocument" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="IDocument.IDocument">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">IDocument.</span></span><span class="sig-name descname"><span class="pre">IDocument</span></span><a class="headerlink" href="#IDocument.IDocument" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IDocumentObject</span></code></p>
+<p>Interface for a document object.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.AddListStyle">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddListStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ListType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">styleName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ListStyle</span></span></span><a class="headerlink" href="#IDocument.IDocument.AddListStyle" title="Link to this definition"></a></dt>
+<dd><p>Adds a new list style to the document and returns it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.AddParagraphStyle">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddParagraphStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">styleName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ParagraphStyle</span></span></span><a class="headerlink" href="#IDocument.IDocument.AddParagraphStyle" title="Link to this definition"></a></dt>
+<dd><p>Adds a new paragraph style to the document and returns it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.AddSection">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddSection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Section</span></span></span><a class="headerlink" href="#IDocument.IDocument.AddSection" title="Link to this definition"></a></dt>
+<dd><p>Adds a new section to the document and returns it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.AddStyle">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AddStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">builtinStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BuiltinStyle</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Style</span></span></span><a class="headerlink" href="#IDocument.IDocument.AddStyle" title="Link to this definition"></a></dt>
+<dd><p>Adds a new style to the document and returns it.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.Background">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Background</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Background</span></em><a class="headerlink" href="#IDocument.IDocument.Background" title="Link to this definition"></a></dt>
+<dd><p>Returns the background of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.Bookmarks">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Bookmarks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">BookmarkCollection</span></em><a class="headerlink" href="#IDocument.IDocument.Bookmarks" title="Link to this definition"></a></dt>
+<dd><p>Returns the collection of bookmarks in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.BuiltinDocumentProperties">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BuiltinDocumentProperties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">BuiltinDocumentProperties</span></em><a class="headerlink" href="#IDocument.IDocument.BuiltinDocumentProperties" title="Link to this definition"></a></dt>
+<dd><p>Returns the built-in document properties.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.Clone">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Document</span></span></span><a class="headerlink" href="#IDocument.IDocument.Clone" title="Link to this definition"></a></dt>
+<dd><p>Creates a clone of the document and returns it.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.Comments">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Comments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CommentsCollection</span></em><a class="headerlink" href="#IDocument.IDocument.Comments" title="Link to this definition"></a></dt>
+<dd><p>Returns the collection of comments in the document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.CreateMinialDocument">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CreateMinialDocument</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IDocument.IDocument.CreateMinialDocument" title="Link to this definition"></a></dt>
+<dd><p>Creates a minimal document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.CreateParagraph">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CreateParagraph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Paragraph</span></span></span><a class="headerlink" href="#IDocument.IDocument.CreateParagraph" title="Link to this definition"></a></dt>
+<dd><p>Creates a new paragraph in the document and returns it.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.CustomDocumentProperties">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomDocumentProperties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CustomDocumentProperties</span></em><a class="headerlink" href="#IDocument.IDocument.CustomDocumentProperties" title="Link to this definition"></a></dt>
+<dd><p>Returns the custom document properties.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.Encrypt">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Encrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#IDocument.IDocument.Encrypt" title="Link to this definition"></a></dt>
+<dd><p>Encrypts the document with the specified password.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IDocument.IDocument.FindString">
+<span class="sig-name descname"><span class="pre">FindString</span></span><a class="headerlink" href="#IDocument.IDocument.FindString" title="Link to this definition"></a></dt>
+<dd><p>Finds the given string in the document and returns the text selection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.GetProtectionType">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GetProtectionType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ProtectionType</span></span></span><a class="headerlink" href="#IDocument.IDocument.GetProtectionType" title="Link to this definition"></a></dt>
+<dd><p>Returns the protection type of the document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.GetText">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GetText</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#IDocument.IDocument.GetText" title="Link to this definition"></a></dt>
+<dd><p>Returns the text content of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.HasChanges">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasChanges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#IDocument.IDocument.HasChanges" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the document has changes, False otherwise.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IDocument.IDocument.ImportContent">
+<span class="sig-name descname"><span class="pre">ImportContent</span></span><a class="headerlink" href="#IDocument.IDocument.ImportContent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.IsUpdateFields">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsUpdateFields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#IDocument.IDocument.IsUpdateFields" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the document is set to update fields, False otherwise.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.LastParagraph">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastParagraph</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Paragraph</span></em><a class="headerlink" href="#IDocument.IDocument.LastParagraph" title="Link to this definition"></a></dt>
+<dd><p>Returns the last paragraph in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.LastSection">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastSection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Section</span></em><a class="headerlink" href="#IDocument.IDocument.LastSection" title="Link to this definition"></a></dt>
+<dd><p>Returns the last section in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.ListStyles">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ListStyles</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ListStyleCollection</span></em><a class="headerlink" href="#IDocument.IDocument.ListStyles" title="Link to this definition"></a></dt>
+<dd><p>Returns the collection of list styles in the document.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IDocument.IDocument.LoadFromFile">
+<span class="sig-name descname"><span class="pre">LoadFromFile</span></span><a class="headerlink" href="#IDocument.IDocument.LoadFromFile" title="Link to this definition"></a></dt>
+<dd><p>Loads the document from the specified file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.LoadFromFileInReadMode">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LoadFromFileInReadMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strFileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FileFormat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#IDocument.IDocument.LoadFromFileInReadMode" title="Link to this definition"></a></dt>
+<dd><p>Loads the document from the specified file in read mode with the specified file format.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.LoadFromStream">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LoadFromStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FileFormat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#IDocument.IDocument.LoadFromStream" title="Link to this definition"></a></dt>
+<dd><p>Loads the document from the specified stream with the specified file format.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.MailMerge">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MailMerge</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">MailMerge</span></em><a class="headerlink" href="#IDocument.IDocument.MailMerge" title="Link to this definition"></a></dt>
+<dd><p>Returns the mail merge object of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.Properties">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Properties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentProperties</span></em><a class="headerlink" href="#IDocument.IDocument.Properties" title="Link to this definition"></a></dt>
+<dd><p>Returns the properties of the document.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IDocument.IDocument.Protect">
+<span class="sig-name descname"><span class="pre">Protect</span></span><a class="headerlink" href="#IDocument.IDocument.Protect" title="Link to this definition"></a></dt>
+<dd><p>Protects the document with the specified protection type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.RemoveEncryption">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RemoveEncryption</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IDocument.IDocument.RemoveEncryption" title="Link to this definition"></a></dt>
+<dd><p>Removes the encryption from the document.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IDocument.IDocument.Replace">
+<span class="sig-name descname"><span class="pre">Replace</span></span><a class="headerlink" href="#IDocument.IDocument.Replace" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IDocument.IDocument.ReplaceInLine">
+<span class="sig-name descname"><span class="pre">ReplaceInLine</span></span><a class="headerlink" href="#IDocument.IDocument.ReplaceInLine" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.ResetFindState">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResetFindState</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IDocument.IDocument.ResetFindState" title="Link to this definition"></a></dt>
+<dd><p>Resets the find state of the document.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IDocument.IDocument.SaveToFile">
+<span class="sig-name descname"><span class="pre">SaveToFile</span></span><a class="headerlink" href="#IDocument.IDocument.SaveToFile" title="Link to this definition"></a></dt>
+<dd><p>Saves the document to the specified stream with the specified file format.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.Sections">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Sections</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">SectionCollection</span></em><a class="headerlink" href="#IDocument.IDocument.Sections" title="Link to this definition"></a></dt>
+<dd><p>Returns the collection of sections in the document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.SetProtectionType">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SetProtectionType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ProtectionType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#IDocument.IDocument.SetProtectionType" title="Link to this definition"></a></dt>
+<dd><p>Sets the protection type of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.Styles">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Styles</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">StyleCollection</span></em><a class="headerlink" href="#IDocument.IDocument.Styles" title="Link to this definition"></a></dt>
+<dd><p>Returns the collection of styles in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.TOC">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TOC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableOfContent</span></em><a class="headerlink" href="#IDocument.IDocument.TOC" title="Link to this definition"></a></dt>
+<dd><p>Returns the table of contents in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.TextBoxes">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextBoxes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextBoxCollection</span></em><a class="headerlink" href="#IDocument.IDocument.TextBoxes" title="Link to this definition"></a></dt>
+<dd><p>Returns the collection of text boxes in the document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IDocument.IDocument.UpdateWordCount">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UpdateWordCount</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IDocument.IDocument.UpdateWordCount" title="Link to this definition"></a></dt>
+<dd><p>Updates the word count of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.Variables">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Variables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">VariableCollection</span></em><a class="headerlink" href="#IDocument.IDocument.Variables" title="Link to this definition"></a></dt>
+<dd><p>Returns the collection of variables in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.ViewSetup">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ViewSetup</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ViewSetup</span></em><a class="headerlink" href="#IDocument.IDocument.ViewSetup" title="Link to this definition"></a></dt>
+<dd><p>Returns the view setup of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IDocument.IDocument.Watermark">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Watermark</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">WatermarkBase</span></em><a class="headerlink" href="#IDocument.IDocument.Watermark" title="Link to this definition"></a></dt>
+<dd><p>Returns the watermark of the document.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

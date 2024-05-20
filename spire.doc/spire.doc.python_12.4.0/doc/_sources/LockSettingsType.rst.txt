@@ -1,0 +1,7 @@
+LockSettingsType module
+=======================
+
+.. automodule:: LockSettingsType
+   :members:
+   :undoc-members:
+   :show-inheritance:

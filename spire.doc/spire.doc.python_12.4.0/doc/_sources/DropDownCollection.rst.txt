@@ -1,0 +1,7 @@
+DropDownCollection module
+=========================
+
+.. automodule:: DropDownCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

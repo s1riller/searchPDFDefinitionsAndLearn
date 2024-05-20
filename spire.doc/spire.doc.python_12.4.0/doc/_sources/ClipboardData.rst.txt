@@ -1,0 +1,7 @@
+ClipboardData module
+====================
+
+.. automodule:: ClipboardData
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+GradientShadingVariant module
+=============================
+
+.. automodule:: GradientShadingVariant
+   :members:
+   :undoc-members:
+   :show-inheritance:

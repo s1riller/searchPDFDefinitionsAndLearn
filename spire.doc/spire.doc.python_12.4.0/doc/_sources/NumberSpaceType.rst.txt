@@ -1,0 +1,7 @@
+NumberSpaceType module
+======================
+
+.. automodule:: NumberSpaceType
+   :members:
+   :undoc-members:
+   :show-inheritance:

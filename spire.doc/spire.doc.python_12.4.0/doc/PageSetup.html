@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PageSetup module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">PageSetup module</a><ul>
+<li><a class="reference internal" href="#PageSetup.PageSetup"><code class="docutils literal notranslate"><span class="pre">PageSetup</span></code></a><ul>
+<li><a class="reference internal" href="#PageSetup.PageSetup.Bidi"><code class="docutils literal notranslate"><span class="pre">PageSetup.Bidi</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.Borders"><code class="docutils literal notranslate"><span class="pre">PageSetup.Borders</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.CharacterSpacingControl"><code class="docutils literal notranslate"><span class="pre">PageSetup.CharacterSpacingControl</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.ClientHeight"><code class="docutils literal notranslate"><span class="pre">PageSetup.ClientHeight</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.ClientWidth"><code class="docutils literal notranslate"><span class="pre">PageSetup.ClientWidth</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.ColumnsLineBetween"><code class="docutils literal notranslate"><span class="pre">PageSetup.ColumnsLineBetween</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.DefaultTabWidth"><code class="docutils literal notranslate"><span class="pre">PageSetup.DefaultTabWidth</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.DifferentFirstPageHeaderFooter"><code class="docutils literal notranslate"><span class="pre">PageSetup.DifferentFirstPageHeaderFooter</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.DifferentOddAndEvenPagesHeaderFooter"><code class="docutils literal notranslate"><span class="pre">PageSetup.DifferentOddAndEvenPagesHeaderFooter</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.EqualColumnWidth"><code class="docutils literal notranslate"><span class="pre">PageSetup.EqualColumnWidth</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.FooterDistance"><code class="docutils literal notranslate"><span class="pre">PageSetup.FooterDistance</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.GridType"><code class="docutils literal notranslate"><span class="pre">PageSetup.GridType</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.Gutter"><code class="docutils literal notranslate"><span class="pre">PageSetup.Gutter</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.HeaderDistance"><code class="docutils literal notranslate"><span class="pre">PageSetup.HeaderDistance</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.InsertPageNumbers"><code class="docutils literal notranslate"><span class="pre">PageSetup.InsertPageNumbers()</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.IsFrontPageBorder"><code class="docutils literal notranslate"><span class="pre">PageSetup.IsFrontPageBorder</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.LineNumberingDistanceFromText"><code class="docutils literal notranslate"><span class="pre">PageSetup.LineNumberingDistanceFromText</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.LineNumberingRestartMode"><code class="docutils literal notranslate"><span class="pre">PageSetup.LineNumberingRestartMode</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.LineNumberingStartValue"><code class="docutils literal notranslate"><span class="pre">PageSetup.LineNumberingStartValue</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.LineNumberingStep"><code class="docutils literal notranslate"><span class="pre">PageSetup.LineNumberingStep</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.LinesPerPage"><code class="docutils literal notranslate"><span class="pre">PageSetup.LinesPerPage</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.Margins"><code class="docutils literal notranslate"><span class="pre">PageSetup.Margins</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.Orientation"><code class="docutils literal notranslate"><span class="pre">PageSetup.Orientation</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.PageBorderIncludeFooter"><code class="docutils literal notranslate"><span class="pre">PageSetup.PageBorderIncludeFooter</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.PageBorderIncludeHeader"><code class="docutils literal notranslate"><span class="pre">PageSetup.PageBorderIncludeHeader</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.PageBorderOffsetFrom"><code class="docutils literal notranslate"><span class="pre">PageSetup.PageBorderOffsetFrom</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.PageBordersApplyType"><code class="docutils literal notranslate"><span class="pre">PageSetup.PageBordersApplyType</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.PageNumberStyle"><code class="docutils literal notranslate"><span class="pre">PageSetup.PageNumberStyle</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.PageSize"><code class="docutils literal notranslate"><span class="pre">PageSetup.PageSize</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.PageStartingNumber"><code class="docutils literal notranslate"><span class="pre">PageSetup.PageStartingNumber</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.RestartPageNumbering"><code class="docutils literal notranslate"><span class="pre">PageSetup.RestartPageNumbering</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.ToString"><code class="docutils literal notranslate"><span class="pre">PageSetup.ToString()</span></code></a></li>
+<li><a class="reference internal" href="#PageSetup.PageSetup.VerticalAlignment"><code class="docutils literal notranslate"><span class="pre">PageSetup.VerticalAlignment</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">PageSetup module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PageSetup.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-PageSetup">
+<span id="pagesetup-module"></span><h1>PageSetup module<a class="headerlink" href="#module-PageSetup" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="PageSetup.PageSetup">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PageSetup.</span></span><span class="sig-name descname"><span class="pre">PageSetup</span></span><a class="headerlink" href="#PageSetup.PageSetup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentSerializable</span></code></p>
+<p>Represents the page setup of a document.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.Bidi">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Bidi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.Bidi" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets whether section contains right-to-left text.
+:return: bool</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.Borders">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Borders</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Borders</span></em><a class="headerlink" href="#PageSetup.PageSetup.Borders" title="Link to this definition"></a></dt>
+<dd><p>Gets the page borders collection.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.CharacterSpacingControl">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CharacterSpacingControl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CharacterSpacing</span></em><a class="headerlink" href="#PageSetup.PageSetup.CharacterSpacingControl" title="Link to this definition"></a></dt>
+<dd><p>Character Spacing Control.
+:return: CharacterSpacing</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.ClientHeight">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ClientHeight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#PageSetup.PageSetup.ClientHeight" title="Link to this definition"></a></dt>
+<dd><p>Gets the height of the client area.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The height of the client area.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.ClientWidth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ClientWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#PageSetup.PageSetup.ClientWidth" title="Link to this definition"></a></dt>
+<dd><p>Gets the width of the client area.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The width of the client area.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.ColumnsLineBetween">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ColumnsLineBetween</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.ColumnsLineBetween" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the value specifies if a vertical line is draw between each of the text columns in the this section.
+:return: bool</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.DefaultTabWidth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DefaultTabWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#PageSetup.PageSetup.DefaultTabWidth" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the length of the auto tab.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The length of the auto tab.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.DifferentFirstPageHeaderFooter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DifferentFirstPageHeaderFooter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.DifferentFirstPageHeaderFooter" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether the current section has a different header/footer for the first page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the current section has a different header/footer for the first page; otherwise, False.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.DifferentOddAndEvenPagesHeaderFooter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DifferentOddAndEvenPagesHeaderFooter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.DifferentOddAndEvenPagesHeaderFooter" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether the document has different headers and footers for odd-numbered and even-numbered pages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the document has different headers and footers for odd-numbered and even-numbered pages; otherwise, False.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.EqualColumnWidth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EqualColumnWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.EqualColumnWidth" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether equal column width.
+:return: bool</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.FooterDistance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FooterDistance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#PageSetup.PageSetup.FooterDistance" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the footer height in points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The footer height.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.GridType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GridType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">GridPitchType</span></em><a class="headerlink" href="#PageSetup.PageSetup.GridType" title="Link to this definition"></a></dt>
+<dd><p>Gets or Sets the grid type of this section.
+:return: GridPitchType</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.Gutter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Gutter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#PageSetup.PageSetup.Gutter" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the extra space added to the margin for document binding in points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The gutter space.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.HeaderDistance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HeaderDistance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#PageSetup.PageSetup.HeaderDistance" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the height of the header in points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The header height.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.InsertPageNumbers">
+<span class="sig-name descname"><span class="pre">InsertPageNumbers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fromTopPage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontalAlignment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PageNumberAlignment</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PageSetup.PageSetup.InsertPageNumbers" title="Link to this definition"></a></dt>
+<dd><p>Inserts the page numbers.
+:param fromTopPage: bool
+:param horizontalAlignment: PageNumberAlignment
+:return: None</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.IsFrontPageBorder">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsFrontPageBorder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.IsFrontPageBorder" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether this instance is a front page border.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.LineNumberingDistanceFromText">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineNumberingDistanceFromText</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#PageSetup.PageSetup.LineNumberingDistanceFromText" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the distance from text in line numbering.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.LineNumberingRestartMode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineNumberingRestartMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">LineNumberingRestartMode</span></em><a class="headerlink" href="#PageSetup.PageSetup.LineNumberingRestartMode" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets the line numbering mode.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.LineNumberingStartValue">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineNumberingStartValue</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#PageSetup.PageSetup.LineNumberingStartValue" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the line numbering start value.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.LineNumberingStep">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineNumberingStep</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#PageSetup.PageSetup.LineNumberingStep" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the line numbering step.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.LinesPerPage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LinesPerPage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#PageSetup.PageSetup.LinesPerPage" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the number of lines per page in the document grid.
+:return: int</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.Margins">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Margins</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">MarginsF</span></em><a class="headerlink" href="#PageSetup.PageSetup.Margins" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the page margins in points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The page margins.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="MarginsF.html#MarginsF.MarginsF" title="MarginsF.MarginsF">MarginsF</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.Orientation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Orientation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PageOrientation</span></em><a class="headerlink" href="#PageSetup.PageSetup.Orientation" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the orientation of the page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The page orientation.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="PageOrientation.html#PageOrientation.PageOrientation" title="PageOrientation.PageOrientation">PageOrientation</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.PageBorderIncludeFooter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageBorderIncludeFooter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.PageBorderIncludeFooter" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether the page border includes the footer.
+If the page border is not measured from the text extents using a value of text in the PageBorderOffsetFrom, then it can be ignored.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.PageBorderIncludeHeader">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageBorderIncludeHeader</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.PageBorderIncludeHeader" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether the page border includes the header.
+If the page border is not measured from the text extents using a value of text in the PageBorderOffsetFrom, then it can be ignored.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.PageBorderOffsetFrom">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageBorderOffsetFrom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PageBorderOffsetFrom</span></em><a class="headerlink" href="#PageSetup.PageSetup.PageBorderOffsetFrom" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the position of the page border.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.PageBordersApplyType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageBordersApplyType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PageBordersApplyType</span></em><a class="headerlink" href="#PageSetup.PageSetup.PageBordersApplyType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the value that determines on which pages the border is applied.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.PageNumberStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageNumberStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PageNumberStyle</span></em><a class="headerlink" href="#PageSetup.PageSetup.PageNumberStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the page number style.
+:return: PageNumberStyle</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.PageSize">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">SizeF</span></em><a class="headerlink" href="#PageSetup.PageSetup.PageSize" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the page size in points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The page size.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>SizeF</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.PageStartingNumber">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageStartingNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#PageSetup.PageSetup.PageStartingNumber" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the page starting number.
+:return: int</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.RestartPageNumbering">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RestartPageNumbering</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PageSetup.PageSetup.RestartPageNumbering" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to restart page numbering.
+:return: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.ToString">
+<span class="sig-name descname"><span class="pre">ToString</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#PageSetup.PageSetup.ToString" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PageSetup.PageSetup.VerticalAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PageAlignment</span></em><a class="headerlink" href="#PageSetup.PageSetup.VerticalAlignment" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the vertical alignment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The vertical alignment.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="PageAlignment.html#PageAlignment.PageAlignment" title="PageAlignment.PageAlignment">PageAlignment</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+PdfSecurity module
+==================
+
+.. automodule:: PdfSecurity
+   :members:
+   :undoc-members:
+   :show-inheritance:

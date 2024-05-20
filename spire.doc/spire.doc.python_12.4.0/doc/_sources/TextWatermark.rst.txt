@@ -1,0 +1,7 @@
+TextWatermark module
+====================
+
+.. automodule:: TextWatermark
+   :members:
+   :undoc-members:
+   :show-inheritance:

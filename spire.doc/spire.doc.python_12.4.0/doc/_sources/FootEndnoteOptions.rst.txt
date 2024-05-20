@@ -1,0 +1,7 @@
+FootEndnoteOptions module
+=========================
+
+.. automodule:: FootEndnoteOptions
+   :members:
+   :undoc-members:
+   :show-inheritance:

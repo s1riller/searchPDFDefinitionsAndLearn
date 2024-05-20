@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ListLevel module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ListLevel module</a><ul>
+<li><a class="reference internal" href="#ListLevel.ListLevel"><code class="docutils literal notranslate"><span class="pre">ListLevel</span></code></a><ul>
+<li><a class="reference internal" href="#ListLevel.ListLevel.BulletCharacter"><code class="docutils literal notranslate"><span class="pre">ListLevel.BulletCharacter</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.CharacterFormat"><code class="docutils literal notranslate"><span class="pre">ListLevel.CharacterFormat</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.Clone"><code class="docutils literal notranslate"><span class="pre">ListLevel.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.FollowCharacter"><code class="docutils literal notranslate"><span class="pre">ListLevel.FollowCharacter</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.GetListItemText"><code class="docutils literal notranslate"><span class="pre">ListLevel.GetListItemText()</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.IsLegalStyleNumbering"><code class="docutils literal notranslate"><span class="pre">ListLevel.IsLegalStyleNumbering</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.NoRestartByHigher"><code class="docutils literal notranslate"><span class="pre">ListLevel.NoRestartByHigher</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.NumberAlignment"><code class="docutils literal notranslate"><span class="pre">ListLevel.NumberAlignment</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.NumberPosition"><code class="docutils literal notranslate"><span class="pre">ListLevel.NumberPosition</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.NumberPrefix"><code class="docutils literal notranslate"><span class="pre">ListLevel.NumberPrefix</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.NumberSufix"><code class="docutils literal notranslate"><span class="pre">ListLevel.NumberSufix</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.ParagraphFormat"><code class="docutils literal notranslate"><span class="pre">ListLevel.ParagraphFormat</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.PatternType"><code class="docutils literal notranslate"><span class="pre">ListLevel.PatternType</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.StartAt"><code class="docutils literal notranslate"><span class="pre">ListLevel.StartAt</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.TabSpaceAfter"><code class="docutils literal notranslate"><span class="pre">ListLevel.TabSpaceAfter</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.TextPosition"><code class="docutils literal notranslate"><span class="pre">ListLevel.TextPosition</span></code></a></li>
+<li><a class="reference internal" href="#ListLevel.ListLevel.UsePrevLevelPattern"><code class="docutils literal notranslate"><span class="pre">ListLevel.UsePrevLevelPattern</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ListLevel module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ListLevel.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ListLevel">
+<span id="listlevel-module"></span><h1>ListLevel module<a class="headerlink" href="#module-ListLevel" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ListLevel.ListLevel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ListLevel.</span></span><span class="sig-name descname"><span class="pre">ListLevel</span></span><a class="headerlink" href="#ListLevel.ListLevel" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentSerializable</span></code></p>
+<p>Represents a list level.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.BulletCharacter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BulletCharacter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#ListLevel.ListLevel.BulletCharacter" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the bullet character of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.CharacterFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CharacterFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CharacterFormat</span></em><a class="headerlink" href="#ListLevel.ListLevel.CharacterFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the character format of the list level.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#ListLevel.ListLevel" title="ListLevel.ListLevel"><span class="pre">ListLevel</span></a></span></span><a class="headerlink" href="#ListLevel.ListLevel.Clone" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.FollowCharacter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FollowCharacter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FollowCharacterType</span></em><a class="headerlink" href="#ListLevel.ListLevel.FollowCharacter" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the type of character following the number text for the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.GetListItemText">
+<span class="sig-name descname"><span class="pre">GetListItemText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listItemIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">listType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ListType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#ListLevel.ListLevel.GetListItemText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.IsLegalStyleNumbering">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsLegalStyleNumbering</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ListLevel.ListLevel.IsLegalStyleNumbering" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets whether the list level uses legal style numbering.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.NoRestartByHigher">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NoRestartByHigher</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ListLevel.ListLevel.NoRestartByHigher" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets whether the list level restarts numbering by higher levels.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.NumberAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumberAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ListNumberAlignment</span></em><a class="headerlink" href="#ListLevel.ListLevel.NumberAlignment" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the number alignment of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.NumberPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumberPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ListLevel.ListLevel.NumberPosition" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the number position of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.NumberPrefix">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumberPrefix</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#ListLevel.ListLevel.NumberPrefix" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the number prefix of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.NumberSufix">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumberSufix</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#ListLevel.ListLevel.NumberSufix" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the number suffix of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.ParagraphFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParagraphFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphFormat</span></em><a class="headerlink" href="#ListLevel.ListLevel.ParagraphFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the paragraph format of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.PatternType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PatternType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ListPatternType</span></em><a class="headerlink" href="#ListLevel.ListLevel.PatternType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the pattern type of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.StartAt">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StartAt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#ListLevel.ListLevel.StartAt" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the start number of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.TabSpaceAfter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TabSpaceAfter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ListLevel.ListLevel.TabSpaceAfter" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the tab space after the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.TextPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ListLevel.ListLevel.TextPosition" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the text position of the list level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ListLevel.ListLevel.UsePrevLevelPattern">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UsePrevLevelPattern</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ListLevel.ListLevel.UsePrevLevelPattern" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

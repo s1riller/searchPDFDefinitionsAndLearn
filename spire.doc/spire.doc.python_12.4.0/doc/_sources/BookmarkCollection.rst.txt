@@ -1,0 +1,7 @@
+BookmarkCollection module
+=========================
+
+.. automodule:: BookmarkCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

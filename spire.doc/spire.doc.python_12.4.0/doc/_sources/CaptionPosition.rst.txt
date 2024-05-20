@@ -1,0 +1,7 @@
+CaptionPosition module
+======================
+
+.. automodule:: CaptionPosition
+   :members:
+   :undoc-members:
+   :show-inheritance:

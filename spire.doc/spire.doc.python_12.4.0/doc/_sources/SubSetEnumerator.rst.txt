@@ -1,0 +1,7 @@
+SubSetEnumerator module
+=======================
+
+.. automodule:: SubSetEnumerator
+   :members:
+   :undoc-members:
+   :show-inheritance:

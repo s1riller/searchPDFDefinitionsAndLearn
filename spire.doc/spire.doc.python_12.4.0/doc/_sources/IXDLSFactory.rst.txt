@@ -1,0 +1,7 @@
+IXDLSFactory module
+===================
+
+.. automodule:: IXDLSFactory
+   :members:
+   :undoc-members:
+   :show-inheritance:

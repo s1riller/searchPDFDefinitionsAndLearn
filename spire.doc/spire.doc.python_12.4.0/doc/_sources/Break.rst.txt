@@ -1,0 +1,7 @@
+Break module
+============
+
+.. automodule:: Break
+   :members:
+   :undoc-members:
+   :show-inheritance:

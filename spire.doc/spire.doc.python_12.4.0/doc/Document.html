@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Document module</a><ul>
+<li><a class="reference internal" href="#Document.Document"><code class="docutils literal notranslate"><span class="pre">Document</span></code></a><ul>
+<li><a class="reference internal" href="#Document.Document.AcceptChanges"><code class="docutils literal notranslate"><span class="pre">Document.AcceptChanges()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.AddListStyle"><code class="docutils literal notranslate"><span class="pre">Document.AddListStyle()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.AddParagraphStyle"><code class="docutils literal notranslate"><span class="pre">Document.AddParagraphStyle()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.AddSection"><code class="docutils literal notranslate"><span class="pre">Document.AddSection()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.AddStyle"><code class="docutils literal notranslate"><span class="pre">Document.AddStyle()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.AutoUpdateStylesByTemplate"><code class="docutils literal notranslate"><span class="pre">Document.AutoUpdateStylesByTemplate</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Background"><code class="docutils literal notranslate"><span class="pre">Document.Background</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Bookmarks"><code class="docutils literal notranslate"><span class="pre">Document.Bookmarks</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.BuiltinDocumentProperties"><code class="docutils literal notranslate"><span class="pre">Document.BuiltinDocumentProperties</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CheckProtectionPassWord"><code class="docutils literal notranslate"><span class="pre">Document.CheckProtectionPassWord()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ChildObjects"><code class="docutils literal notranslate"><span class="pre">Document.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ClearMacros"><code class="docutils literal notranslate"><span class="pre">Document.ClearMacros()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Clone"><code class="docutils literal notranslate"><span class="pre">Document.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CloneCompatibilityTo"><code class="docutils literal notranslate"><span class="pre">Document.CloneCompatibilityTo()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CloneDefaultStyleTo"><code class="docutils literal notranslate"><span class="pre">Document.CloneDefaultStyleTo()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CloneThemesTo"><code class="docutils literal notranslate"><span class="pre">Document.CloneThemesTo()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CloneWebSettingsTo"><code class="docutils literal notranslate"><span class="pre">Document.CloneWebSettingsTo()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Close"><code class="docutils literal notranslate"><span class="pre">Document.Close()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Comments"><code class="docutils literal notranslate"><span class="pre">Document.Comments</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Compare"><code class="docutils literal notranslate"><span class="pre">Document.Compare</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CreateMinialDocument"><code class="docutils literal notranslate"><span class="pre">Document.CreateMinialDocument()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CreateParagraph"><code class="docutils literal notranslate"><span class="pre">Document.CreateParagraph()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CreateParagraphItem"><code class="docutils literal notranslate"><span class="pre">Document.CreateParagraphItem()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.CustomDocumentProperties"><code class="docutils literal notranslate"><span class="pre">Document.CustomDocumentProperties</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.DetectedFormatType"><code class="docutils literal notranslate"><span class="pre">Document.DetectedFormatType</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Dispose"><code class="docutils literal notranslate"><span class="pre">Document.Dispose()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">Document.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.EmbedFontsInFile"><code class="docutils literal notranslate"><span class="pre">Document.EmbedFontsInFile</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.EmbedSystemFonts"><code class="docutils literal notranslate"><span class="pre">Document.EmbedSystemFonts</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Encrypt"><code class="docutils literal notranslate"><span class="pre">Document.Encrypt()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.EndnoteOptions"><code class="docutils literal notranslate"><span class="pre">Document.EndnoteOptions</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Fields"><code class="docutils literal notranslate"><span class="pre">Document.Fields</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.FindAllPattern"><code class="docutils literal notranslate"><span class="pre">Document.FindAllPattern()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.FindAllString"><code class="docutils literal notranslate"><span class="pre">Document.FindAllString()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.FindString"><code class="docutils literal notranslate"><span class="pre">Document.FindString</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.FootnoteOptions"><code class="docutils literal notranslate"><span class="pre">Document.FootnoteOptions</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ForceTableRelayout"><code class="docutils literal notranslate"><span class="pre">Document.ForceTableRelayout</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.GetPageCount"><code class="docutils literal notranslate"><span class="pre">Document.GetPageCount()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.GetProtectionType"><code class="docutils literal notranslate"><span class="pre">Document.GetProtectionType()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.GetText"><code class="docutils literal notranslate"><span class="pre">Document.GetText()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.HTMLCustomComment"><code class="docutils literal notranslate"><span class="pre">Document.HTMLCustomComment</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.HTMLSentenceIdentifier"><code class="docutils literal notranslate"><span class="pre">Document.HTMLSentenceIdentifier</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.HTMLTrackChanges"><code class="docutils literal notranslate"><span class="pre">Document.HTMLTrackChanges</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.HasChanges"><code class="docutils literal notranslate"><span class="pre">Document.HasChanges</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.HtmlBaseUrl"><code class="docutils literal notranslate"><span class="pre">Document.HtmlBaseUrl</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.HtmlExportOptions"><code class="docutils literal notranslate"><span class="pre">Document.HtmlExportOptions</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ImportContent"><code class="docutils literal notranslate"><span class="pre">Document.ImportContent</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ImportSection"><code class="docutils literal notranslate"><span class="pre">Document.ImportSection()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.InsertTextFromFile"><code class="docutils literal notranslate"><span class="pre">Document.InsertTextFromFile()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.InsertTextFromStream"><code class="docutils literal notranslate"><span class="pre">Document.InsertTextFromStream()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.IsContainMacro"><code class="docutils literal notranslate"><span class="pre">Document.IsContainMacro</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.IsUpdateFields"><code class="docutils literal notranslate"><span class="pre">Document.IsUpdateFields</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.JPEGQuality"><code class="docutils literal notranslate"><span class="pre">Document.JPEGQuality</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.KeepSameFormat"><code class="docutils literal notranslate"><span class="pre">Document.KeepSameFormat</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.LastParagraph"><code class="docutils literal notranslate"><span class="pre">Document.LastParagraph</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.LastSection"><code class="docutils literal notranslate"><span class="pre">Document.LastSection</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ListStyles"><code class="docutils literal notranslate"><span class="pre">Document.ListStyles</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.LoadFromFile"><code class="docutils literal notranslate"><span class="pre">Document.LoadFromFile</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.LoadFromFileInReadMode"><code class="docutils literal notranslate"><span class="pre">Document.LoadFromFileInReadMode()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.LoadFromStream"><code class="docutils literal notranslate"><span class="pre">Document.LoadFromStream</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.LoadRtf"><code class="docutils literal notranslate"><span class="pre">Document.LoadRtf</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.LoadText"><code class="docutils literal notranslate"><span class="pre">Document.LoadText</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.MailMerge"><code class="docutils literal notranslate"><span class="pre">Document.MailMerge</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.OpenOnlineBin"><code class="docutils literal notranslate"><span class="pre">Document.OpenOnlineBin()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.PageCount"><code class="docutils literal notranslate"><span class="pre">Document.PageCount</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.PrivateFontList"><code class="docutils literal notranslate"><span class="pre">Document.PrivateFontList</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Properties"><code class="docutils literal notranslate"><span class="pre">Document.Properties</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Protect"><code class="docutils literal notranslate"><span class="pre">Document.Protect</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.QuiteMode"><code class="docutils literal notranslate"><span class="pre">Document.QuiteMode</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.RejectChanges"><code class="docutils literal notranslate"><span class="pre">Document.RejectChanges()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.RemoveEncryption"><code class="docutils literal notranslate"><span class="pre">Document.RemoveEncryption()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Replace"><code class="docutils literal notranslate"><span class="pre">Document.Replace</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ReplaceFirst"><code class="docutils literal notranslate"><span class="pre">Document.ReplaceFirst</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ReplaceInLine"><code class="docutils literal notranslate"><span class="pre">Document.ReplaceInLine</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ResetFindState"><code class="docutils literal notranslate"><span class="pre">Document.ResetFindState()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ResetPageLayoutCache"><code class="docutils literal notranslate"><span class="pre">Document.ResetPageLayoutCache()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SaveImageToStreams"><code class="docutils literal notranslate"><span class="pre">Document.SaveImageToStreams</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SaveToEpub"><code class="docutils literal notranslate"><span class="pre">Document.SaveToEpub</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SaveToFile"><code class="docutils literal notranslate"><span class="pre">Document.SaveToFile</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SaveToOnlineBin"><code class="docutils literal notranslate"><span class="pre">Document.SaveToOnlineBin()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SaveToSVG"><code class="docutils literal notranslate"><span class="pre">Document.SaveToSVG</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SaveToStream"><code class="docutils literal notranslate"><span class="pre">Document.SaveToStream</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SaveToTxt"><code class="docutils literal notranslate"><span class="pre">Document.SaveToTxt()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Sections"><code class="docutils literal notranslate"><span class="pre">Document.Sections</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SetDateTimeOfUnitTest"><code class="docutils literal notranslate"><span class="pre">Document.SetDateTimeOfUnitTest()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.SetProtectionType"><code class="docutils literal notranslate"><span class="pre">Document.SetProtectionType()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Styles"><code class="docutils literal notranslate"><span class="pre">Document.Styles</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.TOC"><code class="docutils literal notranslate"><span class="pre">Document.TOC</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.TextBoxes"><code class="docutils literal notranslate"><span class="pre">Document.TextBoxes</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.TrackChanges"><code class="docutils literal notranslate"><span class="pre">Document.TrackChanges</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.UpdateTOCPageNumbers"><code class="docutils literal notranslate"><span class="pre">Document.UpdateTOCPageNumbers</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.UpdateTableLayout"><code class="docutils literal notranslate"><span class="pre">Document.UpdateTableLayout()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.UpdateTableOfContents"><code class="docutils literal notranslate"><span class="pre">Document.UpdateTableOfContents</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.UpdateWordCount"><code class="docutils literal notranslate"><span class="pre">Document.UpdateWordCount</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.UseNewEngine"><code class="docutils literal notranslate"><span class="pre">Document.UseNewEngine</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Variables"><code class="docutils literal notranslate"><span class="pre">Document.Variables</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.ViewSetup"><code class="docutils literal notranslate"><span class="pre">Document.ViewSetup</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.Watermark"><code class="docutils literal notranslate"><span class="pre">Document.Watermark</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.XHTMLValidateOption"><code class="docutils literal notranslate"><span class="pre">Document.XHTMLValidateOption</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.add_BookmarkLayout"><code class="docutils literal notranslate"><span class="pre">Document.add_BookmarkLayout()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.add_EvalInformation"><code class="docutils literal notranslate"><span class="pre">Document.add_EvalInformation()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.add_PageLayout"><code class="docutils literal notranslate"><span class="pre">Document.add_PageLayout()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.add_UpdateFields"><code class="docutils literal notranslate"><span class="pre">Document.add_UpdateFields()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.remove_BookmarkLayout"><code class="docutils literal notranslate"><span class="pre">Document.remove_BookmarkLayout()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.remove_EvalInformation"><code class="docutils literal notranslate"><span class="pre">Document.remove_EvalInformation()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.remove_PageLayout"><code class="docutils literal notranslate"><span class="pre">Document.remove_PageLayout()</span></code></a></li>
+<li><a class="reference internal" href="#Document.Document.remove_UpdateFields"><code class="docutils literal notranslate"><span class="pre">Document.remove_UpdateFields()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Document module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Document.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Document">
+<span id="document-module"></span><h1>Document module<a class="headerlink" href="#module-Document" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Document.Document">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Document.</span></span><span class="sig-name descname"><span class="pre">Document</span></span><a class="headerlink" href="#Document.Document" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentContainer</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IDocument</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code></p>
+<p>Represents a document.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.AcceptChanges">
+<span class="sig-name descname"><span class="pre">AcceptChanges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.AcceptChanges" title="Link to this definition"></a></dt>
+<dd><p>Accepts changes tracked from the moment of last change acceptance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.AddListStyle">
+<span class="sig-name descname"><span class="pre">AddListStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ListType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">styleName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ListStyle</span></span></span><a class="headerlink" href="#Document.Document.AddListStyle" title="Link to this definition"></a></dt>
+<dd><p>Adds a new list style to the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>listType</strong> (<a class="reference internal" href="ListType.html#ListType.ListType" title="ListType.ListType"><em>ListType</em></a>) – The type of the list.</p></li>
+<li><p><strong>styleName</strong> (<em>str</em>) – The name of the paragraph style.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The newly added list style.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="ListStyle.html#ListStyle.ListStyle" title="ListStyle.ListStyle">ListStyle</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.AddParagraphStyle">
+<span class="sig-name descname"><span class="pre">AddParagraphStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">styleName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ParagraphStyle</span></span></span><a class="headerlink" href="#Document.Document.AddParagraphStyle" title="Link to this definition"></a></dt>
+<dd><p>Adds a new paragraph style to the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>styleName</strong> (<em>str</em>) – The name of the paragraph style.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The newly added paragraph style.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="ParagraphStyle.html#ParagraphStyle.ParagraphStyle" title="ParagraphStyle.ParagraphStyle">ParagraphStyle</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.AddSection">
+<span class="sig-name descname"><span class="pre">AddSection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Section</span></span></span><a class="headerlink" href="#Document.Document.AddSection" title="Link to this definition"></a></dt>
+<dd><p>Adds a new section to the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The newly added section.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="Section.html#Section.Section" title="Section.Section">Section</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.AddStyle">
+<span class="sig-name descname"><span class="pre">AddStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">builtinStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BuiltinStyle</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Style</span></span></span><a class="headerlink" href="#Document.Document.AddStyle" title="Link to this definition"></a></dt>
+<dd><p>Adds a style to the document style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>builtinStyle</strong> (<a class="reference internal" href="BuiltinStyle.html#BuiltinStyle.BuiltinStyle" title="BuiltinStyle.BuiltinStyle"><em>BuiltinStyle</em></a>) – The built-in style to add.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The added style.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="Style.html#Style.Style" title="Style.Style">Style</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.AutoUpdateStylesByTemplate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoUpdateStylesByTemplate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.AutoUpdateStylesByTemplate" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether updating the styles in this document to match
+the styles in the attached template each time you open .
+if update document styles automatically, set to true.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Background">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Background</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Background</span></em><a class="headerlink" href="#Document.Document.Background" title="Link to this definition"></a></dt>
+<dd><p>Gets document’s background</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Bookmarks">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Bookmarks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">BookmarkCollection</span></em><a class="headerlink" href="#Document.Document.Bookmarks" title="Link to this definition"></a></dt>
+<dd><p>Gets document bookmarks.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.BuiltinDocumentProperties">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BuiltinDocumentProperties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">BuiltinDocumentProperties</span></em><a class="headerlink" href="#Document.Document.BuiltinDocumentProperties" title="Link to this definition"></a></dt>
+<dd><p>Gets document built-in properties object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.CheckProtectionPassWord">
+<span class="sig-name descname"><span class="pre">CheckProtectionPassWord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Document.Document.CheckProtectionPassWord" title="Link to this definition"></a></dt>
+<dd><p>Checks if the entered password is the same as the permission protection password.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>password</strong> – The password to check.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the password is correct, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#Document.Document.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child entities.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.ClearMacros">
+<span class="sig-name descname"><span class="pre">ClearMacros</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.ClearMacros" title="Link to this definition"></a></dt>
+<dd><p>Removes the macros from the document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Document.Document" title="Document.Document"><span class="pre">Document</span></a></span></span><a class="headerlink" href="#Document.Document.Clone" title="Link to this definition"></a></dt>
+<dd><p>Clones the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The cloned document.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#Document.Document" title="Document.Document">Document</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.CloneCompatibilityTo">
+<span class="sig-name descname"><span class="pre">CloneCompatibilityTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">destDoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Document.Document" title="Document.Document"><span class="pre">Document</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.CloneCompatibilityTo" title="Link to this definition"></a></dt>
+<dd><p>Clones the compatibility settings of the current document to the destination document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>destDoc</strong> (<a class="reference internal" href="#Document.Document" title="Document.Document"><em>Document</em></a>) – The destination document.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.CloneDefaultStyleTo">
+<span class="sig-name descname"><span class="pre">CloneDefaultStyleTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">destDoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Document.Document" title="Document.Document"><span class="pre">Document</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.CloneDefaultStyleTo" title="Link to this definition"></a></dt>
+<dd><p>Clones the default style of the current document to the destination document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>destDoc</strong> (<a class="reference internal" href="#Document.Document" title="Document.Document"><em>Document</em></a>) – The destination document.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.CloneThemesTo">
+<span class="sig-name descname"><span class="pre">CloneThemesTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">destDoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Document.Document" title="Document.Document"><span class="pre">Document</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.CloneThemesTo" title="Link to this definition"></a></dt>
+<dd><p>Clones the theme style of the current document to the destination document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>destDoc</strong> (<a class="reference internal" href="#Document.Document" title="Document.Document"><em>Document</em></a>) – The destination document.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.CloneWebSettingsTo">
+<span class="sig-name descname"><span class="pre">CloneWebSettingsTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">destDoc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Document.Document" title="Document.Document"><span class="pre">Document</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.CloneWebSettingsTo" title="Link to this definition"></a></dt>
+<dd><p>Clone Websettings to other document.
+:param destDoc: The destination Document object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.Close">
+<span class="sig-name descname"><span class="pre">Close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.Close" title="Link to this definition"></a></dt>
+<dd><p>Closes this instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Comments">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Comments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CommentsCollection</span></em><a class="headerlink" href="#Document.Document.Comments" title="Link to this definition"></a></dt>
+<dd><p>Gets comments item of the document.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.Compare">
+<span class="sig-name descname"><span class="pre">Compare</span></span><a class="headerlink" href="#Document.Document.Compare" title="Link to this definition"></a></dt>
+<dd><p>Compares this document with another document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>document</strong> – The document to compare.</p></li>
+<li><p><strong>author</strong> – The author to use for revisions.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.CreateMinialDocument">
+<span class="sig-name descname"><span class="pre">CreateMinialDocument</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.CreateMinialDocument" title="Link to this definition"></a></dt>
+<dd><p>Creates a minimal document with one empty section and one empty paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.CreateParagraph">
+<span class="sig-name descname"><span class="pre">CreateParagraph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Paragraph</span></span></span><a class="headerlink" href="#Document.Document.CreateParagraph" title="Link to this definition"></a></dt>
+<dd><p>Creates a new paragraph in the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The newly created paragraph.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="Paragraph.html#Paragraph.Paragraph" title="Paragraph.Paragraph">Paragraph</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.CreateParagraphItem">
+<span class="sig-name descname"><span class="pre">CreateParagraphItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">itemType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ParagraphItemType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ParagraphBase</span></span></span><a class="headerlink" href="#Document.Document.CreateParagraphItem" title="Link to this definition"></a></dt>
+<dd><p>Creates new paragraph item instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>itemType</strong> – Paragraph item type.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ParagraphBase object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.CustomDocumentProperties">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomDocumentProperties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CustomDocumentProperties</span></em><a class="headerlink" href="#Document.Document.CustomDocumentProperties" title="Link to this definition"></a></dt>
+<dd><p>Gets document custom properties object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.DetectedFormatType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DetectedFormatType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FileFormat</span></em><a class="headerlink" href="#Document.Document.DetectedFormatType" title="Link to this definition"></a></dt>
+<dd><p>Returns the detected format type of the document which was loaded. .</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.Dispose">
+<span class="sig-name descname"><span class="pre">Dispose</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.Dispose" title="Link to this definition"></a></dt>
+<dd><p>Prerforms application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#Document.Document.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.EmbedFontsInFile">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmbedFontsInFile</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.EmbedFontsInFile" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether save fonts that are used in the document in the file.
+Only support for the DOCX file format.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.EmbedSystemFonts">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmbedSystemFonts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.EmbedSystemFonts" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether save system fonts that are used in the document in the file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.Encrypt">
+<span class="sig-name descname"><span class="pre">Encrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.Encrypt" title="Link to this definition"></a></dt>
+<dd><p>Encrypts the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>password</strong> (<em>str</em>) – The password.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.EndnoteOptions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EndnoteOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FootEndnoteOptions</span></em><a class="headerlink" href="#Document.Document.EndnoteOptions" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets options that control numbering and positioning of endnotes in this document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Fields">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Fields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FieldCollection</span></em><a class="headerlink" href="#Document.Document.Fields" title="Link to this definition"></a></dt>
+<dd><p>Gets fields of the documnet.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.FindAllPattern">
+<span class="sig-name descname"><span class="pre">FindAllPattern</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Regex</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">TextSelection</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Document.Document.FindAllPattern" title="Link to this definition"></a></dt>
+<dd><p>Returns all entries of matchString regex.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pattern</strong> (<em>Regex</em>) – The regex pattern.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The found text selections.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="TextSelection.html#TextSelection.TextSelection" title="TextSelection.TextSelection">TextSelection</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.FindAllString">
+<span class="sig-name descname"><span class="pre">FindAllString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matchString</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caseSensitive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wholeWord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">TextSelection</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Document.Document.FindAllString" title="Link to this definition"></a></dt>
+<dd><p>Returns all entries of matchString string, taking into consideration caseSensitive
+and wholeWord options.
+:param matchString: The string to match.
+:param caseSensitive: If True, the match is case sensitive.
+:param wholeWord: If True, the match must be a whole word.
+:return: A list of TextSelection objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.FindString">
+<span class="sig-name descname"><span class="pre">FindString</span></span><a class="headerlink" href="#Document.Document.FindString" title="Link to this definition"></a></dt>
+<dd><p>Finds and returns string along with formatting.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stringValue</strong> (<em>str</em>) – The string to find.</p></li>
+<li><p><strong>caseSensitive</strong> (<em>bool</em>) – If set to True, use case sensitive search.</p></li>
+<li><p><strong>wholeWord</strong> (<em>bool</em>) – If it search the whole word, set to True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The found text selection.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="TextSelection.html#TextSelection.TextSelection" title="TextSelection.TextSelection">TextSelection</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.FootnoteOptions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FootnoteOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FootEndnoteOptions</span></em><a class="headerlink" href="#Document.Document.FootnoteOptions" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets options that control numbering and positioning of footnotes in this document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.ForceTableRelayout">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ForceTableRelayout</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.ForceTableRelayout" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to force table relayout.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.GetPageCount">
+<span class="sig-name descname"><span class="pre">GetPageCount</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Document.Document.GetPageCount" title="Link to this definition"></a></dt>
+<dd><p>Gets the total number of pages for the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The total number of pages.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.GetProtectionType">
+<span class="sig-name descname"><span class="pre">GetProtectionType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ProtectionType</span></span></span><a class="headerlink" href="#Document.Document.GetProtectionType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the type of protection of the document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.GetText">
+<span class="sig-name descname"><span class="pre">GetText</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Document.Document.GetText" title="Link to this definition"></a></dt>
+<dd><p>Gets the text of the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The text of the document.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.HTMLCustomComment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HTMLCustomComment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.HTMLCustomComment" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value specifying whether parsing and writing comment of document in HTML.
+Supported HTML Tag : span ,when the value of class attribute is comment
+Supported HTML Tag Attribytes : data-comment / data-user / data-cid / data-date.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.HTMLSentenceIdentifier">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HTMLSentenceIdentifier</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.HTMLSentenceIdentifier" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value specifying whether to add identifier to a sentence when writing to HTML.
+Writed HTML Attribyte : sentence.
+Writed HTML Value Of Attribyte : start / end / (start,end).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.HTMLTrackChanges">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HTMLTrackChanges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.HTMLTrackChanges" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value specifying whether parsing and writing custom Change_Tracking HTML Tags are supported.
+Supported HTML Tag : insert / delete.
+Supported HTML Tag Attribytes : data-username / data-time.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.HasChanges">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasChanges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.HasChanges" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether the document has tracked changes.
+if the document has tracked changes, set to true.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.HtmlBaseUrl">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HtmlBaseUrl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Document.Document.HtmlBaseUrl" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the Base path which is used to convert the relative path to absolute path.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.HtmlExportOptions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HtmlExportOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HtmlExportOptions</span></em><a class="headerlink" href="#Document.Document.HtmlExportOptions" title="Link to this definition"></a></dt>
+<dd><p>Gets the save options.
+The save options.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.ImportContent">
+<span class="sig-name descname"><span class="pre">ImportContent</span></span><a class="headerlink" href="#Document.Document.ImportContent" title="Link to this definition"></a></dt>
+<dd><p>Imports all content into the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doc</strong> (<a class="reference internal" href="IDocument.html#IDocument.IDocument" title="IDocument.IDocument"><em>IDocument</em></a>) – The document to import.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.ImportSection">
+<span class="sig-name descname"><span class="pre">ImportSection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ISection</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.ImportSection" title="Link to this definition"></a></dt>
+<dd><p>Imports a section into the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>section</strong> (<a class="reference internal" href="ISection.html#ISection.ISection" title="ISection.ISection"><em>ISection</em></a>) – The section to be imported.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.InsertTextFromFile">
+<span class="sig-name descname"><span class="pre">InsertTextFromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FileFormat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.InsertTextFromFile" title="Link to this definition"></a></dt>
+<dd><p>Insert text from a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<em>Stream</em>) – The file name.</p></li>
+<li><p><strong>fileFormat</strong> (<a class="reference internal" href="FileFormat.html#FileFormat.FileFormat" title="FileFormat.FileFormat"><em>FileFormat</em></a>) – Type of the format.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.InsertTextFromStream">
+<span class="sig-name descname"><span class="pre">InsertTextFromStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FileFormat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.InsertTextFromStream" title="Link to this definition"></a></dt>
+<dd><p>Insert text from stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stream</strong> (<em>Stream</em>) – The stream.</p></li>
+<li><p><strong>fileFormat</strong> (<a class="reference internal" href="FileFormat.html#FileFormat.FileFormat" title="FileFormat.FileFormat"><em>FileFormat</em></a>) – Type of the format.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.IsContainMacro">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsContainMacro</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.IsContainMacro" title="Link to this definition"></a></dt>
+<dd><p>Indicates whether the document has macros.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.IsUpdateFields">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsUpdateFields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.IsUpdateFields" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to update fields in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.JPEGQuality">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JPEGQuality</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#Document.Document.JPEGQuality" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the quality (Q%) of the image of JPEG format, this property
+is only used for doc to pdf. The default value is 80.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.KeepSameFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KeepSameFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.KeepSameFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value that indicates whether to keep same formatting when this document is merged to other document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.LastParagraph">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastParagraph</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Paragraph</span></em><a class="headerlink" href="#Document.Document.LastParagraph" title="Link to this definition"></a></dt>
+<dd><p>Gets last section object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.LastSection">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastSection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Section</span></em><a class="headerlink" href="#Document.Document.LastSection" title="Link to this definition"></a></dt>
+<dd><p>Gets last section of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.ListStyles">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ListStyles</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ListStyleCollection</span></em><a class="headerlink" href="#Document.Document.ListStyles" title="Link to this definition"></a></dt>
+<dd><p>Gets document list styles.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.LoadFromFile">
+<span class="sig-name descname"><span class="pre">LoadFromFile</span></span><a class="headerlink" href="#Document.Document.LoadFromFile" title="Link to this definition"></a></dt>
+<dd><p>Opens doc file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fileName</strong> (<em>Stream</em>) – The fileName.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.LoadFromFileInReadMode">
+<span class="sig-name descname"><span class="pre">LoadFromFileInReadMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strFileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FileFormat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.LoadFromFileInReadMode" title="Link to this definition"></a></dt>
+<dd><p>LoadFromStream new document in read-only mode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>strFileName</strong> (<em>str</em>) – File to open.</p></li>
+<li><p><strong>fileFormat</strong> (<a class="reference internal" href="FileFormat.html#FileFormat.FileFormat" title="FileFormat.FileFormat"><em>FileFormat</em></a>) – Type of the format.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.LoadFromStream">
+<span class="sig-name descname"><span class="pre">LoadFromStream</span></span><a class="headerlink" href="#Document.Document.LoadFromStream" title="Link to this definition"></a></dt>
+<dd><p>Opens the HTML document from stream with the specified file format and validation type.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.LoadRtf">
+<span class="sig-name descname"><span class="pre">LoadRtf</span></span><a class="headerlink" href="#Document.Document.LoadRtf" title="Link to this definition"></a></dt>
+<dd><p>Opens the rtf document from a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fileName</strong> (<em>str</em>) – Name of the file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.LoadText">
+<span class="sig-name descname"><span class="pre">LoadText</span></span><a class="headerlink" href="#Document.Document.LoadText" title="Link to this definition"></a></dt>
+<dd><p>Opens the text document from a file with default encoding utf-8.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fileName</strong> (<em>str</em>) – Name of the file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.MailMerge">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MailMerge</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">MailMerge</span></em><a class="headerlink" href="#Document.Document.MailMerge" title="Link to this definition"></a></dt>
+<dd><p>Gets mail merge engine.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.OpenOnlineBin">
+<span class="sig-name descname"><span class="pre">OpenOnlineBin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.OpenOnlineBin" title="Link to this definition"></a></dt>
+<dd><p>Opens an online binary file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fileName</strong> (<em>str</em>) – The name of the file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.PageCount">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#Document.Document.PageCount" title="Link to this definition"></a></dt>
+<dd><p>Gets total number of pages for document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.PrivateFontList">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PrivateFontList</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">PrivateFontPath</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#Document.Document.PrivateFontList" title="Link to this definition"></a></dt>
+<dd><p>Gets the private font list.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Properties">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Properties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentProperties</span></em><a class="headerlink" href="#Document.Document.Properties" title="Link to this definition"></a></dt>
+<dd><p>Gets the document properties.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.Protect">
+<span class="sig-name descname"><span class="pre">Protect</span></span><a class="headerlink" href="#Document.Document.Protect" title="Link to this definition"></a></dt>
+<dd><p>Protects the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>type</strong> (<a class="reference internal" href="ProtectionType.html#ProtectionType.ProtectionType" title="ProtectionType.ProtectionType"><em>ProtectionType</em></a>) – The type of protection.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.QuiteMode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">QuiteMode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.QuiteMode" title="Link to this definition"></a></dt>
+<dd><p>Get or sets whether is quite mode.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.RejectChanges">
+<span class="sig-name descname"><span class="pre">RejectChanges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.RejectChanges" title="Link to this definition"></a></dt>
+<dd><p>Rejects changes tracked from the moment of last change acceptance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.RemoveEncryption">
+<span class="sig-name descname"><span class="pre">RemoveEncryption</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.RemoveEncryption" title="Link to this definition"></a></dt>
+<dd><p>Removes the encryption.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.Replace">
+<span class="sig-name descname"><span class="pre">Replace</span></span><a class="headerlink" href="#Document.Document.Replace" title="Link to this definition"></a></dt>
+<dd><p>Replaces all entries of matchString regular expression with newValue string.
+:param pattern: The regular expression pattern to match.
+:param replace: The string to replace the matched pattern with.
+:return: The number of replacements made.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.ReplaceFirst">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ReplaceFirst</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.ReplaceFirst" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether need first replacing.
+True indciates need first replacing.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.ReplaceInLine">
+<span class="sig-name descname"><span class="pre">ReplaceInLine</span></span><a class="headerlink" href="#Document.Document.ReplaceInLine" title="Link to this definition"></a></dt>
+<dd><p>Replaces all occurrences of matchString text with newValue text in single-line mode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>matchString</strong> – The matchString.</p></li>
+<li><p><strong>newValue</strong> – The newValue.</p></li>
+<li><p><strong>caseSensitive</strong> – If True, the replacement is case sensitive.</p></li>
+<li><p><strong>wholeWord</strong> – If True, only whole words will be replaced.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of replacements made.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.ResetFindState">
+<span class="sig-name descname"><span class="pre">ResetFindState</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.ResetFindState" title="Link to this definition"></a></dt>
+<dd><p>Resets the FindPattern.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.ResetPageLayoutCache">
+<span class="sig-name descname"><span class="pre">ResetPageLayoutCache</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.ResetPageLayoutCache" title="Link to this definition"></a></dt>
+<dd><p>Reset the page layout cache data of the new engine.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.SaveImageToStreams">
+<span class="sig-name descname"><span class="pre">SaveImageToStreams</span></span><a class="headerlink" href="#Document.Document.SaveImageToStreams" title="Link to this definition"></a></dt>
+<dd><p>Save the specified range of pages as image return streams.
+The default is PNG format image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pageIndex</strong> (<em>int</em>) – Index of the page.</p></li>
+<li><p><strong>pageCount</strong> (<em>int</em>) – The page count.</p></li>
+<li><p><strong>type</strong> (<a class="reference internal" href="ImageType.html#ImageType.ImageType" title="ImageType.ImageType"><em>ImageType</em></a>) – The type.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The streams.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Stream]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.SaveToEpub">
+<span class="sig-name descname"><span class="pre">SaveToEpub</span></span><a class="headerlink" href="#Document.Document.SaveToEpub" title="Link to this definition"></a></dt>
+<dd><p>Saves the EPUB document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<em>str</em>) – The fileName.</p></li>
+<li><p><strong>coverImage</strong> (<a class="reference internal" href="DocPicture.html#DocPicture.DocPicture" title="DocPicture.DocPicture"><em>DocPicture</em></a>) – The cover image.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.SaveToFile">
+<span class="sig-name descname"><span class="pre">SaveToFile</span></span><a class="headerlink" href="#Document.Document.SaveToFile" title="Link to this definition"></a></dt>
+<dd><p>Saves document to file and digitally sign, Only DOC and DOCX are supported.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<em>str</em>) – The file.</p></li>
+<li><p><strong>fileFormat</strong> (<a class="reference internal" href="FileFormat.html#FileFormat.FileFormat" title="FileFormat.FileFormat"><em>FileFormat</em></a>) – The file format.</p></li>
+<li><p><strong>certificatePath</strong> (<em>str</em>) – Path to the file certificate.</p></li>
+<li><p><strong>securePassword</strong> (<em>str</em>) – Password of the certificate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.SaveToOnlineBin">
+<span class="sig-name descname"><span class="pre">SaveToOnlineBin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Document.Document.SaveToOnlineBin" title="Link to this definition"></a></dt>
+<dd><p>Saves the document in Spire.Online format.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.SaveToSVG">
+<span class="sig-name descname"><span class="pre">SaveToSVG</span></span><a class="headerlink" href="#Document.Document.SaveToSVG" title="Link to this definition"></a></dt>
+<dd><p>Saves the SVG.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fileName</strong> (<em>str</em>) – The file name.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.SaveToStream">
+<span class="sig-name descname"><span class="pre">SaveToStream</span></span><a class="headerlink" href="#Document.Document.SaveToStream" title="Link to this definition"></a></dt>
+<dd><p>Saves the document into stream with the specified parameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.SaveToTxt">
+<span class="sig-name descname"><span class="pre">SaveToTxt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Encoding</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.SaveToTxt" title="Link to this definition"></a></dt>
+<dd><p>Saves the document to a text file with the specified encoding.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fileName</strong> (<em>str</em>) – The name of the file.</p></li>
+<li><p><strong>encoding</strong> (<em>Encoding</em>) – The encoding.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Sections">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Sections</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">SectionCollection</span></em><a class="headerlink" href="#Document.Document.Sections" title="Link to this definition"></a></dt>
+<dd><p>Gets document sections.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.SetDateTimeOfUnitTest">
+<span class="sig-name descname"><span class="pre">SetDateTimeOfUnitTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dateTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DateTime</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.SetDateTimeOfUnitTest" title="Link to this definition"></a></dt>
+<dd><p>Sets date and time of the unit test.
+For unit testing use only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.SetProtectionType">
+<span class="sig-name descname"><span class="pre">SetProtectionType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ProtectionType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.SetProtectionType" title="Link to this definition"></a></dt>
+<dd><p>Sets the protection type of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Styles">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Styles</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">StyleCollection</span></em><a class="headerlink" href="#Document.Document.Styles" title="Link to this definition"></a></dt>
+<dd><p>Gets document styles.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.TOC">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TOC</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableOfContent</span></em><a class="headerlink" href="#Document.Document.TOC" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the TOC element of the word document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.TextBoxes">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextBoxes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextBoxCollection</span></em><a class="headerlink" href="#Document.Document.TextBoxes" title="Link to this definition"></a></dt>
+<dd><p>Get/set textbox items of main document</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.TrackChanges">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TrackChanges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.TrackChanges" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether tracking changes is turn on.
+if track changes in on, set to true.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.UpdateTOCPageNumbers">
+<span class="sig-name descname"><span class="pre">UpdateTOCPageNumbers</span></span><a class="headerlink" href="#Document.Document.UpdateTOCPageNumbers" title="Link to this definition"></a></dt>
+<dd><p>Updates the Table of Contents page numbers in the document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.UpdateTableLayout">
+<span class="sig-name descname"><span class="pre">UpdateTableLayout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.UpdateTableLayout" title="Link to this definition"></a></dt>
+<dd><p>Update table grid before saving the document when using the new engine.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.UpdateTableOfContents">
+<span class="sig-name descname"><span class="pre">UpdateTableOfContents</span></span><a class="headerlink" href="#Document.Document.UpdateTableOfContents" title="Link to this definition"></a></dt>
+<dd><p>Updates the Table of Contents in the document.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Document.Document.UpdateWordCount">
+<span class="sig-name descname"><span class="pre">UpdateWordCount</span></span><a class="headerlink" href="#Document.Document.UpdateWordCount" title="Link to this definition"></a></dt>
+<dd><p>Update Paragraphs count, Word count and Character count.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.UseNewEngine">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UseNewEngine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Document.Document.UseNewEngine" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether the new engine layout is enabled.
+The Spire.Doc product conversion feature has enabled the new engine way layout by default.
+If you want to switch to the old engine layout, use the Document constructor
+with the “useNewEngine” parameter and set the parameter “useNewEngine” to false.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Variables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Variables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">VariableCollection</span></em><a class="headerlink" href="#Document.Document.Variables" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the document variables.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.ViewSetup">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ViewSetup</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ViewSetup</span></em><a class="headerlink" href="#Document.Document.ViewSetup" title="Link to this definition"></a></dt>
+<dd><p>Gets view setup options in Microsoft word.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.Watermark">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Watermark</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">WatermarkBase</span></em><a class="headerlink" href="#Document.Document.Watermark" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets document’s watermark.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Document.Document.XHTMLValidateOption">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">XHTMLValidateOption</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">XHTMLValidationType</span></em><a class="headerlink" href="#Document.Document.XHTMLValidateOption" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the HTML validate option.the default value is None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.add_BookmarkLayout">
+<span class="sig-name descname"><span class="pre">add_BookmarkLayout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BookmarkLevelHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.add_BookmarkLayout" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.add_EvalInformation">
+<span class="sig-name descname"><span class="pre">add_EvalInformation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SpireDocEvalInfo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.add_EvalInformation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.add_PageLayout">
+<span class="sig-name descname"><span class="pre">add_PageLayout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PageLayoutHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.add_PageLayout" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.add_UpdateFields">
+<span class="sig-name descname"><span class="pre">add_UpdateFields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UpdateFieldsHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.add_UpdateFields" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.remove_BookmarkLayout">
+<span class="sig-name descname"><span class="pre">remove_BookmarkLayout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BookmarkLevelHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.remove_BookmarkLayout" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.remove_EvalInformation">
+<span class="sig-name descname"><span class="pre">remove_EvalInformation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SpireDocEvalInfo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.remove_EvalInformation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.remove_PageLayout">
+<span class="sig-name descname"><span class="pre">remove_PageLayout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PageLayoutHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.remove_PageLayout" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Document.Document.remove_UpdateFields">
+<span class="sig-name descname"><span class="pre">remove_UpdateFields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UpdateFieldsHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Document.Document.remove_UpdateFields" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+HorizontalAlignment module
+==========================
+
+.. automodule:: HorizontalAlignment
+   :members:
+   :undoc-members:
+   :show-inheritance:

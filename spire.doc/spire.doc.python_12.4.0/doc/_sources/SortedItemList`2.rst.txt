@@ -1,0 +1,7 @@
+SortedItemList\`2 module
+========================
+
+.. automodule:: SortedItemList`2
+   :members:
+   :undoc-members:
+   :show-inheritance:

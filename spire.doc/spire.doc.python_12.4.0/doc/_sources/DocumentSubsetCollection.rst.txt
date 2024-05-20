@@ -1,0 +1,7 @@
+DocumentSubsetCollection module
+===============================
+
+.. automodule:: DocumentSubsetCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

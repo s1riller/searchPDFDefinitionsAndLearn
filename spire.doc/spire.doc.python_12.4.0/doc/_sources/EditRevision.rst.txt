@@ -1,0 +1,7 @@
+EditRevision module
+===================
+
+.. automodule:: EditRevision
+   :members:
+   :undoc-members:
+   :show-inheritance:

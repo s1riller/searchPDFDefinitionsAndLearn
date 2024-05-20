@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paragraph module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Paragraph module</a><ul>
+<li><a class="reference internal" href="#Paragraph.Paragraph"><code class="docutils literal notranslate"><span class="pre">Paragraph</span></code></a><ul>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendBookmarkEnd"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendBookmarkEnd()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendBookmarkStart"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendBookmarkStart()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendBreak"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendBreak()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendCheckBox"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendCheckBox</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendComment"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendComment()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendCommentMark"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendCommentMark()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendDropDownFormField"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendDropDownFormField</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendField"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendField()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendFieldMark"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendFieldMark()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendFootnote"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendFootnote</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendHTML"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendHTML()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendHorizonalLine"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendHorizonalLine()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendHyperlink"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendHyperlink</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendOleObject"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendOleObject</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendPermEnd"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendPermEnd()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendPermStart"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendPermStart()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendPicture"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendPicture</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendRTF"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendRTF</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendShape"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendShape()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendShapeGroup"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendShapeGroup()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendSymbol"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendSymbol()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendTOC"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendTOC()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendText"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendText()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendTextBox"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendTextBox()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.AppendTextFormField"><code class="docutils literal notranslate"><span class="pre">Paragraph.AppendTextFormField</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.ApplyStyle"><code class="docutils literal notranslate"><span class="pre">Paragraph.ApplyStyle</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.BreakCharacterFormat"><code class="docutils literal notranslate"><span class="pre">Paragraph.BreakCharacterFormat</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.CharCount"><code class="docutils literal notranslate"><span class="pre">Paragraph.CharCount</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.CharCountIncludeSpace"><code class="docutils literal notranslate"><span class="pre">Paragraph.CharCountIncludeSpace</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.ChildObjects"><code class="docutils literal notranslate"><span class="pre">Paragraph.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">Paragraph.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.Find"><code class="docutils literal notranslate"><span class="pre">Paragraph.Find</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.Format"><code class="docutils literal notranslate"><span class="pre">Paragraph.Format</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.GetIndex"><code class="docutils literal notranslate"><span class="pre">Paragraph.GetIndex()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.GetListFormatForApplyStyle"><code class="docutils literal notranslate"><span class="pre">Paragraph.GetListFormatForApplyStyle()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.GetStyle"><code class="docutils literal notranslate"><span class="pre">Paragraph.GetStyle()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.InsertSectionBreak"><code class="docutils literal notranslate"><span class="pre">Paragraph.InsertSectionBreak</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.IsEndOfDocument"><code class="docutils literal notranslate"><span class="pre">Paragraph.IsEndOfDocument</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.IsEndOfHeaderFooter"><code class="docutils literal notranslate"><span class="pre">Paragraph.IsEndOfHeaderFooter</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.IsEndOfSection"><code class="docutils literal notranslate"><span class="pre">Paragraph.IsEndOfSection</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.IsInCell"><code class="docutils literal notranslate"><span class="pre">Paragraph.IsInCell</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.Items"><code class="docutils literal notranslate"><span class="pre">Paragraph.Items</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.ListFormat"><code class="docutils literal notranslate"><span class="pre">Paragraph.ListFormat</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.ListText"><code class="docutils literal notranslate"><span class="pre">Paragraph.ListText</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.ParentSection"><code class="docutils literal notranslate"><span class="pre">Paragraph.ParentSection</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.RemoveAbsPosition"><code class="docutils literal notranslate"><span class="pre">Paragraph.RemoveAbsPosition()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.RemoveFrame"><code class="docutils literal notranslate"><span class="pre">Paragraph.RemoveFrame()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.Replace"><code class="docutils literal notranslate"><span class="pre">Paragraph.Replace</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.StyleName"><code class="docutils literal notranslate"><span class="pre">Paragraph.StyleName</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.Text"><code class="docutils literal notranslate"><span class="pre">Paragraph.Text</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.UpdateListValue"><code class="docutils literal notranslate"><span class="pre">Paragraph.UpdateListValue()</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.WordCount"><code class="docutils literal notranslate"><span class="pre">Paragraph.WordCount</span></code></a></li>
+<li><a class="reference internal" href="#Paragraph.Paragraph.get_Item"><code class="docutils literal notranslate"><span class="pre">Paragraph.get_Item()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Paragraph module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Paragraph.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Paragraph">
+<span id="paragraph-module"></span><h1>Paragraph module<a class="headerlink" href="#module-Paragraph" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Paragraph.Paragraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Paragraph.</span></span><span class="sig-name descname"><span class="pre">Paragraph</span></span><a class="headerlink" href="#Paragraph.Paragraph" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BodyRegion</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IParagraph</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IStyleHolder</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code></p>
+<p>Represents a paragraph in a document.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendBookmarkEnd">
+<span class="sig-name descname"><span class="pre">AppendBookmarkEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BookmarkEnd</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendBookmarkEnd" title="Link to this definition"></a></dt>
+<dd><p>Appends the end of a bookmark with the specified name to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> – The name of the bookmark.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A BookmarkEnd object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendBookmarkStart">
+<span class="sig-name descname"><span class="pre">AppendBookmarkStart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BookmarkStart</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendBookmarkStart" title="Link to this definition"></a></dt>
+<dd><p>Appends the start of a bookmark with the specified name to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> – The name of the bookmark.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A BookmarkStart object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendBreak">
+<span class="sig-name descname"><span class="pre">AppendBreak</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">breakType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BreakType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Break</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendBreak" title="Link to this definition"></a></dt>
+<dd><p>Appends a break to the end of the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>breakType</strong> – The type of break.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended break.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendCheckBox">
+<span class="sig-name descname"><span class="pre">AppendCheckBox</span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendCheckBox" title="Link to this definition"></a></dt>
+<dd><p>Appends a checkbox form field to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The appended checkbox form field.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="CheckBoxFormField.html#CheckBoxFormField.CheckBoxFormField" title="CheckBoxFormField.CheckBoxFormField">CheckBoxFormField</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendComment">
+<span class="sig-name descname"><span class="pre">AppendComment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Comment</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendComment" title="Link to this definition"></a></dt>
+<dd><p>Appends a comment to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> – The comment text.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Comment object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendCommentMark">
+<span class="sig-name descname"><span class="pre">AppendCommentMark</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CommentMarkType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">CommentMark</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendCommentMark" title="Link to this definition"></a></dt>
+<dd><p>Appends a comment mark to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>type</strong> – The type of the comment mark.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A CommentMark object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendDropDownFormField">
+<span class="sig-name descname"><span class="pre">AppendDropDownFormField</span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendDropDownFormField" title="Link to this definition"></a></dt>
+<dd><p>Appends a dropdown form field to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The appended dropdown form field.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="DropDownFormField.html#DropDownFormField.DropDownFormField" title="DropDownFormField.DropDownFormField">DropDownFormField</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendField">
+<span class="sig-name descname"><span class="pre">AppendField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fieldName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FieldType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Field</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendField" title="Link to this definition"></a></dt>
+<dd><p>Appends a field to this paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fieldName</strong> (<em>str</em>) – The name of the field.</p></li>
+<li><p><strong>fieldType</strong> (<a class="reference internal" href="FieldType.html#FieldType.FieldType" title="FieldType.FieldType"><em>FieldType</em></a>) – The type of the field.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended field.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="Field.html#Field.Field" title="Field.Field">Field</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendFieldMark">
+<span class="sig-name descname"><span class="pre">AppendFieldMark</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FieldMarkType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">FieldMark</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendFieldMark" title="Link to this definition"></a></dt>
+<dd><p>Appends a field mark to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>type</strong> – The type of the field mark.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A FieldMark object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendFootnote">
+<span class="sig-name descname"><span class="pre">AppendFootnote</span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendFootnote" title="Link to this definition"></a></dt>
+<dd><p>Appends a footnote to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>type</strong> (<a class="reference internal" href="FootnoteType.html#FootnoteType.FootnoteType" title="FootnoteType.FootnoteType"><em>FootnoteType</em></a>) – The type of the footnote.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended footnote.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="Footnote.html#Footnote.Footnote" title="Footnote.Footnote">Footnote</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendHTML">
+<span class="sig-name descname"><span class="pre">AppendHTML</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Paragraph.Paragraph.AppendHTML" title="Link to this definition"></a></dt>
+<dd><p>Appends HTML to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>html</strong> – The HTML content.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendHorizonalLine">
+<span class="sig-name descname"><span class="pre">AppendHorizonalLine</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ShapeObject</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendHorizonalLine" title="Link to this definition"></a></dt>
+<dd><p>Appends a horizontal line to the end of the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The appended horizontal line.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="ShapeObject.html#ShapeObject.ShapeObject" title="ShapeObject.ShapeObject">ShapeObject</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendHyperlink">
+<span class="sig-name descname"><span class="pre">AppendHyperlink</span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendHyperlink" title="Link to this definition"></a></dt>
+<dd><p>Appends a hyperlink to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>link</strong> – The link URL.</p></li>
+<li><p><strong>text</strong> – The text to display.</p></li>
+<li><p><strong>type</strong> – The type of the hyperlink.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Field object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendOleObject">
+<span class="sig-name descname"><span class="pre">AppendOleObject</span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendOleObject" title="Link to this definition"></a></dt>
+<dd><p>Appends an OLE object to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>oleStream</strong> – The OLE object (file) stream.</p></li>
+<li><p><strong>olePicture</strong> – The OLE picture.</p></li>
+<li><p><strong>type</strong> – The type of OLE object.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended OLE object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendPermEnd">
+<span class="sig-name descname"><span class="pre">AppendPermEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PermissionEnd</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendPermEnd" title="Link to this definition"></a></dt>
+<dd><p>Appends the end of a permission with the specified id to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> – The id of the permission.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A PermissionEnd object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendPermStart">
+<span class="sig-name descname"><span class="pre">AppendPermStart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PermissionStart</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendPermStart" title="Link to this definition"></a></dt>
+<dd><p>Appends the start of a permission with the specified id to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> – The id of the permission.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A PermissionStart object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendPicture">
+<span class="sig-name descname"><span class="pre">AppendPicture</span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendPicture" title="Link to this definition"></a></dt>
+<dd><p>Appends a picture to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>imgFile</strong> – The image file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended picture.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendRTF">
+<span class="sig-name descname"><span class="pre">AppendRTF</span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendRTF" title="Link to this definition"></a></dt>
+<dd><p>Appends RTF to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rtfcode</strong> – The RTF code.</p></li>
+<li><p><strong>addtolastsection</strong> – When True, the RTF is added to the last section of the document.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendShape">
+<span class="sig-name descname"><span class="pre">AppendShape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shapeType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ShapeType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ShapeObject</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendShape" title="Link to this definition"></a></dt>
+<dd><p>Appends a shape to the end of the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>float</em>) – The width of the shape.</p></li>
+<li><p><strong>height</strong> (<em>float</em>) – The height of the shape.</p></li>
+<li><p><strong>shapeType</strong> (<a class="reference internal" href="ShapeType.html#ShapeType.ShapeType" title="ShapeType.ShapeType"><em>ShapeType</em></a>) – The type of the shape.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended shape.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="ShapeObject.html#ShapeObject.ShapeObject" title="ShapeObject.ShapeObject">ShapeObject</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendShapeGroup">
+<span class="sig-name descname"><span class="pre">AppendShapeGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ShapeGroup</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendShapeGroup" title="Link to this definition"></a></dt>
+<dd><p>Appends a shape group to the end of the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> – The width of the shape group.</p></li>
+<li><p><strong>height</strong> – The height of the shape group.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended shape group.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendSymbol">
+<span class="sig-name descname"><span class="pre">AppendSymbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">characterCode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Symbol</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendSymbol" title="Link to this definition"></a></dt>
+<dd><p>Appends a special symbol to the end of the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>characterCode</strong> (<em>int</em>) – The character code.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended symbol.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="Symbol.html#Symbol.Symbol" title="Symbol.Symbol">Symbol</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendTOC">
+<span class="sig-name descname"><span class="pre">AppendTOC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lowerLevel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upperLevel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TableOfContent</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendTOC" title="Link to this definition"></a></dt>
+<dd><p>Appends a table of content to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lowerLevel</strong> – The starting heading level of the table of content.</p></li>
+<li><p><strong>upperLevel</strong> – The ending heading level of the table of content.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended table of content.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendText">
+<span class="sig-name descname"><span class="pre">AppendText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TextRange</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendText" title="Link to this definition"></a></dt>
+<dd><p>Appends text to the end of this paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The text to append.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended text range.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="TextRange.html#TextRange.TextRange" title="TextRange.TextRange">TextRange</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendTextBox">
+<span class="sig-name descname"><span class="pre">AppendTextBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TextBox</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendTextBox" title="Link to this definition"></a></dt>
+<dd><p>Appends a textbox to the end of the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>float</em>) – The width of the textbox.</p></li>
+<li><p><strong>height</strong> (<em>float</em>) – The height of the textbox.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended textbox.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="TextBox.html#TextBox.TextBox" title="TextBox.TextBox">TextBox</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.AppendTextFormField">
+<span class="sig-name descname"><span class="pre">AppendTextFormField</span></span><a class="headerlink" href="#Paragraph.Paragraph.AppendTextFormField" title="Link to this definition"></a></dt>
+<dd><p>Appends a text form field to the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>defaultText</strong> (<em>str</em>) – The default text. Pass “null” to insert default Word text.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The appended text form field.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="TextFormField.html#TextFormField.TextFormField" title="TextFormField.TextFormField">TextFormField</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.ApplyStyle">
+<span class="sig-name descname"><span class="pre">ApplyStyle</span></span><a class="headerlink" href="#Paragraph.Paragraph.ApplyStyle" title="Link to this definition"></a></dt>
+<dd><p>Applies the specified style to this paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>styleName</strong> (<em>str</em>) – The name of the style to apply.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.BreakCharacterFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BreakCharacterFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CharacterFormat</span></em><a class="headerlink" href="#Paragraph.Paragraph.BreakCharacterFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets character format for the break symbol.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The character format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.CharCount">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CharCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#Paragraph.Paragraph.CharCount" title="Link to this definition"></a></dt>
+<dd><p>Gets the character count of this paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The character count of this paragraph.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.CharCountIncludeSpace">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CharCountIncludeSpace</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#Paragraph.Paragraph.CharCountIncludeSpace" title="Link to this definition"></a></dt>
+<dd><p>Gets the character count including spaces of this paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The character count including spaces of this paragraph.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#Paragraph.Paragraph.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The child objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#Paragraph.Paragraph.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.Find">
+<span class="sig-name descname"><span class="pre">Find</span></span><a class="headerlink" href="#Paragraph.Paragraph.Find" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.Format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphFormat</span></em><a class="headerlink" href="#Paragraph.Paragraph.Format" title="Link to this definition"></a></dt>
+<dd><p>Gets paragraph format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The paragraph format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.GetIndex">
+<span class="sig-name descname"><span class="pre">GetIndex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IDocumentObject</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.GetIndex" title="Link to this definition"></a></dt>
+<dd><p>Gets the index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entity</strong> – The document object.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The index.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.GetListFormatForApplyStyle">
+<span class="sig-name descname"><span class="pre">GetListFormatForApplyStyle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ListFormat</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.GetListFormatForApplyStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets the list format for apply style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The list format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.GetStyle">
+<span class="sig-name descname"><span class="pre">GetStyle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ParagraphStyle</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.GetStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets the style of this paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The style of this paragraph.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="ParagraphStyle.html#ParagraphStyle.ParagraphStyle" title="ParagraphStyle.ParagraphStyle">ParagraphStyle</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.InsertSectionBreak">
+<span class="sig-name descname"><span class="pre">InsertSectionBreak</span></span><a class="headerlink" href="#Paragraph.Paragraph.InsertSectionBreak" title="Link to this definition"></a></dt>
+<dd><p>Inserts the section break.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.IsEndOfDocument">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsEndOfDocument</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Paragraph.Paragraph.IsEndOfDocument" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether this paragraph is end of document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If this paragraph is end of document, set to True.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.IsEndOfHeaderFooter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsEndOfHeaderFooter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Paragraph.Paragraph.IsEndOfHeaderFooter" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether this paragraph is end of header/footer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If this paragraph is end of header/footer, set to True.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.IsEndOfSection">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsEndOfSection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Paragraph.Paragraph.IsEndOfSection" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether this paragraph is end of section.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If this paragraph is end of section, set to True.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.IsInCell">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsInCell</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Paragraph.Paragraph.IsInCell" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether this paragraph is in cell.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If this paragraph is in cell, set to True.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.Items">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Items</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphItemCollection</span></em><a class="headerlink" href="#Paragraph.Paragraph.Items" title="Link to this definition"></a></dt>
+<dd><p>Gets paragraph items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The items.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.ListFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ListFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ListFormat</span></em><a class="headerlink" href="#Paragraph.Paragraph.ListFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets format of the list for the paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The list format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.ListText">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ListText</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Paragraph.Paragraph.ListText" title="Link to this definition"></a></dt>
+<dd><p>Gets the list text.</p>
+<p>The value of the list number is obtained by dynamic calculation.
+The value of the list number of the paragraph directly may be incorrect.
+To obtain the correct value, you need to traverse all paragraphs in the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.ParentSection">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParentSection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Section</span></em><a class="headerlink" href="#Paragraph.Paragraph.ParentSection" title="Link to this definition"></a></dt>
+<dd><p>Gets the parent section of the paragraph.
+:return: The parent section of the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.RemoveAbsPosition">
+<span class="sig-name descname"><span class="pre">RemoveAbsPosition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Paragraph.Paragraph.RemoveAbsPosition" title="Link to this definition"></a></dt>
+<dd><p>Removes the absolute position of this paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.RemoveFrame">
+<span class="sig-name descname"><span class="pre">RemoveFrame</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Paragraph.Paragraph.RemoveFrame" title="Link to this definition"></a></dt>
+<dd><p>Remove a frame.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.Replace">
+<span class="sig-name descname"><span class="pre">Replace</span></span><a class="headerlink" href="#Paragraph.Paragraph.Replace" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.StyleName">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StyleName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Paragraph.Paragraph.StyleName" title="Link to this definition"></a></dt>
+<dd><p>Gets paragraph style name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The style name.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.Text">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Paragraph.Paragraph.Text" title="Link to this definition"></a></dt>
+<dd><p>Gets paragraph text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The paragraph text.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Remarks:</dt><dd><p>All internal formatting will be cleared when new text is set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.UpdateListValue">
+<span class="sig-name descname"><span class="pre">UpdateListValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.UpdateListValue" title="Link to this definition"></a></dt>
+<dd><p>Updates the list value.</p>
+<p>The value of the list number is obtained by dynamic calculation.
+The value of the list number of the paragraph directly may be incorrect.
+To obtain the correct value, you need to traverse all paragraphs in the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The value string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.WordCount">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WordCount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#Paragraph.Paragraph.WordCount" title="Link to this definition"></a></dt>
+<dd><p>Gets the word count of this paragraph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The word count of this paragraph.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paragraph.Paragraph.get_Item">
+<span class="sig-name descname"><span class="pre">get_Item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ParagraphBase</span></span></span><a class="headerlink" href="#Paragraph.Paragraph.get_Item" title="Link to this definition"></a></dt>
+<dd><p>Gets paragraph item by index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – The index.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The paragraph item.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

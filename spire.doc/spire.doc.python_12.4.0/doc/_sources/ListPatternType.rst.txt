@@ -1,0 +1,7 @@
+ListPatternType module
+======================
+
+.. automodule:: ListPatternType
+   :members:
+   :undoc-members:
+   :show-inheritance:

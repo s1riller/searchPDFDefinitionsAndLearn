@@ -1,0 +1,7 @@
+CommentMarkType module
+======================
+
+.. automodule:: CommentMarkType
+   :members:
+   :undoc-members:
+   :show-inheritance:

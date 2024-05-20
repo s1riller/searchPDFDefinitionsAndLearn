@@ -1,0 +1,7 @@
+IMergeField module
+==================
+
+.. automodule:: IMergeField
+   :members:
+   :undoc-members:
+   :show-inheritance:

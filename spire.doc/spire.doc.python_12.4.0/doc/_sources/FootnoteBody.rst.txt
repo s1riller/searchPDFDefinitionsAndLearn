@@ -1,0 +1,7 @@
+FootnoteBody module
+===================
+
+.. automodule:: FootnoteBody
+   :members:
+   :undoc-members:
+   :show-inheritance:

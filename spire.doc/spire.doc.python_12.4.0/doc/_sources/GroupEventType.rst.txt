@@ -1,0 +1,7 @@
+GroupEventType module
+=====================
+
+.. automodule:: GroupEventType
+   :members:
+   :undoc-members:
+   :show-inheritance:

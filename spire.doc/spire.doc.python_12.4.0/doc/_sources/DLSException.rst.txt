@@ -1,0 +1,7 @@
+DLSException module
+===================
+
+.. automodule:: DLSException
+   :members:
+   :undoc-members:
+   :show-inheritance:

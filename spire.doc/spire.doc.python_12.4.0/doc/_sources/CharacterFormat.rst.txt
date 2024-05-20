@@ -1,0 +1,7 @@
+CharacterFormat module
+======================
+
+.. automodule:: CharacterFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

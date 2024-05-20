@@ -1,0 +1,7 @@
+CompareOptions module
+=====================
+
+.. automodule:: CompareOptions
+   :members:
+   :undoc-members:
+   :show-inheritance:

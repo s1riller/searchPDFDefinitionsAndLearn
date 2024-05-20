@@ -1,0 +1,7 @@
+TextSelection module
+====================
+
+.. automodule:: TextSelection
+   :members:
+   :undoc-members:
+   :show-inheritance:

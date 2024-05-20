@@ -1,0 +1,7 @@
+CollectionEx module
+===================
+
+.. automodule:: CollectionEx
+   :members:
+   :undoc-members:
+   :show-inheritance:

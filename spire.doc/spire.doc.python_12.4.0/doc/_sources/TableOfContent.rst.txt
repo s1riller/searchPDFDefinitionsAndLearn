@@ -1,0 +1,7 @@
+TableOfContent module
+=====================
+
+.. automodule:: TableOfContent
+   :members:
+   :undoc-members:
+   :show-inheritance:

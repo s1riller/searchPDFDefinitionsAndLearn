@@ -1,0 +1,7 @@
+Comment module
+==============
+
+.. automodule:: Comment
+   :members:
+   :undoc-members:
+   :show-inheritance:

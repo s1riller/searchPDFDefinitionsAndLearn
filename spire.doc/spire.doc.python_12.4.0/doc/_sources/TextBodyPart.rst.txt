@@ -1,0 +1,7 @@
+TextBodyPart module
+===================
+
+.. automodule:: TextBodyPart
+   :members:
+   :undoc-members:
+   :show-inheritance:

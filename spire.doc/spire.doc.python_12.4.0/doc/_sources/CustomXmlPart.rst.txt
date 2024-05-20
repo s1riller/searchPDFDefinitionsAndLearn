@@ -1,0 +1,7 @@
+CustomXmlPart module
+====================
+
+.. automodule:: CustomXmlPart
+   :members:
+   :undoc-members:
+   :show-inheritance:

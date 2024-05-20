@@ -1,0 +1,7 @@
+AutoFitBehaviorType module
+==========================
+
+.. automodule:: AutoFitBehaviorType
+   :members:
+   :undoc-members:
+   :show-inheritance:

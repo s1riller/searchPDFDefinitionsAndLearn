@@ -1,0 +1,7 @@
+SDTInlineContent module
+=======================
+
+.. automodule:: SDTInlineContent
+   :members:
+   :undoc-members:
+   :show-inheritance:

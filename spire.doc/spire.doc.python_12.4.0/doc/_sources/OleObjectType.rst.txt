@@ -1,0 +1,7 @@
+OleObjectType module
+====================
+
+.. automodule:: OleObjectType
+   :members:
+   :undoc-members:
+   :show-inheritance:

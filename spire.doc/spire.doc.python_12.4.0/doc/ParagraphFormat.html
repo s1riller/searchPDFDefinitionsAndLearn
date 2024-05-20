@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParagraphFormat module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ParagraphFormat module</a><ul>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat</span></code></a><ul>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.AfterAutoSpacing"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.AfterAutoSpacing</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.AfterSpacing"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.AfterSpacing</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.AutoSpaceDE"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.AutoSpaceDE</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.AutoSpaceDN"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.AutoSpaceDN</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.BackColor"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.BackColor</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.BeforeAutoSpacing"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.BeforeAutoSpacing</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.BeforeSpacing"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.BeforeSpacing</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.Borders"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.Borders</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.ClearBackground"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.ClearBackground()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.FirstLineIndent"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.FirstLineIndent</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.Frame"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.Frame</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.HorizontalAlignment"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.HorizontalAlignment</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.IsBidi"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.IsBidi</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.IsColumnBreakAfter"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.IsColumnBreakAfter</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.IsFrame"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.IsFrame</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.IsKinSoku"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.IsKinSoku</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.IsWidowControl"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.IsWidowControl</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.KeepFollow"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.KeepFollow</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.KeepLines"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.KeepLines</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.LeftIndent"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.LeftIndent</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.LineSpacing"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.LineSpacing</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.LineSpacingRule"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.LineSpacingRule</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.MirrorIndents"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.MirrorIndents</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.OutlineLevel"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.OutlineLevel</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.OverflowPunc"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.OverflowPunc</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.PageBreakAfter"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.PageBreakAfter</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.PageBreakBefore"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.PageBreakBefore</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.RightIndent"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.RightIndent</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.SetFirstLineIndent"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.SetFirstLineIndent()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.SetLeftIndent"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.SetLeftIndent()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.SetRightIndent"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.SetRightIndent()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.SnapToGrid"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.SnapToGrid</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.SuppressAutoHyphens"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.SuppressAutoHyphens</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.Tabs"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.Tabs</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.TextAlignment"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.TextAlignment</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphFormat.ParagraphFormat.WordWrap"><code class="docutils literal notranslate"><span class="pre">ParagraphFormat.WordWrap</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ParagraphFormat module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ParagraphFormat.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ParagraphFormat">
+<span id="paragraphformat-module"></span><h1>ParagraphFormat module<a class="headerlink" href="#module-ParagraphFormat" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ParagraphFormat.</span></span><span class="sig-name descname"><span class="pre">ParagraphFormat</span></span><a class="headerlink" href="#ParagraphFormat.ParagraphFormat" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">WordAttrCollection</span></code></p>
+<p>Represents the formatting options for a paragraph.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.AfterAutoSpacing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AfterAutoSpacing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.AfterAutoSpacing" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether spacing after is automatic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.AfterSpacing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AfterSpacing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.AfterSpacing" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets the spacing (in points) after the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.AutoSpaceDE">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoSpaceDE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.AutoSpaceDE" title="Link to this definition"></a></dt>
+<dd><p>Returns the value that determines whether the space is automatically adjusted between Asian and Latin text.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.AutoSpaceDN">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AutoSpaceDN</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.AutoSpaceDN" title="Link to this definition"></a></dt>
+<dd><p>Returns the value that determines whether the space is automatically adjusted between Asian text and numbers.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.BackColor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BackColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Color</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.BackColor" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets background color of the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.BeforeAutoSpacing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BeforeAutoSpacing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.BeforeAutoSpacing" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether spacing before is automatic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.BeforeSpacing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BeforeSpacing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.BeforeSpacing" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets the spacing (in points) before the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.Borders">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Borders</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Borders</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.Borders" title="Link to this definition"></a></dt>
+<dd><p>Gets collection of borders in the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.ClearBackground">
+<span class="sig-name descname"><span class="pre">ClearBackground</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.ClearBackground" title="Link to this definition"></a></dt>
+<dd><p>Clears the paragraph background.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.FirstLineIndent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FirstLineIndent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.FirstLineIndent" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the value (in points) for first line or hanging indent.
+Positive value represents first-line indent, and Negative value represents hanging indent.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.Frame">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Frame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Frame</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.Frame" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.HorizontalAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HorizontalAlignment</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.HorizontalAlignment" title="Link to this definition"></a></dt>
+<dd><p>Returns the horizontal alignment for the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.IsBidi">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsBidi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.IsBidi" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets the right-to-left property of the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.IsColumnBreakAfter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsColumnBreakAfter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.IsColumnBreakAfter" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets a value indicating whether there is a column break after the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.IsFrame">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsFrame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.IsFrame" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether this instance is a frame.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.IsKinSoku">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsKinSoku</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.IsKinSoku" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value that determines whether to use Asian rules for controlling first and last characters.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.IsWidowControl">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsWidowControl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.IsWidowControl" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the first and last lines in the paragraph are to remain on the same page as the rest of the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.KeepFollow">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KeepFollow</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.KeepFollow" title="Link to this definition"></a></dt>
+<dd><p>Returns True if the paragraph is to remain on the same page as the paragraph that follows it.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.KeepLines">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KeepLines</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.KeepLines" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether all lines in the paragraph are to remain on the same page.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.LeftIndent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeftIndent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.LeftIndent" title="Link to this definition"></a></dt>
+<dd><p>Returns the value that represents the left indent for the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.LineSpacing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineSpacing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.LineSpacing" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets the line spacing property of the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.LineSpacingRule">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineSpacingRule</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">LineSpacingRule</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.LineSpacingRule" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets the line spacing rule property of the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.MirrorIndents">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MirrorIndents</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.MirrorIndents" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether the indentation type is mirror indents.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.OutlineLevel">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutlineLevel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">OutlineLevel</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.OutlineLevel" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the outline level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.OverflowPunc">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OverflowPunc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.OverflowPunc" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether punctuation is allowed to extend past text extents.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.PageBreakAfter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageBreakAfter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.PageBreakAfter" title="Link to this definition"></a></dt>
+<dd><p>Returns True if a page break is forced after the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.PageBreakBefore">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageBreakBefore</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.PageBreakBefore" title="Link to this definition"></a></dt>
+<dd><p>Returns True if a page break is forced before the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.RightIndent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RightIndent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.RightIndent" title="Link to this definition"></a></dt>
+<dd><p>Returns the value that represents the right indent for the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.SetFirstLineIndent">
+<span class="sig-name descname"><span class="pre">SetFirstLineIndent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">firstLineIndent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.SetFirstLineIndent" title="Link to this definition"></a></dt>
+<dd><p>Sets the value that represents the first line indent for the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.SetLeftIndent">
+<span class="sig-name descname"><span class="pre">SetLeftIndent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">leftIndent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.SetLeftIndent" title="Link to this definition"></a></dt>
+<dd><p>Sets the value that represents the left indent for the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.SetRightIndent">
+<span class="sig-name descname"><span class="pre">SetRightIndent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rightIndent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.SetRightIndent" title="Link to this definition"></a></dt>
+<dd><p>Sets the value that represents the right indent for the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.SnapToGrid">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SnapToGrid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.SnapToGrid" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value specifies whether the current paragraph snaps to grid when document grid is defined.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.SuppressAutoHyphens">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SuppressAutoHyphens</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.SuppressAutoHyphens" title="Link to this definition"></a></dt>
+<dd><p>Indicates whether to suppress automatic hyphenation for the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.Tabs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Tabs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TabCollection</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.Tabs" title="Link to this definition"></a></dt>
+<dd><p>Gets the tabs info.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.TextAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextAlignment</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.TextAlignment" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the style of text alignment.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphFormat.ParagraphFormat.WordWrap">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WordWrap</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphFormat.ParagraphFormat.WordWrap" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value that determines whether to allow Latin text to wrap in the middle of a word.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

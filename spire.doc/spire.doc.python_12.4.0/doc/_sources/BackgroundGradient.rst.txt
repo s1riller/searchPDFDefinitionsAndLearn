@@ -1,0 +1,7 @@
+BackgroundGradient module
+=========================
+
+.. automodule:: BackgroundGradient
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShapeBase module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ShapeBase module</a><ul>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase"><code class="docutils literal notranslate"><span class="pre">ShapeBase</span></code></a><ul>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.AdjustWithEffects"><code class="docutils literal notranslate"><span class="pre">ShapeBase.AdjustWithEffects()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.AlternativeText"><code class="docutils literal notranslate"><span class="pre">ShapeBase.AlternativeText</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.Bottom"><code class="docutils literal notranslate"><span class="pre">ShapeBase.Bottom</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.ChildObjects"><code class="docutils literal notranslate"><span class="pre">ShapeBase.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.CoordOrigin"><code class="docutils literal notranslate"><span class="pre">ShapeBase.CoordOrigin</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.CoordSize"><code class="docutils literal notranslate"><span class="pre">ShapeBase.CoordSize</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.DistanceBottom"><code class="docutils literal notranslate"><span class="pre">ShapeBase.DistanceBottom</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.DistanceLeft"><code class="docutils literal notranslate"><span class="pre">ShapeBase.DistanceLeft</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.DistanceRight"><code class="docutils literal notranslate"><span class="pre">ShapeBase.DistanceRight</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.DistanceTop"><code class="docutils literal notranslate"><span class="pre">ShapeBase.DistanceTop</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.FetchInheritedShapeAttr"><code class="docutils literal notranslate"><span class="pre">ShapeBase.FetchInheritedShapeAttr()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.FetchShapeAttr"><code class="docutils literal notranslate"><span class="pre">ShapeBase.FetchShapeAttr()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.GetDirectShapeAttr"><code class="docutils literal notranslate"><span class="pre">ShapeBase.GetDirectShapeAttr()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.GetDirectShapeAttribute"><code class="docutils literal notranslate"><span class="pre">ShapeBase.GetDirectShapeAttribute()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.GetInheritedShapeAttribute"><code class="docutils literal notranslate"><span class="pre">ShapeBase.GetInheritedShapeAttribute()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.GetShapeAttribute"><code class="docutils literal notranslate"><span class="pre">ShapeBase.GetShapeAttribute()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.HasImage"><code class="docutils literal notranslate"><span class="pre">ShapeBase.HasImage</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.HasKey"><code class="docutils literal notranslate"><span class="pre">ShapeBase.HasKey()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.Height"><code class="docutils literal notranslate"><span class="pre">ShapeBase.Height</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.HorizontalAlignment"><code class="docutils literal notranslate"><span class="pre">ShapeBase.HorizontalAlignment</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.HorizontalOrigin"><code class="docutils literal notranslate"><span class="pre">ShapeBase.HorizontalOrigin</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.HorizontalPosition"><code class="docutils literal notranslate"><span class="pre">ShapeBase.HorizontalPosition</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.IsSignatureLine"><code class="docutils literal notranslate"><span class="pre">ShapeBase.IsSignatureLine</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.LocalToParent"><code class="docutils literal notranslate"><span class="pre">ShapeBase.LocalToParent()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.RemoveShapeAttr"><code class="docutils literal notranslate"><span class="pre">ShapeBase.RemoveShapeAttr()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.RemoveShapeAttribute"><code class="docutils literal notranslate"><span class="pre">ShapeBase.RemoveShapeAttribute()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.Right"><code class="docutils literal notranslate"><span class="pre">ShapeBase.Right</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.Rotation"><code class="docutils literal notranslate"><span class="pre">ShapeBase.Rotation</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.SetShapeAttr"><code class="docutils literal notranslate"><span class="pre">ShapeBase.SetShapeAttr()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.SetShapeAttribute"><code class="docutils literal notranslate"><span class="pre">ShapeBase.SetShapeAttribute()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.SetShapeType"><code class="docutils literal notranslate"><span class="pre">ShapeBase.SetShapeType()</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.ShapeType"><code class="docutils literal notranslate"><span class="pre">ShapeBase.ShapeType</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.Size"><code class="docutils literal notranslate"><span class="pre">ShapeBase.Size</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.TextWrappingStyle"><code class="docutils literal notranslate"><span class="pre">ShapeBase.TextWrappingStyle</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.TextWrappingType"><code class="docutils literal notranslate"><span class="pre">ShapeBase.TextWrappingType</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.VerticalAlignment"><code class="docutils literal notranslate"><span class="pre">ShapeBase.VerticalAlignment</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.VerticalOrigin"><code class="docutils literal notranslate"><span class="pre">ShapeBase.VerticalOrigin</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.VerticalPosition"><code class="docutils literal notranslate"><span class="pre">ShapeBase.VerticalPosition</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.Width"><code class="docutils literal notranslate"><span class="pre">ShapeBase.Width</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.WrapType"><code class="docutils literal notranslate"><span class="pre">ShapeBase.WrapType</span></code></a></li>
+<li><a class="reference internal" href="#ShapeBase.ShapeBase.ZOrder"><code class="docutils literal notranslate"><span class="pre">ShapeBase.ZOrder</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ShapeBase module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ShapeBase.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ShapeBase">
+<span id="shapebase-module"></span><h1>ShapeBase module<a class="headerlink" href="#module-ShapeBase" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ShapeBase.</span></span><span class="sig-name descname"><span class="pre">ShapeBase</span></span><a class="headerlink" href="#ShapeBase.ShapeBase" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ParagraphBase</span></code></p>
+<p>Base class for shapes.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.AdjustWithEffects">
+<span class="sig-name descname"><span class="pre">AdjustWithEffects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RectangleF</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">RectangleF</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.AdjustWithEffects" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.AlternativeText">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AlternativeText</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.AlternativeText" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the alternative text.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.Bottom">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Bottom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.Bottom" title="Link to this definition"></a></dt>
+<dd><p>Get the bottom position of the shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child objects of the entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.CoordOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CoordOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Point</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.CoordOrigin" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.CoordSize">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CoordSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Size</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.CoordSize" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.DistanceBottom">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DistanceBottom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.DistanceBottom" title="Link to this definition"></a></dt>
+<dd><p>Get the distance from the bottom of the shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.DistanceLeft">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DistanceLeft</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.DistanceLeft" title="Link to this definition"></a></dt>
+<dd><p>Get the distance from the left of the shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.DistanceRight">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DistanceRight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.DistanceRight" title="Link to this definition"></a></dt>
+<dd><p>Get the distance from the right of the shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.DistanceTop">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DistanceTop</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.DistanceTop" title="Link to this definition"></a></dt>
+<dd><p>Get the distance from the top of the shape.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.FetchInheritedShapeAttr">
+<span class="sig-name descname"><span class="pre">FetchInheritedShapeAttr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SpireObject</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.FetchInheritedShapeAttr" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.FetchShapeAttr">
+<span class="sig-name descname"><span class="pre">FetchShapeAttr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SpireObject</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.FetchShapeAttr" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.GetDirectShapeAttr">
+<span class="sig-name descname"><span class="pre">GetDirectShapeAttr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SpireObject</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.GetDirectShapeAttr" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.GetDirectShapeAttribute">
+<span class="sig-name descname"><span class="pre">GetDirectShapeAttribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SpireObject</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.GetDirectShapeAttribute" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.GetInheritedShapeAttribute">
+<span class="sig-name descname"><span class="pre">GetInheritedShapeAttribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SpireObject</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.GetInheritedShapeAttribute" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.GetShapeAttribute">
+<span class="sig-name descname"><span class="pre">GetShapeAttribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SpireObject</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.GetShapeAttribute" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.HasImage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HasImage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.HasImage" title="Link to this definition"></a></dt>
+<dd><p>Check if the shape has an image.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.HasKey">
+<span class="sig-name descname"><span class="pre">HasKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.HasKey" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.Height">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.Height" title="Link to this definition"></a></dt>
+<dd><p>Get the height of the shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.HorizontalAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeHorizontalAlignment</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.HorizontalAlignment" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.HorizontalOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HorizontalOrigin</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.HorizontalOrigin" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.HorizontalPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.HorizontalPosition" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.IsSignatureLine">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsSignatureLine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.IsSignatureLine" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.LocalToParent">
+<span class="sig-name descname"><span class="pre">LocalToParent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PointF</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">PointF</span></span></span><a class="headerlink" href="#ShapeBase.ShapeBase.LocalToParent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.RemoveShapeAttr">
+<span class="sig-name descname"><span class="pre">RemoveShapeAttr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ShapeBase.ShapeBase.RemoveShapeAttr" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.RemoveShapeAttribute">
+<span class="sig-name descname"><span class="pre">RemoveShapeAttribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ShapeBase.ShapeBase.RemoveShapeAttribute" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.Right">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Right</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.Right" title="Link to this definition"></a></dt>
+<dd><p>Get the right position of the shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.Rotation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Rotation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.Rotation" title="Link to this definition"></a></dt>
+<dd><p>Get the rotation of the shape.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.SetShapeAttr">
+<span class="sig-name descname"><span class="pre">SetShapeAttr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SpireObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ShapeBase.ShapeBase.SetShapeAttr" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.SetShapeAttribute">
+<span class="sig-name descname"><span class="pre">SetShapeAttribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SpireObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ShapeBase.ShapeBase.SetShapeAttribute" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.SetShapeType">
+<span class="sig-name descname"><span class="pre">SetShapeType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shapeType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ShapeType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ShapeBase.ShapeBase.SetShapeType" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.ShapeType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ShapeType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeType</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.ShapeType" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.Size">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">SizeF</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.Size" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.TextWrappingStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextWrappingStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextWrappingStyle</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.TextWrappingStyle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.TextWrappingType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextWrappingType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextWrappingType</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.TextWrappingType" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.VerticalAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeVerticalAlignment</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.VerticalAlignment" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.VerticalOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">VerticalOrigin</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.VerticalOrigin" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.VerticalPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.VerticalPosition" title="Link to this definition"></a></dt>
+<dd><p>Get the vertical position of the shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.Width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.Width" title="Link to this definition"></a></dt>
+<dd><p>Get the width of the shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.WrapType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WrapType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextWrappingStyle</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.WrapType" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ShapeBase.ShapeBase.ZOrder">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ZOrder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#ShapeBase.ShapeBase.ZOrder" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

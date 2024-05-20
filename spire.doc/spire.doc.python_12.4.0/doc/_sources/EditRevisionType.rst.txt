@@ -1,0 +1,7 @@
+EditRevisionType module
+=======================
+
+.. automodule:: EditRevisionType
+   :members:
+   :undoc-members:
+   :show-inheritance:

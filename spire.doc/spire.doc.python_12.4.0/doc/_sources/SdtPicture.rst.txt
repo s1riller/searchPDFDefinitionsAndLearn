@@ -1,0 +1,7 @@
+SdtPicture module
+=================
+
+.. automodule:: SdtPicture
+   :members:
+   :undoc-members:
+   :show-inheritance:

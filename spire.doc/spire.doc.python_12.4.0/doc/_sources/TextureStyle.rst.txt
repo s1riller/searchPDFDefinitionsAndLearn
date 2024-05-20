@@ -1,0 +1,7 @@
+TextureStyle module
+===================
+
+.. automodule:: TextureStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+TextBoxLineStyle module
+=======================
+
+.. automodule:: TextBoxLineStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

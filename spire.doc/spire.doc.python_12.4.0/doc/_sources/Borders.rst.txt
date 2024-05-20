@@ -1,0 +1,7 @@
+Borders module
+==============
+
+.. automodule:: Borders
+   :members:
+   :undoc-members:
+   :show-inheritance:

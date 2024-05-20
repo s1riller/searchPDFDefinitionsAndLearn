@@ -1,0 +1,7 @@
+Doc\_PropertyType module
+========================
+
+.. automodule:: Doc_PropertyType
+   :members:
+   :undoc-members:
+   :show-inheritance:

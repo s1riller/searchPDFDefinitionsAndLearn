@@ -1,0 +1,7 @@
+CustomDocumentProperties module
+===============================
+
+.. automodule:: CustomDocumentProperties
+   :members:
+   :undoc-members:
+   :show-inheritance:

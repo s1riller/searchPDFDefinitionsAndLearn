@@ -1,0 +1,7 @@
+LineDashing module
+==================
+
+.. automodule:: LineDashing
+   :members:
+   :undoc-members:
+   :show-inheritance:

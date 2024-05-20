@@ -1,0 +1,7 @@
+BuiltInProperty module
+======================
+
+.. automodule:: BuiltInProperty
+   :members:
+   :undoc-members:
+   :show-inheritance:

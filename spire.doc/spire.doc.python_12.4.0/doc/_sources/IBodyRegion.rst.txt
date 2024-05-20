@@ -1,0 +1,7 @@
+IBodyRegion module
+==================
+
+.. automodule:: IBodyRegion
+   :members:
+   :undoc-members:
+   :show-inheritance:

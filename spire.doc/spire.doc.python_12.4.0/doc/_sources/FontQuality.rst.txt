@@ -1,0 +1,7 @@
+FontQuality module
+==================
+
+.. automodule:: FontQuality
+   :members:
+   :undoc-members:
+   :show-inheritance:

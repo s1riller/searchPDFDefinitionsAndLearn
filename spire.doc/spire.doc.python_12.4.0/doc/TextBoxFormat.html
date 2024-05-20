@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TextBoxFormat module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">TextBoxFormat module</a><ul>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat</span></code></a><ul>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.Clone"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.FillColor"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.FillColor</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.FillEfects"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.FillEfects</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.Height"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.Height</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.HorizontalAlignment"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.HorizontalAlignment</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.HorizontalOrigin"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.HorizontalOrigin</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.HorizontalPosition"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.HorizontalPosition</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.InternalMargin"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.InternalMargin</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.IsFitShapeToText"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.IsFitShapeToText</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.LayoutFlowAlt"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.LayoutFlowAlt</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.LineColor"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.LineColor</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.LineDashing"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.LineDashing</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.LineStyle"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.LineStyle</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.LineWidth"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.LineWidth</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.NoLine"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.NoLine</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.TextAnchor"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.TextAnchor</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.TextWrappingStyle"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.TextWrappingStyle</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.TextWrappingType"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.TextWrappingType</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.VerticalAlignment"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.VerticalAlignment</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.VerticalOrigin"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.VerticalOrigin</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.VerticalPosition"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.VerticalPosition</span></code></a></li>
+<li><a class="reference internal" href="#TextBoxFormat.TextBoxFormat.Width"><code class="docutils literal notranslate"><span class="pre">TextBoxFormat.Width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">TextBoxFormat module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/TextBoxFormat.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-TextBoxFormat">
+<span id="textboxformat-module"></span><h1>TextBoxFormat module<a class="headerlink" href="#module-TextBoxFormat" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TextBoxFormat.</span></span><span class="sig-name descname"><span class="pre">TextBoxFormat</span></span><a class="headerlink" href="#TextBoxFormat.TextBoxFormat" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">WordAttrCollection</span></code></p>
+<p>Represents the format of a text box.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#TextBoxFormat.TextBoxFormat" title="TextBoxFormat.TextBoxFormat"><span class="pre">TextBoxFormat</span></a></span></span><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.Clone" title="Link to this definition"></a></dt>
+<dd><p>Clone textbox format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The result TextBoxFormat.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#TextBoxFormat.TextBoxFormat" title="TextBoxFormat.TextBoxFormat">TextBoxFormat</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.FillColor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FillColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Color</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.FillColor" title="Link to this definition"></a></dt>
+<dd><p>Get/set the fill color of the text box.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.FillEfects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FillEfects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Background</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.FillEfects" title="Link to this definition"></a></dt>
+<dd><p>Get the fill effects of the text box.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.Height">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.Height" title="Link to this definition"></a></dt>
+<dd><p>Get/set the height of the text box.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.HorizontalAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeHorizontalAlignment</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.HorizontalAlignment" title="Link to this definition"></a></dt>
+<dd><p>Get/set textbox horizontal alignment.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.HorizontalOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HorizontalOrigin</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.HorizontalOrigin" title="Link to this definition"></a></dt>
+<dd><p>Get/set the horizontal origin of the text box.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.HorizontalPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.HorizontalPosition" title="Link to this definition"></a></dt>
+<dd><p>Get/set textbox horizontal position.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.InternalMargin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InternalMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">InternalMargin</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.InternalMargin" title="Link to this definition"></a></dt>
+<dd><p>Gets the internal margin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The internal margin.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="InternalMargin.html#InternalMargin.InternalMargin" title="InternalMargin.InternalMargin">InternalMargin</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.IsFitShapeToText">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsFitShapeToText</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.IsFitShapeToText" title="Link to this definition"></a></dt>
+<dd><p>Gets or Sets a value.Specifies whether the spape stretches to fit the text in the textbox.
+Default is false.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.LayoutFlowAlt">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LayoutFlowAlt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextDirection</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.LayoutFlowAlt" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the text direction of the textbox.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.LineColor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Color</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.LineColor" title="Link to this definition"></a></dt>
+<dd><p>Get/set the line color of the text box.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.LineDashing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineDashing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">LineDashing</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.LineDashing" title="Link to this definition"></a></dt>
+<dd><p>Get/set line dashing for textbox.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.LineStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextBoxLineStyle</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.LineStyle" title="Link to this definition"></a></dt>
+<dd><p>Get/set the line style of the text box.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.LineWidth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LineWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.LineWidth" title="Link to this definition"></a></dt>
+<dd><p>Get/set textbox line width.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.NoLine">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NoLine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.NoLine" title="Link to this definition"></a></dt>
+<dd><p>Get/set value which defines if
+there is a line around textbox shape.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.TextAnchor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextAnchor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeVerticalAlignment</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.TextAnchor" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the vertical anchoring of text. Default is top.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.TextWrappingStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextWrappingStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextWrappingStyle</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.TextWrappingStyle" title="Link to this definition"></a></dt>
+<dd><p>Get/set text Wrapping style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.TextWrappingType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextWrappingType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextWrappingType</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.TextWrappingType" title="Link to this definition"></a></dt>
+<dd><p>Get/set wrapping type for textbox.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.VerticalAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeVerticalAlignment</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.VerticalAlignment" title="Link to this definition"></a></dt>
+<dd><p>Get/set textbox vertical alignment.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.VerticalOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">VerticalOrigin</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.VerticalOrigin" title="Link to this definition"></a></dt>
+<dd><p>Get/set the vertical origin of the text box.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.VerticalPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.VerticalPosition" title="Link to this definition"></a></dt>
+<dd><p>Get/set textbox vertical position.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TextBoxFormat.TextBoxFormat.Width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#TextBoxFormat.TextBoxFormat.Width" title="Link to this definition"></a></dt>
+<dd><p>Get/set the width of the text box.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+CharacterSpacing module
+=======================
+
+.. automodule:: CharacterSpacing
+   :members:
+   :undoc-members:
+   :show-inheritance:

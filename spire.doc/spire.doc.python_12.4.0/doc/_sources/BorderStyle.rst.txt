@@ -1,0 +1,7 @@
+BorderStyle module
+==================
+
+.. automodule:: BorderStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

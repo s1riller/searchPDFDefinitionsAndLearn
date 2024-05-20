@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Body module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Body module</a><ul>
+<li><a class="reference internal" href="#Body.Body"><code class="docutils literal notranslate"><span class="pre">Body</span></code></a><ul>
+<li><a class="reference internal" href="#Body.Body.AddParagraph"><code class="docutils literal notranslate"><span class="pre">Body.AddParagraph()</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.AddTable"><code class="docutils literal notranslate"><span class="pre">Body.AddTable</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.ChildObjects"><code class="docutils literal notranslate"><span class="pre">Body.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">Body.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.EnsureMinimum"><code class="docutils literal notranslate"><span class="pre">Body.EnsureMinimum()</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.FirstParagraph"><code class="docutils literal notranslate"><span class="pre">Body.FirstParagraph</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.FormFields"><code class="docutils literal notranslate"><span class="pre">Body.FormFields</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.InsertXHTML"><code class="docutils literal notranslate"><span class="pre">Body.InsertXHTML</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.IsValidXHTML"><code class="docutils literal notranslate"><span class="pre">Body.IsValidXHTML</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.LastParagraph"><code class="docutils literal notranslate"><span class="pre">Body.LastParagraph</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.Paragraphs"><code class="docutils literal notranslate"><span class="pre">Body.Paragraphs</span></code></a></li>
+<li><a class="reference internal" href="#Body.Body.Tables"><code class="docutils literal notranslate"><span class="pre">Body.Tables</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Body module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Body.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Body">
+<span id="body-module"></span><h1>Body module<a class="headerlink" href="#module-Body" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Body.Body">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Body.</span></span><span class="sig-name descname"><span class="pre">Body</span></span><a class="headerlink" href="#Body.Body" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentContainer</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IBody</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code></p>
+<p>Represents the body of a document.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Body.Body.AddParagraph">
+<span class="sig-name descname"><span class="pre">AddParagraph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Paragraph</span></span></span><a class="headerlink" href="#Body.Body.AddParagraph" title="Link to this definition"></a></dt>
+<dd><p>Adds a paragraph at the end of the section.
+:return: The added paragraph.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Body.Body.AddTable">
+<span class="sig-name descname"><span class="pre">AddTable</span></span><a class="headerlink" href="#Body.Body.AddTable" title="Link to this definition"></a></dt>
+<dd><p>Adds a table.
+:return: The added table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Body.Body.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#Body.Body.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child objects.
+:return: The child objects.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Body.Body.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#Body.Body.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.
+:return: The type of the document object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Body.Body.EnsureMinimum">
+<span class="sig-name descname"><span class="pre">EnsureMinimum</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Body.Body.EnsureMinimum" title="Link to this definition"></a></dt>
+<dd><p>If the text body has no paragraphs, creates and appends one paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Body.Body.FirstParagraph">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FirstParagraph</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">IParagraph</span></em><a class="headerlink" href="#Body.Body.FirstParagraph" title="Link to this definition"></a></dt>
+<dd><p>Gets the first paragraph.
+:return: The first paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Body.Body.FormFields">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FormFields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FormFieldCollection</span></em><a class="headerlink" href="#Body.Body.FormFields" title="Link to this definition"></a></dt>
+<dd><p>Gets the form fields.
+:return: The form fields.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Body.Body.InsertXHTML">
+<span class="sig-name descname"><span class="pre">InsertXHTML</span></span><a class="headerlink" href="#Body.Body.InsertXHTML" title="Link to this definition"></a></dt>
+<dd><p>Inserts HTML at the end of the text body.
+:param html: The HTML to insert.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Body.Body.IsValidXHTML">
+<span class="sig-name descname"><span class="pre">IsValidXHTML</span></span><a class="headerlink" href="#Body.Body.IsValidXHTML" title="Link to this definition"></a></dt>
+<dd><p>Validates the XHTML.
+:param html: The HTML to validate.
+:param type: The validation type.
+:return: True if the XHTML is valid, False otherwise.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Body.Body.LastParagraph">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastParagraph</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">IParagraph</span></em><a class="headerlink" href="#Body.Body.LastParagraph" title="Link to this definition"></a></dt>
+<dd><p>Gets the last paragraph.
+:return: The last paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Body.Body.Paragraphs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Paragraphs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphCollection</span></em><a class="headerlink" href="#Body.Body.Paragraphs" title="Link to this definition"></a></dt>
+<dd><p>Gets the inner paragraphs.
+:return: The inner paragraphs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Body.Body.Tables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Tables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableCollection</span></em><a class="headerlink" href="#Body.Body.Tables" title="Link to this definition"></a></dt>
+<dd><p>Gets the inner tables.
+:return: The inner tables.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

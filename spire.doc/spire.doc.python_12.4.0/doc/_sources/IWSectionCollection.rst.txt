@@ -1,0 +1,7 @@
+IWSectionCollection module
+==========================
+
+.. automodule:: IWSectionCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

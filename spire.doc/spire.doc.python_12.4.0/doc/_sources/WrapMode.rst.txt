@@ -1,0 +1,7 @@
+WrapMode module
+===============
+
+.. automodule:: WrapMode
+   :members:
+   :undoc-members:
+   :show-inheritance:

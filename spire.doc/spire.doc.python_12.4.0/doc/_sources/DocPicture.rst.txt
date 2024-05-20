@@ -1,0 +1,7 @@
+DocPicture module
+=================
+
+.. automodule:: DocPicture
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+CellFormat module
+=================
+
+.. automodule:: CellFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

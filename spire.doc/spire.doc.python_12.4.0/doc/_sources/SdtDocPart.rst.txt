@@ -1,0 +1,7 @@
+SdtDocPart module
+=================
+
+.. automodule:: SdtDocPart
+   :members:
+   :undoc-members:
+   :show-inheritance:

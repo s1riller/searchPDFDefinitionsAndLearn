@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+	<Infomation>
+		<Country>Country</Country>
+		<City>City</City>
+		<Population>Population</Population>
+		<Area>Area/km²</Area>
+	</Infomation>
+	<Infomation>
+		<Country>China</Country>
+		<City>Chengdu</City>
+		<Population>15918000</Population>
+		<Area>14312</Area>
+	</Infomation>
+	<Infomation>
+		<Country>Germany</Country>
+		<City>Munich</City>
+		<Population>3100000</Population>
+		<Area>270</Area>
+	</Infomation>
+	<Infomation>
+		<Country>Thailand</Country>
+		<City>Bangkok</City>
+		<Population>15680000</Population>
+		<Area>1197</Area>
+	</Infomation>	
+	<Infomation>
+		<Country>Russia</Country>
+		<City>Moscow</City>
+		<Population>14150000</Population>
+		<Area>2511</Area>
+	</Infomation>
+	<Infomation>
+		<Country>China</Country>
+		<City>Beijing</City>
+		<Population>21729000</Population>
+		<Area>16807</Area>
+	</Infomation>	
+	<Infomation>
+		<Country>Russia</Country>
+		<City>Moscow</City>
+		<Population>21729000</Population>
+		<Area>16807</Area>
+	</Infomation>
+</Data>

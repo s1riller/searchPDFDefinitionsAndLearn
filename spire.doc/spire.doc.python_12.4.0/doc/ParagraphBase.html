@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParagraphBase module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ParagraphBase module</a><ul>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase"><code class="docutils literal notranslate"><span class="pre">ParagraphBase</span></code></a><ul>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.ApplyCharacterFormat"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.ApplyCharacterFormat()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.ApplyStyle"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.ApplyStyle()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.CharacterFormat"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.CharacterFormat</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.ChildObjects"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.DeleteRevision"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.DeleteRevision</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.GetNextWidgetSibling"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.GetNextWidgetSibling()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.GetPreviousWidgetSibling"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.GetPreviousWidgetSibling()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.InsertRevision"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.InsertRevision</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.IsDeleteRevision"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.IsDeleteRevision</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.IsInsertRevision"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.IsInsertRevision</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.OwnerParagraph"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.OwnerParagraph</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphBase.ParagraphBase.StyleName"><code class="docutils literal notranslate"><span class="pre">ParagraphBase.StyleName</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ParagraphBase module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ParagraphBase.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ParagraphBase">
+<span id="paragraphbase-module"></span><h1>ParagraphBase module<a class="headerlink" href="#module-ParagraphBase" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ParagraphBase.</span></span><span class="sig-name descname"><span class="pre">ParagraphBase</span></span><a class="headerlink" href="#ParagraphBase.ParagraphBase" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentBase</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IParagraphBase</span></code></p>
+<p>Base class for paragraphs in a document.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.ApplyCharacterFormat">
+<span class="sig-name descname"><span class="pre">ApplyCharacterFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">charFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CharacterFormat</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ParagraphBase.ParagraphBase.ApplyCharacterFormat" title="Link to this definition"></a></dt>
+<dd><p>Sets the character format.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.ApplyStyle">
+<span class="sig-name descname"><span class="pre">ApplyStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">styleName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ParagraphBase.ParagraphBase.ApplyStyle" title="Link to this definition"></a></dt>
+<dd><p>Applies the specified style to the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.CharacterFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CharacterFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CharacterFormat</span></em><a class="headerlink" href="#ParagraphBase.ParagraphBase.CharacterFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the character format.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#ParagraphBase.ParagraphBase.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child objects of the entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.DeleteRevision">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DeleteRevision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">EditRevision</span></em><a class="headerlink" href="#ParagraphBase.ParagraphBase.DeleteRevision" title="Link to this definition"></a></dt>
+<dd><p>Gets the delete revision for this object.
+Note: This can be null. If null, it does not have a delete revision.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.GetNextWidgetSibling">
+<span class="sig-name descname"><span class="pre">GetNextWidgetSibling</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IDocumentObject</span></span></span><a class="headerlink" href="#ParagraphBase.ParagraphBase.GetNextWidgetSibling" title="Link to this definition"></a></dt>
+<dd><p>Gets the next widget sibling of the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.GetPreviousWidgetSibling">
+<span class="sig-name descname"><span class="pre">GetPreviousWidgetSibling</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IDocumentObject</span></span></span><a class="headerlink" href="#ParagraphBase.ParagraphBase.GetPreviousWidgetSibling" title="Link to this definition"></a></dt>
+<dd><p>Gets the previous widget sibling of the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.InsertRevision">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InsertRevision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">EditRevision</span></em><a class="headerlink" href="#ParagraphBase.ParagraphBase.InsertRevision" title="Link to this definition"></a></dt>
+<dd><p>Gets the insert revision for this object.
+Note: This can be null. If null, it does not have an insert revision.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.IsDeleteRevision">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsDeleteRevision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphBase.ParagraphBase.IsDeleteRevision" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether this item was deleted from the document,
+when “Track Changes” is or was set to “true”.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.IsInsertRevision">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsInsertRevision</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ParagraphBase.ParagraphBase.IsInsertRevision" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether this item was inserted to the document,
+when “Track Changes” is or was set to “true”.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.OwnerParagraph">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OwnerParagraph</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Paragraph</span></em><a class="headerlink" href="#ParagraphBase.ParagraphBase.OwnerParagraph" title="Link to this definition"></a></dt>
+<dd><p>Gets the owner paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphBase.ParagraphBase.StyleName">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StyleName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#ParagraphBase.ParagraphBase.StyleName" title="Link to this definition"></a></dt>
+<dd><p>Gets the style name.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

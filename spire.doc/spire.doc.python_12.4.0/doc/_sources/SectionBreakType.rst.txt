@@ -1,0 +1,7 @@
+SectionBreakType module
+=======================
+
+.. automodule:: SectionBreakType
+   :members:
+   :undoc-members:
+   :show-inheritance:

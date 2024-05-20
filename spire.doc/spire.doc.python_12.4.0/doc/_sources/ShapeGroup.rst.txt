@@ -1,0 +1,7 @@
+ShapeGroup module
+=================
+
+.. automodule:: ShapeGroup
+   :members:
+   :undoc-members:
+   :show-inheritance:

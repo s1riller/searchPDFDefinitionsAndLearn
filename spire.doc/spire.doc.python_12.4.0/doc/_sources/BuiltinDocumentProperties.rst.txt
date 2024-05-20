@@ -1,0 +1,7 @@
+BuiltinDocumentProperties module
+================================
+
+.. automodule:: BuiltinDocumentProperties
+   :members:
+   :undoc-members:
+   :show-inheritance:

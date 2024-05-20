@@ -1,0 +1,7 @@
+FrameSizeRule module
+====================
+
+.. automodule:: FrameSizeRule
+   :members:
+   :undoc-members:
+   :show-inheritance:

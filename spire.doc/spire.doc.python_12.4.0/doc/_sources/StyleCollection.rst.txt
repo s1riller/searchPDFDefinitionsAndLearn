@@ -1,0 +1,7 @@
+StyleCollection module
+======================
+
+.. automodule:: StyleCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ListPatternType module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ListPatternType module</a><ul>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType"><code class="docutils literal notranslate"><span class="pre">ListPatternType</span></code></a><ul>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Aiueo"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Aiueo</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.AiueoFullWidth"><code class="docutils literal notranslate"><span class="pre">ListPatternType.AiueoFullWidth</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Arabic"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Arabic</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.ArabicAbjad"><code class="docutils literal notranslate"><span class="pre">ListPatternType.ArabicAbjad</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.ArabicAlpha"><code class="docutils literal notranslate"><span class="pre">ListPatternType.ArabicAlpha</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Bullet"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Bullet</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.CardinalText"><code class="docutils literal notranslate"><span class="pre">ListPatternType.CardinalText</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Chicago"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Chicago</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.ChineseCounting"><code class="docutils literal notranslate"><span class="pre">ListPatternType.ChineseCounting</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.ChineseCountingThousand"><code class="docutils literal notranslate"><span class="pre">ListPatternType.ChineseCountingThousand</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.ChineseLegalSimplified"><code class="docutils literal notranslate"><span class="pre">ListPatternType.ChineseLegalSimplified</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.CustomType"><code class="docutils literal notranslate"><span class="pre">ListPatternType.CustomType</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.DecimalEnclosedCircle"><code class="docutils literal notranslate"><span class="pre">ListPatternType.DecimalEnclosedCircle</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.DecimalEnclosedCircleChinese"><code class="docutils literal notranslate"><span class="pre">ListPatternType.DecimalEnclosedCircleChinese</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.DecimalEnclosedFullstop"><code class="docutils literal notranslate"><span class="pre">ListPatternType.DecimalEnclosedFullstop</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.DecimalEnclosedParen"><code class="docutils literal notranslate"><span class="pre">ListPatternType.DecimalEnclosedParen</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.DecimalFullWidth"><code class="docutils literal notranslate"><span class="pre">ListPatternType.DecimalFullWidth</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.DecimalFullWidth2"><code class="docutils literal notranslate"><span class="pre">ListPatternType.DecimalFullWidth2</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.DecimalHalfWidth"><code class="docutils literal notranslate"><span class="pre">ListPatternType.DecimalHalfWidth</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Hebrew1"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Hebrew1</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Hebrew2"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Hebrew2</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.IdeographDigital"><code class="docutils literal notranslate"><span class="pre">ListPatternType.IdeographDigital</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.IdeographEnclosedCircle"><code class="docutils literal notranslate"><span class="pre">ListPatternType.IdeographEnclosedCircle</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.IdeographLegalTraditional"><code class="docutils literal notranslate"><span class="pre">ListPatternType.IdeographLegalTraditional</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.IdeographTraditional"><code class="docutils literal notranslate"><span class="pre">ListPatternType.IdeographTraditional</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.IdeographZodiac"><code class="docutils literal notranslate"><span class="pre">ListPatternType.IdeographZodiac</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.IdeographZodiacTraditional"><code class="docutils literal notranslate"><span class="pre">ListPatternType.IdeographZodiacTraditional</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Iroha"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Iroha</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.IrohaFullWidth"><code class="docutils literal notranslate"><span class="pre">ListPatternType.IrohaFullWidth</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.JapaneseCounting"><code class="docutils literal notranslate"><span class="pre">ListPatternType.JapaneseCounting</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.JapaneseDigitalTenThousand"><code class="docutils literal notranslate"><span class="pre">ListPatternType.JapaneseDigitalTenThousand</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.JapaneseLegal"><code class="docutils literal notranslate"><span class="pre">ListPatternType.JapaneseLegal</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.KoreanCounting"><code class="docutils literal notranslate"><span class="pre">ListPatternType.KoreanCounting</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.KoreanDigital"><code class="docutils literal notranslate"><span class="pre">ListPatternType.KoreanDigital</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.KoreanDigital2"><code class="docutils literal notranslate"><span class="pre">ListPatternType.KoreanDigital2</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.KoreanLegal"><code class="docutils literal notranslate"><span class="pre">ListPatternType.KoreanLegal</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.LeadingZero"><code class="docutils literal notranslate"><span class="pre">ListPatternType.LeadingZero</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.LowLetter"><code class="docutils literal notranslate"><span class="pre">ListPatternType.LowLetter</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.LowRoman"><code class="docutils literal notranslate"><span class="pre">ListPatternType.LowRoman</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.NumberInDash"><code class="docutils literal notranslate"><span class="pre">ListPatternType.NumberInDash</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Ordinal"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Ordinal</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.OrdinalText"><code class="docutils literal notranslate"><span class="pre">ListPatternType.OrdinalText</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.Special"><code class="docutils literal notranslate"><span class="pre">ListPatternType.Special</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.TaiwaneseCounting"><code class="docutils literal notranslate"><span class="pre">ListPatternType.TaiwaneseCounting</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.TaiwaneseCountingThousand"><code class="docutils literal notranslate"><span class="pre">ListPatternType.TaiwaneseCountingThousand</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.TaiwaneseDigital"><code class="docutils literal notranslate"><span class="pre">ListPatternType.TaiwaneseDigital</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.UpLetter"><code class="docutils literal notranslate"><span class="pre">ListPatternType.UpLetter</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.UpRoman"><code class="docutils literal notranslate"><span class="pre">ListPatternType.UpRoman</span></code></a></li>
+<li><a class="reference internal" href="#ListPatternType.ListPatternType.none"><code class="docutils literal notranslate"><span class="pre">ListPatternType.none</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ListPatternType module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ListPatternType.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ListPatternType">
+<span id="listpatterntype-module"></span><h1>ListPatternType module<a class="headerlink" href="#module-ListPatternType" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ListPatternType.</span></span><span class="sig-name descname"><span class="pre">ListPatternType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ListPatternType.ListPatternType" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Specifies type of the list numbering format.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Aiueo">
+<span class="sig-name descname"><span class="pre">Aiueo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Aiueo" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.AiueoFullWidth">
+<span class="sig-name descname"><span class="pre">AiueoFullWidth</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.AiueoFullWidth" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Arabic">
+<span class="sig-name descname"><span class="pre">Arabic</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Arabic" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.ArabicAbjad">
+<span class="sig-name descname"><span class="pre">ArabicAbjad</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">48</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.ArabicAbjad" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.ArabicAlpha">
+<span class="sig-name descname"><span class="pre">ArabicAlpha</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">46</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.ArabicAlpha" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Bullet">
+<span class="sig-name descname"><span class="pre">Bullet</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Bullet" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.CardinalText">
+<span class="sig-name descname"><span class="pre">CardinalText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.CardinalText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Chicago">
+<span class="sig-name descname"><span class="pre">Chicago</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Chicago" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.ChineseCounting">
+<span class="sig-name descname"><span class="pre">ChineseCounting</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">37</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.ChineseCounting" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.ChineseCountingThousand">
+<span class="sig-name descname"><span class="pre">ChineseCountingThousand</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">39</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.ChineseCountingThousand" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.ChineseLegalSimplified">
+<span class="sig-name descname"><span class="pre">ChineseLegalSimplified</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">38</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.ChineseLegalSimplified" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.CustomType">
+<span class="sig-name descname"><span class="pre">CustomType</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">65280</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.CustomType" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.DecimalEnclosedCircle">
+<span class="sig-name descname"><span class="pre">DecimalEnclosedCircle</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.DecimalEnclosedCircle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.DecimalEnclosedCircleChinese">
+<span class="sig-name descname"><span class="pre">DecimalEnclosedCircleChinese</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">28</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.DecimalEnclosedCircleChinese" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.DecimalEnclosedFullstop">
+<span class="sig-name descname"><span class="pre">DecimalEnclosedFullstop</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">26</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.DecimalEnclosedFullstop" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.DecimalEnclosedParen">
+<span class="sig-name descname"><span class="pre">DecimalEnclosedParen</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">27</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.DecimalEnclosedParen" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.DecimalFullWidth">
+<span class="sig-name descname"><span class="pre">DecimalFullWidth</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.DecimalFullWidth" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.DecimalFullWidth2">
+<span class="sig-name descname"><span class="pre">DecimalFullWidth2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.DecimalFullWidth2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.DecimalHalfWidth">
+<span class="sig-name descname"><span class="pre">DecimalHalfWidth</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.DecimalHalfWidth" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Hebrew1">
+<span class="sig-name descname"><span class="pre">Hebrew1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">45</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Hebrew1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Hebrew2">
+<span class="sig-name descname"><span class="pre">Hebrew2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">47</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Hebrew2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.IdeographDigital">
+<span class="sig-name descname"><span class="pre">IdeographDigital</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.IdeographDigital" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.IdeographEnclosedCircle">
+<span class="sig-name descname"><span class="pre">IdeographEnclosedCircle</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">29</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.IdeographEnclosedCircle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.IdeographLegalTraditional">
+<span class="sig-name descname"><span class="pre">IdeographLegalTraditional</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">34</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.IdeographLegalTraditional" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.IdeographTraditional">
+<span class="sig-name descname"><span class="pre">IdeographTraditional</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.IdeographTraditional" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.IdeographZodiac">
+<span class="sig-name descname"><span class="pre">IdeographZodiac</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.IdeographZodiac" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.IdeographZodiacTraditional">
+<span class="sig-name descname"><span class="pre">IdeographZodiacTraditional</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.IdeographZodiacTraditional" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Iroha">
+<span class="sig-name descname"><span class="pre">Iroha</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Iroha" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.IrohaFullWidth">
+<span class="sig-name descname"><span class="pre">IrohaFullWidth</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.IrohaFullWidth" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.JapaneseCounting">
+<span class="sig-name descname"><span class="pre">JapaneseCounting</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.JapaneseCounting" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.JapaneseDigitalTenThousand">
+<span class="sig-name descname"><span class="pre">JapaneseDigitalTenThousand</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.JapaneseDigitalTenThousand" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.JapaneseLegal">
+<span class="sig-name descname"><span class="pre">JapaneseLegal</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.JapaneseLegal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.KoreanCounting">
+<span class="sig-name descname"><span class="pre">KoreanCounting</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">42</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.KoreanCounting" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.KoreanDigital">
+<span class="sig-name descname"><span class="pre">KoreanDigital</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">41</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.KoreanDigital" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.KoreanDigital2">
+<span class="sig-name descname"><span class="pre">KoreanDigital2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">44</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.KoreanDigital2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.KoreanLegal">
+<span class="sig-name descname"><span class="pre">KoreanLegal</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">43</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.KoreanLegal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.LeadingZero">
+<span class="sig-name descname"><span class="pre">LeadingZero</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.LeadingZero" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.LowLetter">
+<span class="sig-name descname"><span class="pre">LowLetter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.LowLetter" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.LowRoman">
+<span class="sig-name descname"><span class="pre">LowRoman</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.LowRoman" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.NumberInDash">
+<span class="sig-name descname"><span class="pre">NumberInDash</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">57</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.NumberInDash" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Ordinal">
+<span class="sig-name descname"><span class="pre">Ordinal</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Ordinal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.OrdinalText">
+<span class="sig-name descname"><span class="pre">OrdinalText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.OrdinalText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.Special">
+<span class="sig-name descname"><span class="pre">Special</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">58</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.Special" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.TaiwaneseCounting">
+<span class="sig-name descname"><span class="pre">TaiwaneseCounting</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">33</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.TaiwaneseCounting" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.TaiwaneseCountingThousand">
+<span class="sig-name descname"><span class="pre">TaiwaneseCountingThousand</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">35</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.TaiwaneseCountingThousand" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.TaiwaneseDigital">
+<span class="sig-name descname"><span class="pre">TaiwaneseDigital</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">36</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.TaiwaneseDigital" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.UpLetter">
+<span class="sig-name descname"><span class="pre">UpLetter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.UpLetter" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.UpRoman">
+<span class="sig-name descname"><span class="pre">UpRoman</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.UpRoman" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ListPatternType.ListPatternType.none">
+<span class="sig-name descname"><span class="pre">none</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">255</span></em><a class="headerlink" href="#ListPatternType.ListPatternType.none" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

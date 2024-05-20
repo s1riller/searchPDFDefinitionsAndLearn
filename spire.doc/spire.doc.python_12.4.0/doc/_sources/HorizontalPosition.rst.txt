@@ -1,0 +1,7 @@
+HorizontalPosition module
+=========================
+
+.. automodule:: HorizontalPosition
+   :members:
+   :undoc-members:
+   :show-inheritance:

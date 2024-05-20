@@ -1,0 +1,7 @@
+WordAttrCollection module
+=========================
+
+.. automodule:: WordAttrCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

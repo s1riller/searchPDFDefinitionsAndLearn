@@ -1,0 +1,7 @@
+SdtBuildingBlockGallery module
+==============================
+
+.. automodule:: SdtBuildingBlockGallery
+   :members:
+   :undoc-members:
+   :show-inheritance:

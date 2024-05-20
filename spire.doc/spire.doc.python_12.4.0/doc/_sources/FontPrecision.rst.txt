@@ -1,0 +1,7 @@
+FontPrecision module
+====================
+
+.. automodule:: FontPrecision
+   :members:
+   :undoc-members:
+   :show-inheritance:

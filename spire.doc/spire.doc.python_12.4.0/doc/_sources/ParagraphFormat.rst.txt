@@ -1,0 +1,7 @@
+ParagraphFormat module
+======================
+
+.. automodule:: ParagraphFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+BodyRegion module
+=================
+
+.. automodule:: BodyRegion
+   :members:
+   :undoc-members:
+   :show-inheritance:

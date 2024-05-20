@@ -1,0 +1,7 @@
+GroupedShapeOrigin module
+=========================
+
+.. automodule:: GroupedShapeOrigin
+   :members:
+   :undoc-members:
+   :show-inheritance:

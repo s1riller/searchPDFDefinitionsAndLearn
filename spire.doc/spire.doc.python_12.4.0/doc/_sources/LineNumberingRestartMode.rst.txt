@@ -1,0 +1,7 @@
+LineNumberingRestartMode module
+===============================
+
+.. automodule:: LineNumberingRestartMode
+   :members:
+   :undoc-members:
+   :show-inheritance:

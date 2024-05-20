@@ -1,0 +1,7 @@
+IStructureDocument module
+=========================
+
+.. automodule:: IStructureDocument
+   :members:
+   :undoc-members:
+   :show-inheritance:

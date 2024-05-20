@@ -1,0 +1,7 @@
+ViewSetup module
+================
+
+.. automodule:: ViewSetup
+   :members:
+   :undoc-members:
+   :show-inheritance:

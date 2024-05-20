@@ -1,0 +1,7 @@
+PictureWatermark module
+=======================
+
+.. automodule:: PictureWatermark
+   :members:
+   :undoc-members:
+   :show-inheritance:

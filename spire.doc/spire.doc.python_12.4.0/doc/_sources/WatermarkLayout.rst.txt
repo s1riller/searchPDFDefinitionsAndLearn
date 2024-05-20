@@ -1,0 +1,7 @@
+WatermarkLayout module
+======================
+
+.. automodule:: WatermarkLayout
+   :members:
+   :undoc-members:
+   :show-inheritance:

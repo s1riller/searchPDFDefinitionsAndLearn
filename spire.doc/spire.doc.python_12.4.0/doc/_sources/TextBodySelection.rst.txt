@@ -1,0 +1,7 @@
+TextBodySelection module
+========================
+
+.. automodule:: TextBodySelection
+   :members:
+   :undoc-members:
+   :show-inheritance:

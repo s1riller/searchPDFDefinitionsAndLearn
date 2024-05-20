@@ -1,0 +1,7 @@
+TextBoxCollection module
+========================
+
+.. automodule:: TextBoxCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

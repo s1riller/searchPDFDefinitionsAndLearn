@@ -1,0 +1,7 @@
+NumberFormType module
+=====================
+
+.. automodule:: NumberFormType
+   :members:
+   :undoc-members:
+   :show-inheritance:

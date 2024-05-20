@@ -1,0 +1,7 @@
+ShapeBase module
+================
+
+.. automodule:: ShapeBase
+   :members:
+   :undoc-members:
+   :show-inheritance:

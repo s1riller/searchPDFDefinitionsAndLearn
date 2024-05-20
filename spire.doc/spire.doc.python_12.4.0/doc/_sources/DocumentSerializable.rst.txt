@@ -1,0 +1,7 @@
+DocumentSerializable module
+===========================
+
+.. automodule:: DocumentSerializable
+   :members:
+   :undoc-members:
+   :show-inheritance:

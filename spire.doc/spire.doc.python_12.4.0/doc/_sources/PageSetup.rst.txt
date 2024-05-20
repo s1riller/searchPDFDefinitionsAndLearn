@@ -1,0 +1,7 @@
+PageSetup module
+================
+
+.. automodule:: PageSetup
+   :members:
+   :undoc-members:
+   :show-inheritance:

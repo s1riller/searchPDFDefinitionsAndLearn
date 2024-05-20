@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Borders module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Borders module</a><ul>
+<li><a class="reference internal" href="#Borders.Borders"><code class="docutils literal notranslate"><span class="pre">Borders</span></code></a><ul>
+<li><a class="reference internal" href="#Borders.Borders.BorderType"><code class="docutils literal notranslate"><span class="pre">Borders.BorderType()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Bottom"><code class="docutils literal notranslate"><span class="pre">Borders.Bottom</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.BottomKey"><code class="docutils literal notranslate"><span class="pre">Borders.BottomKey()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Clone"><code class="docutils literal notranslate"><span class="pre">Borders.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Color"><code class="docutils literal notranslate"><span class="pre">Borders.Color()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.DiagonalDown"><code class="docutils literal notranslate"><span class="pre">Borders.DiagonalDown</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.DiagonalDownKey"><code class="docutils literal notranslate"><span class="pre">Borders.DiagonalDownKey()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.DiagonalUp"><code class="docutils literal notranslate"><span class="pre">Borders.DiagonalUp</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.DiagonalUpKey"><code class="docutils literal notranslate"><span class="pre">Borders.DiagonalUpKey()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Horizontal"><code class="docutils literal notranslate"><span class="pre">Borders.Horizontal</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.HorizontalKey"><code class="docutils literal notranslate"><span class="pre">Borders.HorizontalKey()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.IsDefault"><code class="docutils literal notranslate"><span class="pre">Borders.IsDefault</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.IsShadow"><code class="docutils literal notranslate"><span class="pre">Borders.IsShadow()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Left"><code class="docutils literal notranslate"><span class="pre">Borders.Left</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.LeftKey"><code class="docutils literal notranslate"><span class="pre">Borders.LeftKey()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.LineWidth"><code class="docutils literal notranslate"><span class="pre">Borders.LineWidth()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.NoBorder"><code class="docutils literal notranslate"><span class="pre">Borders.NoBorder</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Right"><code class="docutils literal notranslate"><span class="pre">Borders.Right</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.RightKey"><code class="docutils literal notranslate"><span class="pre">Borders.RightKey()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.SetOnlyLineWidth"><code class="docutils literal notranslate"><span class="pre">Borders.SetOnlyLineWidth()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Space"><code class="docutils literal notranslate"><span class="pre">Borders.Space()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Top"><code class="docutils literal notranslate"><span class="pre">Borders.Top</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.TopKey"><code class="docutils literal notranslate"><span class="pre">Borders.TopKey()</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.Vertical"><code class="docutils literal notranslate"><span class="pre">Borders.Vertical</span></code></a></li>
+<li><a class="reference internal" href="#Borders.Borders.VerticalKey"><code class="docutils literal notranslate"><span class="pre">Borders.VerticalKey()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Borders module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Borders.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Borders">
+<span id="borders-module"></span><h1>Borders module<a class="headerlink" href="#module-Borders" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Borders.Borders">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Borders.</span></span><span class="sig-name descname"><span class="pre">Borders</span></span><a class="headerlink" href="#Borders.Borders" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">WordAttrCollection</span></code></p>
+<p>Represents a collection of four borders. &lt;see cref=”!:Spire.Doc.Border” /&gt;</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.BorderType">
+<span class="sig-name descname"><span class="pre">BorderType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BorderStyle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Borders.Borders.BorderType" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.Bottom">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Bottom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#Borders.Borders.Bottom" title="Link to this definition"></a></dt>
+<dd><p>Gets bottom border.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.BottomKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BottomKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Borders.Borders.BottomKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the bottom key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Borders.Borders" title="Borders.Borders"><span class="pre">Borders</span></a></span></span><a class="headerlink" href="#Borders.Borders.Clone" title="Link to this definition"></a></dt>
+<dd><p>Clones self.
+&lt;returns&gt;&lt;/returns&gt;</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.Color">
+<span class="sig-name descname"><span class="pre">Color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Borders.Borders.Color" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.DiagonalDown">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DiagonalDown</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#Borders.Borders.DiagonalDown" title="Link to this definition"></a></dt>
+<dd><p>Gets diagonal border from top left corner to bottom right corner.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.DiagonalDownKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DiagonalDownKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Borders.Borders.DiagonalDownKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the diagonal down key.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.DiagonalUp">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DiagonalUp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#Borders.Borders.DiagonalUp" title="Link to this definition"></a></dt>
+<dd><p>Gets diagonal border from bottom left corner to top right corner.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.DiagonalUpKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DiagonalUpKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Borders.Borders.DiagonalUpKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the diagonal up key.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.Horizontal">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Horizontal</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#Borders.Borders.Horizontal" title="Link to this definition"></a></dt>
+<dd><p>Gets horizontal border.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.HorizontalKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Borders.Borders.HorizontalKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the horizontal key.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.IsDefault">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsDefault</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Borders.Borders.IsDefault" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether format is default.
+&lt;value&gt;
+&lt;c&gt;true&lt;/c&gt; if format is default; otherwise,&lt;c&gt;false&lt;/c&gt;.&lt;/value&gt;&amp;gt;</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.IsShadow">
+<span class="sig-name descname"><span class="pre">IsShadow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Borders.Borders.IsShadow" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.Left">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Left</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#Borders.Borders.Left" title="Link to this definition"></a></dt>
+<dd><p>Gets left border.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.LeftKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeftKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Borders.Borders.LeftKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the left key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.LineWidth">
+<span class="sig-name descname"><span class="pre">LineWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Borders.Borders.LineWidth" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.NoBorder">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NoBorder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Borders.Borders.NoBorder" title="Link to this definition"></a></dt>
+<dd><p>Gets whether the border exists</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.Right">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Right</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#Borders.Borders.Right" title="Link to this definition"></a></dt>
+<dd><p>Gets right border.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.RightKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RightKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Borders.Borders.RightKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the right key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.SetOnlyLineWidth">
+<span class="sig-name descname"><span class="pre">SetOnlyLineWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineWidth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Borders.Borders.SetOnlyLineWidth" title="Link to this definition"></a></dt>
+<dd><p>Sets only line width.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.Space">
+<span class="sig-name descname"><span class="pre">Space</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Borders.Borders.Space" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.Top">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Top</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#Borders.Borders.Top" title="Link to this definition"></a></dt>
+<dd><p>Gets top border.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.TopKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TopKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Borders.Borders.TopKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the top key.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Borders.Borders.Vertical">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Vertical</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#Borders.Borders.Vertical" title="Link to this definition"></a></dt>
+<dd><p>Gets vertical border.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Borders.Borders.VerticalKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Borders.Borders.VerticalKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the vertical key.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

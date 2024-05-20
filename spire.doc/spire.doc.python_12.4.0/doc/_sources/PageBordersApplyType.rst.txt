@@ -1,0 +1,7 @@
+PageBordersApplyType module
+===========================
+
+.. automodule:: PageBordersApplyType
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+Paddings module
+===============
+
+.. automodule:: Paddings
+   :members:
+   :undoc-members:
+   :show-inheritance:

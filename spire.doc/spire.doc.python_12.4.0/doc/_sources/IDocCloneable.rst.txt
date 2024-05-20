@@ -1,0 +1,7 @@
+IDocCloneable module
+====================
+
+.. automodule:: IDocCloneable
+   :members:
+   :undoc-members:
+   :show-inheritance:

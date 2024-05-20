@@ -1,0 +1,7 @@
+DocumentSecurity module
+=======================
+
+.. automodule:: DocumentSecurity
+   :members:
+   :undoc-members:
+   :show-inheritance:

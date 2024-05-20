@@ -1,0 +1,7 @@
+ColumnCollection module
+=======================
+
+.. automodule:: ColumnCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

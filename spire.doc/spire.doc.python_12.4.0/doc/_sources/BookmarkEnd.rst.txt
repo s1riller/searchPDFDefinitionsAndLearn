@@ -1,0 +1,7 @@
+BookmarkEnd module
+==================
+
+.. automodule:: BookmarkEnd
+   :members:
+   :undoc-members:
+   :show-inheritance:

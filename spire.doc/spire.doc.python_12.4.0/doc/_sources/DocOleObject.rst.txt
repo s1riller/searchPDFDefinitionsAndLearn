@@ -1,0 +1,7 @@
+DocOleObject module
+===================
+
+.. automodule:: DocOleObject
+   :members:
+   :undoc-members:
+   :show-inheritance:

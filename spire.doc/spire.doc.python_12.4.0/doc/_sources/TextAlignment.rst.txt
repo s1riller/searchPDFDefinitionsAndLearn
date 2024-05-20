@@ -1,0 +1,7 @@
+TextAlignment module
+====================
+
+.. automodule:: TextAlignment
+   :members:
+   :undoc-members:
+   :show-inheritance:

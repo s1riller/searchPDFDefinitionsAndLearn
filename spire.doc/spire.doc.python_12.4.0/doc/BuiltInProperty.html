@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuiltInProperty module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">BuiltInProperty module</a><ul>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty</span></code></a><ul>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.ApplicationName"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.ApplicationName</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Author"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Author</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.ByteCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.ByteCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Category"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Category</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.CharCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.CharCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.CharactersWithSpaces"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.CharactersWithSpaces</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Comments"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Comments</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Company"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Company</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.ContentStatus"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.ContentStatus</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.ContentType"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.ContentType</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.CreationDate"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.CreationDate</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.DocParts"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.DocParts</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.DocVersion"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.DocVersion</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.EditTime"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.EditTime</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.ExcelDigitalSignature"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.ExcelDigitalSignature</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.HeadingPair"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.HeadingPair</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.HiddenCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.HiddenCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Hyperlinks"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Hyperlinks</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.HyperlinksChanged"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.HyperlinksChanged</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Keywords"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Keywords</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Language"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Language</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.LastAuthor"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.LastAuthor</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.LastPrinted"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.LastPrinted</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.LastSaveDate"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.LastSaveDate</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.LineCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.LineCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.LinkBase"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.LinkBase</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.LinksDirty"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.LinksDirty</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Manager"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Manager</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.MultimediaClipCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.MultimediaClipCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.NoteCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.NoteCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.PageCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.PageCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.ParagraphCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.ParagraphCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.PresentationTarget"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.PresentationTarget</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.RevisionNumber"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.RevisionNumber</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.ScaleCrop"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.ScaleCrop</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Security"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Security</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.ShareDoc"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.ShareDoc</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.SlideCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.SlideCount</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Subject"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Subject</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Template"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Template</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Thumbnail"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Thumbnail</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Title"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Title</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.Version"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.Version</span></code></a></li>
+<li><a class="reference internal" href="#BuiltInProperty.BuiltInProperty.WordCount"><code class="docutils literal notranslate"><span class="pre">BuiltInProperty.WordCount</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">BuiltInProperty module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/BuiltInProperty.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-BuiltInProperty">
+<span id="builtinproperty-module"></span><h1>BuiltInProperty module<a class="headerlink" href="#module-BuiltInProperty" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">BuiltInProperty.</span></span><span class="sig-name descname"><span class="pre">BuiltInProperty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BuiltInProperty.BuiltInProperty" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum class representing built-in properties in a document.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.ApplicationName">
+<span class="sig-name descname"><span class="pre">ApplicationName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.ApplicationName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Author">
+<span class="sig-name descname"><span class="pre">Author</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Author" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.ByteCount">
+<span class="sig-name descname"><span class="pre">ByteCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1002</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.ByteCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Category">
+<span class="sig-name descname"><span class="pre">Category</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Category" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.CharCount">
+<span class="sig-name descname"><span class="pre">CharCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.CharCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.CharactersWithSpaces">
+<span class="sig-name descname"><span class="pre">CharactersWithSpaces</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1015</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.CharactersWithSpaces" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Comments">
+<span class="sig-name descname"><span class="pre">Comments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Comments" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Company">
+<span class="sig-name descname"><span class="pre">Company</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1013</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Company" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.ContentStatus">
+<span class="sig-name descname"><span class="pre">ContentStatus</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1023</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.ContentStatus" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.ContentType">
+<span class="sig-name descname"><span class="pre">ContentType</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1022</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.ContentType" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.CreationDate">
+<span class="sig-name descname"><span class="pre">CreationDate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.CreationDate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.DocParts">
+<span class="sig-name descname"><span class="pre">DocParts</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1011</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.DocParts" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.DocVersion">
+<span class="sig-name descname"><span class="pre">DocVersion</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1025</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.DocVersion" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.EditTime">
+<span class="sig-name descname"><span class="pre">EditTime</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.EditTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.ExcelDigitalSignature">
+<span class="sig-name descname"><span class="pre">ExcelDigitalSignature</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1021</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.ExcelDigitalSignature" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.HeadingPair">
+<span class="sig-name descname"><span class="pre">HeadingPair</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1010</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.HeadingPair" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.HiddenCount">
+<span class="sig-name descname"><span class="pre">HiddenCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1007</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.HiddenCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Hyperlinks">
+<span class="sig-name descname"><span class="pre">Hyperlinks</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1018</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Hyperlinks" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.HyperlinksChanged">
+<span class="sig-name descname"><span class="pre">HyperlinksChanged</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1019</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.HyperlinksChanged" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Keywords">
+<span class="sig-name descname"><span class="pre">Keywords</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Keywords" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Language">
+<span class="sig-name descname"><span class="pre">Language</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1024</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Language" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.LastAuthor">
+<span class="sig-name descname"><span class="pre">LastAuthor</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.LastAuthor" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.LastPrinted">
+<span class="sig-name descname"><span class="pre">LastPrinted</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.LastPrinted" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.LastSaveDate">
+<span class="sig-name descname"><span class="pre">LastSaveDate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.LastSaveDate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.LineCount">
+<span class="sig-name descname"><span class="pre">LineCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1003</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.LineCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.LinkBase">
+<span class="sig-name descname"><span class="pre">LinkBase</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1017</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.LinkBase" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.LinksDirty">
+<span class="sig-name descname"><span class="pre">LinksDirty</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1014</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.LinksDirty" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Manager">
+<span class="sig-name descname"><span class="pre">Manager</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1012</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Manager" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.MultimediaClipCount">
+<span class="sig-name descname"><span class="pre">MultimediaClipCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1008</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.MultimediaClipCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.NoteCount">
+<span class="sig-name descname"><span class="pre">NoteCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1006</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.NoteCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.PageCount">
+<span class="sig-name descname"><span class="pre">PageCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.PageCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.ParagraphCount">
+<span class="sig-name descname"><span class="pre">ParagraphCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1004</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.ParagraphCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.PresentationTarget">
+<span class="sig-name descname"><span class="pre">PresentationTarget</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1001</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.PresentationTarget" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.RevisionNumber">
+<span class="sig-name descname"><span class="pre">RevisionNumber</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.RevisionNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.ScaleCrop">
+<span class="sig-name descname"><span class="pre">ScaleCrop</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1009</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.ScaleCrop" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Security">
+<span class="sig-name descname"><span class="pre">Security</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Security" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.ShareDoc">
+<span class="sig-name descname"><span class="pre">ShareDoc</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1016</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.ShareDoc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.SlideCount">
+<span class="sig-name descname"><span class="pre">SlideCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1005</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.SlideCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Subject">
+<span class="sig-name descname"><span class="pre">Subject</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Subject" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Template">
+<span class="sig-name descname"><span class="pre">Template</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Template" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Thumbnail">
+<span class="sig-name descname"><span class="pre">Thumbnail</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Thumbnail" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Title">
+<span class="sig-name descname"><span class="pre">Title</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Title" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.Version">
+<span class="sig-name descname"><span class="pre">Version</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1020</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.Version" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltInProperty.BuiltInProperty.WordCount">
+<span class="sig-name descname"><span class="pre">WordCount</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#BuiltInProperty.BuiltInProperty.WordCount" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

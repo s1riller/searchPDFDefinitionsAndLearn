@@ -1,0 +1,7 @@
+HttpContentType module
+======================
+
+.. automodule:: HttpContentType
+   :members:
+   :undoc-members:
+   :show-inheritance:

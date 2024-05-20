@@ -1,0 +1,7 @@
+VariableCollection module
+=========================
+
+.. automodule:: VariableCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

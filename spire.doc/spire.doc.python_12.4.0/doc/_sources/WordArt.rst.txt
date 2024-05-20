@@ -1,0 +1,7 @@
+WordArt module
+==============
+
+.. automodule:: WordArt
+   :members:
+   :undoc-members:
+   :show-inheritance:

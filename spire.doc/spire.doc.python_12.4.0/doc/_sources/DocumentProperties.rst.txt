@@ -1,0 +1,7 @@
+DocumentProperties module
+=========================
+
+.. automodule:: DocumentProperties
+   :members:
+   :undoc-members:
+   :show-inheritance:

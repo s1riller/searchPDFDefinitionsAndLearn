@@ -1,0 +1,7 @@
+FootnoteRestartRule module
+==========================
+
+.. automodule:: FootnoteRestartRule
+   :members:
+   :undoc-members:
+   :show-inheritance:

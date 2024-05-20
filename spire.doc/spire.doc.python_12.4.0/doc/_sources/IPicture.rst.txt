@@ -1,0 +1,7 @@
+IPicture module
+===============
+
+.. automodule:: IPicture
+   :members:
+   :undoc-members:
+   :show-inheritance:

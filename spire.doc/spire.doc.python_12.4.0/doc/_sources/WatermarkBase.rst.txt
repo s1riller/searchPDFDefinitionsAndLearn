@@ -1,0 +1,7 @@
+WatermarkBase module
+====================
+
+.. automodule:: WatermarkBase
+   :members:
+   :undoc-members:
+   :show-inheritance:

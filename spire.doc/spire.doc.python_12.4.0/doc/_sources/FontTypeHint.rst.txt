@@ -1,0 +1,7 @@
+FontTypeHint module
+===================
+
+.. automodule:: FontTypeHint
+   :members:
+   :undoc-members:
+   :show-inheritance:

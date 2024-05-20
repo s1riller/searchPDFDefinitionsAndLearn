@@ -1,0 +1,7 @@
+TableCollection module
+======================
+
+.. automodule:: TableCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

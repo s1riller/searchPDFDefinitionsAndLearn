@@ -1,0 +1,7 @@
+StringUtil module
+=================
+
+.. automodule:: StringUtil
+   :members:
+   :undoc-members:
+   :show-inheritance:

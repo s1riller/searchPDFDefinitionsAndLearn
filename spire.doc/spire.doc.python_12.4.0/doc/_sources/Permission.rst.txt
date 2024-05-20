@@ -1,0 +1,7 @@
+Permission module
+=================
+
+.. automodule:: Permission
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+PermissionStart module
+======================
+
+.. automodule:: PermissionStart
+   :members:
+   :undoc-members:
+   :show-inheritance:

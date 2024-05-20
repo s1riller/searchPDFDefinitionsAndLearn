@@ -1,0 +1,7 @@
+FormatBase module
+=================
+
+.. automodule:: FormatBase
+   :members:
+   :undoc-members:
+   :show-inheritance:

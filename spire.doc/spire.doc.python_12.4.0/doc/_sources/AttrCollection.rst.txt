@@ -1,0 +1,7 @@
+AttrCollection module
+=====================
+
+.. automodule:: AttrCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

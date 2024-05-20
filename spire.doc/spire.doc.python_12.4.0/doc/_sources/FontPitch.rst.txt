@@ -1,0 +1,7 @@
+FontPitch module
+================
+
+.. automodule:: FontPitch
+   :members:
+   :undoc-members:
+   :show-inheritance:

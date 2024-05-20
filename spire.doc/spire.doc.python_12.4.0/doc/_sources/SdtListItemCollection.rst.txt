@@ -1,0 +1,7 @@
+SdtListItemCollection module
+============================
+
+.. automodule:: SdtListItemCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

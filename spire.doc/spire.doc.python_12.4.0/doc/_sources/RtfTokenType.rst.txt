@@ -1,0 +1,7 @@
+RtfTokenType module
+===================
+
+.. automodule:: RtfTokenType
+   :members:
+   :undoc-members:
+   :show-inheritance:

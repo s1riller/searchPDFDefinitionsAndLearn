@@ -1,0 +1,7 @@
+TextEffect module
+=================
+
+.. automodule:: TextEffect
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CharacterFormat module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">CharacterFormat module</a><ul>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat"><code class="docutils literal notranslate"><span class="pre">CharacterFormat</span></code></a><ul>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.AllCaps"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.AllCaps</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.AllowContextualAlternates"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.AllowContextualAlternates</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.Bidi"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.Bidi</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.Bold"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.Bold</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.BoldBidi"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.BoldBidi</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.Border"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.Border</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.CharacterSpacing"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.CharacterSpacing</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.ClearBackground"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.ClearBackground()</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.ClearFormatting"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.ClearFormatting()</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.DoubleStrike"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.DoubleStrike</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.Emboss"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.Emboss</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.EmphasisMark"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.EmphasisMark</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.Engrave"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.Engrave</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.FontName"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.FontName</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.FontNameAscii"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.FontNameAscii</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.FontNameBidi"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.FontNameBidi</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.FontNameFarEast"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.FontNameFarEast</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.FontNameNonFarEast"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.FontNameNonFarEast</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.FontSize"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.FontSize</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.FontSizeBidi"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.FontSizeBidi</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.FontTypeHint"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.FontTypeHint</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.Hidden"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.Hidden</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.HighlightColor"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.HighlightColor</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.IsOutLine"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.IsOutLine</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.IsShadow"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.IsShadow</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.IsSmallCaps"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.IsSmallCaps</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.IsStrikeout"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.IsStrikeout</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.Italic"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.Italic</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.ItalicBidi"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.ItalicBidi</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.LigaturesType"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.LigaturesType</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.LocaleIdASCII"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.LocaleIdASCII</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.LocaleIdFarEast"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.LocaleIdFarEast</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.NumberFormType"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.NumberFormType</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.NumberSpaceType"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.NumberSpaceType</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.Position"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.Position</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.StylisticSetType"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.StylisticSetType</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.SubSuperScript"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.SubSuperScript</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.TextBackgroundColor"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.TextBackgroundColor</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.TextColor"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.TextColor</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.TextScale"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.TextScale</span></code></a></li>
+<li><a class="reference internal" href="#CharacterFormat.CharacterFormat.UnderlineStyle"><code class="docutils literal notranslate"><span class="pre">CharacterFormat.UnderlineStyle</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CharacterFormat module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/CharacterFormat.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-CharacterFormat">
+<span id="characterformat-module"></span><h1>CharacterFormat module<a class="headerlink" href="#module-CharacterFormat" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CharacterFormat.</span></span><span class="sig-name descname"><span class="pre">CharacterFormat</span></span><a class="headerlink" href="#CharacterFormat.CharacterFormat" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">WordAttrCollection</span></code></p>
+<p>Represents the character formatting in a document.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.AllCaps">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AllCaps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.AllCaps" title="Link to this definition"></a></dt>
+<dd><p>Gets the AllCaps property of the text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The AllCaps property of the text.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.AllowContextualAlternates">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AllowContextualAlternates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.AllowContextualAlternates" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to allow contextual alternates.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.Bidi">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Bidi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.Bidi" title="Link to this definition"></a></dt>
+<dd><p>Gets the right-to-left property of the text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The right-to-left property of the text.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.Bold">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Bold</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.Bold" title="Link to this definition"></a></dt>
+<dd><p>Gets bold style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.BoldBidi">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BoldBidi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.BoldBidi" title="Link to this definition"></a></dt>
+<dd><p>Gets the bold property for right-to-left text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The bold property for right-to-left text.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.Border">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Border</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Border</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.Border" title="Link to this definition"></a></dt>
+<dd><p>Gets the border.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.CharacterSpacing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CharacterSpacing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.CharacterSpacing" title="Link to this definition"></a></dt>
+<dd><p>Gets character spacing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.ClearBackground">
+<span class="sig-name descname"><span class="pre">ClearBackground</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CharacterFormat.CharacterFormat.ClearBackground" title="Link to this definition"></a></dt>
+<dd><p>Clears the text background.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.ClearFormatting">
+<span class="sig-name descname"><span class="pre">ClearFormatting</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CharacterFormat.CharacterFormat.ClearFormatting" title="Link to this definition"></a></dt>
+<dd><p>Clears the formatting of the character.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.DoubleStrike">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoubleStrike</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.DoubleStrike" title="Link to this definition"></a></dt>
+<dd><p>Gets double strikeout style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.Emboss">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Emboss</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.Emboss" title="Link to this definition"></a></dt>
+<dd><p>Gets the emboss property of the text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The emboss property of the text.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.EmphasisMark">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmphasisMark</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Emphasis</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.EmphasisMark" title="Link to this definition"></a></dt>
+<dd><p>Gets text emphasis mark</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.Engrave">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Engrave</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.Engrave" title="Link to this definition"></a></dt>
+<dd><p>Gets the Engrave property of the text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Engrave property of the text.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.FontName">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FontName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.FontName" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets font name.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.FontNameAscii">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FontNameAscii</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.FontNameAscii" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the font used for Latin text (characters with character codes from 0 through 127).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.FontNameBidi">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FontNameBidi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.FontNameBidi" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the font name for right-to-left text.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.FontNameFarEast">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FontNameFarEast</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.FontNameFarEast" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the East Asian font name.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.FontNameNonFarEast">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FontNameNonFarEast</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.FontNameNonFarEast" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the font used for characters with character codes from 128 through 255.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.FontSize">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FontSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.FontSize" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets font size.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.FontSizeBidi">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FontSizeBidi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.FontSizeBidi" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the font size of the right-to-left text.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.FontTypeHint">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FontTypeHint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FontTypeHint</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.FontTypeHint" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the font type hint.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.Hidden">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Hidden</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.Hidden" title="Link to this definition"></a></dt>
+<dd><p>Gets the Hidden property of the text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Hidden property of the text.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.HighlightColor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HighlightColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Color</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.HighlightColor" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the highlight color of the text.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.IsOutLine">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsOutLine</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.IsOutLine" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the outline character property.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.IsShadow">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsShadow</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.IsShadow" title="Link to this definition"></a></dt>
+<dd><p>Gets the shadow property of the text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The shadow property of the text.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.IsSmallCaps">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsSmallCaps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.IsSmallCaps" title="Link to this definition"></a></dt>
+<dd><p>Gets the IsSmallCaps property of the text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The IsSmallCaps property of the text.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.IsStrikeout">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsStrikeout</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.IsStrikeout" title="Link to this definition"></a></dt>
+<dd><p>Gets strikeout style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.Italic">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Italic</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.Italic" title="Link to this definition"></a></dt>
+<dd><p>Gets italic style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.ItalicBidi">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ItalicBidi</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.ItalicBidi" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the italic property for right-to-left text.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.LigaturesType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LigaturesType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">LigatureType</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.LigaturesType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the ligatures type.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.LocaleIdASCII">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LocaleIdASCII</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Int16</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.LocaleIdASCII" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the ASCII locale id.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.LocaleIdFarEast">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LocaleIdFarEast</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Int16</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.LocaleIdFarEast" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the far east locale id.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.NumberFormType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumberFormType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">NumberFormType</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.NumberFormType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the number form type.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.NumberSpaceType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NumberSpaceType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">NumberSpaceType</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.NumberSpaceType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the number space type.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.Position">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Position</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.Position" title="Link to this definition"></a></dt>
+<dd><p>Gets position.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.StylisticSetType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StylisticSetType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">StylisticSetType</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.StylisticSetType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the stylistic set type.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.SubSuperScript">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubSuperScript</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">SubSuperScript</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.SubSuperScript" title="Link to this definition"></a></dt>
+<dd><p>Gets subscript or superscript style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.TextBackgroundColor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextBackgroundColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Color</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.TextBackgroundColor" title="Link to this definition"></a></dt>
+<dd><p>Gets text background color.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.TextColor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Color</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.TextColor" title="Link to this definition"></a></dt>
+<dd><p>Gets text color</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.TextScale">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextScale</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Int16</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.TextScale" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets a value specifies that the percentage by which the contents of a run shall be expanded or compressed
+with respect to its normal(100%) character width,with a minimun width of 1% and maximum width of 600%.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="CharacterFormat.CharacterFormat.UnderlineStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UnderlineStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">UnderlineStyle</span></em><a class="headerlink" href="#CharacterFormat.CharacterFormat.UnderlineStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets underline style.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

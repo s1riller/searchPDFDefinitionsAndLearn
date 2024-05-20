@@ -1,0 +1,7 @@
+CheckBoxFormField module
+========================
+
+.. automodule:: CheckBoxFormField
+   :members:
+   :undoc-members:
+   :show-inheritance:

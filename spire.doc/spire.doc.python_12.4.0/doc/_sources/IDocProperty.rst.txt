@@ -1,0 +1,7 @@
+IDocProperty module
+===================
+
+.. automodule:: IDocProperty
+   :members:
+   :undoc-members:
+   :show-inheritance:

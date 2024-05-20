@@ -1,0 +1,7 @@
+ITextBoxItemCollection module
+=============================
+
+.. automodule:: ITextBoxItemCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

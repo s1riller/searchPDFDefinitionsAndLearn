@@ -1,0 +1,7 @@
+ParagraphCollection module
+==========================
+
+.. automodule:: ParagraphCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

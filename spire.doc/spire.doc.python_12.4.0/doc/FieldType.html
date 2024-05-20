@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FieldType module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">FieldType module</a><ul>
+<li><a class="reference internal" href="#FieldType.FieldType"><code class="docutils literal notranslate"><span class="pre">FieldType</span></code></a><ul>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAddin"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAddin</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAddressBlock"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAddressBlock</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAdvance"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAdvance</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAsk"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAsk</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAuthor"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAuthor</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAutoNum"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAutoNum</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAutoNumLegal"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAutoNumLegal</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAutoNumOutline"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAutoNumOutline</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAutoText"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAutoText</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldAutoTextList"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldAutoTextList</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldBarcode"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldBarcode</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldBibliography"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldBibliography</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldBidiOutline"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldBidiOutline</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldCannotParse"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldCannotParse</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldCitation"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldCitation</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldComments"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldComments</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldCompare"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldCompare</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldCreateDate"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldCreateDate</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldDDE"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldDDE</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldDDEAuto"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldDDEAuto</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldData"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldData</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldDatabase"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldDatabase</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldDate"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldDate</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldDisplayBarcode"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldDisplayBarcode</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldDocProperty"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldDocProperty</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldDocVariable"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldDocVariable</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldEditTime"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldEditTime</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldEmbed"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldEmbed</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldEmpty"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldEmpty</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldEquation"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldEquation</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldExpression"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldExpression</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldFileName"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldFileName</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldFileSize"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldFileSize</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldFillIn"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldFillIn</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldFootnoteRef"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldFootnoteRef</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldFormCheckBox"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldFormCheckBox</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldFormDropDown"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldFormDropDown</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldFormTextInput"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldFormTextInput</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldFormula"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldFormula</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldGlossary"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldGlossary</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldGoToButton"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldGoToButton</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldGreetingLine"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldGreetingLine</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldHTMLActiveX"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldHTMLActiveX</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldHyperlink"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldHyperlink</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldIf"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldIf</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldImport"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldImport</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldInclude"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldInclude</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldIncludePicture"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldIncludePicture</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldIncludeText"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldIncludeText</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldIndex"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldIndex</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldIndexEntry"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldIndexEntry</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldInfo"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldInfo</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldKeyWord"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldKeyWord</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldLastSavedBy"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldLastSavedBy</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldLink"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldLink</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldListNum"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldListNum</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldMacro"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldMacro</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldMacroButton"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldMacroButton</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldMergeBarcode"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldMergeBarcode</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldMergeField"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldMergeField</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldMergeRec"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldMergeRec</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldMergeSeq"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldMergeSeq</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldNext"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldNext</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldNextIf"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldNextIf</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldNone"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldNone</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldNoteRef"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldNoteRef</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldNumChars"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldNumChars</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldNumPages"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldNumPages</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldNumWords"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldNumWords</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldOCX"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldOCX</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldPage"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldPage</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldPageRef"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldPageRef</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldPrint"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldPrint</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldPrintDate"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldPrintDate</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldPrivate"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldPrivate</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldQuote"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldQuote</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldRef"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldRef</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldRefDoc"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldRefDoc</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldRefNoKeyword"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldRefNoKeyword</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldRevisionNum"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldRevisionNum</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSaveDate"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSaveDate</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSection"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSection</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSectionPages"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSectionPages</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSequence"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSequence</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSet"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSet</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldShape"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldShape</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSkipIf"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSkipIf</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldStyleRef"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldStyleRef</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSubject"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSubject</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSubscriber"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSubscriber</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldSymbol"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldSymbol</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldTOA"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldTOA</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldTOAEntry"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldTOAEntry</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldTOC"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldTOC</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldTOCEntry"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldTOCEntry</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldTemplate"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldTemplate</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldTime"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldTime</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldTitle"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldTitle</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldUnknown"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldUnknown</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldUserAddress"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldUserAddress</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldUserInitials"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldUserInitials</span></code></a></li>
+<li><a class="reference internal" href="#FieldType.FieldType.FieldUserName"><code class="docutils literal notranslate"><span class="pre">FieldType.FieldUserName</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">FieldType module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/FieldType.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-FieldType">
+<span id="fieldtype-module"></span><h1>FieldType module<a class="headerlink" href="#module-FieldType" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="FieldType.FieldType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FieldType.</span></span><span class="sig-name descname"><span class="pre">FieldType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FieldType.FieldType" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum class representing the type of fields.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAddin">
+<span class="sig-name descname"><span class="pre">FieldAddin</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">81</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAddin" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAddressBlock">
+<span class="sig-name descname"><span class="pre">FieldAddressBlock</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">93</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAddressBlock" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAdvance">
+<span class="sig-name descname"><span class="pre">FieldAdvance</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">84</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAdvance" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAsk">
+<span class="sig-name descname"><span class="pre">FieldAsk</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">38</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAsk" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAuthor">
+<span class="sig-name descname"><span class="pre">FieldAuthor</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAuthor" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAutoNum">
+<span class="sig-name descname"><span class="pre">FieldAutoNum</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">54</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAutoNum" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAutoNumLegal">
+<span class="sig-name descname"><span class="pre">FieldAutoNumLegal</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">53</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAutoNumLegal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAutoNumOutline">
+<span class="sig-name descname"><span class="pre">FieldAutoNumOutline</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">52</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAutoNumOutline" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAutoText">
+<span class="sig-name descname"><span class="pre">FieldAutoText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">79</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAutoText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldAutoTextList">
+<span class="sig-name descname"><span class="pre">FieldAutoTextList</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">89</span></em><a class="headerlink" href="#FieldType.FieldType.FieldAutoTextList" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldBarcode">
+<span class="sig-name descname"><span class="pre">FieldBarcode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">63</span></em><a class="headerlink" href="#FieldType.FieldType.FieldBarcode" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldBibliography">
+<span class="sig-name descname"><span class="pre">FieldBibliography</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100500</span></em><a class="headerlink" href="#FieldType.FieldType.FieldBibliography" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldBidiOutline">
+<span class="sig-name descname"><span class="pre">FieldBidiOutline</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">92</span></em><a class="headerlink" href="#FieldType.FieldType.FieldBidiOutline" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldCannotParse">
+<span class="sig-name descname"><span class="pre">FieldCannotParse</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#FieldType.FieldType.FieldCannotParse" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldCitation">
+<span class="sig-name descname"><span class="pre">FieldCitation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1980</span></em><a class="headerlink" href="#FieldType.FieldType.FieldCitation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldComments">
+<span class="sig-name descname"><span class="pre">FieldComments</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#FieldType.FieldType.FieldComments" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldCompare">
+<span class="sig-name descname"><span class="pre">FieldCompare</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">80</span></em><a class="headerlink" href="#FieldType.FieldType.FieldCompare" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldCreateDate">
+<span class="sig-name descname"><span class="pre">FieldCreateDate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#FieldType.FieldType.FieldCreateDate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldDDE">
+<span class="sig-name descname"><span class="pre">FieldDDE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">45</span></em><a class="headerlink" href="#FieldType.FieldType.FieldDDE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldDDEAuto">
+<span class="sig-name descname"><span class="pre">FieldDDEAuto</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">46</span></em><a class="headerlink" href="#FieldType.FieldType.FieldDDEAuto" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldData">
+<span class="sig-name descname"><span class="pre">FieldData</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">40</span></em><a class="headerlink" href="#FieldType.FieldType.FieldData" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldDatabase">
+<span class="sig-name descname"><span class="pre">FieldDatabase</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">78</span></em><a class="headerlink" href="#FieldType.FieldType.FieldDatabase" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldDate">
+<span class="sig-name descname"><span class="pre">FieldDate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#FieldType.FieldType.FieldDate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldDisplayBarcode">
+<span class="sig-name descname"><span class="pre">FieldDisplayBarcode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6301</span></em><a class="headerlink" href="#FieldType.FieldType.FieldDisplayBarcode" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldDocProperty">
+<span class="sig-name descname"><span class="pre">FieldDocProperty</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">85</span></em><a class="headerlink" href="#FieldType.FieldType.FieldDocProperty" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldDocVariable">
+<span class="sig-name descname"><span class="pre">FieldDocVariable</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">64</span></em><a class="headerlink" href="#FieldType.FieldType.FieldDocVariable" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldEditTime">
+<span class="sig-name descname"><span class="pre">FieldEditTime</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#FieldType.FieldType.FieldEditTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldEmbed">
+<span class="sig-name descname"><span class="pre">FieldEmbed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">58</span></em><a class="headerlink" href="#FieldType.FieldType.FieldEmbed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldEmpty">
+<span class="sig-name descname"><span class="pre">FieldEmpty</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">-1</span></em><a class="headerlink" href="#FieldType.FieldType.FieldEmpty" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldEquation">
+<span class="sig-name descname"><span class="pre">FieldEquation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">49</span></em><a class="headerlink" href="#FieldType.FieldType.FieldEquation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldExpression">
+<span class="sig-name descname"><span class="pre">FieldExpression</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">34</span></em><a class="headerlink" href="#FieldType.FieldType.FieldExpression" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldFileName">
+<span class="sig-name descname"><span class="pre">FieldFileName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">29</span></em><a class="headerlink" href="#FieldType.FieldType.FieldFileName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldFileSize">
+<span class="sig-name descname"><span class="pre">FieldFileSize</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">69</span></em><a class="headerlink" href="#FieldType.FieldType.FieldFileSize" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldFillIn">
+<span class="sig-name descname"><span class="pre">FieldFillIn</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">39</span></em><a class="headerlink" href="#FieldType.FieldType.FieldFillIn" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldFootnoteRef">
+<span class="sig-name descname"><span class="pre">FieldFootnoteRef</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#FieldType.FieldType.FieldFootnoteRef" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldFormCheckBox">
+<span class="sig-name descname"><span class="pre">FieldFormCheckBox</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">71</span></em><a class="headerlink" href="#FieldType.FieldType.FieldFormCheckBox" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldFormDropDown">
+<span class="sig-name descname"><span class="pre">FieldFormDropDown</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">83</span></em><a class="headerlink" href="#FieldType.FieldType.FieldFormDropDown" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldFormTextInput">
+<span class="sig-name descname"><span class="pre">FieldFormTextInput</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">70</span></em><a class="headerlink" href="#FieldType.FieldType.FieldFormTextInput" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldFormula">
+<span class="sig-name descname"><span class="pre">FieldFormula</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">34</span></em><a class="headerlink" href="#FieldType.FieldType.FieldFormula" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldGlossary">
+<span class="sig-name descname"><span class="pre">FieldGlossary</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">47</span></em><a class="headerlink" href="#FieldType.FieldType.FieldGlossary" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldGoToButton">
+<span class="sig-name descname"><span class="pre">FieldGoToButton</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="headerlink" href="#FieldType.FieldType.FieldGoToButton" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldGreetingLine">
+<span class="sig-name descname"><span class="pre">FieldGreetingLine</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">94</span></em><a class="headerlink" href="#FieldType.FieldType.FieldGreetingLine" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldHTMLActiveX">
+<span class="sig-name descname"><span class="pre">FieldHTMLActiveX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">91</span></em><a class="headerlink" href="#FieldType.FieldType.FieldHTMLActiveX" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldHyperlink">
+<span class="sig-name descname"><span class="pre">FieldHyperlink</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">88</span></em><a class="headerlink" href="#FieldType.FieldType.FieldHyperlink" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldIf">
+<span class="sig-name descname"><span class="pre">FieldIf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#FieldType.FieldType.FieldIf" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldImport">
+<span class="sig-name descname"><span class="pre">FieldImport</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">55</span></em><a class="headerlink" href="#FieldType.FieldType.FieldImport" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldInclude">
+<span class="sig-name descname"><span class="pre">FieldInclude</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">36</span></em><a class="headerlink" href="#FieldType.FieldType.FieldInclude" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldIncludePicture">
+<span class="sig-name descname"><span class="pre">FieldIncludePicture</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">67</span></em><a class="headerlink" href="#FieldType.FieldType.FieldIncludePicture" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldIncludeText">
+<span class="sig-name descname"><span class="pre">FieldIncludeText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">68</span></em><a class="headerlink" href="#FieldType.FieldType.FieldIncludeText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldIndex">
+<span class="sig-name descname"><span class="pre">FieldIndex</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#FieldType.FieldType.FieldIndex" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldIndexEntry">
+<span class="sig-name descname"><span class="pre">FieldIndexEntry</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#FieldType.FieldType.FieldIndexEntry" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldInfo">
+<span class="sig-name descname"><span class="pre">FieldInfo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#FieldType.FieldType.FieldInfo" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldKeyWord">
+<span class="sig-name descname"><span class="pre">FieldKeyWord</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#FieldType.FieldType.FieldKeyWord" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldLastSavedBy">
+<span class="sig-name descname"><span class="pre">FieldLastSavedBy</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#FieldType.FieldType.FieldLastSavedBy" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldLink">
+<span class="sig-name descname"><span class="pre">FieldLink</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">56</span></em><a class="headerlink" href="#FieldType.FieldType.FieldLink" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldListNum">
+<span class="sig-name descname"><span class="pre">FieldListNum</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">90</span></em><a class="headerlink" href="#FieldType.FieldType.FieldListNum" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldMacro">
+<span class="sig-name descname"><span class="pre">FieldMacro</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">76</span></em><a class="headerlink" href="#FieldType.FieldType.FieldMacro" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldMacroButton">
+<span class="sig-name descname"><span class="pre">FieldMacroButton</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">51</span></em><a class="headerlink" href="#FieldType.FieldType.FieldMacroButton" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldMergeBarcode">
+<span class="sig-name descname"><span class="pre">FieldMergeBarcode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6302</span></em><a class="headerlink" href="#FieldType.FieldType.FieldMergeBarcode" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldMergeField">
+<span class="sig-name descname"><span class="pre">FieldMergeField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">59</span></em><a class="headerlink" href="#FieldType.FieldType.FieldMergeField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldMergeRec">
+<span class="sig-name descname"><span class="pre">FieldMergeRec</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">44</span></em><a class="headerlink" href="#FieldType.FieldType.FieldMergeRec" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldMergeSeq">
+<span class="sig-name descname"><span class="pre">FieldMergeSeq</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">75</span></em><a class="headerlink" href="#FieldType.FieldType.FieldMergeSeq" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldNext">
+<span class="sig-name descname"><span class="pre">FieldNext</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">41</span></em><a class="headerlink" href="#FieldType.FieldType.FieldNext" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldNextIf">
+<span class="sig-name descname"><span class="pre">FieldNextIf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">42</span></em><a class="headerlink" href="#FieldType.FieldType.FieldNextIf" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldNone">
+<span class="sig-name descname"><span class="pre">FieldNone</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#FieldType.FieldType.FieldNone" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldNoteRef">
+<span class="sig-name descname"><span class="pre">FieldNoteRef</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">72</span></em><a class="headerlink" href="#FieldType.FieldType.FieldNoteRef" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldNumChars">
+<span class="sig-name descname"><span class="pre">FieldNumChars</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">28</span></em><a class="headerlink" href="#FieldType.FieldType.FieldNumChars" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldNumPages">
+<span class="sig-name descname"><span class="pre">FieldNumPages</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">26</span></em><a class="headerlink" href="#FieldType.FieldType.FieldNumPages" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldNumWords">
+<span class="sig-name descname"><span class="pre">FieldNumWords</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">27</span></em><a class="headerlink" href="#FieldType.FieldType.FieldNumWords" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldOCX">
+<span class="sig-name descname"><span class="pre">FieldOCX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">87</span></em><a class="headerlink" href="#FieldType.FieldType.FieldOCX" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldPage">
+<span class="sig-name descname"><span class="pre">FieldPage</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">33</span></em><a class="headerlink" href="#FieldType.FieldType.FieldPage" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldPageRef">
+<span class="sig-name descname"><span class="pre">FieldPageRef</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">37</span></em><a class="headerlink" href="#FieldType.FieldType.FieldPageRef" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldPrint">
+<span class="sig-name descname"><span class="pre">FieldPrint</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">48</span></em><a class="headerlink" href="#FieldType.FieldType.FieldPrint" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldPrintDate">
+<span class="sig-name descname"><span class="pre">FieldPrintDate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#FieldType.FieldType.FieldPrintDate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldPrivate">
+<span class="sig-name descname"><span class="pre">FieldPrivate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">77</span></em><a class="headerlink" href="#FieldType.FieldType.FieldPrivate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldQuote">
+<span class="sig-name descname"><span class="pre">FieldQuote</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">35</span></em><a class="headerlink" href="#FieldType.FieldType.FieldQuote" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldRef">
+<span class="sig-name descname"><span class="pre">FieldRef</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#FieldType.FieldType.FieldRef" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldRefDoc">
+<span class="sig-name descname"><span class="pre">FieldRefDoc</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#FieldType.FieldType.FieldRefDoc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldRefNoKeyword">
+<span class="sig-name descname"><span class="pre">FieldRefNoKeyword</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#FieldType.FieldType.FieldRefNoKeyword" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldRevisionNum">
+<span class="sig-name descname"><span class="pre">FieldRevisionNum</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#FieldType.FieldType.FieldRevisionNum" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSaveDate">
+<span class="sig-name descname"><span class="pre">FieldSaveDate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSaveDate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSection">
+<span class="sig-name descname"><span class="pre">FieldSection</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">65</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSection" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSectionPages">
+<span class="sig-name descname"><span class="pre">FieldSectionPages</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">66</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSectionPages" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSequence">
+<span class="sig-name descname"><span class="pre">FieldSequence</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSequence" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSet">
+<span class="sig-name descname"><span class="pre">FieldSet</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSet" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldShape">
+<span class="sig-name descname"><span class="pre">FieldShape</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">95</span></em><a class="headerlink" href="#FieldType.FieldType.FieldShape" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSkipIf">
+<span class="sig-name descname"><span class="pre">FieldSkipIf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">43</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSkipIf" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldStyleRef">
+<span class="sig-name descname"><span class="pre">FieldStyleRef</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#FieldType.FieldType.FieldStyleRef" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSubject">
+<span class="sig-name descname"><span class="pre">FieldSubject</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSubject" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSubscriber">
+<span class="sig-name descname"><span class="pre">FieldSubscriber</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">82</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSubscriber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldSymbol">
+<span class="sig-name descname"><span class="pre">FieldSymbol</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">57</span></em><a class="headerlink" href="#FieldType.FieldType.FieldSymbol" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldTOA">
+<span class="sig-name descname"><span class="pre">FieldTOA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">73</span></em><a class="headerlink" href="#FieldType.FieldType.FieldTOA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldTOAEntry">
+<span class="sig-name descname"><span class="pre">FieldTOAEntry</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">74</span></em><a class="headerlink" href="#FieldType.FieldType.FieldTOAEntry" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldTOC">
+<span class="sig-name descname"><span class="pre">FieldTOC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#FieldType.FieldType.FieldTOC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldTOCEntry">
+<span class="sig-name descname"><span class="pre">FieldTOCEntry</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#FieldType.FieldType.FieldTOCEntry" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldTemplate">
+<span class="sig-name descname"><span class="pre">FieldTemplate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#FieldType.FieldType.FieldTemplate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldTime">
+<span class="sig-name descname"><span class="pre">FieldTime</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#FieldType.FieldType.FieldTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldTitle">
+<span class="sig-name descname"><span class="pre">FieldTitle</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#FieldType.FieldType.FieldTitle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldUnknown">
+<span class="sig-name descname"><span class="pre">FieldUnknown</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000</span></em><a class="headerlink" href="#FieldType.FieldType.FieldUnknown" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldUserAddress">
+<span class="sig-name descname"><span class="pre">FieldUserAddress</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">62</span></em><a class="headerlink" href="#FieldType.FieldType.FieldUserAddress" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldUserInitials">
+<span class="sig-name descname"><span class="pre">FieldUserInitials</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">61</span></em><a class="headerlink" href="#FieldType.FieldType.FieldUserInitials" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FieldType.FieldType.FieldUserName">
+<span class="sig-name descname"><span class="pre">FieldUserName</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">60</span></em><a class="headerlink" href="#FieldType.FieldType.FieldUserName" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

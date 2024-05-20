@@ -1,0 +1,7 @@
+ICollectionBase module
+======================
+
+.. automodule:: ICollectionBase
+   :members:
+   :undoc-members:
+   :show-inheritance:

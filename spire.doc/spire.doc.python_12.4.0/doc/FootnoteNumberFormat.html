@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FootnoteNumberFormat module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">FootnoteNumberFormat module</a><ul>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat</span></code></a><ul>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.Arabic"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.Arabic</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.ArabicAbjad"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.ArabicAbjad</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.ArabicAlpha"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.ArabicAlpha</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.Chicago"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.Chicago</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.ChineseCountingThousand"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.ChineseCountingThousand</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.ChineseLegalSimplified"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.ChineseLegalSimplified</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.DecimalEnclosedCircleChinese"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.DecimalEnclosedCircleChinese</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.DecimalFullWidth"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.DecimalFullWidth</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.Hebrew1"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.Hebrew1</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.Hebrew2"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.Hebrew2</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.IdeographEnclosedCircle"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.IdeographEnclosedCircle</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.IdeographTraditional"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.IdeographTraditional</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.IdeographZodiac"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.IdeographZodiac</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.LowerCaseLetter"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.LowerCaseLetter</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.LowerCaseRoman"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.LowerCaseRoman</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.UpperCaseLetter"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.UpperCaseLetter</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.UpperCaseRoman"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.UpperCaseRoman</span></code></a></li>
+<li><a class="reference internal" href="#FootnoteNumberFormat.FootnoteNumberFormat.none"><code class="docutils literal notranslate"><span class="pre">FootnoteNumberFormat.none</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">FootnoteNumberFormat module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/FootnoteNumberFormat.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-FootnoteNumberFormat">
+<span id="footnotenumberformat-module"></span><h1>FootnoteNumberFormat module<a class="headerlink" href="#module-FootnoteNumberFormat" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FootnoteNumberFormat.</span></span><span class="sig-name descname"><span class="pre">FootnoteNumberFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Specifies Numberformat of FootEndNote.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.Arabic">
+<span class="sig-name descname"><span class="pre">Arabic</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.Arabic" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.ArabicAbjad">
+<span class="sig-name descname"><span class="pre">ArabicAbjad</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">48</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.ArabicAbjad" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.ArabicAlpha">
+<span class="sig-name descname"><span class="pre">ArabicAlpha</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">46</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.ArabicAlpha" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.Chicago">
+<span class="sig-name descname"><span class="pre">Chicago</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.Chicago" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.ChineseCountingThousand">
+<span class="sig-name descname"><span class="pre">ChineseCountingThousand</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">39</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.ChineseCountingThousand" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.ChineseLegalSimplified">
+<span class="sig-name descname"><span class="pre">ChineseLegalSimplified</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">38</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.ChineseLegalSimplified" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.DecimalEnclosedCircleChinese">
+<span class="sig-name descname"><span class="pre">DecimalEnclosedCircleChinese</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">28</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.DecimalEnclosedCircleChinese" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.DecimalFullWidth">
+<span class="sig-name descname"><span class="pre">DecimalFullWidth</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.DecimalFullWidth" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.Hebrew1">
+<span class="sig-name descname"><span class="pre">Hebrew1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">45</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.Hebrew1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.Hebrew2">
+<span class="sig-name descname"><span class="pre">Hebrew2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">47</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.Hebrew2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.IdeographEnclosedCircle">
+<span class="sig-name descname"><span class="pre">IdeographEnclosedCircle</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">29</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.IdeographEnclosedCircle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.IdeographTraditional">
+<span class="sig-name descname"><span class="pre">IdeographTraditional</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.IdeographTraditional" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.IdeographZodiac">
+<span class="sig-name descname"><span class="pre">IdeographZodiac</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.IdeographZodiac" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.LowerCaseLetter">
+<span class="sig-name descname"><span class="pre">LowerCaseLetter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.LowerCaseLetter" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.LowerCaseRoman">
+<span class="sig-name descname"><span class="pre">LowerCaseRoman</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.LowerCaseRoman" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.UpperCaseLetter">
+<span class="sig-name descname"><span class="pre">UpperCaseLetter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.UpperCaseLetter" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.UpperCaseRoman">
+<span class="sig-name descname"><span class="pre">UpperCaseRoman</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.UpperCaseRoman" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FootnoteNumberFormat.FootnoteNumberFormat.none">
+<span class="sig-name descname"><span class="pre">none</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">255</span></em><a class="headerlink" href="#FootnoteNumberFormat.FootnoteNumberFormat.none" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

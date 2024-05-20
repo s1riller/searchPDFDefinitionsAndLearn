@@ -1,0 +1,7 @@
+SdtCheckBox module
+==================
+
+.. automodule:: SdtCheckBox
+   :members:
+   :undoc-members:
+   :show-inheritance:

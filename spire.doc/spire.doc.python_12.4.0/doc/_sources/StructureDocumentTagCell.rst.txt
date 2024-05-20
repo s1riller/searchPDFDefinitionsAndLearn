@@ -1,0 +1,7 @@
+StructureDocumentTagCell module
+===============================
+
+.. automodule:: StructureDocumentTagCell
+   :members:
+   :undoc-members:
+   :show-inheritance:

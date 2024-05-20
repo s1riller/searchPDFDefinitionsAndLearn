@@ -1,0 +1,7 @@
+TextAnchor module
+=================
+
+.. automodule:: TextAnchor
+   :members:
+   :undoc-members:
+   :show-inheritance:

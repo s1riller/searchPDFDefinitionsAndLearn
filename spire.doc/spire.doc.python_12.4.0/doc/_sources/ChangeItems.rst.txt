@@ -1,0 +1,7 @@
+ChangeItems module
+==================
+
+.. automodule:: ChangeItems
+   :members:
+   :undoc-members:
+   :show-inheritance:

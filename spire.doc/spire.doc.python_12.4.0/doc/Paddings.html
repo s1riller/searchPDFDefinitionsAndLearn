@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paddings module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Paddings module</a><ul>
+<li><a class="reference internal" href="#Paddings.Paddings"><code class="docutils literal notranslate"><span class="pre">Paddings</span></code></a><ul>
+<li><a class="reference internal" href="#Paddings.Paddings.Bottom"><code class="docutils literal notranslate"><span class="pre">Paddings.Bottom</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.BottomKey"><code class="docutils literal notranslate"><span class="pre">Paddings.BottomKey()</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.Equals"><code class="docutils literal notranslate"><span class="pre">Paddings.Equals</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.Left"><code class="docutils literal notranslate"><span class="pre">Paddings.Left</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.LeftKey"><code class="docutils literal notranslate"><span class="pre">Paddings.LeftKey()</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.Right"><code class="docutils literal notranslate"><span class="pre">Paddings.Right</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.RightKey"><code class="docutils literal notranslate"><span class="pre">Paddings.RightKey()</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.SetAll"><code class="docutils literal notranslate"><span class="pre">Paddings.SetAll()</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.Top"><code class="docutils literal notranslate"><span class="pre">Paddings.Top</span></code></a></li>
+<li><a class="reference internal" href="#Paddings.Paddings.TopKey"><code class="docutils literal notranslate"><span class="pre">Paddings.TopKey()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Paddings module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Paddings.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Paddings">
+<span id="paddings-module"></span><h1>Paddings module<a class="headerlink" href="#module-Paddings" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Paddings.Paddings">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Paddings.</span></span><span class="sig-name descname"><span class="pre">Paddings</span></span><a class="headerlink" href="#Paddings.Paddings" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">WordAttrCollection</span></code></p>
+<p>Represents a collection of padding values for a document element.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="Paddings.Paddings.Bottom">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Bottom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#Paddings.Paddings.Bottom" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the bottom padding value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paddings.Paddings.BottomKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BottomKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Paddings.Paddings.BottomKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the constant value for the bottom key.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Paddings.Paddings.Equals">
+<span class="sig-name descname"><span class="pre">Equals</span></span><a class="headerlink" href="#Paddings.Paddings.Equals" title="Link to this definition"></a></dt>
+<dd><p>Determines whether the current instance is equal to the specified object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paddings.Paddings.Left">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Left</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#Paddings.Paddings.Left" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the left padding value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paddings.Paddings.LeftKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeftKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Paddings.Paddings.LeftKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the constant value for the left key.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paddings.Paddings.Right">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Right</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#Paddings.Paddings.Right" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the right padding value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paddings.Paddings.RightKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RightKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Paddings.Paddings.RightKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the constant value for the right key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paddings.Paddings.SetAll">
+<span class="sig-name descname"><span class="pre">SetAll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Paddings.Paddings.SetAll" title="Link to this definition"></a></dt>
+<dd><p>Sets all padding values to the specified value.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Paddings.Paddings.Top">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Top</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#Paddings.Paddings.Top" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the top padding value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Paddings.Paddings.TopKey">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TopKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Paddings.Paddings.TopKey" title="Link to this definition"></a></dt>
+<dd><p>Gets the constant value for the top key.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

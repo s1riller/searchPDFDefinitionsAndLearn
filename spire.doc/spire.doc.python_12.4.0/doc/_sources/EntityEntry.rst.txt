@@ -1,0 +1,7 @@
+EntityEntry module
+==================
+
+.. automodule:: EntityEntry
+   :members:
+   :undoc-members:
+   :show-inheritance:

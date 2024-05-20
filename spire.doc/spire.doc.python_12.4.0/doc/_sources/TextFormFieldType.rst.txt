@@ -1,0 +1,7 @@
+TextFormFieldType module
+========================
+
+.. automodule:: TextFormFieldType
+   :members:
+   :undoc-members:
+   :show-inheritance:

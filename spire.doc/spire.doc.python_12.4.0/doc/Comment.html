@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comment module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Comment module</a><ul>
+<li><a class="reference internal" href="#Comment.Comment"><code class="docutils literal notranslate"><span class="pre">Comment</span></code></a><ul>
+<li><a class="reference internal" href="#Comment.Comment.AddItem"><code class="docutils literal notranslate"><span class="pre">Comment.AddItem()</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.Body"><code class="docutils literal notranslate"><span class="pre">Comment.Body</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.ByRepliedComment"><code class="docutils literal notranslate"><span class="pre">Comment.ByRepliedComment</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.ChildObjects"><code class="docutils literal notranslate"><span class="pre">Comment.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.Clear"><code class="docutils literal notranslate"><span class="pre">Comment.Clear()</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.CommentMarkEnd"><code class="docutils literal notranslate"><span class="pre">Comment.CommentMarkEnd</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.CommentMarkStart"><code class="docutils literal notranslate"><span class="pre">Comment.CommentMarkStart</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">Comment.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.EnsureMinimum"><code class="docutils literal notranslate"><span class="pre">Comment.EnsureMinimum()</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.Format"><code class="docutils literal notranslate"><span class="pre">Comment.Format</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.Items"><code class="docutils literal notranslate"><span class="pre">Comment.Items</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.MarkCommentDone"><code class="docutils literal notranslate"><span class="pre">Comment.MarkCommentDone()</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.MarkDone"><code class="docutils literal notranslate"><span class="pre">Comment.MarkDone</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.Replace"><code class="docutils literal notranslate"><span class="pre">Comment.Replace</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.ReplyCommentItems"><code class="docutils literal notranslate"><span class="pre">Comment.ReplyCommentItems</span></code></a></li>
+<li><a class="reference internal" href="#Comment.Comment.ReplyToComment"><code class="docutils literal notranslate"><span class="pre">Comment.ReplyToComment()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Comment module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Comment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Comment">
+<span id="comment-module"></span><h1>Comment module<a class="headerlink" href="#module-Comment" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Comment.Comment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Comment.</span></span><span class="sig-name descname"><span class="pre">Comment</span></span><a class="headerlink" href="#Comment.Comment" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ParagraphBase</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code></p>
+<p>Represents a container for text of a comment.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Comment.Comment.AddItem">
+<span class="sig-name descname"><span class="pre">AddItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paraItem</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IParagraphBase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Comment.Comment.AddItem" title="Link to this definition"></a></dt>
+<dd><p>Adds the paragraph item to the commented items.
+:param paraItem: The paragraph item.
+:returns: None</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.Body">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Body</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Body</span></em><a class="headerlink" href="#Comment.Comment.Body" title="Link to this definition"></a></dt>
+<dd><p>Gets comment body.
+:return: The text body.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.ByRepliedComment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ByRepliedComment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#Comment.Comment" title="Comment.Comment"><span class="pre">Comment</span></a></em><a class="headerlink" href="#Comment.Comment.ByRepliedComment" title="Link to this definition"></a></dt>
+<dd><p>Gets the comment of current comment replied.
+:return: Comment of by reply.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#Comment.Comment.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child document objects.
+:return: The child entities.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Comment.Comment.Clear">
+<span class="sig-name descname"><span class="pre">Clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Comment.Comment.Clear" title="Link to this definition"></a></dt>
+<dd><p>Clears the commented items.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.CommentMarkEnd">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommentMarkEnd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CommentMark</span></em><a class="headerlink" href="#Comment.Comment.CommentMarkEnd" title="Link to this definition"></a></dt>
+<dd><p>Gets the ending mark of the comment.
+:return: The commentMark of end.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.CommentMarkStart">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommentMarkStart</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CommentMark</span></em><a class="headerlink" href="#Comment.Comment.CommentMarkStart" title="Link to this definition"></a></dt>
+<dd><p>Gets the beginning mark of the comment.
+:return: The commentMark of start.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#Comment.Comment.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.
+:return: The type of the document object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Comment.Comment.EnsureMinimum">
+<span class="sig-name descname"><span class="pre">EnsureMinimum</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Comment.Comment.EnsureMinimum" title="Link to this definition"></a></dt>
+<dd><p>Ensures the minimum.
+:returns: None</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.Format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CommentFormat</span></em><a class="headerlink" href="#Comment.Comment.Format" title="Link to this definition"></a></dt>
+<dd><p>Gets the format.
+:return: The format.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.Items">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Items</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphItemCollection</span></em><a class="headerlink" href="#Comment.Comment.Items" title="Link to this definition"></a></dt>
+<dd><p>Gets the range of commented items.
+:return: The range comment contains.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Comment.Comment.MarkCommentDone">
+<span class="sig-name descname"><span class="pre">MarkCommentDone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">done</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Comment.Comment.MarkCommentDone" title="Link to this definition"></a></dt>
+<dd><p>Marks the comment done.
+:param done: The done.
+:returns: None</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.MarkDone">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MarkDone</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Comment.Comment.MarkDone" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether done.
+:return: True if done, False otherwise.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Comment.Comment.Replace">
+<span class="sig-name descname"><span class="pre">Replace</span></span><a class="headerlink" href="#Comment.Comment.Replace" title="Link to this definition"></a></dt>
+<dd><p>Replace commented items with matchString text.
+:param text: The text.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Comment.Comment.ReplyCommentItems">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ReplyCommentItems</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CommentsCollection</span></em><a class="headerlink" href="#Comment.Comment.ReplyCommentItems" title="Link to this definition"></a></dt>
+<dd><p>Gets the range of commented items.
+:return: The reply commented range.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Comment.Comment.ReplyToComment">
+<span class="sig-name descname"><span class="pre">ReplyToComment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replyComment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Comment.Comment" title="Comment.Comment"><span class="pre">Comment</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Comment.Comment.ReplyToComment" title="Link to this definition"></a></dt>
+<dd><p>Replies to comment.
+:param replyComment: The reply comment.
+:returns: None</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

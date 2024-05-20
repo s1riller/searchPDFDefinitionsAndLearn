@@ -1,0 +1,7 @@
+PdfPermissionsFlags module
+==========================
+
+.. automodule:: PdfPermissionsFlags
+   :members:
+   :undoc-members:
+   :show-inheritance:

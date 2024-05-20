@@ -1,0 +1,7 @@
+TextFormat module
+=================
+
+.. automodule:: TextFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

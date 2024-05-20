@@ -1,0 +1,7 @@
+OfficeMath module
+=================
+
+.. automodule:: OfficeMath
+   :members:
+   :undoc-members:
+   :show-inheritance:

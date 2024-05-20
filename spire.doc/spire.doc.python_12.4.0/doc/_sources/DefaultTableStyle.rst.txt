@@ -1,0 +1,7 @@
+DefaultTableStyle module
+========================
+
+.. automodule:: DefaultTableStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

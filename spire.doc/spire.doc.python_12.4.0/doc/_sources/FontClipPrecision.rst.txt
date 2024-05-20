@@ -1,0 +1,7 @@
+FontClipPrecision module
+========================
+
+.. automodule:: FontClipPrecision
+   :members:
+   :undoc-members:
+   :show-inheritance:

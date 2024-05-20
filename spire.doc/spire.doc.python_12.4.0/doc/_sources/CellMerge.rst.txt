@@ -1,0 +1,7 @@
+CellMerge module
+================
+
+.. automodule:: CellMerge
+   :members:
+   :undoc-members:
+   :show-inheritance:

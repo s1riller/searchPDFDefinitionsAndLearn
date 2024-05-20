@@ -1,0 +1,7 @@
+OleLinkType module
+==================
+
+.. automodule:: OleLinkType
+   :members:
+   :undoc-members:
+   :show-inheritance:

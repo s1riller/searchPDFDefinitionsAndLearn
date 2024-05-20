@@ -1,0 +1,7 @@
+MailMergeMainDocumentType module
+================================
+
+.. automodule:: MailMergeMainDocumentType
+   :members:
+   :undoc-members:
+   :show-inheritance:

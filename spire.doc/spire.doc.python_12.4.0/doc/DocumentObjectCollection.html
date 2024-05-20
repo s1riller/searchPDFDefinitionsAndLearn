@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocumentObjectCollection module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">DocumentObjectCollection module</a><ul>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection</span></code></a><ul>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.Add"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.Add()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.Clear"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.Clear()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.Contains"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.Contains()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.FirstItem"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.FirstItem</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.IndexOf"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.IndexOf()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.Insert"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.Insert()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.LastItem"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.LastItem</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.Remove"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.Remove()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.RemoveAt"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.RemoveAt()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectCollection.DocumentObjectCollection.get_Item"><code class="docutils literal notranslate"><span class="pre">DocumentObjectCollection.get_Item()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">DocumentObjectCollection module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/DocumentObjectCollection.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-DocumentObjectCollection">
+<span id="documentobjectcollection-module"></span><h1>DocumentObjectCollection module<a class="headerlink" href="#module-DocumentObjectCollection" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DocumentObjectCollection.</span></span><span class="sig-name descname"><span class="pre">DocumentObjectCollection</span></span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentSerializableCollection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IDocumentObjectCollection</span></code></p>
+<p>Represents a collection of DLS entities.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.Add">
+<span class="sig-name descname"><span class="pre">Add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IDocumentObject</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.Add" title="Link to this definition"></a></dt>
+<dd><p>Adds the specified entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entity</strong> (<a class="reference internal" href="IDocumentObject.html#IDocumentObject.IDocumentObject" title="IDocumentObject.IDocumentObject"><em>IDocumentObject</em></a>) – the document object.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The index.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.Clear">
+<span class="sig-name descname"><span class="pre">Clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.Clear" title="Link to this definition"></a></dt>
+<dd><p>Removes all items</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.Contains">
+<span class="sig-name descname"><span class="pre">Contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IDocumentObject</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.Contains" title="Link to this definition"></a></dt>
+<dd><p>Determines whether a entity is in the collection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entity</strong> (<a class="reference internal" href="IDocumentObject.html#IDocumentObject.IDocumentObject" title="IDocumentObject.IDocumentObject"><em>IDocumentObject</em></a>) – The document object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.FirstItem">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FirstItem</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObject</span></em><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.FirstItem" title="Link to this definition"></a></dt>
+<dd><p>Gets the first item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The first item.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.IndexOf">
+<span class="sig-name descname"><span class="pre">IndexOf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IDocumentObject</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.IndexOf" title="Link to this definition"></a></dt>
+<dd><p>Returns the zero-based index of the specified entity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entity</strong> (<a class="reference internal" href="IDocumentObject.html#IDocumentObject.IDocumentObject" title="IDocumentObject.IDocumentObject"><em>IDocumentObject</em></a>) – The document object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.Insert">
+<span class="sig-name descname"><span class="pre">Insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IDocumentObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.Insert" title="Link to this definition"></a></dt>
+<dd><p>Inserts a entity into the collection at the specified index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – The index.</p></li>
+<li><p><strong>entity</strong> (<a class="reference internal" href="IDocumentObject.html#IDocumentObject.IDocumentObject" title="IDocumentObject.IDocumentObject"><em>IDocumentObject</em></a>) – The document object.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.LastItem">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastItem</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObject</span></em><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.LastItem" title="Link to this definition"></a></dt>
+<dd><p>Gets the last item.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The last item.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.Remove">
+<span class="sig-name descname"><span class="pre">Remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IDocumentObject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.Remove" title="Link to this definition"></a></dt>
+<dd><p>Removes the document object from the collection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entity</strong> (<a class="reference internal" href="IDocumentObject.html#IDocumentObject.IDocumentObject" title="IDocumentObject.IDocumentObject"><em>IDocumentObject</em></a>) – The document object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.RemoveAt">
+<span class="sig-name descname"><span class="pre">RemoveAt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.RemoveAt" title="Link to this definition"></a></dt>
+<dd><p>Removes the document object at the specified index from the collection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> (<em>int</em>) – The index.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObjectCollection.DocumentObjectCollection.get_Item">
+<span class="sig-name descname"><span class="pre">get_Item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DocumentObject</span></span></span><a class="headerlink" href="#DocumentObjectCollection.DocumentObjectCollection.get_Item" title="Link to this definition"></a></dt>
+<dd><p>Gets the DocumentObject at the specified index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> (<em>int</em>) – The index of the DocumentObject.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The DocumentObject at the specified index.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocPicture module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">DocPicture module</a><ul>
+<li><a class="reference internal" href="#DocPicture.DocPicture"><code class="docutils literal notranslate"><span class="pre">DocPicture</span></code></a><ul>
+<li><a class="reference internal" href="#DocPicture.DocPicture.AddCaption"><code class="docutils literal notranslate"><span class="pre">DocPicture.AddCaption()</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.BiLevel"><code class="docutils literal notranslate"><span class="pre">DocPicture.BiLevel</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.Brightness"><code class="docutils literal notranslate"><span class="pre">DocPicture.Brightness</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.CharacterFormat"><code class="docutils literal notranslate"><span class="pre">DocPicture.CharacterFormat</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.Color"><code class="docutils literal notranslate"><span class="pre">DocPicture.Color</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.Contrast"><code class="docutils literal notranslate"><span class="pre">DocPicture.Contrast</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">DocPicture.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.GrayScale"><code class="docutils literal notranslate"><span class="pre">DocPicture.GrayScale</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.Height"><code class="docutils literal notranslate"><span class="pre">DocPicture.Height</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.HeightScale"><code class="docutils literal notranslate"><span class="pre">DocPicture.HeightScale</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.HorizontalAlignment"><code class="docutils literal notranslate"><span class="pre">DocPicture.HorizontalAlignment</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.HorizontalOrigin"><code class="docutils literal notranslate"><span class="pre">DocPicture.HorizontalOrigin</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.HorizontalPosition"><code class="docutils literal notranslate"><span class="pre">DocPicture.HorizontalPosition</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.ImageBytes"><code class="docutils literal notranslate"><span class="pre">DocPicture.ImageBytes</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.IsCrop"><code class="docutils literal notranslate"><span class="pre">DocPicture.IsCrop</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.IsUnderText"><code class="docutils literal notranslate"><span class="pre">DocPicture.IsUnderText</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.LayoutInCell"><code class="docutils literal notranslate"><span class="pre">DocPicture.LayoutInCell</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.LoadImage"><code class="docutils literal notranslate"><span class="pre">DocPicture.LoadImage</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.ReplaceImage"><code class="docutils literal notranslate"><span class="pre">DocPicture.ReplaceImage()</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.Rotation"><code class="docutils literal notranslate"><span class="pre">DocPicture.Rotation</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.SetScale"><code class="docutils literal notranslate"><span class="pre">DocPicture.SetScale</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.TextWrappingStyle"><code class="docutils literal notranslate"><span class="pre">DocPicture.TextWrappingStyle</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.TextWrappingType"><code class="docutils literal notranslate"><span class="pre">DocPicture.TextWrappingType</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.Title"><code class="docutils literal notranslate"><span class="pre">DocPicture.Title</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.TransparentColor"><code class="docutils literal notranslate"><span class="pre">DocPicture.TransparentColor</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.VerticalAlignment"><code class="docutils literal notranslate"><span class="pre">DocPicture.VerticalAlignment</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.VerticalOrigin"><code class="docutils literal notranslate"><span class="pre">DocPicture.VerticalOrigin</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.VerticalPosition"><code class="docutils literal notranslate"><span class="pre">DocPicture.VerticalPosition</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.Width"><code class="docutils literal notranslate"><span class="pre">DocPicture.Width</span></code></a></li>
+<li><a class="reference internal" href="#DocPicture.DocPicture.WidthScale"><code class="docutils literal notranslate"><span class="pre">DocPicture.WidthScale</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">DocPicture module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/DocPicture.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-DocPicture">
+<span id="docpicture-module"></span><h1>DocPicture module<a class="headerlink" href="#module-DocPicture" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="DocPicture.DocPicture">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DocPicture.</span></span><span class="sig-name descname"><span class="pre">DocPicture</span></span><a class="headerlink" href="#DocPicture.DocPicture" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ShapeObject</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IPicture</span></code></p>
+<p>Represents a picture in a document.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.AddCaption">
+<span class="sig-name descname"><span class="pre">AddCaption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberingFormat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CaptionNumberingFormat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">captionPosition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CaptionPosition</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IParagraph</span></span></span><a class="headerlink" href="#DocPicture.DocPicture.AddCaption" title="Link to this definition"></a></dt>
+<dd><p>Adds a caption for the current picture.
+:param name: The name of the caption.
+:param numberingFormat: The numbering format of the caption.
+:param captionPosition: The position of the caption.
+:return: The paragraph object representing the added caption.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.BiLevel">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BiLevel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#DocPicture.DocPicture.BiLevel" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether the picture is in bi-level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the picture is in bi-level, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.Brightness">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Brightness</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.Brightness" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the brightness of the picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The brightness of the picture.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.CharacterFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CharacterFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CharacterFormat</span></em><a class="headerlink" href="#DocPicture.DocPicture.CharacterFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the character format of the shape object.
+:return: The character format of the shape object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.Color">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Color</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PictureColor</span></em><a class="headerlink" href="#DocPicture.DocPicture.Color" title="Link to this definition"></a></dt>
+<dd><p>Gets picture color.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.Contrast">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Contrast</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.Contrast" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the contrast of the picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The contrast of the picture.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#DocPicture.DocPicture.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The type of the document object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="DocumentObjectType.html#DocumentObjectType.DocumentObjectType" title="DocumentObjectType.DocumentObjectType">DocumentObjectType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.GrayScale">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GrayScale</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#DocPicture.DocPicture.GrayScale" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether the picture is in grayscale.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the picture is in grayscale, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.Height">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.Height" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the height of the picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The height of the picture.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.HeightScale">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HeightScale</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.HeightScale" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the height scale of the picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The height scale of the picture.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.HorizontalAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeHorizontalAlignment</span></em><a class="headerlink" href="#DocPicture.DocPicture.HorizontalAlignment" title="Link to this definition"></a></dt>
+<dd><p>Gets the horizontal alignment of the picture.
+:return: The horizontal alignment of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.HorizontalOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HorizontalOrigin</span></em><a class="headerlink" href="#DocPicture.DocPicture.HorizontalOrigin" title="Link to this definition"></a></dt>
+<dd><p>Gets horizontal origin of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.HorizontalPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.HorizontalPosition" title="Link to this definition"></a></dt>
+<dd><p>Gets absolute horizontal position of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.ImageBytes">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ImageBytes</span></span><a class="headerlink" href="#DocPicture.DocPicture.ImageBytes" title="Link to this definition"></a></dt>
+<dd><p>Gets the image byte array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The image byte array.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.IsCrop">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsCrop</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#DocPicture.DocPicture.IsCrop" title="Link to this definition"></a></dt>
+<dd><p>Gets whether the picture object is cropped.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.IsUnderText">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsUnderText</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#DocPicture.DocPicture.IsUnderText" title="Link to this definition"></a></dt>
+<dd><p>Gets whether the picture is below the text.
+:return: True if the picture is below the text, False otherwise.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.LayoutInCell">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LayoutInCell</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#DocPicture.DocPicture.LayoutInCell" title="Link to this definition"></a></dt>
+<dd><p>Gets whether a picture in a table is displayed inside or outside the table.
+:return: True if the picture is displayed inside the table, False otherwise.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.LoadImage">
+<span class="sig-name descname"><span class="pre">LoadImage</span></span><a class="headerlink" href="#DocPicture.DocPicture.LoadImage" title="Link to this definition"></a></dt>
+<dd><p>Loads the image from a file.
+:param imgFile: The path of the image file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.ReplaceImage">
+<span class="sig-name descname"><span class="pre">ReplaceImage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imageBytes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bIsKeepRation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DocPicture.DocPicture.ReplaceImage" title="Link to this definition"></a></dt>
+<dd><p>Replaces the image with a new image.
+:param imageBytes: The byte array containing the new image data.
+:param bIsKeepRation: True to keep the original aspect ratio of the image, False otherwise.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.Rotation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Rotation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.Rotation" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the rotation of the picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The rotation of the picture.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.SetScale">
+<span class="sig-name descname"><span class="pre">SetScale</span></span><a class="headerlink" href="#DocPicture.DocPicture.SetScale" title="Link to this definition"></a></dt>
+<dd><p>Scales the image by the specified scale factor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>scaleFactor</strong> (<em>float</em>) – The scale factor to apply.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.TextWrappingStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextWrappingStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextWrappingStyle</span></em><a class="headerlink" href="#DocPicture.DocPicture.TextWrappingStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets text wrapping style of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.TextWrappingType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextWrappingType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextWrappingType</span></em><a class="headerlink" href="#DocPicture.DocPicture.TextWrappingType" title="Link to this definition"></a></dt>
+<dd><p>Gets text wrapping type of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.Title">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#DocPicture.DocPicture.Title" title="Link to this definition"></a></dt>
+<dd><p>Gets the title of the picture.
+:return: The title of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.TransparentColor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TransparentColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Color</span></em><a class="headerlink" href="#DocPicture.DocPicture.TransparentColor" title="Link to this definition"></a></dt>
+<dd><p>Gets transparent color.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.VerticalAlignment">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalAlignment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ShapeVerticalAlignment</span></em><a class="headerlink" href="#DocPicture.DocPicture.VerticalAlignment" title="Link to this definition"></a></dt>
+<dd><p>Gets the vertical alignment of the picture.
+:return: The vertical alignment of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.VerticalOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">VerticalOrigin</span></em><a class="headerlink" href="#DocPicture.DocPicture.VerticalOrigin" title="Link to this definition"></a></dt>
+<dd><p>Gets absolute horizontal position of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.VerticalPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.VerticalPosition" title="Link to this definition"></a></dt>
+<dd><p>Gets absolute vertical position of the picture.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.Width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.Width" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the width of the picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The width of the picture.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocPicture.DocPicture.WidthScale">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WidthScale</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#DocPicture.DocPicture.WidthScale" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the width scale of the picture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The width scale of the picture.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

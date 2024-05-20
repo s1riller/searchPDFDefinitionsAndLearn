@@ -1,0 +1,7 @@
+ZoomType module
+===============
+
+.. automodule:: ZoomType
+   :members:
+   :undoc-members:
+   :show-inheritance:

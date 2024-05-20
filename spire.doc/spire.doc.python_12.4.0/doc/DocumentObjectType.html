@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocumentObjectType module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">DocumentObjectType module</a><ul>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType</span></code></a><ul>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Any"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Any</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Body"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Body</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.BookmarkEnd"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.BookmarkEnd</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.BookmarkStart"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.BookmarkStart</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Break"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Break</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.BuildingBlock"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.BuildingBlock</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.CheckBox"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.CheckBox</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Comment"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Comment</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.CommentMark"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.CommentMark</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.ControlField"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.ControlField</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.CustomXml"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.CustomXml</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Document"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Document</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.DropDownFormField"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.DropDownFormField</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.EmbededField"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.EmbededField</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Field"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Field</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.FieldEnd"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.FieldEnd</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.FieldMark"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.FieldMark</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.FieldSeparator"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.FieldSeparator</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.FieldStart"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.FieldStart</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Footnote"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Footnote</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.FormField"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.FormField</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.GlossaryDocument"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.GlossaryDocument</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.HeaderFooter"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.HeaderFooter</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.MergeField"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.MergeField</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.MoveFromRangeEnd"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.MoveFromRangeEnd</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.MoveFromRangeStart"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.MoveFromRangeStart</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.MoveToRangeEnd"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.MoveToRangeEnd</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.MoveToRangeStart"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.MoveToRangeStart</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.OfficeMath"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.OfficeMath</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.OleObject"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.OleObject</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Paragraph"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Paragraph</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.PermissionEnd"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.PermissionEnd</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.PermissionStart"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.PermissionStart</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Picture"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Picture</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Ruby"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Ruby</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.SDTBlockContent"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.SDTBlockContent</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.SDTCellContent"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.SDTCellContent</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.SDTInlineContent"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.SDTInlineContent</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.SDTRowContent"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.SDTRowContent</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Section"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Section</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.SeqField"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.SeqField</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Shape"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Shape</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.ShapeGroup"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.ShapeGroup</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.ShapeLine"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.ShapeLine</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.ShapePath"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.ShapePath</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.ShapeRect"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.ShapeRect</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.SmartTag"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.SmartTag</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.SpecialChar"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.SpecialChar</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.StructureDocumentTag"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.StructureDocumentTag</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.StructureDocumentTagCell"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.StructureDocumentTagCell</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.StructureDocumentTagInline"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.StructureDocumentTagInline</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.StructureDocumentTagRow"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.StructureDocumentTagRow</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.SubDocument"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.SubDocument</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Symbol"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Symbol</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.System"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.System</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.TOC"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.TOC</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Table"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Table</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.TableCell"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.TableCell</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.TableRow"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.TableRow</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.TextBox"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.TextBox</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.TextFormField"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.TextFormField</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.TextRange"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.TextRange</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.Undefined"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.Undefined</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObjectType.DocumentObjectType.XmlParaItem"><code class="docutils literal notranslate"><span class="pre">DocumentObjectType.XmlParaItem</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">DocumentObjectType module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/DocumentObjectType.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-DocumentObjectType">
+<span id="documentobjecttype-module"></span><h1>DocumentObjectType module<a class="headerlink" href="#module-DocumentObjectType" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DocumentObjectType.</span></span><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DocumentObjectType.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Specifies the type of a Document object type.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Any">
+<span class="sig-name descname"><span class="pre">Any</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">58</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Any" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Body">
+<span class="sig-name descname"><span class="pre">Body</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Body" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.BookmarkEnd">
+<span class="sig-name descname"><span class="pre">BookmarkEnd</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.BookmarkEnd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.BookmarkStart">
+<span class="sig-name descname"><span class="pre">BookmarkStart</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.BookmarkStart" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Break">
+<span class="sig-name descname"><span class="pre">Break</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">46</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Break" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.BuildingBlock">
+<span class="sig-name descname"><span class="pre">BuildingBlock</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">62</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.BuildingBlock" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.CheckBox">
+<span class="sig-name descname"><span class="pre">CheckBox</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">29</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.CheckBox" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Comment">
+<span class="sig-name descname"><span class="pre">Comment</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">43</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Comment" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.CommentMark">
+<span class="sig-name descname"><span class="pre">CommentMark</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">51</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.CommentMark" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.ControlField">
+<span class="sig-name descname"><span class="pre">ControlField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">26</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.ControlField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.CustomXml">
+<span class="sig-name descname"><span class="pre">CustomXml</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">53</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.CustomXml" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Document">
+<span class="sig-name descname"><span class="pre">Document</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Document" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.DropDownFormField">
+<span class="sig-name descname"><span class="pre">DropDownFormField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">28</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.DropDownFormField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.EmbededField">
+<span class="sig-name descname"><span class="pre">EmbededField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.EmbededField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Field">
+<span class="sig-name descname"><span class="pre">Field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Field" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.FieldEnd">
+<span class="sig-name descname"><span class="pre">FieldEnd</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.FieldEnd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.FieldMark">
+<span class="sig-name descname"><span class="pre">FieldMark</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.FieldMark" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.FieldSeparator">
+<span class="sig-name descname"><span class="pre">FieldSeparator</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.FieldSeparator" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.FieldStart">
+<span class="sig-name descname"><span class="pre">FieldStart</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.FieldStart" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Footnote">
+<span class="sig-name descname"><span class="pre">Footnote</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">44</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Footnote" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.FormField">
+<span class="sig-name descname"><span class="pre">FormField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">63</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.FormField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.GlossaryDocument">
+<span class="sig-name descname"><span class="pre">GlossaryDocument</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">61</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.GlossaryDocument" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.HeaderFooter">
+<span class="sig-name descname"><span class="pre">HeaderFooter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.HeaderFooter" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.MergeField">
+<span class="sig-name descname"><span class="pre">MergeField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.MergeField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.MoveFromRangeEnd">
+<span class="sig-name descname"><span class="pre">MoveFromRangeEnd</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">33</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.MoveFromRangeEnd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.MoveFromRangeStart">
+<span class="sig-name descname"><span class="pre">MoveFromRangeStart</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.MoveFromRangeStart" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.MoveToRangeEnd">
+<span class="sig-name descname"><span class="pre">MoveToRangeEnd</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">35</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.MoveToRangeEnd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.MoveToRangeStart">
+<span class="sig-name descname"><span class="pre">MoveToRangeStart</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">34</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.MoveToRangeStart" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.OfficeMath">
+<span class="sig-name descname"><span class="pre">OfficeMath</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">55</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.OfficeMath" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.OleObject">
+<span class="sig-name descname"><span class="pre">OleObject</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">52</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.OleObject" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Paragraph">
+<span class="sig-name descname"><span class="pre">Paragraph</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Paragraph" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.PermissionEnd">
+<span class="sig-name descname"><span class="pre">PermissionEnd</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">37</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.PermissionEnd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.PermissionStart">
+<span class="sig-name descname"><span class="pre">PermissionStart</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">36</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.PermissionStart" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Picture">
+<span class="sig-name descname"><span class="pre">Picture</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Picture" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Ruby">
+<span class="sig-name descname"><span class="pre">Ruby</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">57</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Ruby" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.SDTBlockContent">
+<span class="sig-name descname"><span class="pre">SDTBlockContent</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.SDTBlockContent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.SDTCellContent">
+<span class="sig-name descname"><span class="pre">SDTCellContent</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.SDTCellContent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.SDTInlineContent">
+<span class="sig-name descname"><span class="pre">SDTInlineContent</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.SDTInlineContent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.SDTRowContent">
+<span class="sig-name descname"><span class="pre">SDTRowContent</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.SDTRowContent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Section">
+<span class="sig-name descname"><span class="pre">Section</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Section" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.SeqField">
+<span class="sig-name descname"><span class="pre">SeqField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.SeqField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Shape">
+<span class="sig-name descname"><span class="pre">Shape</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">38</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Shape" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.ShapeGroup">
+<span class="sig-name descname"><span class="pre">ShapeGroup</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">39</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.ShapeGroup" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.ShapeLine">
+<span class="sig-name descname"><span class="pre">ShapeLine</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">40</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.ShapeLine" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.ShapePath">
+<span class="sig-name descname"><span class="pre">ShapePath</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">41</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.ShapePath" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.ShapeRect">
+<span class="sig-name descname"><span class="pre">ShapeRect</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">42</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.ShapeRect" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.SmartTag">
+<span class="sig-name descname"><span class="pre">SmartTag</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">54</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.SmartTag" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.SpecialChar">
+<span class="sig-name descname"><span class="pre">SpecialChar</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">60</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.SpecialChar" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.StructureDocumentTag">
+<span class="sig-name descname"><span class="pre">StructureDocumentTag</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.StructureDocumentTag" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.StructureDocumentTagCell">
+<span class="sig-name descname"><span class="pre">StructureDocumentTagCell</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.StructureDocumentTagCell" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.StructureDocumentTagInline">
+<span class="sig-name descname"><span class="pre">StructureDocumentTagInline</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.StructureDocumentTagInline" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.StructureDocumentTagRow">
+<span class="sig-name descname"><span class="pre">StructureDocumentTagRow</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.StructureDocumentTagRow" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.SubDocument">
+<span class="sig-name descname"><span class="pre">SubDocument</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">59</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.SubDocument" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Symbol">
+<span class="sig-name descname"><span class="pre">Symbol</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">47</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Symbol" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.System">
+<span class="sig-name descname"><span class="pre">System</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">56</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.System" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.TOC">
+<span class="sig-name descname"><span class="pre">TOC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">48</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.TOC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Table">
+<span class="sig-name descname"><span class="pre">Table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Table" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.TableCell">
+<span class="sig-name descname"><span class="pre">TableCell</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.TableCell" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.TableRow">
+<span class="sig-name descname"><span class="pre">TableRow</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.TableRow" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.TextBox">
+<span class="sig-name descname"><span class="pre">TextBox</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">45</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.TextBox" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.TextFormField">
+<span class="sig-name descname"><span class="pre">TextFormField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">27</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.TextFormField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.TextRange">
+<span class="sig-name descname"><span class="pre">TextRange</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.TextRange" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.Undefined">
+<span class="sig-name descname"><span class="pre">Undefined</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.Undefined" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="DocumentObjectType.DocumentObjectType.XmlParaItem">
+<span class="sig-name descname"><span class="pre">XmlParaItem</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">49</span></em><a class="headerlink" href="#DocumentObjectType.DocumentObjectType.XmlParaItem" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

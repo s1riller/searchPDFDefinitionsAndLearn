@@ -1,0 +1,7 @@
+PdfEncryptionKeySize module
+===========================
+
+.. automodule:: PdfEncryptionKeySize
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+FormFieldCollection module
+==========================
+
+.. automodule:: FormFieldCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

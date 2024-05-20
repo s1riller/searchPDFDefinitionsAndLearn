@@ -1,0 +1,7 @@
+Tab module
+==========
+
+.. automodule:: Tab
+   :members:
+   :undoc-members:
+   :show-inheritance:

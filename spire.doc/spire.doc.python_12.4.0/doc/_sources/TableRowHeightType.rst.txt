@@ -1,0 +1,7 @@
+TableRowHeightType module
+=========================
+
+.. automodule:: TableRowHeightType
+   :members:
+   :undoc-members:
+   :show-inheritance:

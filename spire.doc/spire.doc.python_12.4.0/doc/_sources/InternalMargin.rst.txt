@@ -1,0 +1,7 @@
+InternalMargin module
+=====================
+
+.. automodule:: InternalMargin
+   :members:
+   :undoc-members:
+   :show-inheritance:

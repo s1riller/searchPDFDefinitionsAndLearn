@@ -1,0 +1,7 @@
+BookmarkTextStyle module
+========================
+
+.. automodule:: BookmarkTextStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

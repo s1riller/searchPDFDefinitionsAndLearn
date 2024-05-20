@@ -1,0 +1,7 @@
+VerticalOrigin module
+=====================
+
+.. automodule:: VerticalOrigin
+   :members:
+   :undoc-members:
+   :show-inheritance:

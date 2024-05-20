@@ -1,0 +1,7 @@
+FootnoteNumberFormat module
+===========================
+
+.. automodule:: FootnoteNumberFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

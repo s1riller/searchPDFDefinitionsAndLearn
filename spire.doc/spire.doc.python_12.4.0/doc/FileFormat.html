@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FileFormat module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">FileFormat module</a><ul>
+<li><a class="reference internal" href="#FileFormat.FileFormat"><code class="docutils literal notranslate"><span class="pre">FileFormat</span></code></a><ul>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Auto"><code class="docutils literal notranslate"><span class="pre">FileFormat.Auto</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Doc"><code class="docutils literal notranslate"><span class="pre">FileFormat.Doc</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.DocPre97"><code class="docutils literal notranslate"><span class="pre">FileFormat.DocPre97</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docm"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docm</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docm2010"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docm2010</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docm2013"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docm2013</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docm2016"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docm2016</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docm2019"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docm2019</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docx"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docx</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docx2010"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docx2010</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docx2013"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docx2013</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docx2016"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docx2016</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Docx2019"><code class="docutils literal notranslate"><span class="pre">FileFormat.Docx2019</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dot"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dot</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotm"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotm</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotm2010"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotm2010</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotm2013"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotm2013</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotm2016"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotm2016</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotm2019"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotm2019</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotx"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotx</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotx2010"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotx2010</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotx2013"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotx2013</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotx2016"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotx2016</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Dotx2019"><code class="docutils literal notranslate"><span class="pre">FileFormat.Dotx2019</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.EPub"><code class="docutils literal notranslate"><span class="pre">FileFormat.EPub</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Html"><code class="docutils literal notranslate"><span class="pre">FileFormat.Html</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.OFD"><code class="docutils literal notranslate"><span class="pre">FileFormat.OFD</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.OOXML"><code class="docutils literal notranslate"><span class="pre">FileFormat.OOXML</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Odt"><code class="docutils literal notranslate"><span class="pre">FileFormat.Odt</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.OnlineDoc"><code class="docutils literal notranslate"><span class="pre">FileFormat.OnlineDoc</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Ott"><code class="docutils literal notranslate"><span class="pre">FileFormat.Ott</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.PCL"><code class="docutils literal notranslate"><span class="pre">FileFormat.PCL</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.PDF"><code class="docutils literal notranslate"><span class="pre">FileFormat.PDF</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.PostScript"><code class="docutils literal notranslate"><span class="pre">FileFormat.PostScript</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Rtf"><code class="docutils literal notranslate"><span class="pre">FileFormat.Rtf</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.SVG"><code class="docutils literal notranslate"><span class="pre">FileFormat.SVG</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Txt"><code class="docutils literal notranslate"><span class="pre">FileFormat.Txt</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.WordML"><code class="docutils literal notranslate"><span class="pre">FileFormat.WordML</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.WordXml"><code class="docutils literal notranslate"><span class="pre">FileFormat.WordXml</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Wps"><code class="docutils literal notranslate"><span class="pre">FileFormat.Wps</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Wpt"><code class="docutils literal notranslate"><span class="pre">FileFormat.Wpt</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.XPS"><code class="docutils literal notranslate"><span class="pre">FileFormat.XPS</span></code></a></li>
+<li><a class="reference internal" href="#FileFormat.FileFormat.Xml"><code class="docutils literal notranslate"><span class="pre">FileFormat.Xml</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">FileFormat module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/FileFormat.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-FileFormat">
+<span id="fileformat-module"></span><h1>FileFormat module<a class="headerlink" href="#module-FileFormat" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="FileFormat.FileFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FileFormat.</span></span><span class="sig-name descname"><span class="pre">FileFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileFormat.FileFormat" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum class representing different types of file formats.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Auto">
+<span class="sig-name descname"><span class="pre">Auto</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">42</span></em><a class="headerlink" href="#FileFormat.FileFormat.Auto" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Doc">
+<span class="sig-name descname"><span class="pre">Doc</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#FileFormat.FileFormat.Doc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.DocPre97">
+<span class="sig-name descname"><span class="pre">DocPre97</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">35</span></em><a class="headerlink" href="#FileFormat.FileFormat.DocPre97" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docm">
+<span class="sig-name descname"><span class="pre">Docm</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docm" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docm2010">
+<span class="sig-name descname"><span class="pre">Docm2010</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docm2010" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docm2013">
+<span class="sig-name descname"><span class="pre">Docm2013</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docm2013" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docm2016">
+<span class="sig-name descname"><span class="pre">Docm2016</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docm2016" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docm2019">
+<span class="sig-name descname"><span class="pre">Docm2019</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docm2019" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docx">
+<span class="sig-name descname"><span class="pre">Docx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docx" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docx2010">
+<span class="sig-name descname"><span class="pre">Docx2010</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docx2010" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docx2013">
+<span class="sig-name descname"><span class="pre">Docx2013</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docx2013" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docx2016">
+<span class="sig-name descname"><span class="pre">Docx2016</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docx2016" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Docx2019">
+<span class="sig-name descname"><span class="pre">Docx2019</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#FileFormat.FileFormat.Docx2019" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dot">
+<span class="sig-name descname"><span class="pre">Dot</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dot" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotm">
+<span class="sig-name descname"><span class="pre">Dotm</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotm" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotm2010">
+<span class="sig-name descname"><span class="pre">Dotm2010</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotm2010" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotm2013">
+<span class="sig-name descname"><span class="pre">Dotm2013</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotm2013" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotm2016">
+<span class="sig-name descname"><span class="pre">Dotm2016</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotm2016" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotm2019">
+<span class="sig-name descname"><span class="pre">Dotm2019</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotm2019" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotx">
+<span class="sig-name descname"><span class="pre">Dotx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotx" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotx2010">
+<span class="sig-name descname"><span class="pre">Dotx2010</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotx2010" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotx2013">
+<span class="sig-name descname"><span class="pre">Dotx2013</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotx2013" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotx2016">
+<span class="sig-name descname"><span class="pre">Dotx2016</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotx2016" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Dotx2019">
+<span class="sig-name descname"><span class="pre">Dotx2019</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#FileFormat.FileFormat.Dotx2019" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.EPub">
+<span class="sig-name descname"><span class="pre">EPub</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">34</span></em><a class="headerlink" href="#FileFormat.FileFormat.EPub" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Html">
+<span class="sig-name descname"><span class="pre">Html</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#FileFormat.FileFormat.Html" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.OFD">
+<span class="sig-name descname"><span class="pre">OFD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">38</span></em><a class="headerlink" href="#FileFormat.FileFormat.OFD" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.OOXML">
+<span class="sig-name descname"><span class="pre">OOXML</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#FileFormat.FileFormat.OOXML" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Odt">
+<span class="sig-name descname"><span class="pre">Odt</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#FileFormat.FileFormat.Odt" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.OnlineDoc">
+<span class="sig-name descname"><span class="pre">OnlineDoc</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">39</span></em><a class="headerlink" href="#FileFormat.FileFormat.OnlineDoc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Ott">
+<span class="sig-name descname"><span class="pre">Ott</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">26</span></em><a class="headerlink" href="#FileFormat.FileFormat.Ott" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.PCL">
+<span class="sig-name descname"><span class="pre">PCL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">37</span></em><a class="headerlink" href="#FileFormat.FileFormat.PCL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.PDF">
+<span class="sig-name descname"><span class="pre">PDF</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">27</span></em><a class="headerlink" href="#FileFormat.FileFormat.PDF" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.PostScript">
+<span class="sig-name descname"><span class="pre">PostScript</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">36</span></em><a class="headerlink" href="#FileFormat.FileFormat.PostScript" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Rtf">
+<span class="sig-name descname"><span class="pre">Rtf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">29</span></em><a class="headerlink" href="#FileFormat.FileFormat.Rtf" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.SVG">
+<span class="sig-name descname"><span class="pre">SVG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#FileFormat.FileFormat.SVG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Txt">
+<span class="sig-name descname"><span class="pre">Txt</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">28</span></em><a class="headerlink" href="#FileFormat.FileFormat.Txt" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.WordML">
+<span class="sig-name descname"><span class="pre">WordML</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#FileFormat.FileFormat.WordML" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.WordXml">
+<span class="sig-name descname"><span class="pre">WordXml</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#FileFormat.FileFormat.WordXml" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Wps">
+<span class="sig-name descname"><span class="pre">Wps</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">40</span></em><a class="headerlink" href="#FileFormat.FileFormat.Wps" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Wpt">
+<span class="sig-name descname"><span class="pre">Wpt</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">41</span></em><a class="headerlink" href="#FileFormat.FileFormat.Wpt" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.XPS">
+<span class="sig-name descname"><span class="pre">XPS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">33</span></em><a class="headerlink" href="#FileFormat.FileFormat.XPS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FileFormat.FileFormat.Xml">
+<span class="sig-name descname"><span class="pre">Xml</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#FileFormat.FileFormat.Xml" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

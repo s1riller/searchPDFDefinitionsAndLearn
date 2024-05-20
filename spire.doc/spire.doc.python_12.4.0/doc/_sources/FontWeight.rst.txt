@@ -1,0 +1,7 @@
+FontWeight module
+=================
+
+.. automodule:: FontWeight
+   :members:
+   :undoc-members:
+   :show-inheritance:

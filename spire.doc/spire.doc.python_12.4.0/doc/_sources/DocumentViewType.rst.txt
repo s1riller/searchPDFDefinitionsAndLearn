@@ -1,0 +1,7 @@
+DocumentViewType module
+=======================
+
+.. automodule:: DocumentViewType
+   :members:
+   :undoc-members:
+   :show-inheritance:

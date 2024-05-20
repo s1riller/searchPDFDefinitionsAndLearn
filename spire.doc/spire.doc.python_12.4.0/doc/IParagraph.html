@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IParagraph module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">IParagraph module</a><ul>
+<li><a class="reference internal" href="#IParagraph.IParagraph"><code class="docutils literal notranslate"><span class="pre">IParagraph</span></code></a><ul>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendBookmarkEnd"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendBookmarkEnd()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendBookmarkStart"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendBookmarkStart()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendBreak"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendBreak()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendCheckBox"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendCheckBox</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendComment"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendComment()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendDropDownFormField"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendDropDownFormField</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendField"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendField()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendFootnote"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendFootnote()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendHTML"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendHTML()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendHyperlink"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendHyperlink</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendOleObject"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendOleObject</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendSymbol"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendSymbol()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendTOC"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendTOC()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendText"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendText()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendTextBox"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendTextBox()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.AppendTextFormField"><code class="docutils literal notranslate"><span class="pre">IParagraph.AppendTextFormField</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.BreakCharacterFormat"><code class="docutils literal notranslate"><span class="pre">IParagraph.BreakCharacterFormat</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.Format"><code class="docutils literal notranslate"><span class="pre">IParagraph.Format</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.GetStyle"><code class="docutils literal notranslate"><span class="pre">IParagraph.GetStyle()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.IsEndOfDocument"><code class="docutils literal notranslate"><span class="pre">IParagraph.IsEndOfDocument</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.IsEndOfSection"><code class="docutils literal notranslate"><span class="pre">IParagraph.IsEndOfSection</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.IsInCell"><code class="docutils literal notranslate"><span class="pre">IParagraph.IsInCell</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.Items"><code class="docutils literal notranslate"><span class="pre">IParagraph.Items</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.ListFormat"><code class="docutils literal notranslate"><span class="pre">IParagraph.ListFormat</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.RemoveAbsPosition"><code class="docutils literal notranslate"><span class="pre">IParagraph.RemoveAbsPosition()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.Replace"><code class="docutils literal notranslate"><span class="pre">IParagraph.Replace()</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.Text"><code class="docutils literal notranslate"><span class="pre">IParagraph.Text</span></code></a></li>
+<li><a class="reference internal" href="#IParagraph.IParagraph.get_Item"><code class="docutils literal notranslate"><span class="pre">IParagraph.get_Item()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">IParagraph module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/IParagraph.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-IParagraph">
+<span id="iparagraph-module"></span><h1>IParagraph module<a class="headerlink" href="#module-IParagraph" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="IParagraph.IParagraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">IParagraph.</span></span><span class="sig-name descname"><span class="pre">IParagraph</span></span><a class="headerlink" href="#IParagraph.IParagraph" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IBodyRegion</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IStyleHolder</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code></p>
+<p>Represents a paragraph in a document.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendBookmarkEnd">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendBookmarkEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BookmarkEnd</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendBookmarkEnd" title="Link to this definition"></a></dt>
+<dd><p>Appends a bookmark end with the specified name to the paragraph and returns the appended bookmark end.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendBookmarkStart">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendBookmarkStart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BookmarkStart</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendBookmarkStart" title="Link to this definition"></a></dt>
+<dd><p>Appends a bookmark start with the specified name to the paragraph and returns the appended bookmark start.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendBreak">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendBreak</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">breakType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BreakType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Break</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendBreak" title="Link to this definition"></a></dt>
+<dd><p>Appends a break with the specified type to the paragraph and returns the appended break.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendCheckBox">
+<span class="sig-name descname"><span class="pre">AppendCheckBox</span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendCheckBox" title="Link to this definition"></a></dt>
+<dd><p>Appends a checkbox form field to the paragraph and returns the appended checkbox form field.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendComment">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendComment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Comment</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendComment" title="Link to this definition"></a></dt>
+<dd><p>Appends a comment with the specified text to the paragraph and returns the appended comment.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendDropDownFormField">
+<span class="sig-name descname"><span class="pre">AppendDropDownFormField</span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendDropDownFormField" title="Link to this definition"></a></dt>
+<dd><p>Appends a dropdown form field to the paragraph and returns the appended dropdown form field.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendField">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fieldName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FieldType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Field</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendField" title="Link to this definition"></a></dt>
+<dd><p>Appends a field with the specified name and type to the paragraph and returns the appended field.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendFootnote">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendFootnote</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FootnoteType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Footnote</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendFootnote" title="Link to this definition"></a></dt>
+<dd><p>Appends a footnote with the specified type to the paragraph and returns the appended footnote.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendHTML">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendHTML</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#IParagraph.IParagraph.AppendHTML" title="Link to this definition"></a></dt>
+<dd><p>Appends the specified HTML content to the paragraph.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendHyperlink">
+<span class="sig-name descname"><span class="pre">AppendHyperlink</span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendHyperlink" title="Link to this definition"></a></dt>
+<dd><p>Appends a hyperlink with the specified link, display text, and type to the paragraph and returns the appended hyperlink field.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendOleObject">
+<span class="sig-name descname"><span class="pre">AppendOleObject</span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendOleObject" title="Link to this definition"></a></dt>
+<dd><p>Appends an OLE object with the specified stream, picture, and type to the paragraph and returns the appended OLE object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendSymbol">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendSymbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">characterCode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Symbol</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendSymbol" title="Link to this definition"></a></dt>
+<dd><p>Appends a symbol with the specified character code to the paragraph and returns the appended symbol.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendTOC">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendTOC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lowerHeadingLevel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upperHeadingLevel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TableOfContent</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendTOC" title="Link to this definition"></a></dt>
+<dd><p>Appends a table of contents with the specified lower and upper heading levels to the paragraph and returns the appended table of contents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendText">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TextRange</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendText" title="Link to this definition"></a></dt>
+<dd><p>Appends the specified text to the paragraph and returns the appended text range.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendTextBox">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AppendTextBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TextBox</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendTextBox" title="Link to this definition"></a></dt>
+<dd><p>Appends a text box with the specified width and height to the paragraph and returns the appended text box.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.AppendTextFormField">
+<span class="sig-name descname"><span class="pre">AppendTextFormField</span></span><a class="headerlink" href="#IParagraph.IParagraph.AppendTextFormField" title="Link to this definition"></a></dt>
+<dd><p>Appends a text form field with the specified default text to the paragraph and returns the appended text form field.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.BreakCharacterFormat">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BreakCharacterFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CharacterFormat</span></em><a class="headerlink" href="#IParagraph.IParagraph.BreakCharacterFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the character formatting settings for the break character in the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.Format">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphFormat</span></em><a class="headerlink" href="#IParagraph.IParagraph.Format" title="Link to this definition"></a></dt>
+<dd><p>Gets the formatting settings for the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.GetStyle">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GetStyle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ParagraphStyle</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.GetStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets the style applied to the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.IsEndOfDocument">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsEndOfDocument</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#IParagraph.IParagraph.IsEndOfDocument" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether the paragraph is at the end of the document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.IsEndOfSection">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsEndOfSection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#IParagraph.IParagraph.IsEndOfSection" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether the paragraph is at the end of a section.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.IsInCell">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsInCell</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#IParagraph.IParagraph.IsInCell" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether the paragraph is inside a table cell.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.Items">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Items</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphItemCollection</span></em><a class="headerlink" href="#IParagraph.IParagraph.Items" title="Link to this definition"></a></dt>
+<dd><p>Gets the collection of paragraph items in the paragraph.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.ListFormat">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ListFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ListFormat</span></em><a class="headerlink" href="#IParagraph.IParagraph.ListFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the list formatting settings for the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.RemoveAbsPosition">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RemoveAbsPosition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#IParagraph.IParagraph.RemoveAbsPosition" title="Link to this definition"></a></dt>
+<dd><p>Removes the absolute position of the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.Replace">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">given</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textSelection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TextSelection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caseSensitive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wholeWord</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.Replace" title="Link to this definition"></a></dt>
+<dd><p>Replaces the specified text in the paragraph with the specified replacement text and returns the number of replacements made.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.Text">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#IParagraph.IParagraph.Text" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the text content of the paragraph.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="IParagraph.IParagraph.get_Item">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_Item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ParagraphBase</span></span></span><a class="headerlink" href="#IParagraph.IParagraph.get_Item" title="Link to this definition"></a></dt>
+<dd><p>Gets the paragraph item at the specified index.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

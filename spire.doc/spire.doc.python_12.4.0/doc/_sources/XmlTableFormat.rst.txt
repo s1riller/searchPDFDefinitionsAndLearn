@@ -1,0 +1,7 @@
+XmlTableFormat module
+=====================
+
+.. automodule:: XmlTableFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

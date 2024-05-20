@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XDLSReader module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">XDLSReader module</a><ul>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader"><code class="docutils literal notranslate"><span class="pre">XDLSReader</span></code></a><ul>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.AttributeReader"><code class="docutils literal notranslate"><span class="pre">XDLSReader.AttributeReader</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.Deserialize"><code class="docutils literal notranslate"><span class="pre">XDLSReader.Deserialize()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.GetAttributeValue"><code class="docutils literal notranslate"><span class="pre">XDLSReader.GetAttributeValue()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.HasAttribute"><code class="docutils literal notranslate"><span class="pre">XDLSReader.HasAttribute()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadBoolean"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadBoolean()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadByte"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadByte()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadChildElement"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadChildElement</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadChildStringContent"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadChildStringContent()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadColor"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadColor()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadDateTime"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadDateTime()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadDouble"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadDouble()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadFloat"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadFloat()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadInt"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadInt()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadShort"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadShort()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.ReadString"><code class="docutils literal notranslate"><span class="pre">XDLSReader.ReadString()</span></code></a></li>
+<li><a class="reference internal" href="#XDLSReader.XDLSReader.TagName"><code class="docutils literal notranslate"><span class="pre">XDLSReader.TagName</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">XDLSReader module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/XDLSReader.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-XDLSReader">
+<span id="xdlsreader-module"></span><h1>XDLSReader module<a class="headerlink" href="#module-XDLSReader" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">XDLSReader.</span></span><span class="sig-name descname"><span class="pre">XDLSReader</span></span><a class="headerlink" href="#XDLSReader.XDLSReader" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IXDLSAttributeReader</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IXDLSContentReader</span></code></p>
+<p>This class represents an XDLS reader.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.AttributeReader">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AttributeReader</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">IXDLSAttributeReader</span></em><a class="headerlink" href="#XDLSReader.XDLSReader.AttributeReader" title="Link to this definition"></a></dt>
+<dd><p>Get the attribute reader of the XDLS reader.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.Deserialize">
+<span class="sig-name descname"><span class="pre">Deserialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IDocumentSerializable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#XDLSReader.XDLSReader.Deserialize" title="Link to this definition"></a></dt>
+<dd><p>Deserialize the XDLS reader with the given value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.GetAttributeValue">
+<span class="sig-name descname"><span class="pre">GetAttributeValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.GetAttributeValue" title="Link to this definition"></a></dt>
+<dd><p>Get the attribute value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.HasAttribute">
+<span class="sig-name descname"><span class="pre">HasAttribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.HasAttribute" title="Link to this definition"></a></dt>
+<dd><p>Check if the XDLS reader has the attribute with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadBoolean">
+<span class="sig-name descname"><span class="pre">ReadBoolean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadBoolean" title="Link to this definition"></a></dt>
+<dd><p>Read the boolean value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadByte">
+<span class="sig-name descname"><span class="pre">ReadByte</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadByte" title="Link to this definition"></a></dt>
+<dd><p>Read the byte value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadChildElement">
+<span class="sig-name descname"><span class="pre">ReadChildElement</span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadChildElement" title="Link to this definition"></a></dt>
+<dd><p>Read the child element from the XDLS reader with the given value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadChildStringContent">
+<span class="sig-name descname"><span class="pre">ReadChildStringContent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadChildStringContent" title="Link to this definition"></a></dt>
+<dd><p>Read the child string content from the XDLS reader.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadColor">
+<span class="sig-name descname"><span class="pre">ReadColor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Color</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadColor" title="Link to this definition"></a></dt>
+<dd><p>Read the color value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadDateTime">
+<span class="sig-name descname"><span class="pre">ReadDateTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DateTime</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadDateTime" title="Link to this definition"></a></dt>
+<dd><p>Read the DateTime value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadDouble">
+<span class="sig-name descname"><span class="pre">ReadDouble</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadDouble" title="Link to this definition"></a></dt>
+<dd><p>Read the double value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadFloat">
+<span class="sig-name descname"><span class="pre">ReadFloat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadFloat" title="Link to this definition"></a></dt>
+<dd><p>Read the float value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadInt">
+<span class="sig-name descname"><span class="pre">ReadInt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadInt" title="Link to this definition"></a></dt>
+<dd><p>Read the integer value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadShort">
+<span class="sig-name descname"><span class="pre">ReadShort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Int16</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadShort" title="Link to this definition"></a></dt>
+<dd><p>Read the short value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.ReadString">
+<span class="sig-name descname"><span class="pre">ReadString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#XDLSReader.XDLSReader.ReadString" title="Link to this definition"></a></dt>
+<dd><p>Read the string value from the XDLS reader with the given name.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="XDLSReader.XDLSReader.TagName">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TagName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#XDLSReader.XDLSReader.TagName" title="Link to this definition"></a></dt>
+<dd><p>Get the tag name of the XDLS reader.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

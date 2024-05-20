@@ -1,0 +1,7 @@
+WidthType module
+================
+
+.. automodule:: WidthType
+   :members:
+   :undoc-members:
+   :show-inheritance:

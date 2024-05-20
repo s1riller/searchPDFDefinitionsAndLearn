@@ -1,0 +1,7 @@
+TableRow module
+===============
+
+.. automodule:: TableRow
+   :members:
+   :undoc-members:
+   :show-inheritance:

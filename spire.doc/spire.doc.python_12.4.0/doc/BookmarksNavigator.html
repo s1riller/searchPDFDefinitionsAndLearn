@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookmarksNavigator module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">BookmarksNavigator module</a><ul>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator</span></code></a><ul>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.CurrentBookmark"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.CurrentBookmark</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.DeleteBookmarkContent"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.DeleteBookmarkContent()</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.Document"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.Document</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.GetBookmarkContent"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.GetBookmarkContent()</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.InsertParagraph"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.InsertParagraph()</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.InsertParagraphItem"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.InsertParagraphItem()</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.InsertTable"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.InsertTable()</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.InsertText"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.InsertText</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.InsertTextBodyPart"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.InsertTextBodyPart()</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.MoveToBookmark"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.MoveToBookmark</span></code></a></li>
+<li><a class="reference internal" href="#BookmarksNavigator.BookmarksNavigator.ReplaceBookmarkContent"><code class="docutils literal notranslate"><span class="pre">BookmarksNavigator.ReplaceBookmarkContent</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">BookmarksNavigator module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/BookmarksNavigator.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-BookmarksNavigator">
+<span id="bookmarksnavigator-module"></span><h1>BookmarksNavigator module<a class="headerlink" href="#module-BookmarksNavigator" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">BookmarksNavigator.</span></span><span class="sig-name descname"><span class="pre">BookmarksNavigator</span></span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SpireObject</span></code></p>
+<p>Represents a bookmarks navigator.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.CurrentBookmark">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CurrentBookmark</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Bookmark</span></em><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.CurrentBookmark" title="Link to this definition"></a></dt>
+<dd><p>Gets the current bookmark in the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The current bookmark in the bookmarks navigator.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="Bookmark.html#Bookmark.Bookmark" title="Bookmark.Bookmark">Bookmark</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.DeleteBookmarkContent">
+<span class="sig-name descname"><span class="pre">DeleteBookmarkContent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">saveFormatting</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.DeleteBookmarkContent" title="Link to this definition"></a></dt>
+<dd><p>Deletes the content of the current bookmark in the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>saveFormatting</strong> (<em>bool</em>) – True to save the formatting of the deleted content, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.Document">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Document</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">IDocument</span></em><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.Document" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the document associated with the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The document associated with the bookmarks navigator.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="IDocument.html#IDocument.IDocument" title="IDocument.IDocument">IDocument</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.GetBookmarkContent">
+<span class="sig-name descname"><span class="pre">GetBookmarkContent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TextBodyPart</span></span></span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.GetBookmarkContent" title="Link to this definition"></a></dt>
+<dd><p>Gets the content of the current bookmark in the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The content of the current bookmark.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="TextBodyPart.html#TextBodyPart.TextBodyPart" title="TextBodyPart.TextBodyPart">TextBodyPart</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.InsertParagraph">
+<span class="sig-name descname"><span class="pre">InsertParagraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paragraph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">IParagraph</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.InsertParagraph" title="Link to this definition"></a></dt>
+<dd><p>Inserts the specified paragraph at the current position of the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paragraph</strong> (<a class="reference internal" href="IParagraph.html#IParagraph.IParagraph" title="IParagraph.IParagraph"><em>IParagraph</em></a>) – The paragraph to insert.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.InsertParagraphItem">
+<span class="sig-name descname"><span class="pre">InsertParagraphItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">itemType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ParagraphItemType</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IParagraphBase</span></span></span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.InsertParagraphItem" title="Link to this definition"></a></dt>
+<dd><p>Inserts a paragraph item of the specified type at the current position of the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>itemType</strong> (<a class="reference internal" href="ParagraphItemType.html#ParagraphItemType.ParagraphItemType" title="ParagraphItemType.ParagraphItemType"><em>ParagraphItemType</em></a>) – The type of the paragraph item to insert.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The inserted paragraph item.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="IParagraphBase.html#IParagraphBase.IParagraphBase" title="IParagraphBase.IParagraphBase">IParagraphBase</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.InsertTable">
+<span class="sig-name descname"><span class="pre">InsertTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ITable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.InsertTable" title="Link to this definition"></a></dt>
+<dd><p>Inserts the specified table at the current position of the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>table</strong> (<a class="reference internal" href="ITable.html#ITable.ITable" title="ITable.ITable"><em>ITable</em></a>) – The table to insert.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.InsertText">
+<span class="sig-name descname"><span class="pre">InsertText</span></span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.InsertText" title="Link to this definition"></a></dt>
+<dd><p>Inserts the specified text at the current position of the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – The text to insert.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The inserted text range.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="ITextRange.html#ITextRange.ITextRange" title="ITextRange.ITextRange">ITextRange</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.InsertTextBodyPart">
+<span class="sig-name descname"><span class="pre">InsertTextBodyPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bodyPart</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TextBodyPart</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.InsertTextBodyPart" title="Link to this definition"></a></dt>
+<dd><p>Inserts the specified text body part at the current position of the bookmarks navigator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bodyPart</strong> (<a class="reference internal" href="TextBodyPart.html#TextBodyPart.TextBodyPart" title="TextBodyPart.TextBodyPart"><em>TextBodyPart</em></a>) – The text body part to insert.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.MoveToBookmark">
+<span class="sig-name descname"><span class="pre">MoveToBookmark</span></span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.MoveToBookmark" title="Link to this definition"></a></dt>
+<dd><p>Moves the bookmarks navigator to the specified bookmark.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bookmarkName</strong> (<em>str</em>) – The name of the bookmark to move to.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BookmarksNavigator.BookmarksNavigator.ReplaceBookmarkContent">
+<span class="sig-name descname"><span class="pre">ReplaceBookmarkContent</span></span><a class="headerlink" href="#BookmarksNavigator.BookmarksNavigator.ReplaceBookmarkContent" title="Link to this definition"></a></dt>
+<dd><p>Replaces the content of the current bookmark with the specified text body part.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bodyPart</strong> (<a class="reference internal" href="TextBodyPart.html#TextBodyPart.TextBodyPart" title="TextBodyPart.TextBodyPart"><em>TextBodyPart</em></a>) – The text body part to replace with.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

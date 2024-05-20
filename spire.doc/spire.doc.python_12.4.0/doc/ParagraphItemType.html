@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParagraphItemType module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ParagraphItemType module</a><ul>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType</span></code></a><ul>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.BookmarkEnd"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.BookmarkEnd</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.BookmarkStart"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.BookmarkStart</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.Break"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.Break</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.CheckBox"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.CheckBox</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.Comment"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.Comment</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.CommentMark"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.CommentMark</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.ControlField"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.ControlField</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.DropDownFormField"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.DropDownFormField</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.EmbedField"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.EmbedField</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.Field"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.Field</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.FieldMark"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.FieldMark</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.Footnote"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.Footnote</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.FormField"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.FormField</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.MergeField"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.MergeField</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.OleObject"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.OleObject</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.PermissionEnd"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.PermissionEnd</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.PermissionStart"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.PermissionStart</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.Picture"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.Picture</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.SeqField"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.SeqField</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.ShapeGroup"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.ShapeGroup</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.ShapeObject"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.ShapeObject</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.Symbol"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.Symbol</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.TOC"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.TOC</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.TextBox"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.TextBox</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.TextFormField"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.TextFormField</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphItemType.ParagraphItemType.TextRange"><code class="docutils literal notranslate"><span class="pre">ParagraphItemType.TextRange</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ParagraphItemType module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ParagraphItemType.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ParagraphItemType">
+<span id="paragraphitemtype-module"></span><h1>ParagraphItemType module<a class="headerlink" href="#module-ParagraphItemType" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ParagraphItemType.</span></span><span class="sig-name descname"><span class="pre">ParagraphItemType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ParagraphItemType.ParagraphItemType" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Specifies the type of the ParagraphBase.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.BookmarkEnd">
+<span class="sig-name descname"><span class="pre">BookmarkEnd</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.BookmarkEnd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.BookmarkStart">
+<span class="sig-name descname"><span class="pre">BookmarkStart</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.BookmarkStart" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.Break">
+<span class="sig-name descname"><span class="pre">Break</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.Break" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.CheckBox">
+<span class="sig-name descname"><span class="pre">CheckBox</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.CheckBox" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.Comment">
+<span class="sig-name descname"><span class="pre">Comment</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.Comment" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.CommentMark">
+<span class="sig-name descname"><span class="pre">CommentMark</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.CommentMark" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.ControlField">
+<span class="sig-name descname"><span class="pre">ControlField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.ControlField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.DropDownFormField">
+<span class="sig-name descname"><span class="pre">DropDownFormField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.DropDownFormField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.EmbedField">
+<span class="sig-name descname"><span class="pre">EmbedField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.EmbedField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.Field">
+<span class="sig-name descname"><span class="pre">Field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.Field" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.FieldMark">
+<span class="sig-name descname"><span class="pre">FieldMark</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.FieldMark" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.Footnote">
+<span class="sig-name descname"><span class="pre">Footnote</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.Footnote" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.FormField">
+<span class="sig-name descname"><span class="pre">FormField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.FormField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.MergeField">
+<span class="sig-name descname"><span class="pre">MergeField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.MergeField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.OleObject">
+<span class="sig-name descname"><span class="pre">OleObject</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.OleObject" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.PermissionEnd">
+<span class="sig-name descname"><span class="pre">PermissionEnd</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.PermissionEnd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.PermissionStart">
+<span class="sig-name descname"><span class="pre">PermissionStart</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.PermissionStart" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.Picture">
+<span class="sig-name descname"><span class="pre">Picture</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.Picture" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.SeqField">
+<span class="sig-name descname"><span class="pre">SeqField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.SeqField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.ShapeGroup">
+<span class="sig-name descname"><span class="pre">ShapeGroup</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.ShapeGroup" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.ShapeObject">
+<span class="sig-name descname"><span class="pre">ShapeObject</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.ShapeObject" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.Symbol">
+<span class="sig-name descname"><span class="pre">Symbol</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.Symbol" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.TOC">
+<span class="sig-name descname"><span class="pre">TOC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.TOC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.TextBox">
+<span class="sig-name descname"><span class="pre">TextBox</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.TextBox" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.TextFormField">
+<span class="sig-name descname"><span class="pre">TextFormField</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.TextFormField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ParagraphItemType.ParagraphItemType.TextRange">
+<span class="sig-name descname"><span class="pre">TextRange</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ParagraphItemType.ParagraphItemType.TextRange" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

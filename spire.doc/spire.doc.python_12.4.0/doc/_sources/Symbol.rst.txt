@@ -1,0 +1,7 @@
+Symbol module
+=============
+
+.. automodule:: Symbol
+   :members:
+   :undoc-members:
+   :show-inheritance:

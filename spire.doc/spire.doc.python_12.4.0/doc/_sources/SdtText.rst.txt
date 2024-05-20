@@ -1,0 +1,7 @@
+SdtText module
+==============
+
+.. automodule:: SdtText
+   :members:
+   :undoc-members:
+   :show-inheritance:

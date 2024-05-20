@@ -1,0 +1,7 @@
+CellCollection module
+=====================
+
+.. automodule:: CellCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

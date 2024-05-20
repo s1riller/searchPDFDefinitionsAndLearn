@@ -1,0 +1,7 @@
+EditingGroup module
+===================
+
+.. automodule:: EditingGroup
+   :members:
+   :undoc-members:
+   :show-inheritance:

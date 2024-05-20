@@ -1,0 +1,7 @@
+ITextRange module
+=================
+
+.. automodule:: ITextRange
+   :members:
+   :undoc-members:
+   :show-inheritance:

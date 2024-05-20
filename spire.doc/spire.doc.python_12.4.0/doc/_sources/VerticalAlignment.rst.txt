@@ -1,0 +1,7 @@
+VerticalAlignment module
+========================
+
+.. automodule:: VerticalAlignment
+   :members:
+   :undoc-members:
+   :show-inheritance:

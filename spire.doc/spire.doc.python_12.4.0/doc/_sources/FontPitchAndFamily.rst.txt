@@ -1,0 +1,7 @@
+FontPitchAndFamily module
+=========================
+
+.. automodule:: FontPitchAndFamily
+   :members:
+   :undoc-members:
+   :show-inheritance:

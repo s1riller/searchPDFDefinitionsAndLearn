@@ -1,0 +1,7 @@
+TabCollection module
+====================
+
+.. automodule:: TabCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

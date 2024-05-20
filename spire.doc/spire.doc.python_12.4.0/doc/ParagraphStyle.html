@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParagraphStyle module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ParagraphStyle module</a><ul>
+<li><a class="reference internal" href="#ParagraphStyle.ParagraphStyle"><code class="docutils literal notranslate"><span class="pre">ParagraphStyle</span></code></a><ul>
+<li><a class="reference internal" href="#ParagraphStyle.ParagraphStyle.ApplyBaseStyle"><code class="docutils literal notranslate"><span class="pre">ParagraphStyle.ApplyBaseStyle()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphStyle.ParagraphStyle.BaseStyle"><code class="docutils literal notranslate"><span class="pre">ParagraphStyle.BaseStyle</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphStyle.ParagraphStyle.Clone"><code class="docutils literal notranslate"><span class="pre">ParagraphStyle.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphStyle.ParagraphStyle.ListFormat"><code class="docutils literal notranslate"><span class="pre">ParagraphStyle.ListFormat</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphStyle.ParagraphStyle.ParagraphFormat"><code class="docutils literal notranslate"><span class="pre">ParagraphStyle.ParagraphFormat</span></code></a></li>
+<li><a class="reference internal" href="#ParagraphStyle.ParagraphStyle.StyleType"><code class="docutils literal notranslate"><span class="pre">ParagraphStyle.StyleType</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ParagraphStyle module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ParagraphStyle.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ParagraphStyle">
+<span id="paragraphstyle-module"></span><h1>ParagraphStyle module<a class="headerlink" href="#module-ParagraphStyle" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ParagraphStyle.ParagraphStyle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ParagraphStyle.</span></span><span class="sig-name descname"><span class="pre">ParagraphStyle</span></span><a class="headerlink" href="#ParagraphStyle.ParagraphStyle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Style</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IParagraphStyle</span></code></p>
+<p>Represents a paragraph style.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphStyle.ParagraphStyle.ApplyBaseStyle">
+<span class="sig-name descname"><span class="pre">ApplyBaseStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">styleName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ParagraphStyle.ParagraphStyle.ApplyBaseStyle" title="Link to this definition"></a></dt>
+<dd><p>Applies a base style to the paragraph style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>styleName</strong> (<em>str</em>) – The name of the base style to apply.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphStyle.ParagraphStyle.BaseStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BaseStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#ParagraphStyle.ParagraphStyle" title="ParagraphStyle.ParagraphStyle"><span class="pre">ParagraphStyle</span></a></em><a class="headerlink" href="#ParagraphStyle.ParagraphStyle.BaseStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets the base style of the paragraph style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The base style of the paragraph style.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#ParagraphStyle.ParagraphStyle" title="ParagraphStyle.ParagraphStyle">ParagraphStyle</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ParagraphStyle.ParagraphStyle.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IStyle</span></span></span><a class="headerlink" href="#ParagraphStyle.ParagraphStyle.Clone" title="Link to this definition"></a></dt>
+<dd><p>Creates a clone of the paragraph style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A clone of the paragraph style.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="IStyle.html#IStyle.IStyle" title="IStyle.IStyle">IStyle</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphStyle.ParagraphStyle.ListFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ListFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ListFormat</span></em><a class="headerlink" href="#ParagraphStyle.ParagraphStyle.ListFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the list format of the paragraph style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The list format of the paragraph style.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="ListFormat.html#ListFormat.ListFormat" title="ListFormat.ListFormat">ListFormat</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphStyle.ParagraphStyle.ParagraphFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParagraphFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphFormat</span></em><a class="headerlink" href="#ParagraphStyle.ParagraphStyle.ParagraphFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the paragraph format of the paragraph style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The paragraph format of the paragraph style.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="ParagraphFormat.html#ParagraphFormat.ParagraphFormat" title="ParagraphFormat.ParagraphFormat">ParagraphFormat</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ParagraphStyle.ParagraphStyle.StyleType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StyleType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">StyleType</span></em><a class="headerlink" href="#ParagraphStyle.ParagraphStyle.StyleType" title="Link to this definition"></a></dt>
+<dd><p>Gets the style type of the paragraph style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The style type of the paragraph style.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="StyleType.html#StyleType.StyleType" title="StyleType.StyleType">StyleType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

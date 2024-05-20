@@ -1,0 +1,7 @@
+SdtDate module
+==============
+
+.. automodule:: SdtDate
+   :members:
+   :undoc-members:
+   :show-inheritance:

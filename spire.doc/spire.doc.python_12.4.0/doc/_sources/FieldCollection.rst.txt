@@ -1,0 +1,7 @@
+FieldCollection module
+======================
+
+.. automodule:: FieldCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

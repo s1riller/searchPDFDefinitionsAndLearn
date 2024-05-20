@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Style module</a><ul>
+<li><a class="reference internal" href="#Style.Style"><code class="docutils literal notranslate"><span class="pre">Style</span></code></a><ul>
+<li><a class="reference internal" href="#Style.Style.ApplyBaseStyle"><code class="docutils literal notranslate"><span class="pre">Style.ApplyBaseStyle</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.CharacterFormat"><code class="docutils literal notranslate"><span class="pre">Style.CharacterFormat</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.Clone"><code class="docutils literal notranslate"><span class="pre">Style.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.CreateBuiltinStyle"><code class="docutils literal notranslate"><span class="pre">Style.CreateBuiltinStyle</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.GetStyleType"><code class="docutils literal notranslate"><span class="pre">Style.GetStyleType</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.IsCustomStyle"><code class="docutils literal notranslate"><span class="pre">Style.IsCustomStyle</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.IsHeading"><code class="docutils literal notranslate"><span class="pre">Style.IsHeading</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.Name"><code class="docutils literal notranslate"><span class="pre">Style.Name</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.NameToBuiltIn"><code class="docutils literal notranslate"><span class="pre">Style.NameToBuiltIn()</span></code></a></li>
+<li><a class="reference internal" href="#Style.Style.StyleId"><code class="docutils literal notranslate"><span class="pre">Style.StyleId</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Style module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Style.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Style">
+<span id="style-module"></span><h1>Style module<a class="headerlink" href="#module-Style" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Style.Style">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Style.</span></span><span class="sig-name descname"><span class="pre">Style</span></span><a class="headerlink" href="#Style.Style" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentSerializable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IStyle</span></code></p>
+<p>Represents a style in a document.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Style.Style.ApplyBaseStyle">
+<span class="sig-name descname"><span class="pre">ApplyBaseStyle</span></span><a class="headerlink" href="#Style.Style.ApplyBaseStyle" title="Link to this definition"></a></dt>
+<dd><p>Applies a base style to this style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Style.Style.CharacterFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CharacterFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CharacterFormat</span></em><a class="headerlink" href="#Style.Style.CharacterFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the character format of the style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Style.Style.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IStyle</span></span></span><a class="headerlink" href="#Style.Style.Clone" title="Link to this definition"></a></dt>
+<dd><p>Creates a deep copy of this style.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Style.Style.CreateBuiltinStyle">
+<span class="sig-name descname"><span class="pre">CreateBuiltinStyle</span></span><a class="headerlink" href="#Style.Style.CreateBuiltinStyle" title="Link to this definition"></a></dt>
+<dd><p>A function that is part of a class.</p>
+<p>This wrapper provides a mechanism that allows the function to be constructed with
+a reference to the class that it owns. The construction is deferred until
+<cite>__set_name__</cite> is called.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>class_name</strong> (<em>str</em>) – Name of the class that owns the function.</p></li>
+<li><p><strong>construct_function</strong> (<em>function</em>) – Constructor for the function: takes in a
+reference to the class  that owns the function and gives back the function.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Style.Style.GetStyleType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GetStyleType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">StyleType</span></em><a class="headerlink" href="#Style.Style.GetStyleType" title="Link to this definition"></a></dt>
+<dd><p>Gets the style type.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Style.Style.IsCustomStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsCustomStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Style.Style.IsCustomStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether this instance is a custom style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Style.Style.IsHeading">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsHeading</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Style.Style.IsHeading" title="Link to this definition"></a></dt>
+<dd><p>Gets a value indicating whether this style is a heading style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Style.Style.Name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Style.Style.Name" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the name of the style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Style.Style.NameToBuiltIn">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NameToBuiltIn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">styleName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BuiltinStyle</span></span></span><a class="headerlink" href="#Style.Style.NameToBuiltIn" title="Link to this definition"></a></dt>
+<dd><p>Converts a style name to a built-in style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Style.Style.StyleId">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StyleId</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Style.Style.StyleId" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the style id.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

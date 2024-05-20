@@ -1,0 +1,7 @@
+FollowCharacterType module
+==========================
+
+.. automodule:: FollowCharacterType
+   :members:
+   :undoc-members:
+   :show-inheritance:

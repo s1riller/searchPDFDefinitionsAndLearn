@@ -1,0 +1,7 @@
+PictureColor module
+===================
+
+.. automodule:: PictureColor
+   :members:
+   :undoc-members:
+   :show-inheritance:

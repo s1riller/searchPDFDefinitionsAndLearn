@@ -1,0 +1,7 @@
+TextDirection module
+====================
+
+.. automodule:: TextDirection
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+ShapeItemCollection module
+==========================
+
+.. automodule:: ShapeItemCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

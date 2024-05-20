@@ -1,0 +1,7 @@
+TablePositioning module
+=======================
+
+.. automodule:: TablePositioning
+   :members:
+   :undoc-members:
+   :show-inheritance:

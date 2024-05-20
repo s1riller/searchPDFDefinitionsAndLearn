@@ -1,0 +1,7 @@
+ShapeObject module
+==================
+
+.. automodule:: ShapeObject
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+PrivateFontPath module
+======================
+
+.. automodule:: PrivateFontPath
+   :members:
+   :undoc-members:
+   :show-inheritance:

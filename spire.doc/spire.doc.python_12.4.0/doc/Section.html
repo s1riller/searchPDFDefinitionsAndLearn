@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Section module</a><ul>
+<li><a class="reference internal" href="#Section.Section"><code class="docutils literal notranslate"><span class="pre">Section</span></code></a><ul>
+<li><a class="reference internal" href="#Section.Section.AddColumn"><code class="docutils literal notranslate"><span class="pre">Section.AddColumn()</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.AddParagraph"><code class="docutils literal notranslate"><span class="pre">Section.AddParagraph()</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.AddTable"><code class="docutils literal notranslate"><span class="pre">Section.AddTable</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.Body"><code class="docutils literal notranslate"><span class="pre">Section.Body</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.BreakCode"><code class="docutils literal notranslate"><span class="pre">Section.BreakCode</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.ChildObjects"><code class="docutils literal notranslate"><span class="pre">Section.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.Clone"><code class="docutils literal notranslate"><span class="pre">Section.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.CloneSectionPropertiesTo"><code class="docutils literal notranslate"><span class="pre">Section.CloneSectionPropertiesTo()</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.Columns"><code class="docutils literal notranslate"><span class="pre">Section.Columns</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">Section.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.EndnoteOptions"><code class="docutils literal notranslate"><span class="pre">Section.EndnoteOptions</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.FootnoteOptions"><code class="docutils literal notranslate"><span class="pre">Section.FootnoteOptions</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.HeadersFooters"><code class="docutils literal notranslate"><span class="pre">Section.HeadersFooters</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.MakeColumnsSameWidth"><code class="docutils literal notranslate"><span class="pre">Section.MakeColumnsSameWidth()</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.PageSetup"><code class="docutils literal notranslate"><span class="pre">Section.PageSetup</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.Paragraphs"><code class="docutils literal notranslate"><span class="pre">Section.Paragraphs</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.ProtectForm"><code class="docutils literal notranslate"><span class="pre">Section.ProtectForm</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.Tables"><code class="docutils literal notranslate"><span class="pre">Section.Tables</span></code></a></li>
+<li><a class="reference internal" href="#Section.Section.TextDirection"><code class="docutils literal notranslate"><span class="pre">Section.TextDirection</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Section module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Section.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Section">
+<span id="section-module"></span><h1>Section module<a class="headerlink" href="#module-Section" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Section.Section">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Section.</span></span><span class="sig-name descname"><span class="pre">Section</span></span><a class="headerlink" href="#Section.Section" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentContainer</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ISection</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code></p>
+<p>Represents a section in a document.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Section.Section.AddColumn">
+<span class="sig-name descname"><span class="pre">AddColumn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Column</span></span></span><a class="headerlink" href="#Section.Section.AddColumn" title="Link to this definition"></a></dt>
+<dd><p>Adds new column to the section.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Section.Section.AddParagraph">
+<span class="sig-name descname"><span class="pre">AddParagraph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Paragraph</span></span></span><a class="headerlink" href="#Section.Section.AddParagraph" title="Link to this definition"></a></dt>
+<dd><p>Adds a new paragraph to the section.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Section.Section.AddTable">
+<span class="sig-name descname"><span class="pre">AddTable</span></span><a class="headerlink" href="#Section.Section.AddTable" title="Link to this definition"></a></dt>
+<dd><p>Adds a new table to the section.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.Body">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Body</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Body</span></em><a class="headerlink" href="#Section.Section.Body" title="Link to this definition"></a></dt>
+<dd><p>Gets the section body.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.BreakCode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BreakCode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">SectionBreakType</span></em><a class="headerlink" href="#Section.Section.BreakCode" title="Link to this definition"></a></dt>
+<dd><p>Returns or sets break code.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#Section.Section.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Section.Section.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Section.Section" title="Section.Section"><span class="pre">Section</span></a></span></span><a class="headerlink" href="#Section.Section.Clone" title="Link to this definition"></a></dt>
+<dd><p>Clones the section.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Section.Section.CloneSectionPropertiesTo">
+<span class="sig-name descname"><span class="pre">CloneSectionPropertiesTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">destSection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Section.Section" title="Section.Section"><span class="pre">Section</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Section.Section.CloneSectionPropertiesTo" title="Link to this definition"></a></dt>
+<dd><p>Clones the properties of the current section to the destination section.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.Columns">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Columns</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ColumnCollection</span></em><a class="headerlink" href="#Section.Section.Columns" title="Link to this definition"></a></dt>
+<dd><p>Get collection of columns which logically divide page on many printing/publishing areas.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#Section.Section.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.EndnoteOptions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EndnoteOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FootEndnoteOptions</span></em><a class="headerlink" href="#Section.Section.EndnoteOptions" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets options that control numbering and positioning of endnotes in current section.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.FootnoteOptions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FootnoteOptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FootEndnoteOptions</span></em><a class="headerlink" href="#Section.Section.FootnoteOptions" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets options that control numbering and positioning of footnote in current section.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.HeadersFooters">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HeadersFooters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HeadersFooters</span></em><a class="headerlink" href="#Section.Section.HeadersFooters" title="Link to this definition"></a></dt>
+<dd><p>Gets headers/footers of current section.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Section.Section.MakeColumnsSameWidth">
+<span class="sig-name descname"><span class="pre">MakeColumnsSameWidth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Section.Section.MakeColumnsSameWidth" title="Link to this definition"></a></dt>
+<dd><p>Makes all columns in current section to be of equal width.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.PageSetup">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageSetup</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PageSetup</span></em><a class="headerlink" href="#Section.Section.PageSetup" title="Link to this definition"></a></dt>
+<dd><p>Gets page Setup of current section.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.Paragraphs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Paragraphs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ParagraphCollection</span></em><a class="headerlink" href="#Section.Section.Paragraphs" title="Link to this definition"></a></dt>
+<dd><p>Gets the paragraphs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.ProtectForm">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ProtectForm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Section.Section.ProtectForm" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether [protect form].</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.Tables">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Tables</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableCollection</span></em><a class="headerlink" href="#Section.Section.Tables" title="Link to this definition"></a></dt>
+<dd><p>Gets the tables.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Section.Section.TextDirection">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextDirection</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TextDirection</span></em><a class="headerlink" href="#Section.Section.TextDirection" title="Link to this definition"></a></dt>
+<dd><p>Gets or Sets the text direction.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

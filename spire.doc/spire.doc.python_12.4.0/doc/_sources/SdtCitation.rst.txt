@@ -1,0 +1,7 @@
+SdtCitation module
+==================
+
+.. automodule:: SdtCitation
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+PermissionEnd module
+====================
+
+.. automodule:: PermissionEnd
+   :members:
+   :undoc-members:
+   :show-inheritance:

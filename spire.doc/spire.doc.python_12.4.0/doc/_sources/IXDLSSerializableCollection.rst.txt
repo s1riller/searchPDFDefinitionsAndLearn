@@ -1,0 +1,7 @@
+IXDLSSerializableCollection module
+==================================
+
+.. automodule:: IXDLSSerializableCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

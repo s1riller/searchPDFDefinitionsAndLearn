@@ -1,0 +1,7 @@
+PageOrientation module
+======================
+
+.. automodule:: PageOrientation
+   :members:
+   :undoc-members:
+   :show-inheritance:

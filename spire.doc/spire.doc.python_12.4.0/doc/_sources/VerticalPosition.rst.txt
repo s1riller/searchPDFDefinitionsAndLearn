@@ -1,0 +1,7 @@
+VerticalPosition module
+=======================
+
+.. automodule:: VerticalPosition
+   :members:
+   :undoc-members:
+   :show-inheritance:

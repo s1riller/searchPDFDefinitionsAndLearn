@@ -1,0 +1,7 @@
+Hyphenation module
+==================
+
+.. automodule:: Hyphenation
+   :members:
+   :undoc-members:
+   :show-inheritance:

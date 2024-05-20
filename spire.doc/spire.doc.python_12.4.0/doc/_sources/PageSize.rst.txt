@@ -1,0 +1,7 @@
+PageSize module
+===============
+
+.. automodule:: PageSize
+   :members:
+   :undoc-members:
+   :show-inheritance:

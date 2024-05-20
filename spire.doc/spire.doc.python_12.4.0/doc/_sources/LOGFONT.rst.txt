@@ -1,0 +1,7 @@
+LOGFONT module
+==============
+
+.. automodule:: LOGFONT
+   :members:
+   :undoc-members:
+   :show-inheritance:

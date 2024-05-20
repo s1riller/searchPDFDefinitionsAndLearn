@@ -1,0 +1,7 @@
+MailMergeDataSet module
+=======================
+
+.. automodule:: MailMergeDataSet
+   :members:
+   :undoc-members:
+   :show-inheritance:

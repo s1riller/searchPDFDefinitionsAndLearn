@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BorderStyle module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">BorderStyle module</a><ul>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle"><code class="docutils literal notranslate"><span class="pre">BorderStyle</span></code></a><ul>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Cleared"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Cleared</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.DashDotStroker"><code class="docutils literal notranslate"><span class="pre">BorderStyle.DashDotStroker</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.DashLargeGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.DashLargeGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.DashSmallGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.DashSmallGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Dot"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Dot</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.DotDash"><code class="docutils literal notranslate"><span class="pre">BorderStyle.DotDash</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.DotDotDash"><code class="docutils literal notranslate"><span class="pre">BorderStyle.DotDotDash</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Double"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Double</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.DoubleWave"><code class="docutils literal notranslate"><span class="pre">BorderStyle.DoubleWave</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Emboss3D"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Emboss3D</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Engrave3D"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Engrave3D</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Hairline"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Hairline</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Inset"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Inset</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Outset"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Outset</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Single"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Single</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Thick"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Thick</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThickThickThinMediumGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThickThickThinMediumGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThickThinLargeGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThickThinLargeGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThickThinMediumGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThickThinMediumGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThickThinSmallGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThickThinSmallGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThinThickLargeGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThinThickLargeGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThinThickMediumGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThinThickMediumGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThinThickSmallGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThinThickSmallGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThinThickThinLargeGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThinThickThinLargeGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThinThickThinMediumGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThinThickThinMediumGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThinThickThinSmallGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThinThickThinSmallGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.ThinThinSmallGap"><code class="docutils literal notranslate"><span class="pre">BorderStyle.ThinThinSmallGap</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Triple"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Triple</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.TwistedLines1"><code class="docutils literal notranslate"><span class="pre">BorderStyle.TwistedLines1</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.Wave"><code class="docutils literal notranslate"><span class="pre">BorderStyle.Wave</span></code></a></li>
+<li><a class="reference internal" href="#BorderStyle.BorderStyle.none"><code class="docutils literal notranslate"><span class="pre">BorderStyle.none</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">BorderStyle module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/BorderStyle.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-BorderStyle">
+<span id="borderstyle-module"></span><h1>BorderStyle module<a class="headerlink" href="#module-BorderStyle" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">BorderStyle.</span></span><span class="sig-name descname"><span class="pre">BorderStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BorderStyle.BorderStyle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Specifies style of the border line.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Cleared">
+<span class="sig-name descname"><span class="pre">Cleared</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">255</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Cleared" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.DashDotStroker">
+<span class="sig-name descname"><span class="pre">DashDotStroker</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.DashDotStroker" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.DashLargeGap">
+<span class="sig-name descname"><span class="pre">DashLargeGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.DashLargeGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.DashSmallGap">
+<span class="sig-name descname"><span class="pre">DashSmallGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.DashSmallGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Dot">
+<span class="sig-name descname"><span class="pre">Dot</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Dot" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.DotDash">
+<span class="sig-name descname"><span class="pre">DotDash</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.DotDash" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.DotDotDash">
+<span class="sig-name descname"><span class="pre">DotDotDash</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.DotDotDash" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Double">
+<span class="sig-name descname"><span class="pre">Double</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Double" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.DoubleWave">
+<span class="sig-name descname"><span class="pre">DoubleWave</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.DoubleWave" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Emboss3D">
+<span class="sig-name descname"><span class="pre">Emboss3D</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Emboss3D" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Engrave3D">
+<span class="sig-name descname"><span class="pre">Engrave3D</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Engrave3D" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Hairline">
+<span class="sig-name descname"><span class="pre">Hairline</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Hairline" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Inset">
+<span class="sig-name descname"><span class="pre">Inset</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">27</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Inset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Outset">
+<span class="sig-name descname"><span class="pre">Outset</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">26</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Outset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Single">
+<span class="sig-name descname"><span class="pre">Single</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Single" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Thick">
+<span class="sig-name descname"><span class="pre">Thick</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Thick" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThickThickThinMediumGap">
+<span class="sig-name descname"><span class="pre">ThickThickThinMediumGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThickThickThinMediumGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThickThinLargeGap">
+<span class="sig-name descname"><span class="pre">ThickThinLargeGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThickThinLargeGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThickThinMediumGap">
+<span class="sig-name descname"><span class="pre">ThickThinMediumGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThickThinMediumGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThickThinSmallGap">
+<span class="sig-name descname"><span class="pre">ThickThinSmallGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThickThinSmallGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThinThickLargeGap">
+<span class="sig-name descname"><span class="pre">ThinThickLargeGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThinThickLargeGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThinThickMediumGap">
+<span class="sig-name descname"><span class="pre">ThinThickMediumGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThinThickMediumGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThinThickSmallGap">
+<span class="sig-name descname"><span class="pre">ThinThickSmallGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThinThickSmallGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThinThickThinLargeGap">
+<span class="sig-name descname"><span class="pre">ThinThickThinLargeGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThinThickThinLargeGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThinThickThinMediumGap">
+<span class="sig-name descname"><span class="pre">ThinThickThinMediumGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThinThickThinMediumGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThinThickThinSmallGap">
+<span class="sig-name descname"><span class="pre">ThinThickThinSmallGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThinThickThinSmallGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.ThinThinSmallGap">
+<span class="sig-name descname"><span class="pre">ThinThinSmallGap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.ThinThinSmallGap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Triple">
+<span class="sig-name descname"><span class="pre">Triple</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Triple" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.TwistedLines1">
+<span class="sig-name descname"><span class="pre">TwistedLines1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">214</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.TwistedLines1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.Wave">
+<span class="sig-name descname"><span class="pre">Wave</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.Wave" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BorderStyle.BorderStyle.none">
+<span class="sig-name descname"><span class="pre">none</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#BorderStyle.BorderStyle.none" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

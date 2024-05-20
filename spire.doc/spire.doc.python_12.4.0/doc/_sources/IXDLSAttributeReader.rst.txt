@@ -1,0 +1,7 @@
+IXDLSAttributeReader module
+===========================
+
+.. automodule:: IXDLSAttributeReader
+   :members:
+   :undoc-members:
+   :show-inheritance:

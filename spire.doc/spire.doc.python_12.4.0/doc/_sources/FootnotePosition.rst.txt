@@ -1,0 +1,7 @@
+FootnotePosition module
+=======================
+
+.. automodule:: FootnotePosition
+   :members:
+   :undoc-members:
+   :show-inheritance:

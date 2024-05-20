@@ -1,0 +1,7 @@
+ShapeLineStyle module
+=====================
+
+.. automodule:: ShapeLineStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

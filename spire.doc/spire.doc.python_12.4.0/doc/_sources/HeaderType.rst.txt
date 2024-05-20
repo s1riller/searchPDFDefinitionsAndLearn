@@ -1,0 +1,7 @@
+HeaderType module
+=================
+
+.. automodule:: HeaderType
+   :members:
+   :undoc-members:
+   :show-inheritance:

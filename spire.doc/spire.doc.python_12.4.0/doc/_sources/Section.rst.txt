@@ -1,0 +1,7 @@
+Section module
+==============
+
+.. automodule:: Section
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+XDLSReader module
+=================
+
+.. automodule:: XDLSReader
+   :members:
+   :undoc-members:
+   :show-inheritance:

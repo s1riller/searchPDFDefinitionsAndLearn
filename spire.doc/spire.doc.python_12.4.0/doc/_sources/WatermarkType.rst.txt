@@ -1,0 +1,7 @@
+WatermarkType module
+====================
+
+.. automodule:: WatermarkType
+   :members:
+   :undoc-members:
+   :show-inheritance:

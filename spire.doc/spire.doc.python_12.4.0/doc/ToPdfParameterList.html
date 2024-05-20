@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToPdfParameterList module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ToPdfParameterList module</a><ul>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList</span></code></a><ul>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.CreateWordBookmarks"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.CreateWordBookmarks</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.CreateWordBookmarksUsingHeadings"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.CreateWordBookmarksUsingHeadings</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.DisableLink"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.DisableLink</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.EmbeddedFontNameList"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.EmbeddedFontNameList</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.IsAtLast"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.IsAtLast</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.IsEmbeddedAllFonts"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.IsEmbeddedAllFonts</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.IsHidden"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.IsHidden</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.MimicWPSLayout"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.MimicWPSLayout</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.PdfConformanceLevel"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.PdfConformanceLevel</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.PdfSecurity"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.PdfSecurity</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.PrivateFontPaths"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.PrivateFontPaths</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.UpdateFields"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.UpdateFields</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.UsePSCoversion"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.UsePSCoversion</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.WordBookmarksColor"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.WordBookmarksColor</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.WordBookmarksTextStyle"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.WordBookmarksTextStyle</span></code></a></li>
+<li><a class="reference internal" href="#ToPdfParameterList.ToPdfParameterList.WordBookmarksTitle"><code class="docutils literal notranslate"><span class="pre">ToPdfParameterList.WordBookmarksTitle</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ToPdfParameterList module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ToPdfParameterList.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ToPdfParameterList">
+<span id="topdfparameterlist-module"></span><h1>ToPdfParameterList module<a class="headerlink" href="#module-ToPdfParameterList" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ToPdfParameterList.</span></span><span class="sig-name descname"><span class="pre">ToPdfParameterList</span></span><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SpireObject</span></code></p>
+<p>Represents a list of parameters for converting to PDF.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.CreateWordBookmarks">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CreateWordBookmarks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.CreateWordBookmarks" title="Link to this definition"></a></dt>
+<dd><p>Gets or set the a value, Whether to use word bookmars when create the bookmarks.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.CreateWordBookmarksUsingHeadings">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CreateWordBookmarksUsingHeadings</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.CreateWordBookmarksUsingHeadings" title="Link to this definition"></a></dt>
+<dd><p>Gets or set the a value that determines whether create the bookmarks using Headings.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.DisableLink">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisableLink</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.DisableLink" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets whether to remove the link on the hyperlink and keep the character format during converting to pdf.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.EmbeddedFontNameList">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmbeddedFontNameList</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.EmbeddedFontNameList" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>&lt;summary&gt;</dt><dd><p>Gets or sets Embedded into the PDF document font name.</p>
+</dd>
+</dl>
+<p>&lt;/summary&gt;</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.IsAtLast">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsAtLast</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.IsAtLast" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets To Pdf TextBox HeightType.The default is “Exactly”.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.IsEmbeddedAllFonts">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsEmbeddedAllFonts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.IsEmbeddedAllFonts" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets whether all fonts are embedded in the PDF document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.IsHidden">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsHidden</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.IsHidden" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets whether hidden text is converted.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.MimicWPSLayout">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MimicWPSLayout</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.MimicWPSLayout" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to mimic the layout of WPS Application.
+The default value is false.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.PdfConformanceLevel">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PdfConformanceLevel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PdfConformanceLevel</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.PdfConformanceLevel" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the Pdf document’s Conformance-level.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.PdfSecurity">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PdfSecurity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PdfSecurity</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.PdfSecurity" title="Link to this definition"></a></dt>
+<dd><p>Represents the security settings of the PDF document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.PrivateFontPaths">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PrivateFontPaths</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">PrivateFontPath</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.PrivateFontPaths" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the private font paths.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.UpdateFields">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UpdateFields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.UpdateFields" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to change the fields before saving the document when using the new engine.
+The default value is true.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.UsePSCoversion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UsePSCoversion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.UsePSCoversion" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to use the PS conversion.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.WordBookmarksColor">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WordBookmarksColor</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Color</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.WordBookmarksColor" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the text color of the word bookmarks.
+the default value is the “SaddleBrown” color(#FF8B4513).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The text color of the word boomarks.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Color</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.WordBookmarksTextStyle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WordBookmarksTextStyle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">BookmarkTextStyle</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.WordBookmarksTextStyle" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the text style of the word bookmarks.
+The default value is the Bold.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The word bookmarks text style.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="BookmarkTextStyle.html#BookmarkTextStyle.BookmarkTextStyle" title="BookmarkTextStyle.BookmarkTextStyle">BookmarkTextStyle</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="ToPdfParameterList.ToPdfParameterList.WordBookmarksTitle">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WordBookmarksTitle</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#ToPdfParameterList.ToPdfParameterList.WordBookmarksTitle" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the word bookmarks title. The default value for this title is null.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The word bookmarks title.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

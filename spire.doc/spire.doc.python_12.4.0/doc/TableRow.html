@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TableRow module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">TableRow module</a><ul>
+<li><a class="reference internal" href="#TableRow.TableRow"><code class="docutils literal notranslate"><span class="pre">TableRow</span></code></a><ul>
+<li><a class="reference internal" href="#TableRow.TableRow.AddCell"><code class="docutils literal notranslate"><span class="pre">TableRow.AddCell</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.Cells"><code class="docutils literal notranslate"><span class="pre">TableRow.Cells</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.ChildObjects"><code class="docutils literal notranslate"><span class="pre">TableRow.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.Clone"><code class="docutils literal notranslate"><span class="pre">TableRow.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">TableRow.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.GetRowIndex"><code class="docutils literal notranslate"><span class="pre">TableRow.GetRowIndex()</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.Height"><code class="docutils literal notranslate"><span class="pre">TableRow.Height</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.HeightType"><code class="docutils literal notranslate"><span class="pre">TableRow.HeightType</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.IsHeader"><code class="docutils literal notranslate"><span class="pre">TableRow.IsHeader</span></code></a></li>
+<li><a class="reference internal" href="#TableRow.TableRow.RowFormat"><code class="docutils literal notranslate"><span class="pre">TableRow.RowFormat</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">TableRow module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/TableRow.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-TableRow">
+<span id="tablerow-module"></span><h1>TableRow module<a class="headerlink" href="#module-TableRow" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="TableRow.TableRow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TableRow.</span></span><span class="sig-name descname"><span class="pre">TableRow</span></span><a class="headerlink" href="#TableRow.TableRow" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentBase</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code></p>
+<p>Represents a table row in a document.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TableRow.TableRow.AddCell">
+<span class="sig-name descname"><span class="pre">AddCell</span></span><a class="headerlink" href="#TableRow.TableRow.AddCell" title="Link to this definition"></a></dt>
+<dd><p>Adds a cell to the table row.
+:returns: The added cell.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableRow.TableRow.Cells">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Cells</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CellCollection</span></em><a class="headerlink" href="#TableRow.TableRow.Cells" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the cell collection of the table row.
+:returns: The cell collection of the table row.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableRow.TableRow.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#TableRow.TableRow.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child objects of the table row.
+:returns: The child objects of the table row.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TableRow.TableRow.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#TableRow.TableRow" title="TableRow.TableRow"><span class="pre">TableRow</span></a></span></span><a class="headerlink" href="#TableRow.TableRow.Clone" title="Link to this definition"></a></dt>
+<dd><p>Creates a deep copy of the table row.
+:returns: A new instance of the TableRow class that is a deep copy of this instance.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableRow.TableRow.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#TableRow.TableRow.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.
+:returns: The type of the document object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TableRow.TableRow.GetRowIndex">
+<span class="sig-name descname"><span class="pre">GetRowIndex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#TableRow.TableRow.GetRowIndex" title="Link to this definition"></a></dt>
+<dd><p>Gets the index of the table row in the owner table.
+:returns: The index of the table row in the owner table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableRow.TableRow.Height">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#TableRow.TableRow.Height" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the height of the table row.
+:returns: The height of the table row.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableRow.TableRow.HeightType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HeightType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableRowHeightType</span></em><a class="headerlink" href="#TableRow.TableRow.HeightType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the height type of the table row.
+:returns: The height type of the table row.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableRow.TableRow.IsHeader">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsHeader</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#TableRow.TableRow.IsHeader" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether the table row is a header.
+:returns: True if the table row is a header; otherwise, False.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="TableRow.TableRow.RowFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RowFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">RowFormat</span></em><a class="headerlink" href="#TableRow.TableRow.RowFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the row format of the table row.
+:returns: The row format of the table row.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

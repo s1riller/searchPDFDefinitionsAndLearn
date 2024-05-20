@@ -1,0 +1,7 @@
+IDocumentObject module
+======================
+
+.. automodule:: IDocumentObject
+   :members:
+   :undoc-members:
+   :show-inheritance:

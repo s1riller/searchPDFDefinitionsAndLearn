@@ -1,0 +1,7 @@
+ListStyleCollection module
+==========================
+
+.. automodule:: ListStyleCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

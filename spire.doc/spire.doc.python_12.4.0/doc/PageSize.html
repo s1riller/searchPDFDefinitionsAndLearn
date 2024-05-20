@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PageSize module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">PageSize module</a><ul>
+<li><a class="reference internal" href="#PageSize.PageSize"><code class="docutils literal notranslate"><span class="pre">PageSize</span></code></a><ul>
+<li><a class="reference internal" href="#PageSize.PageSize.A3"><code class="docutils literal notranslate"><span class="pre">PageSize.A3()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.A4"><code class="docutils literal notranslate"><span class="pre">PageSize.A4()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.A5"><code class="docutils literal notranslate"><span class="pre">PageSize.A5()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.A6"><code class="docutils literal notranslate"><span class="pre">PageSize.A6()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.B4"><code class="docutils literal notranslate"><span class="pre">PageSize.B4()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.B5"><code class="docutils literal notranslate"><span class="pre">PageSize.B5()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.B6"><code class="docutils literal notranslate"><span class="pre">PageSize.B6()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.EnvelopeDL"><code class="docutils literal notranslate"><span class="pre">PageSize.EnvelopeDL()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Executive"><code class="docutils literal notranslate"><span class="pre">PageSize.Executive()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Flsa"><code class="docutils literal notranslate"><span class="pre">PageSize.Flsa()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.HalfLetter"><code class="docutils literal notranslate"><span class="pre">PageSize.HalfLetter()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Ledger"><code class="docutils literal notranslate"><span class="pre">PageSize.Ledger()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Legal"><code class="docutils literal notranslate"><span class="pre">PageSize.Legal()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Letter"><code class="docutils literal notranslate"><span class="pre">PageSize.Letter()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Letter11x17"><code class="docutils literal notranslate"><span class="pre">PageSize.Letter11x17()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Note"><code class="docutils literal notranslate"><span class="pre">PageSize.Note()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Quarto"><code class="docutils literal notranslate"><span class="pre">PageSize.Quarto()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Statement"><code class="docutils literal notranslate"><span class="pre">PageSize.Statement()</span></code></a></li>
+<li><a class="reference internal" href="#PageSize.PageSize.Tabloid"><code class="docutils literal notranslate"><span class="pre">PageSize.Tabloid()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">PageSize module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PageSize.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-PageSize">
+<span id="pagesize-module"></span><h1>PageSize module<a class="headerlink" href="#module-PageSize" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="PageSize.PageSize">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PageSize.</span></span><span class="sig-name descname"><span class="pre">PageSize</span></span><a class="headerlink" href="#PageSize.PageSize" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SpireObject</span></code></p>
+<p>Represents a page size.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.A3">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">A3</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.A3" title="Link to this definition"></a></dt>
+<dd><p>Returns the A3 page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.A4">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">A4</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.A4" title="Link to this definition"></a></dt>
+<dd><p>Returns the A4 page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.A5">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">A5</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.A5" title="Link to this definition"></a></dt>
+<dd><p>Returns the A5 page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.A6">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">A6</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.A6" title="Link to this definition"></a></dt>
+<dd><p>Returns the A6 page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.B4">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">B4</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.B4" title="Link to this definition"></a></dt>
+<dd><p>Returns the B4 page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.B5">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">B5</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.B5" title="Link to this definition"></a></dt>
+<dd><p>Returns the B5 page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.B6">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">B6</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.B6" title="Link to this definition"></a></dt>
+<dd><p>Returns the B6 page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.EnvelopeDL">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EnvelopeDL</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.EnvelopeDL" title="Link to this definition"></a></dt>
+<dd><p>Returns the EnvelopeDL page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Executive">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Executive</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Executive" title="Link to this definition"></a></dt>
+<dd><p>Returns the Executive page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Flsa">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Flsa</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Flsa" title="Link to this definition"></a></dt>
+<dd><p>Returns the Flsa page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.HalfLetter">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HalfLetter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.HalfLetter" title="Link to this definition"></a></dt>
+<dd><p>Returns the HalfLetter page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Ledger">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Ledger</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Ledger" title="Link to this definition"></a></dt>
+<dd><p>Returns the Ledger page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Legal">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Legal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Legal" title="Link to this definition"></a></dt>
+<dd><p>Returns the Legal page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Letter">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Letter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Letter" title="Link to this definition"></a></dt>
+<dd><p>Returns the Letter page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Letter11x17">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Letter11x17</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Letter11x17" title="Link to this definition"></a></dt>
+<dd><p>Returns the Letter11x17 page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Note">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Note</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Note" title="Link to this definition"></a></dt>
+<dd><p>Returns the Note page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Quarto">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Quarto</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Quarto" title="Link to this definition"></a></dt>
+<dd><p>Returns the Quarto page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Statement">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Statement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Statement" title="Link to this definition"></a></dt>
+<dd><p>Returns the Statement page size.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PageSize.PageSize.Tabloid">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Tabloid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SizeF</span></span></span><a class="headerlink" href="#PageSize.PageSize.Tabloid" title="Link to this definition"></a></dt>
+<dd><p>Returns the Tabloid page size.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

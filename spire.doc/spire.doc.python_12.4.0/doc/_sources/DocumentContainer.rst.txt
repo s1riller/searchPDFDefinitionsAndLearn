@@ -1,0 +1,7 @@
+DocumentContainer module
+========================
+
+.. automodule:: DocumentContainer
+   :members:
+   :undoc-members:
+   :show-inheritance:

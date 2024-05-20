@@ -1,0 +1,7 @@
+HorizontalRelation module
+=========================
+
+.. automodule:: HorizontalRelation
+   :members:
+   :undoc-members:
+   :show-inheritance:

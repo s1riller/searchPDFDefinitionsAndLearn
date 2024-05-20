@@ -1,0 +1,7 @@
+StructureDocumentTag module
+===========================
+
+.. automodule:: StructureDocumentTag
+   :members:
+   :undoc-members:
+   :show-inheritance:

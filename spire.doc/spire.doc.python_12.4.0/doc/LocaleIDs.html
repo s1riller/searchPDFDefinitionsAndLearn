@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LocaleIDs module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">LocaleIDs module</a><ul>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs"><code class="docutils literal notranslate"><span class="pre">LocaleIDs</span></code></a><ul>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.LanguageNotSet"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.LanguageNotSet</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.af_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.af_ZA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.am_ET"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.am_ET</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_AE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_AE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_BH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_BH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_DZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_DZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_EG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_EG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_IQ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_IQ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_JO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_JO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_KW"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_KW</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_LB"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_LB</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_LY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_LY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_MA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_MA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_OM"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_OM</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_QA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_QA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_SA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_SA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_SY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_SY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_TN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_TN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ar_YE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ar_YE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.arn_CL"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.arn_CL</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.as_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.as_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.az_Cyrl_AZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.az_Cyrl_AZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.az_Latn_AZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.az_Latn_AZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ba_RU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ba_RU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.be_BY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.be_BY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.bg_BG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.bg_BG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.bin_NG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.bin_NG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.bn_BD"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.bn_BD</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.bn_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.bn_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.bo_BT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.bo_BT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.bo_CN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.bo_CN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.br_FR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.br_FR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.bs_Cyrl_BA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.bs_Cyrl_BA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.bs_Latn_BA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.bs_Latn_BA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ca_ES"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ca_ES</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.chr_US"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.chr_US</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.co_FR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.co_FR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.cs_CZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.cs_CZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.cy_GB"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.cy_GB</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.da_DK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.da_DK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.de_AT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.de_AT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.de_CH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.de_CH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.de_DE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.de_DE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.de_LI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.de_LI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.de_LU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.de_LU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.dsb_DE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.dsb_DE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.dv_MV"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.dv_MV</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.el_GR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.el_GR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_029"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_029</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_AU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_AU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_BZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_BZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_CA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_CA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_GB"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_GB</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_HK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_HK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_ID"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_ID</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_IE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_IE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_JM"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_JM</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_MY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_MY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_NZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_NZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_PH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_PH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_SG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_SG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_TT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_TT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_US"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_US</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_ZA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.en_ZW"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.en_ZW</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_AR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_AR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_BO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_BO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_CL"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_CL</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_CO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_CO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_CR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_CR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_DO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_DO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_EC"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_EC</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_ES"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_ES</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_ES_tradnl"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_ES_tradnl</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_GT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_GT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_HN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_HN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_MX"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_MX</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_NI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_NI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_PA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_PA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_PE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_PE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_PR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_PR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_PY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_PY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_SV"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_SV</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_US"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_US</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_UY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_UY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.es_VE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.es_VE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.et_EE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.et_EE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.eu_ES"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.eu_ES</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fa_IR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fa_IR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ff_NG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ff_NG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fi_FI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fi_FI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fil_PH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fil_PH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fo_FO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fo_FO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_BE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_BE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_CA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_CA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_CD"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_CD</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_CH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_CH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_CI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_CI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_CM"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_CM</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_FR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_FR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_HT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_HT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_LU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_LU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_MA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_MA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_MC"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_MC</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_ML"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_ML</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_RE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_RE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_SN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_SN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fr_fr_WINDIES"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fr_fr_WINDIES</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.fy_NL"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.fy_NL</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ga_IE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ga_IE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.gd_GB"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.gd_GB</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.gl_ES"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.gl_ES</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.gn_PY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.gn_PY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.gsw_FR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.gsw_FR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.gu_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.gu_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.guz_EC"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.guz_EC</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.guz_PE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.guz_PE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ha_Latn_NG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ha_Latn_NG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.haw_US"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.haw_US</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.he_IL"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.he_IL</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.hi_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.hi_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.hr_BA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.hr_BA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.hr_HR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.hr_HR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.hsb_DE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.hsb_DE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.hu_HU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.hu_HU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.hy_AM"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.hy_AM</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ibb_NG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ibb_NG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.id_ID"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.id_ID</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ig_NG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ig_NG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ii_CN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ii_CN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.is_IS"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.is_IS</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.it_CH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.it_CH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.it_IT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.it_IT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.iu_Cans_CA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.iu_Cans_CA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.iu_Latn_CA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.iu_Latn_CA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ja_JP"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ja_JP</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ka_GE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ka_GE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.kk_KZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.kk_KZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.kl_GL"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.kl_GL</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.km_KH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.km_KH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.kn_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.kn_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ko_KR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ko_KR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.kok_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.kok_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.kr_NG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.kr_NG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ks_Arab"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ks_Arab</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ks_Deva"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ks_Deva</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ky_KG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ky_KG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.la_Latn"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.la_Latn</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.lb_LU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.lb_LU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.lo_LA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.lo_LA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.lt_LT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.lt_LT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.lv_LV"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.lv_LV</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.mi_NZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.mi_NZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.mk_MK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.mk_MK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ml_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ml_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.mn_MN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.mn_MN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.mn_Mong_CN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.mn_Mong_CN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.mni_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.mni_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.moh_CA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.moh_CA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.mr_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.mr_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ms_BN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ms_BN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ms_MY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ms_MY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.mt_MT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.mt_MT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.my_MM"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.my_MM</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.nb_NO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.nb_NO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ne_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ne_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ne_NP"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ne_NP</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.nl"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.nl</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.nl_BE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.nl_BE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.nl_NL"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.nl_NL</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.nn_NO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.nn_NO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.nso_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.nso_ZA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.oc_FR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.oc_FR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.om_Ethi_ET"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.om_Ethi_ET</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.or_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.or_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.pa_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.pa_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.pa_PK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.pa_PK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.pap_AN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.pap_AN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.pl_PL"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.pl_PL</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.prs_AF"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.prs_AF</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ps_AF"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ps_AF</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.pt_BR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.pt_BR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.pt_PT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.pt_PT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.qut_GT"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.qut_GT</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.quz_BO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.quz_BO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.quz_EC"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.quz_EC</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.quz_PE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.quz_PE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.rm_CH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.rm_CH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ro_MO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ro_MO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ro_RO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ro_RO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ru_MO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ru_MO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ru_RU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ru_RU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.rw_RW"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.rw_RW</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sa_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sa_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sah_RU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sah_RU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sd_Arab_PK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sd_Arab_PK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sd_Deva_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sd_Deva_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.se_FI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.se_FI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.se_NO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.se_NO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.se_SE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.se_SE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.si_LK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.si_LK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sk_SK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sk_SK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sl_SI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sl_SI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sma_NO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sma_NO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sma_SE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sma_SE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.smj_NO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.smj_NO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.smj_SE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.smj_SE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.smn_FI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.smn_FI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sms_FI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sms_FI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.so_SO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.so_SO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sq_AL"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sq_AL</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sr_Cyrl_BA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sr_Cyrl_BA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sr_Cyrl_CS"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sr_Cyrl_CS</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sr_Latn_BA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sr_Latn_BA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sr_Latn_CS"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sr_Latn_CS</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.st_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.st_ZA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sv_FI"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sv_FI</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sv_SE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sv_SE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.sw_KE"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.sw_KE</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.syr_SY"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.syr_SY</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ta_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ta_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.te_IN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.te_IN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.tg_Cyrl_TJ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.tg_Cyrl_TJ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.th_TH"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.th_TH</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ti_ER"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ti_ER</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ti_ET"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ti_ET</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.tk_TM"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.tk_TM</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.tn_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.tn_ZA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.tr_TR"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.tr_TR</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ts_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ts_ZA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.tt_RU"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.tt_RU</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.tzm_Arab_MA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.tzm_Arab_MA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.tzm_Latn_DZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.tzm_Latn_DZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ug_CN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ug_CN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.uk_UA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.uk_UA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ur_PK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ur_PK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.uz_Cyrl_UZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.uz_Cyrl_UZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.uz_Latn_UZ"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.uz_Latn_UZ</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.ve_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.ve_ZA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.vi_VN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.vi_VN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.wo_SN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.wo_SN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.x_none"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.x_none</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.xh_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.xh_ZA</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.yi_Hebr"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.yi_Hebr</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.yo_NG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.yo_NG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.zh_CN"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.zh_CN</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.zh_HK"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.zh_HK</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.zh_MO"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.zh_MO</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.zh_SG"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.zh_SG</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.zh_TW"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.zh_TW</span></code></a></li>
+<li><a class="reference internal" href="#LocaleIDs.LocaleIDs.zu_ZA"><code class="docutils literal notranslate"><span class="pre">LocaleIDs.zu_ZA</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">LocaleIDs module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/LocaleIDs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-LocaleIDs">
+<span id="localeids-module"></span><h1>LocaleIDs module<a class="headerlink" href="#module-LocaleIDs" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">LocaleIDs.</span></span><span class="sig-name descname"><span class="pre">LocaleIDs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#LocaleIDs.LocaleIDs" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum class representing locale IDs.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.LanguageNotSet">
+<span class="sig-name descname"><span class="pre">LanguageNotSet</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.LanguageNotSet" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.af_ZA">
+<span class="sig-name descname"><span class="pre">af_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1072</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.af_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.am_ET">
+<span class="sig-name descname"><span class="pre">am_ET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1118</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.am_ET" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_AE">
+<span class="sig-name descname"><span class="pre">ar_AE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14337</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_AE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_BH">
+<span class="sig-name descname"><span class="pre">ar_BH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15361</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_BH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_DZ">
+<span class="sig-name descname"><span class="pre">ar_DZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5121</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_DZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_EG">
+<span class="sig-name descname"><span class="pre">ar_EG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3073</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_EG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_IQ">
+<span class="sig-name descname"><span class="pre">ar_IQ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2049</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_IQ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_JO">
+<span class="sig-name descname"><span class="pre">ar_JO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11265</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_JO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_KW">
+<span class="sig-name descname"><span class="pre">ar_KW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13313</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_KW" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_LB">
+<span class="sig-name descname"><span class="pre">ar_LB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12289</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_LB" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_LY">
+<span class="sig-name descname"><span class="pre">ar_LY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4097</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_LY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_MA">
+<span class="sig-name descname"><span class="pre">ar_MA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6145</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_MA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_OM">
+<span class="sig-name descname"><span class="pre">ar_OM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8193</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_OM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_QA">
+<span class="sig-name descname"><span class="pre">ar_QA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16385</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_QA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_SA">
+<span class="sig-name descname"><span class="pre">ar_SA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1025</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_SA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_SY">
+<span class="sig-name descname"><span class="pre">ar_SY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10241</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_SY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_TN">
+<span class="sig-name descname"><span class="pre">ar_TN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7169</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_TN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ar_YE">
+<span class="sig-name descname"><span class="pre">ar_YE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9217</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ar_YE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.arn_CL">
+<span class="sig-name descname"><span class="pre">arn_CL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1146</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.arn_CL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.as_IN">
+<span class="sig-name descname"><span class="pre">as_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1101</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.as_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.az_Cyrl_AZ">
+<span class="sig-name descname"><span class="pre">az_Cyrl_AZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2092</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.az_Cyrl_AZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.az_Latn_AZ">
+<span class="sig-name descname"><span class="pre">az_Latn_AZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1068</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.az_Latn_AZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ba_RU">
+<span class="sig-name descname"><span class="pre">ba_RU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1133</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ba_RU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.be_BY">
+<span class="sig-name descname"><span class="pre">be_BY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1059</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.be_BY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.bg_BG">
+<span class="sig-name descname"><span class="pre">bg_BG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1026</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.bg_BG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.bin_NG">
+<span class="sig-name descname"><span class="pre">bin_NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1126</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.bin_NG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.bn_BD">
+<span class="sig-name descname"><span class="pre">bn_BD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2117</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.bn_BD" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.bn_IN">
+<span class="sig-name descname"><span class="pre">bn_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1093</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.bn_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.bo_BT">
+<span class="sig-name descname"><span class="pre">bo_BT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2129</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.bo_BT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.bo_CN">
+<span class="sig-name descname"><span class="pre">bo_CN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1105</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.bo_CN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.br_FR">
+<span class="sig-name descname"><span class="pre">br_FR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1150</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.br_FR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.bs_Cyrl_BA">
+<span class="sig-name descname"><span class="pre">bs_Cyrl_BA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8218</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.bs_Cyrl_BA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.bs_Latn_BA">
+<span class="sig-name descname"><span class="pre">bs_Latn_BA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5146</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.bs_Latn_BA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ca_ES">
+<span class="sig-name descname"><span class="pre">ca_ES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1027</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ca_ES" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.chr_US">
+<span class="sig-name descname"><span class="pre">chr_US</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1116</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.chr_US" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.co_FR">
+<span class="sig-name descname"><span class="pre">co_FR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1155</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.co_FR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.cs_CZ">
+<span class="sig-name descname"><span class="pre">cs_CZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1029</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.cs_CZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.cy_GB">
+<span class="sig-name descname"><span class="pre">cy_GB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1106</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.cy_GB" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.da_DK">
+<span class="sig-name descname"><span class="pre">da_DK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1030</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.da_DK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.de_AT">
+<span class="sig-name descname"><span class="pre">de_AT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3079</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.de_AT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.de_CH">
+<span class="sig-name descname"><span class="pre">de_CH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2055</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.de_CH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.de_DE">
+<span class="sig-name descname"><span class="pre">de_DE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1031</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.de_DE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.de_LI">
+<span class="sig-name descname"><span class="pre">de_LI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5127</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.de_LI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.de_LU">
+<span class="sig-name descname"><span class="pre">de_LU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4103</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.de_LU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.dsb_DE">
+<span class="sig-name descname"><span class="pre">dsb_DE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2094</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.dsb_DE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.dv_MV">
+<span class="sig-name descname"><span class="pre">dv_MV</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1125</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.dv_MV" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.el_GR">
+<span class="sig-name descname"><span class="pre">el_GR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1032</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.el_GR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_029">
+<span class="sig-name descname"><span class="pre">en_029</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9225</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_029" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_AU">
+<span class="sig-name descname"><span class="pre">en_AU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3081</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_AU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_BZ">
+<span class="sig-name descname"><span class="pre">en_BZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10249</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_BZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_CA">
+<span class="sig-name descname"><span class="pre">en_CA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4105</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_CA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_GB">
+<span class="sig-name descname"><span class="pre">en_GB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2057</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_GB" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_HK">
+<span class="sig-name descname"><span class="pre">en_HK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15369</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_HK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_ID">
+<span class="sig-name descname"><span class="pre">en_ID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14345</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_ID" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_IE">
+<span class="sig-name descname"><span class="pre">en_IE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6153</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_IE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_IN">
+<span class="sig-name descname"><span class="pre">en_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16393</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_JM">
+<span class="sig-name descname"><span class="pre">en_JM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8201</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_JM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_MY">
+<span class="sig-name descname"><span class="pre">en_MY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17417</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_MY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_NZ">
+<span class="sig-name descname"><span class="pre">en_NZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5129</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_NZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_PH">
+<span class="sig-name descname"><span class="pre">en_PH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13321</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_PH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_SG">
+<span class="sig-name descname"><span class="pre">en_SG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18441</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_SG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_TT">
+<span class="sig-name descname"><span class="pre">en_TT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11273</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_TT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_US">
+<span class="sig-name descname"><span class="pre">en_US</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1033</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_US" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_ZA">
+<span class="sig-name descname"><span class="pre">en_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7177</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.en_ZW">
+<span class="sig-name descname"><span class="pre">en_ZW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12297</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.en_ZW" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_AR">
+<span class="sig-name descname"><span class="pre">es_AR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11274</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_AR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_BO">
+<span class="sig-name descname"><span class="pre">es_BO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16394</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_BO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_CL">
+<span class="sig-name descname"><span class="pre">es_CL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13322</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_CL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_CO">
+<span class="sig-name descname"><span class="pre">es_CO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9226</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_CO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_CR">
+<span class="sig-name descname"><span class="pre">es_CR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5130</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_CR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_DO">
+<span class="sig-name descname"><span class="pre">es_DO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7178</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_DO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_EC">
+<span class="sig-name descname"><span class="pre">es_EC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12298</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_EC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_ES">
+<span class="sig-name descname"><span class="pre">es_ES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3082</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_ES" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_ES_tradnl">
+<span class="sig-name descname"><span class="pre">es_ES_tradnl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1034</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_ES_tradnl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_GT">
+<span class="sig-name descname"><span class="pre">es_GT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4106</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_GT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_HN">
+<span class="sig-name descname"><span class="pre">es_HN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18442</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_HN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_MX">
+<span class="sig-name descname"><span class="pre">es_MX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2058</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_MX" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_NI">
+<span class="sig-name descname"><span class="pre">es_NI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19466</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_NI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_PA">
+<span class="sig-name descname"><span class="pre">es_PA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6154</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_PA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_PE">
+<span class="sig-name descname"><span class="pre">es_PE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10250</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_PE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_PR">
+<span class="sig-name descname"><span class="pre">es_PR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20490</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_PR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_PY">
+<span class="sig-name descname"><span class="pre">es_PY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15370</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_PY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_SV">
+<span class="sig-name descname"><span class="pre">es_SV</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17418</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_SV" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_US">
+<span class="sig-name descname"><span class="pre">es_US</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21514</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_US" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_UY">
+<span class="sig-name descname"><span class="pre">es_UY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14346</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_UY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.es_VE">
+<span class="sig-name descname"><span class="pre">es_VE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8202</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.es_VE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.et_EE">
+<span class="sig-name descname"><span class="pre">et_EE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1061</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.et_EE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.eu_ES">
+<span class="sig-name descname"><span class="pre">eu_ES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1069</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.eu_ES" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fa_IR">
+<span class="sig-name descname"><span class="pre">fa_IR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1065</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fa_IR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ff_NG">
+<span class="sig-name descname"><span class="pre">ff_NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1127</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ff_NG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fi_FI">
+<span class="sig-name descname"><span class="pre">fi_FI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1035</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fi_FI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fil_PH">
+<span class="sig-name descname"><span class="pre">fil_PH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1124</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fil_PH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fo_FO">
+<span class="sig-name descname"><span class="pre">fo_FO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1080</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fo_FO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_BE">
+<span class="sig-name descname"><span class="pre">fr_BE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2060</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_BE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_CA">
+<span class="sig-name descname"><span class="pre">fr_CA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3084</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_CA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_CD">
+<span class="sig-name descname"><span class="pre">fr_CD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9228</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_CD" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_CH">
+<span class="sig-name descname"><span class="pre">fr_CH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4108</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_CH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_CI">
+<span class="sig-name descname"><span class="pre">fr_CI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12300</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_CI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_CM">
+<span class="sig-name descname"><span class="pre">fr_CM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11276</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_CM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_FR">
+<span class="sig-name descname"><span class="pre">fr_FR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1036</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_FR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_HT">
+<span class="sig-name descname"><span class="pre">fr_HT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15372</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_HT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_LU">
+<span class="sig-name descname"><span class="pre">fr_LU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5132</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_LU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_MA">
+<span class="sig-name descname"><span class="pre">fr_MA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14348</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_MA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_MC">
+<span class="sig-name descname"><span class="pre">fr_MC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6156</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_MC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_ML">
+<span class="sig-name descname"><span class="pre">fr_ML</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13324</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_ML" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_RE">
+<span class="sig-name descname"><span class="pre">fr_RE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8204</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_RE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_SN">
+<span class="sig-name descname"><span class="pre">fr_SN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10252</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_SN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fr_fr_WINDIES">
+<span class="sig-name descname"><span class="pre">fr_fr_WINDIES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7180</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fr_fr_WINDIES" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.fy_NL">
+<span class="sig-name descname"><span class="pre">fy_NL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1122</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.fy_NL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ga_IE">
+<span class="sig-name descname"><span class="pre">ga_IE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2108</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ga_IE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.gd_GB">
+<span class="sig-name descname"><span class="pre">gd_GB</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1084</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.gd_GB" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.gl_ES">
+<span class="sig-name descname"><span class="pre">gl_ES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1110</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.gl_ES" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.gn_PY">
+<span class="sig-name descname"><span class="pre">gn_PY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1140</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.gn_PY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.gsw_FR">
+<span class="sig-name descname"><span class="pre">gsw_FR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1156</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.gsw_FR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.gu_IN">
+<span class="sig-name descname"><span class="pre">gu_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1095</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.gu_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.guz_EC">
+<span class="sig-name descname"><span class="pre">guz_EC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2155</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.guz_EC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.guz_PE">
+<span class="sig-name descname"><span class="pre">guz_PE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3179</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.guz_PE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ha_Latn_NG">
+<span class="sig-name descname"><span class="pre">ha_Latn_NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1128</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ha_Latn_NG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.haw_US">
+<span class="sig-name descname"><span class="pre">haw_US</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1141</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.haw_US" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.he_IL">
+<span class="sig-name descname"><span class="pre">he_IL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1037</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.he_IL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.hi_IN">
+<span class="sig-name descname"><span class="pre">hi_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1081</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.hi_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.hr_BA">
+<span class="sig-name descname"><span class="pre">hr_BA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4122</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.hr_BA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.hr_HR">
+<span class="sig-name descname"><span class="pre">hr_HR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1050</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.hr_HR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.hsb_DE">
+<span class="sig-name descname"><span class="pre">hsb_DE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1070</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.hsb_DE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.hu_HU">
+<span class="sig-name descname"><span class="pre">hu_HU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1038</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.hu_HU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.hy_AM">
+<span class="sig-name descname"><span class="pre">hy_AM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1067</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.hy_AM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ibb_NG">
+<span class="sig-name descname"><span class="pre">ibb_NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1129</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ibb_NG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.id_ID">
+<span class="sig-name descname"><span class="pre">id_ID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1057</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.id_ID" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ig_NG">
+<span class="sig-name descname"><span class="pre">ig_NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1136</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ig_NG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ii_CN">
+<span class="sig-name descname"><span class="pre">ii_CN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1144</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ii_CN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.is_IS">
+<span class="sig-name descname"><span class="pre">is_IS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1039</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.is_IS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.it_CH">
+<span class="sig-name descname"><span class="pre">it_CH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2064</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.it_CH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.it_IT">
+<span class="sig-name descname"><span class="pre">it_IT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1040</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.it_IT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.iu_Cans_CA">
+<span class="sig-name descname"><span class="pre">iu_Cans_CA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1117</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.iu_Cans_CA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.iu_Latn_CA">
+<span class="sig-name descname"><span class="pre">iu_Latn_CA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2141</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.iu_Latn_CA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ja_JP">
+<span class="sig-name descname"><span class="pre">ja_JP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1041</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ja_JP" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ka_GE">
+<span class="sig-name descname"><span class="pre">ka_GE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1079</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ka_GE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.kk_KZ">
+<span class="sig-name descname"><span class="pre">kk_KZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1087</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.kk_KZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.kl_GL">
+<span class="sig-name descname"><span class="pre">kl_GL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1135</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.kl_GL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.km_KH">
+<span class="sig-name descname"><span class="pre">km_KH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1107</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.km_KH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.kn_IN">
+<span class="sig-name descname"><span class="pre">kn_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1099</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.kn_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ko_KR">
+<span class="sig-name descname"><span class="pre">ko_KR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1042</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ko_KR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.kok_IN">
+<span class="sig-name descname"><span class="pre">kok_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1111</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.kok_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.kr_NG">
+<span class="sig-name descname"><span class="pre">kr_NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1137</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.kr_NG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ks_Arab">
+<span class="sig-name descname"><span class="pre">ks_Arab</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1120</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ks_Arab" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ks_Deva">
+<span class="sig-name descname"><span class="pre">ks_Deva</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2144</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ks_Deva" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ky_KG">
+<span class="sig-name descname"><span class="pre">ky_KG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1088</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ky_KG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.la_Latn">
+<span class="sig-name descname"><span class="pre">la_Latn</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1142</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.la_Latn" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.lb_LU">
+<span class="sig-name descname"><span class="pre">lb_LU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1134</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.lb_LU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.lo_LA">
+<span class="sig-name descname"><span class="pre">lo_LA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1108</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.lo_LA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.lt_LT">
+<span class="sig-name descname"><span class="pre">lt_LT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1063</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.lt_LT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.lv_LV">
+<span class="sig-name descname"><span class="pre">lv_LV</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1062</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.lv_LV" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.mi_NZ">
+<span class="sig-name descname"><span class="pre">mi_NZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1153</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.mi_NZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.mk_MK">
+<span class="sig-name descname"><span class="pre">mk_MK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1071</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.mk_MK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ml_IN">
+<span class="sig-name descname"><span class="pre">ml_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1100</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ml_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.mn_MN">
+<span class="sig-name descname"><span class="pre">mn_MN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1104</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.mn_MN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.mn_Mong_CN">
+<span class="sig-name descname"><span class="pre">mn_Mong_CN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2128</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.mn_Mong_CN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.mni_IN">
+<span class="sig-name descname"><span class="pre">mni_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1112</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.mni_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.moh_CA">
+<span class="sig-name descname"><span class="pre">moh_CA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1148</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.moh_CA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.mr_IN">
+<span class="sig-name descname"><span class="pre">mr_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1102</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.mr_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ms_BN">
+<span class="sig-name descname"><span class="pre">ms_BN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2110</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ms_BN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ms_MY">
+<span class="sig-name descname"><span class="pre">ms_MY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1086</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ms_MY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.mt_MT">
+<span class="sig-name descname"><span class="pre">mt_MT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1082</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.mt_MT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.my_MM">
+<span class="sig-name descname"><span class="pre">my_MM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1109</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.my_MM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.nb_NO">
+<span class="sig-name descname"><span class="pre">nb_NO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1044</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.nb_NO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ne_IN">
+<span class="sig-name descname"><span class="pre">ne_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2145</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ne_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ne_NP">
+<span class="sig-name descname"><span class="pre">ne_NP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1121</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ne_NP" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.nl">
+<span class="sig-name descname"><span class="pre">nl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.nl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.nl_BE">
+<span class="sig-name descname"><span class="pre">nl_BE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2067</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.nl_BE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.nl_NL">
+<span class="sig-name descname"><span class="pre">nl_NL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1043</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.nl_NL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.nn_NO">
+<span class="sig-name descname"><span class="pre">nn_NO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2068</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.nn_NO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.nso_ZA">
+<span class="sig-name descname"><span class="pre">nso_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1132</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.nso_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.oc_FR">
+<span class="sig-name descname"><span class="pre">oc_FR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1154</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.oc_FR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.om_Ethi_ET">
+<span class="sig-name descname"><span class="pre">om_Ethi_ET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1138</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.om_Ethi_ET" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.or_IN">
+<span class="sig-name descname"><span class="pre">or_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1096</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.or_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.pa_IN">
+<span class="sig-name descname"><span class="pre">pa_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1094</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.pa_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.pa_PK">
+<span class="sig-name descname"><span class="pre">pa_PK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2118</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.pa_PK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.pap_AN">
+<span class="sig-name descname"><span class="pre">pap_AN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1145</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.pap_AN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.pl_PL">
+<span class="sig-name descname"><span class="pre">pl_PL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1045</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.pl_PL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.prs_AF">
+<span class="sig-name descname"><span class="pre">prs_AF</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1164</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.prs_AF" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ps_AF">
+<span class="sig-name descname"><span class="pre">ps_AF</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1123</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ps_AF" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.pt_BR">
+<span class="sig-name descname"><span class="pre">pt_BR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1046</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.pt_BR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.pt_PT">
+<span class="sig-name descname"><span class="pre">pt_PT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2070</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.pt_PT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.qut_GT">
+<span class="sig-name descname"><span class="pre">qut_GT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1158</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.qut_GT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.quz_BO">
+<span class="sig-name descname"><span class="pre">quz_BO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1131</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.quz_BO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.quz_EC">
+<span class="sig-name descname"><span class="pre">quz_EC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2155</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.quz_EC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.quz_PE">
+<span class="sig-name descname"><span class="pre">quz_PE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3179</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.quz_PE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.rm_CH">
+<span class="sig-name descname"><span class="pre">rm_CH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1047</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.rm_CH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ro_MO">
+<span class="sig-name descname"><span class="pre">ro_MO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2072</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ro_MO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ro_RO">
+<span class="sig-name descname"><span class="pre">ro_RO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1048</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ro_RO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ru_MO">
+<span class="sig-name descname"><span class="pre">ru_MO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2073</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ru_MO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ru_RU">
+<span class="sig-name descname"><span class="pre">ru_RU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1049</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ru_RU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.rw_RW">
+<span class="sig-name descname"><span class="pre">rw_RW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1159</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.rw_RW" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sa_IN">
+<span class="sig-name descname"><span class="pre">sa_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1103</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sa_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sah_RU">
+<span class="sig-name descname"><span class="pre">sah_RU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1157</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sah_RU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sd_Arab_PK">
+<span class="sig-name descname"><span class="pre">sd_Arab_PK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2137</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sd_Arab_PK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sd_Deva_IN">
+<span class="sig-name descname"><span class="pre">sd_Deva_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1113</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sd_Deva_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.se_FI">
+<span class="sig-name descname"><span class="pre">se_FI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3131</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.se_FI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.se_NO">
+<span class="sig-name descname"><span class="pre">se_NO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1083</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.se_NO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.se_SE">
+<span class="sig-name descname"><span class="pre">se_SE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2107</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.se_SE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.si_LK">
+<span class="sig-name descname"><span class="pre">si_LK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1115</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.si_LK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sk_SK">
+<span class="sig-name descname"><span class="pre">sk_SK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1051</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sk_SK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sl_SI">
+<span class="sig-name descname"><span class="pre">sl_SI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1060</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sl_SI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sma_NO">
+<span class="sig-name descname"><span class="pre">sma_NO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6203</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sma_NO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sma_SE">
+<span class="sig-name descname"><span class="pre">sma_SE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7227</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sma_SE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.smj_NO">
+<span class="sig-name descname"><span class="pre">smj_NO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4155</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.smj_NO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.smj_SE">
+<span class="sig-name descname"><span class="pre">smj_SE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5179</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.smj_SE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.smn_FI">
+<span class="sig-name descname"><span class="pre">smn_FI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9275</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.smn_FI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sms_FI">
+<span class="sig-name descname"><span class="pre">sms_FI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8251</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sms_FI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.so_SO">
+<span class="sig-name descname"><span class="pre">so_SO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1143</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.so_SO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sq_AL">
+<span class="sig-name descname"><span class="pre">sq_AL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1052</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sq_AL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sr_Cyrl_BA">
+<span class="sig-name descname"><span class="pre">sr_Cyrl_BA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7194</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sr_Cyrl_BA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sr_Cyrl_CS">
+<span class="sig-name descname"><span class="pre">sr_Cyrl_CS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3098</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sr_Cyrl_CS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sr_Latn_BA">
+<span class="sig-name descname"><span class="pre">sr_Latn_BA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6170</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sr_Latn_BA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sr_Latn_CS">
+<span class="sig-name descname"><span class="pre">sr_Latn_CS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2074</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sr_Latn_CS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.st_ZA">
+<span class="sig-name descname"><span class="pre">st_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1072</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.st_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sv_FI">
+<span class="sig-name descname"><span class="pre">sv_FI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2077</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sv_FI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sv_SE">
+<span class="sig-name descname"><span class="pre">sv_SE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1053</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sv_SE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.sw_KE">
+<span class="sig-name descname"><span class="pre">sw_KE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1089</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.sw_KE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.syr_SY">
+<span class="sig-name descname"><span class="pre">syr_SY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1114</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.syr_SY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ta_IN">
+<span class="sig-name descname"><span class="pre">ta_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1097</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ta_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.te_IN">
+<span class="sig-name descname"><span class="pre">te_IN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1098</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.te_IN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.tg_Cyrl_TJ">
+<span class="sig-name descname"><span class="pre">tg_Cyrl_TJ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1064</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.tg_Cyrl_TJ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.th_TH">
+<span class="sig-name descname"><span class="pre">th_TH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1054</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.th_TH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ti_ER">
+<span class="sig-name descname"><span class="pre">ti_ER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2163</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ti_ER" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ti_ET">
+<span class="sig-name descname"><span class="pre">ti_ET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1139</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ti_ET" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.tk_TM">
+<span class="sig-name descname"><span class="pre">tk_TM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1090</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.tk_TM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.tn_ZA">
+<span class="sig-name descname"><span class="pre">tn_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1074</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.tn_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.tr_TR">
+<span class="sig-name descname"><span class="pre">tr_TR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1055</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.tr_TR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ts_ZA">
+<span class="sig-name descname"><span class="pre">ts_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1073</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ts_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.tt_RU">
+<span class="sig-name descname"><span class="pre">tt_RU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1092</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.tt_RU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.tzm_Arab_MA">
+<span class="sig-name descname"><span class="pre">tzm_Arab_MA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1119</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.tzm_Arab_MA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.tzm_Latn_DZ">
+<span class="sig-name descname"><span class="pre">tzm_Latn_DZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2143</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.tzm_Latn_DZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ug_CN">
+<span class="sig-name descname"><span class="pre">ug_CN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1152</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ug_CN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.uk_UA">
+<span class="sig-name descname"><span class="pre">uk_UA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1058</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.uk_UA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ur_PK">
+<span class="sig-name descname"><span class="pre">ur_PK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1056</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ur_PK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.uz_Cyrl_UZ">
+<span class="sig-name descname"><span class="pre">uz_Cyrl_UZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2115</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.uz_Cyrl_UZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.uz_Latn_UZ">
+<span class="sig-name descname"><span class="pre">uz_Latn_UZ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1091</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.uz_Latn_UZ" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.ve_ZA">
+<span class="sig-name descname"><span class="pre">ve_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1075</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.ve_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.vi_VN">
+<span class="sig-name descname"><span class="pre">vi_VN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1066</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.vi_VN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.wo_SN">
+<span class="sig-name descname"><span class="pre">wo_SN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1160</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.wo_SN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.x_none">
+<span class="sig-name descname"><span class="pre">x_none</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">127</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.x_none" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.xh_ZA">
+<span class="sig-name descname"><span class="pre">xh_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1076</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.xh_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.yi_Hebr">
+<span class="sig-name descname"><span class="pre">yi_Hebr</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1085</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.yi_Hebr" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.yo_NG">
+<span class="sig-name descname"><span class="pre">yo_NG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1130</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.yo_NG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.zh_CN">
+<span class="sig-name descname"><span class="pre">zh_CN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2052</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.zh_CN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.zh_HK">
+<span class="sig-name descname"><span class="pre">zh_HK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3076</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.zh_HK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.zh_MO">
+<span class="sig-name descname"><span class="pre">zh_MO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5124</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.zh_MO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.zh_SG">
+<span class="sig-name descname"><span class="pre">zh_SG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4100</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.zh_SG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.zh_TW">
+<span class="sig-name descname"><span class="pre">zh_TW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1028</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.zh_TW" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="LocaleIDs.LocaleIDs.zu_ZA">
+<span class="sig-name descname"><span class="pre">zu_ZA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1077</span></em><a class="headerlink" href="#LocaleIDs.LocaleIDs.zu_ZA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

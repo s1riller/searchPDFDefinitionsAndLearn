@@ -1,0 +1,7 @@
+TextRange module
+================
+
+.. automodule:: TextRange
+   :members:
+   :undoc-members:
+   :show-inheritance:

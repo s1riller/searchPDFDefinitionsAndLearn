@@ -1,0 +1,7 @@
+Endnote module
+==============
+
+.. automodule:: Endnote
+   :members:
+   :undoc-members:
+   :show-inheritance:

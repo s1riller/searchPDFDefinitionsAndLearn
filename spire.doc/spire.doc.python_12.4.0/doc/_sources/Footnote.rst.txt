@@ -1,0 +1,7 @@
+Footnote module
+===============
+
+.. automodule:: Footnote
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+VMLFill module
+==============
+
+.. automodule:: VMLFill
+   :members:
+   :undoc-members:
+   :show-inheritance:

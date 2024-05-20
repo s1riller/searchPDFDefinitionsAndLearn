@@ -1,0 +1,7 @@
+ISection module
+===============
+
+.. automodule:: ISection
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+LineSpacingRule module
+======================
+
+.. automodule:: LineSpacingRule
+   :members:
+   :undoc-members:
+   :show-inheritance:

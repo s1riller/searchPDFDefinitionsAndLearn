@@ -1,0 +1,7 @@
+Table module
+============
+
+.. automodule:: Table
+   :members:
+   :undoc-members:
+   :show-inheritance:

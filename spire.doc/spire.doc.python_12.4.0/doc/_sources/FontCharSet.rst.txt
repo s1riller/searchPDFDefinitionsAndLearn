@@ -1,0 +1,7 @@
+FontCharSet module
+==================
+
+.. automodule:: FontCharSet
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+SDTContent module
+=================
+
+.. automodule:: SDTContent
+   :members:
+   :undoc-members:
+   :show-inheritance:

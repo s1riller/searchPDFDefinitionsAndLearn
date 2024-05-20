@@ -1,0 +1,7 @@
+EndnotePosition module
+======================
+
+.. automodule:: EndnotePosition
+   :members:
+   :undoc-members:
+   :show-inheritance:

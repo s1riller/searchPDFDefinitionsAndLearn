@@ -1,0 +1,7 @@
+HeadersFooters module
+=====================
+
+.. automodule:: HeadersFooters
+   :members:
+   :undoc-members:
+   :show-inheritance:

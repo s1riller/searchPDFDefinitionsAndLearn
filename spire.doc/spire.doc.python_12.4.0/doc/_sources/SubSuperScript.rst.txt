@@ -1,0 +1,7 @@
+SubSuperScript module
+=====================
+
+.. automodule:: SubSuperScript
+   :members:
+   :undoc-members:
+   :show-inheritance:

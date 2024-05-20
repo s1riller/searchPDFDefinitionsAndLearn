@@ -1,0 +1,7 @@
+BackgroundType module
+=====================
+
+.. automodule:: BackgroundType
+   :members:
+   :undoc-members:
+   :show-inheritance:

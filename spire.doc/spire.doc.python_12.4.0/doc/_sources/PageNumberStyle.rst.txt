@@ -1,0 +1,7 @@
+PageNumberStyle module
+======================
+
+.. automodule:: PageNumberStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

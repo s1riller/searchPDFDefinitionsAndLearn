@@ -1,0 +1,7 @@
+FrameHorzAnchor module
+======================
+
+.. automodule:: FrameHorzAnchor
+   :members:
+   :undoc-members:
+   :show-inheritance:

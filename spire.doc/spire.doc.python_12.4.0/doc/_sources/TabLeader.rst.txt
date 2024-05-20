@@ -1,0 +1,7 @@
+TabLeader module
+================
+
+.. automodule:: TabLeader
+   :members:
+   :undoc-members:
+   :show-inheritance:

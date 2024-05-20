@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MailMerge module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">MailMerge module</a><ul>
+<li><a class="reference internal" href="#MailMerge.MailMerge"><code class="docutils literal notranslate"><span class="pre">MailMerge</span></code></a><ul>
+<li><a class="reference internal" href="#MailMerge.MailMerge.ClearFields"><code class="docutils literal notranslate"><span class="pre">MailMerge.ClearFields</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.ClearGroupTag"><code class="docutils literal notranslate"><span class="pre">MailMerge.ClearGroupTag</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.Execute"><code class="docutils literal notranslate"><span class="pre">MailMerge.Execute</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.ExecuteGroup"><code class="docutils literal notranslate"><span class="pre">MailMerge.ExecuteGroup()</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.GetMergeFieldNames"><code class="docutils literal notranslate"><span class="pre">MailMerge.GetMergeFieldNames</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.GetMergeGroupNames"><code class="docutils literal notranslate"><span class="pre">MailMerge.GetMergeGroupNames()</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.HideEmptyGroup"><code class="docutils literal notranslate"><span class="pre">MailMerge.HideEmptyGroup</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.HideEmptyParagraphs"><code class="docutils literal notranslate"><span class="pre">MailMerge.HideEmptyParagraphs</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.MailMergeMainDocumentType"><code class="docutils literal notranslate"><span class="pre">MailMerge.MailMergeMainDocumentType</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.add_MergeField"><code class="docutils literal notranslate"><span class="pre">MailMerge.add_MergeField()</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.add_MergeGroup"><code class="docutils literal notranslate"><span class="pre">MailMerge.add_MergeGroup()</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.add_MergeImageField"><code class="docutils literal notranslate"><span class="pre">MailMerge.add_MergeImageField()</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.remove_MergeField"><code class="docutils literal notranslate"><span class="pre">MailMerge.remove_MergeField()</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.remove_MergeGroup"><code class="docutils literal notranslate"><span class="pre">MailMerge.remove_MergeGroup()</span></code></a></li>
+<li><a class="reference internal" href="#MailMerge.MailMerge.remove_MergeImageField"><code class="docutils literal notranslate"><span class="pre">MailMerge.remove_MergeImageField()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">MailMerge module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/MailMerge.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-MailMerge">
+<span id="mailmerge-module"></span><h1>MailMerge module<a class="headerlink" href="#module-MailMerge" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="MailMerge.MailMerge">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">MailMerge.</span></span><span class="sig-name descname"><span class="pre">MailMerge</span></span><a class="headerlink" href="#MailMerge.MailMerge" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">SpireObject</span></code></p>
+<p>Represents a mail merge operation.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.ClearFields">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ClearFields</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MailMerge.MailMerge.ClearFields" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to clear the fields. By default, the value is True.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if it clears the fields, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.ClearGroupTag">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ClearGroupTag</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MailMerge.MailMerge.ClearGroupTag" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to clear the group tag. By default, the value is False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if it clears the group tag, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.Execute">
+<span class="sig-name descname"><span class="pre">Execute</span></span><a class="headerlink" href="#MailMerge.MailMerge.Execute" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.ExecuteGroup">
+<span class="sig-name descname"><span class="pre">ExecuteGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataSource</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MailMergeDataTable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MailMerge.MailMerge.ExecuteGroup" title="Link to this definition"></a></dt>
+<dd><p>Executes the mail merge operation for a group in the data source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dataSource</strong> (<a class="reference internal" href="MailMergeDataTable.html#MailMergeDataTable.MailMergeDataTable" title="MailMergeDataTable.MailMergeDataTable"><em>MailMergeDataTable</em></a>) – The data source for the mail merge operation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.GetMergeFieldNames">
+<span class="sig-name descname"><span class="pre">GetMergeFieldNames</span></span><a class="headerlink" href="#MailMerge.MailMerge.GetMergeFieldNames" title="Link to this definition"></a></dt>
+<dd><p>Returns a collection of mergefield names found in the document.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.GetMergeGroupNames">
+<span class="sig-name descname"><span class="pre">GetMergeGroupNames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#MailMerge.MailMerge.GetMergeGroupNames" title="Link to this definition"></a></dt>
+<dd><p>Gets the merge field names.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.HideEmptyGroup">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HideEmptyGroup</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MailMerge.MailMerge.HideEmptyGroup" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to remove groups which contain empty merge fields</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.HideEmptyParagraphs">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HideEmptyParagraphs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#MailMerge.MailMerge.HideEmptyParagraphs" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets a value indicating whether to remove paragraphs which contain empty merge fields.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True to remove paragraphs with empty merge fields, False otherwise.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.MailMergeMainDocumentType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MailMergeMainDocumentType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">MailMergeMainDocumentType</span></em><a class="headerlink" href="#MailMerge.MailMerge.MailMergeMainDocumentType" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the type of the main document for the mail merge operation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The type of the main document.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="MailMergeMainDocumentType.html#MailMergeMainDocumentType.MailMergeMainDocumentType" title="MailMergeMainDocumentType.MailMergeMainDocumentType">MailMergeMainDocumentType</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.add_MergeField">
+<span class="sig-name descname"><span class="pre">add_MergeField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeFieldEventHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MailMerge.MailMerge.add_MergeField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.add_MergeGroup">
+<span class="sig-name descname"><span class="pre">add_MergeGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeGroupEventHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MailMerge.MailMerge.add_MergeGroup" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.add_MergeImageField">
+<span class="sig-name descname"><span class="pre">add_MergeImageField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeImageFieldEventHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MailMerge.MailMerge.add_MergeImageField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.remove_MergeField">
+<span class="sig-name descname"><span class="pre">remove_MergeField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeFieldEventHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MailMerge.MailMerge.remove_MergeField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.remove_MergeGroup">
+<span class="sig-name descname"><span class="pre">remove_MergeGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeGroupEventHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MailMerge.MailMerge.remove_MergeGroup" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="MailMerge.MailMerge.remove_MergeImageField">
+<span class="sig-name descname"><span class="pre">remove_MergeImageField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeImageFieldEventHandler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#MailMerge.MailMerge.remove_MergeImageField" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

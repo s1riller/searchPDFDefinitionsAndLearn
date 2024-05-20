@@ -1,0 +1,7 @@
+FieldCharType module
+====================
+
+.. automodule:: FieldCharType
+   :members:
+   :undoc-members:
+   :show-inheritance:

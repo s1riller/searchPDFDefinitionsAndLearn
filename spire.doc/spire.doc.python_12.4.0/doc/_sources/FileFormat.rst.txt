@@ -1,0 +1,7 @@
+FileFormat module
+=================
+
+.. automodule:: FileFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

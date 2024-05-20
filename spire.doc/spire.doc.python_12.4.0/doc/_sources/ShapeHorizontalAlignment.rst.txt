@@ -1,0 +1,7 @@
+ShapeHorizontalAlignment module
+===============================
+
+.. automodule:: ShapeHorizontalAlignment
+   :members:
+   :undoc-members:
+   :show-inheritance:

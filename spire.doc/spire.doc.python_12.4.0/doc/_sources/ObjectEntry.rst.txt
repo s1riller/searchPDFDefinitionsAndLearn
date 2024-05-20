@@ -1,0 +1,7 @@
+ObjectEntry module
+==================
+
+.. automodule:: ObjectEntry
+   :members:
+   :undoc-members:
+   :show-inheritance:

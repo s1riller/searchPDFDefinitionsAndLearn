@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocumentObject module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">DocumentObject module</a><ul>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject"><code class="docutils literal notranslate"><span class="pre">DocumentObject</span></code></a><ul>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.ChildObjects"><code class="docutils literal notranslate"><span class="pre">DocumentObject.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.Clone"><code class="docutils literal notranslate"><span class="pre">DocumentObject.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">DocumentObject.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.FirstChild"><code class="docutils literal notranslate"><span class="pre">DocumentObject.FirstChild</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.GetNextWidgetSibling"><code class="docutils literal notranslate"><span class="pre">DocumentObject.GetNextWidgetSibling()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.GetPreviousWidgetSibling"><code class="docutils literal notranslate"><span class="pre">DocumentObject.GetPreviousWidgetSibling()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.IsComposite"><code class="docutils literal notranslate"><span class="pre">DocumentObject.IsComposite</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.LastChild"><code class="docutils literal notranslate"><span class="pre">DocumentObject.LastChild</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.NextSibling"><code class="docutils literal notranslate"><span class="pre">DocumentObject.NextSibling</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.Owner"><code class="docutils literal notranslate"><span class="pre">DocumentObject.Owner</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.PrependChild"><code class="docutils literal notranslate"><span class="pre">DocumentObject.PrependChild()</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.PreviousSibling"><code class="docutils literal notranslate"><span class="pre">DocumentObject.PreviousSibling</span></code></a></li>
+<li><a class="reference internal" href="#DocumentObject.DocumentObject.ToString"><code class="docutils literal notranslate"><span class="pre">DocumentObject.ToString()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">DocumentObject module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/DocumentObject.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-DocumentObject">
+<span id="documentobject-module"></span><h1>DocumentObject module<a class="headerlink" href="#module-DocumentObject" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DocumentObject.</span></span><span class="sig-name descname"><span class="pre">DocumentObject</span></span><a class="headerlink" href="#DocumentObject.DocumentObject" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentSerializable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IDocumentObject</span></code></p>
+<p>Represents a document object.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#DocumentObject.DocumentObject.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Gets the child objects of the entity.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#DocumentObject.DocumentObject" title="DocumentObject.DocumentObject"><span class="pre">DocumentObject</span></a></span></span><a class="headerlink" href="#DocumentObject.DocumentObject.Clone" title="Link to this definition"></a></dt>
+<dd><p>Clones the document object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#DocumentObject.DocumentObject.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.FirstChild">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FirstChild</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#DocumentObject.DocumentObject" title="DocumentObject.DocumentObject"><span class="pre">DocumentObject</span></a></em><a class="headerlink" href="#DocumentObject.DocumentObject.FirstChild" title="Link to this definition"></a></dt>
+<dd><p>Gets the first child.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.GetNextWidgetSibling">
+<span class="sig-name descname"><span class="pre">GetNextWidgetSibling</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IDocumentObject</span></span></span><a class="headerlink" href="#DocumentObject.DocumentObject.GetNextWidgetSibling" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.GetPreviousWidgetSibling">
+<span class="sig-name descname"><span class="pre">GetPreviousWidgetSibling</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IDocumentObject</span></span></span><a class="headerlink" href="#DocumentObject.DocumentObject.GetPreviousWidgetSibling" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.IsComposite">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IsComposite</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#DocumentObject.DocumentObject.IsComposite" title="Link to this definition"></a></dt>
+<dd><p>Indicating whether this instance is composite.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.LastChild">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastChild</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#DocumentObject.DocumentObject" title="DocumentObject.DocumentObject"><span class="pre">DocumentObject</span></a></em><a class="headerlink" href="#DocumentObject.DocumentObject.LastChild" title="Link to this definition"></a></dt>
+<dd><p>Gets the last child.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.NextSibling">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NextSibling</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">IDocumentObject</span></em><a class="headerlink" href="#DocumentObject.DocumentObject.NextSibling" title="Link to this definition"></a></dt>
+<dd><p>Gets the next sibling.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.Owner">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Owner</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#DocumentObject.DocumentObject" title="DocumentObject.DocumentObject"><span class="pre">DocumentObject</span></a></em><a class="headerlink" href="#DocumentObject.DocumentObject.Owner" title="Link to this definition"></a></dt>
+<dd><p>Gets the owner of this entity.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.PrependChild">
+<span class="sig-name descname"><span class="pre">PrependChild</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">newChild</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#DocumentObject.DocumentObject" title="DocumentObject.DocumentObject"><span class="pre">DocumentObject</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#DocumentObject.DocumentObject" title="DocumentObject.DocumentObject"><span class="pre">DocumentObject</span></a></span></span><a class="headerlink" href="#DocumentObject.DocumentObject.PrependChild" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.PreviousSibling">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PreviousSibling</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">IDocumentObject</span></em><a class="headerlink" href="#DocumentObject.DocumentObject.PreviousSibling" title="Link to this definition"></a></dt>
+<dd><p>Gets the previous sibling.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="DocumentObject.DocumentObject.ToString">
+<span class="sig-name descname"><span class="pre">ToString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seperator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#DocumentObject.DocumentObject.ToString" title="Link to this definition"></a></dt>
+<dd><p>Exports the name and index in container of the object into a string in the specified seperator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>seperator</strong> (<em>str</em>) – The specified seperator.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result str.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

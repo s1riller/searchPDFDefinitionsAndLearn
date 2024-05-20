@@ -1,0 +1,7 @@
+ShapeType module
+================
+
+.. automodule:: ShapeType
+   :members:
+   :undoc-members:
+   :show-inheritance:

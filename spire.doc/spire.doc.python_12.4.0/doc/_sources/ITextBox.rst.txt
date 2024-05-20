@@ -1,0 +1,7 @@
+ITextBox module
+===============
+
+.. automodule:: ITextBox
+   :members:
+   :undoc-members:
+   :show-inheritance:

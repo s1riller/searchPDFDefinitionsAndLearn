@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frame module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Frame module</a><ul>
+<li><a class="reference internal" href="#Frame.Frame"><code class="docutils literal notranslate"><span class="pre">Frame</span></code></a><ul>
+<li><a class="reference internal" href="#Frame.Frame.FrameAnchorLock"><code class="docutils literal notranslate"><span class="pre">Frame.FrameAnchorLock</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.FrameHeightRule"><code class="docutils literal notranslate"><span class="pre">Frame.FrameHeightRule</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.FrameHorizontalOrigin"><code class="docutils literal notranslate"><span class="pre">Frame.FrameHorizontalOrigin</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.FrameHorizontalPosition"><code class="docutils literal notranslate"><span class="pre">Frame.FrameHorizontalPosition</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.FrameVerticalOrigin"><code class="docutils literal notranslate"><span class="pre">Frame.FrameVerticalOrigin</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.FrameVerticalPosition"><code class="docutils literal notranslate"><span class="pre">Frame.FrameVerticalPosition</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.FrameWidthRule"><code class="docutils literal notranslate"><span class="pre">Frame.FrameWidthRule</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.GetHeight"><code class="docutils literal notranslate"><span class="pre">Frame.GetHeight()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.GetHorizontalDistanceFromText"><code class="docutils literal notranslate"><span class="pre">Frame.GetHorizontalDistanceFromText()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.GetHorizontalPosition"><code class="docutils literal notranslate"><span class="pre">Frame.GetHorizontalPosition()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.GetVerticalDistanceFromText"><code class="docutils literal notranslate"><span class="pre">Frame.GetVerticalDistanceFromText()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.GetVerticalPosition"><code class="docutils literal notranslate"><span class="pre">Frame.GetVerticalPosition()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.GetWidth"><code class="docutils literal notranslate"><span class="pre">Frame.GetWidth()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.SetHeight"><code class="docutils literal notranslate"><span class="pre">Frame.SetHeight()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.SetHorizontalDistanceFromText"><code class="docutils literal notranslate"><span class="pre">Frame.SetHorizontalDistanceFromText()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.SetHorizontalPosition"><code class="docutils literal notranslate"><span class="pre">Frame.SetHorizontalPosition()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.SetVerticalDistanceFromText"><code class="docutils literal notranslate"><span class="pre">Frame.SetVerticalDistanceFromText()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.SetVerticalPosition"><code class="docutils literal notranslate"><span class="pre">Frame.SetVerticalPosition()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.SetWidth"><code class="docutils literal notranslate"><span class="pre">Frame.SetWidth()</span></code></a></li>
+<li><a class="reference internal" href="#Frame.Frame.WrapFrameAround"><code class="docutils literal notranslate"><span class="pre">Frame.WrapFrameAround</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Frame module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Frame.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Frame">
+<span id="frame-module"></span><h1>Frame module<a class="headerlink" href="#module-Frame" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Frame.Frame">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Frame.</span></span><span class="sig-name descname"><span class="pre">Frame</span></span><a class="headerlink" href="#Frame.Frame" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">WordAttrCollection</span></code></p>
+<p>Represents Frame object used in framed document.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="Frame.Frame.FrameAnchorLock">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FrameAnchorLock</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Frame.Frame.FrameAnchorLock" title="Link to this definition"></a></dt>
+<dd><p>Gets whether lock the anchor of Frame or not.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Frame.Frame.FrameHeightRule">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FrameHeightRule</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FrameSizeRule</span></em><a class="headerlink" href="#Frame.Frame.FrameHeightRule" title="Link to this definition"></a></dt>
+<dd><p>Gets Height Rule of Frame.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Frame.Frame.FrameHorizontalOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FrameHorizontalOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FrameHorzAnchor</span></em><a class="headerlink" href="#Frame.Frame.FrameHorizontalOrigin" title="Link to this definition"></a></dt>
+<dd><p>Gets relative to what the frame is positioned horizontally.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Frame.Frame.FrameHorizontalPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FrameHorizontalPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HorizontalPosition</span></em><a class="headerlink" href="#Frame.Frame.FrameHorizontalPosition" title="Link to this definition"></a></dt>
+<dd><p>Gets Horizontal Position of Frame.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Frame.Frame.FrameVerticalOrigin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FrameVerticalOrigin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FrameVertAnchor</span></em><a class="headerlink" href="#Frame.Frame.FrameVerticalOrigin" title="Link to this definition"></a></dt>
+<dd><p>Gets relative to what the frame is positioned vertically.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Frame.Frame.FrameVerticalPosition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FrameVerticalPosition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">VerticalPosition</span></em><a class="headerlink" href="#Frame.Frame.FrameVerticalPosition" title="Link to this definition"></a></dt>
+<dd><p>Gets Vertical Position of Frame.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Frame.Frame.FrameWidthRule">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FrameWidthRule</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">FrameSizeRule</span></em><a class="headerlink" href="#Frame.Frame.FrameWidthRule" title="Link to this definition"></a></dt>
+<dd><p>Gets Width Rule of Frame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.GetHeight">
+<span class="sig-name descname"><span class="pre">GetHeight</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Frame.Frame.GetHeight" title="Link to this definition"></a></dt>
+<dd><p>Gets height of this frame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.GetHorizontalDistanceFromText">
+<span class="sig-name descname"><span class="pre">GetHorizontalDistanceFromText</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Frame.Frame.GetHorizontalDistanceFromText" title="Link to this definition"></a></dt>
+<dd><p>Gets the distance between the document text and left or right edge of the frame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.GetHorizontalPosition">
+<span class="sig-name descname"><span class="pre">GetHorizontalPosition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Frame.Frame.GetHorizontalPosition" title="Link to this definition"></a></dt>
+<dd><p>Gets the position of the left edge of the frame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.GetVerticalDistanceFromText">
+<span class="sig-name descname"><span class="pre">GetVerticalDistanceFromText</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Frame.Frame.GetVerticalDistanceFromText" title="Link to this definition"></a></dt>
+<dd><p>Gets the distance between the document text and top or bottom edge of the frame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.GetVerticalPosition">
+<span class="sig-name descname"><span class="pre">GetVerticalPosition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Frame.Frame.GetVerticalPosition" title="Link to this definition"></a></dt>
+<dd><p>Gets the position of the top edge of the frame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.GetWidth">
+<span class="sig-name descname"><span class="pre">GetWidth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Frame.Frame.GetWidth" title="Link to this definition"></a></dt>
+<dd><p>Gets width of this frame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.SetHeight">
+<span class="sig-name descname"><span class="pre">SetHeight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Frame.Frame.SetHeight" title="Link to this definition"></a></dt>
+<dd><p>Sets height of this frame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.SetHorizontalDistanceFromText">
+<span class="sig-name descname"><span class="pre">SetHorizontalDistanceFromText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Frame.Frame.SetHorizontalDistanceFromText" title="Link to this definition"></a></dt>
+<dd><p>Sets the distance between the document text and left or right edge of the frame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.SetHorizontalPosition">
+<span class="sig-name descname"><span class="pre">SetHorizontalPosition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Frame.Frame.SetHorizontalPosition" title="Link to this definition"></a></dt>
+<dd><p>Sets the position of the left edge of the frame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.SetVerticalDistanceFromText">
+<span class="sig-name descname"><span class="pre">SetVerticalDistanceFromText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Frame.Frame.SetVerticalDistanceFromText" title="Link to this definition"></a></dt>
+<dd><p>Sets the distance between the document text and top or bottom edge of the frame.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.SetVerticalPosition">
+<span class="sig-name descname"><span class="pre">SetVerticalPosition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Frame.Frame.SetVerticalPosition" title="Link to this definition"></a></dt>
+<dd><p>Sets the position of the top edge of the frame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Frame.Frame.SetWidth">
+<span class="sig-name descname"><span class="pre">SetWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Frame.Frame.SetWidth" title="Link to this definition"></a></dt>
+<dd><p>Sets width of this frame</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Frame.Frame.WrapFrameAround">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WrapFrameAround</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#Frame.Frame.WrapFrameAround" title="Link to this definition"></a></dt>
+<dd><p>Gets wrap type of Frame.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

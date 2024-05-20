@@ -1,0 +1,7 @@
+StylisticSetType module
+=======================
+
+.. automodule:: StylisticSetType
+   :members:
+   :undoc-members:
+   :show-inheritance:

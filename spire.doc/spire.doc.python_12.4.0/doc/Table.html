@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Table module</a><ul>
+<li><a class="reference internal" href="#Table.Table"><code class="docutils literal notranslate"><span class="pre">Table</span></code></a><ul>
+<li><a class="reference internal" href="#Table.Table.AddCaption"><code class="docutils literal notranslate"><span class="pre">Table.AddCaption()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.AddRow"><code class="docutils literal notranslate"><span class="pre">Table.AddRow</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.ApplyHorizontalMerge"><code class="docutils literal notranslate"><span class="pre">Table.ApplyHorizontalMerge()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.ApplyStyle"><code class="docutils literal notranslate"><span class="pre">Table.ApplyStyle()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.ApplyTableStyle"><code class="docutils literal notranslate"><span class="pre">Table.ApplyTableStyle()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.ApplyVerticalMerge"><code class="docutils literal notranslate"><span class="pre">Table.ApplyVerticalMerge()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.AutoFit"><code class="docutils literal notranslate"><span class="pre">Table.AutoFit()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.ChildObjects"><code class="docutils literal notranslate"><span class="pre">Table.ChildObjects</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.Clone"><code class="docutils literal notranslate"><span class="pre">Table.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.ColumnWidth"><code class="docutils literal notranslate"><span class="pre">Table.ColumnWidth</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.DefaultColumnWidth"><code class="docutils literal notranslate"><span class="pre">Table.DefaultColumnWidth</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.DefaultColumnsNumber"><code class="docutils literal notranslate"><span class="pre">Table.DefaultColumnsNumber</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.DefaultRowHeight"><code class="docutils literal notranslate"><span class="pre">Table.DefaultRowHeight</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.DocumentObjectType"><code class="docutils literal notranslate"><span class="pre">Table.DocumentObjectType</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.Find"><code class="docutils literal notranslate"><span class="pre">Table.Find()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.FirstRow"><code class="docutils literal notranslate"><span class="pre">Table.FirstRow</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.IndentFromLeft"><code class="docutils literal notranslate"><span class="pre">Table.IndentFromLeft</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.LastCell"><code class="docutils literal notranslate"><span class="pre">Table.LastCell</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.LastRow"><code class="docutils literal notranslate"><span class="pre">Table.LastRow</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.PreferredWidth"><code class="docutils literal notranslate"><span class="pre">Table.PreferredWidth</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.RemoveAbsPosition"><code class="docutils literal notranslate"><span class="pre">Table.RemoveAbsPosition()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.Replace"><code class="docutils literal notranslate"><span class="pre">Table.Replace</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.ResetCells"><code class="docutils literal notranslate"><span class="pre">Table.ResetCells</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.Rows"><code class="docutils literal notranslate"><span class="pre">Table.Rows</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.SetColumnWidth"><code class="docutils literal notranslate"><span class="pre">Table.SetColumnWidth()</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.TableDescription"><code class="docutils literal notranslate"><span class="pre">Table.TableDescription</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.TableFormat"><code class="docutils literal notranslate"><span class="pre">Table.TableFormat</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.TableStyleName"><code class="docutils literal notranslate"><span class="pre">Table.TableStyleName</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.Title"><code class="docutils literal notranslate"><span class="pre">Table.Title</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.Width"><code class="docutils literal notranslate"><span class="pre">Table.Width</span></code></a></li>
+<li><a class="reference internal" href="#Table.Table.get_Item"><code class="docutils literal notranslate"><span class="pre">Table.get_Item()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Table module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Table.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-Table">
+<span id="table-module"></span><h1>Table module<a class="headerlink" href="#module-Table" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Table.Table">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Table.</span></span><span class="sig-name descname"><span class="pre">Table</span></span><a class="headerlink" href="#Table.Table" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BodyRegion</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">IBodyRegion</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ITable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ICompositeObject</span></code></p>
+<p>Represents a table in a document.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.AddCaption">
+<span class="sig-name descname"><span class="pre">AddCaption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CaptionNumberingFormat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">captionPosition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CaptionPosition</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">IParagraph</span></span></span><a class="headerlink" href="#Table.Table.AddCaption" title="Link to this definition"></a></dt>
+<dd><p>Add a caption for the current table.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Table.Table.AddRow">
+<span class="sig-name descname"><span class="pre">AddRow</span></span><a class="headerlink" href="#Table.Table.AddRow" title="Link to this definition"></a></dt>
+<dd><p>Adds a row to table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The added row.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="TableRow.html#TableRow.TableRow" title="TableRow.TableRow">TableRow</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.ApplyHorizontalMerge">
+<span class="sig-name descname"><span class="pre">ApplyHorizontalMerge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rowIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startCellIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endCellIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Table.Table.ApplyHorizontalMerge" title="Link to this definition"></a></dt>
+<dd><p>Applies horizontal merging for cells of table row.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rowIndex</strong> – Index of the row.</p></li>
+<li><p><strong>startCellIndex</strong> – Start index of the cell.</p></li>
+<li><p><strong>endCellIndex</strong> – End index of the cell.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.ApplyStyle">
+<span class="sig-name descname"><span class="pre">ApplyStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">builtinTableStyle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DefaultTableStyle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Table.Table.ApplyStyle" title="Link to this definition"></a></dt>
+<dd><p>Applies the built-in table style.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>builtinTableStyle</strong> (<a class="reference internal" href="DefaultTableStyle.html#DefaultTableStyle.DefaultTableStyle" title="DefaultTableStyle.DefaultTableStyle"><em>DefaultTableStyle</em></a>) – The built-in table style.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.ApplyTableStyle">
+<span class="sig-name descname"><span class="pre">ApplyTableStyle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Table.Table.ApplyTableStyle" title="Link to this definition"></a></dt>
+<dd><p>Applies the table style properties to table and cell.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.ApplyVerticalMerge">
+<span class="sig-name descname"><span class="pre">ApplyVerticalMerge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columnIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRowIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRowIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Table.Table.ApplyVerticalMerge" title="Link to this definition"></a></dt>
+<dd><p>Applies the vertical merge for table cells.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>columnIndex</strong> – Index of the column.</p></li>
+<li><p><strong>startRowIndex</strong> – Start index of the row.</p></li>
+<li><p><strong>endRowIndex</strong> – End index of the row.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.AutoFit">
+<span class="sig-name descname"><span class="pre">AutoFit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">behavior</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AutoFitBehaviorType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Table.Table.AutoFit" title="Link to this definition"></a></dt>
+<dd><p>Determines how Microsoft Word resizes a table when the AutoFit feature is used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>behavior</strong> – How Word resizes the specified table with the AutoFit feature is used.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.ChildObjects">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ChildObjects</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectCollection</span></em><a class="headerlink" href="#Table.Table.ChildObjects" title="Link to this definition"></a></dt>
+<dd><p>Get the child entities of the table.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Table.Table" title="Table.Table"><span class="pre">Table</span></a></span></span><a class="headerlink" href="#Table.Table.Clone" title="Link to this definition"></a></dt>
+<dd><p>Clone the current table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.ColumnWidth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ColumnWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#Table.Table.ColumnWidth" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the width of each column.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.DefaultColumnWidth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DefaultColumnWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#Table.Table.DefaultColumnWidth" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the default width of each column.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.DefaultColumnsNumber">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DefaultColumnsNumber</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#Table.Table.DefaultColumnsNumber" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the default number of columns in the table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.DefaultRowHeight">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DefaultRowHeight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#Table.Table.DefaultRowHeight" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the default row height, the unit of measure is point, 1point = 0.3528 mm.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.DocumentObjectType">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentObjectType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DocumentObjectType</span></em><a class="headerlink" href="#Table.Table.DocumentObjectType" title="Link to this definition"></a></dt>
+<dd><p>Gets the type of the document object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.Find">
+<span class="sig-name descname"><span class="pre">Find</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Regex</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TextSelection</span></span></span><a class="headerlink" href="#Table.Table.Find" title="Link to this definition"></a></dt>
+<dd><p>Finds text by specified pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pattern</strong> – The pattern.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>TextSelection object if found, None otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.FirstRow">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FirstRow</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableRow</span></em><a class="headerlink" href="#Table.Table.FirstRow" title="Link to this definition"></a></dt>
+<dd><p>Get the first row of the table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.IndentFromLeft">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IndentFromLeft</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#Table.Table.IndentFromLeft" title="Link to this definition"></a></dt>
+<dd><p>Get or set the indent from the left for the table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.LastCell">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastCell</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableCell</span></em><a class="headerlink" href="#Table.Table.LastCell" title="Link to this definition"></a></dt>
+<dd><p>Gets the last cell in the table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.LastRow">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LastRow</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TableRow</span></em><a class="headerlink" href="#Table.Table.LastRow" title="Link to this definition"></a></dt>
+<dd><p>Get the last row of the table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.PreferredWidth">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PreferredWidth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">PreferredWidth</span></em><a class="headerlink" href="#Table.Table.PreferredWidth" title="Link to this definition"></a></dt>
+<dd><p>Gets or sets the preferred horizontal width of the table.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.RemoveAbsPosition">
+<span class="sig-name descname"><span class="pre">RemoveAbsPosition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Table.Table.RemoveAbsPosition" title="Link to this definition"></a></dt>
+<dd><p>Removes the absolute position data. If table has absolute position in the document,
+all position data will be erased.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Table.Table.Replace">
+<span class="sig-name descname"><span class="pre">Replace</span></span><a class="headerlink" href="#Table.Table.Replace" title="Link to this definition"></a></dt>
+<dd><p>Replaces all entries of matchString regular expression with newValue string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pattern</strong> (<em>Regex</em>) – The pattern.</p></li>
+<li><p><strong>replace</strong> (<em>str</em>) – Replace text.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of replacements made.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Table.Table.ResetCells">
+<span class="sig-name descname"><span class="pre">ResetCells</span></span><a class="headerlink" href="#Table.Table.ResetCells" title="Link to this definition"></a></dt>
+<dd><p>Reset the number of rows and columns in the table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.Rows">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Rows</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">RowCollection</span></em><a class="headerlink" href="#Table.Table.Rows" title="Link to this definition"></a></dt>
+<dd><p>Gets the collection of rows in the table.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.SetColumnWidth">
+<span class="sig-name descname"><span class="pre">SetColumnWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columnIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnWidth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnWidthType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CellWidthType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Table.Table.SetColumnWidth" title="Link to this definition"></a></dt>
+<dd><p>Sets the width of all cells in the current column of the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>columnIndex</strong> – Index of the column.</p></li>
+<li><p><strong>columnWidth</strong> – The column width.</p></li>
+<li><p><strong>columnWidthType</strong> – The column width type.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.TableDescription">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TableDescription</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Table.Table.TableDescription" title="Link to this definition"></a></dt>
+<dd><p>Get or set the description of the table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.TableFormat">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TableFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">RowFormat</span></em><a class="headerlink" href="#Table.Table.TableFormat" title="Link to this definition"></a></dt>
+<dd><p>Gets the table formatting after ResetCells call.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.TableStyleName">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TableStyleName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Table.Table.TableStyleName" title="Link to this definition"></a></dt>
+<dd><p>Gets the name of the table style.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.Title">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#Table.Table.Title" title="Link to this definition"></a></dt>
+<dd><p>Get or set the title of the table.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="Table.Table.Width">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#Table.Table.Width" title="Link to this definition"></a></dt>
+<dd><p>Get the width of the table.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Table.Table.get_Item">
+<span class="sig-name descname"><span class="pre">get_Item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">TableCell</span></span></span><a class="headerlink" href="#Table.Table.get_Item" title="Link to this definition"></a></dt>
+<dd><p>Get a table cell by row and column indexes.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

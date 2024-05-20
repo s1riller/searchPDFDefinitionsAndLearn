@@ -1,0 +1,7 @@
+MergeField module
+=================
+
+.. automodule:: MergeField
+   :members:
+   :undoc-members:
+   :show-inheritance:

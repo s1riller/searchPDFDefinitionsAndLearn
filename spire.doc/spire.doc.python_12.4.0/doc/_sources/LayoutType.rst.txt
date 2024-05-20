@@ -1,0 +1,7 @@
+LayoutType module
+=================
+
+.. automodule:: LayoutType
+   :members:
+   :undoc-members:
+   :show-inheritance:

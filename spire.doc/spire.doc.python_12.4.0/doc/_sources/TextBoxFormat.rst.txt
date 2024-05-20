@@ -1,0 +1,7 @@
+TextBoxFormat module
+====================
+
+.. automodule:: TextBoxFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

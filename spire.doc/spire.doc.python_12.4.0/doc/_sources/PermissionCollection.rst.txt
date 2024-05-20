@@ -1,0 +1,7 @@
+PermissionCollection module
+===========================
+
+.. automodule:: PermissionCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

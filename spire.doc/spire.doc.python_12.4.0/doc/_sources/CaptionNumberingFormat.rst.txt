@@ -1,0 +1,7 @@
+CaptionNumberingFormat module
+=============================
+
+.. automodule:: CaptionNumberingFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

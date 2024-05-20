@@ -1,0 +1,6 @@
+﻿Demo of Spire.Doc
+
+1. Spire.Doc for .NET is a professional Word .NET library specifically designed for developers to create, read, write, convert and print Word document files from any .NET platform with fast and high quality performance.
+
+2. As an independent Word .NET API, Spire.Doc for .NET doesn't need Microsoft Word to be installed on neither the development nor target systems. However, it can incorporate Microsoft Word document creation capabilities into any developers' .NET applications.
+　　

@@ -1,0 +1,7 @@
+DigitalSignatureType module
+===========================
+
+.. automodule:: DigitalSignatureType
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+CommentsCollection module
+=========================
+
+.. automodule:: CommentsCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

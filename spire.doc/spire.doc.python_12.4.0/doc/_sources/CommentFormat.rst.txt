@@ -1,0 +1,7 @@
+CommentFormat module
+====================
+
+.. automodule:: CommentFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

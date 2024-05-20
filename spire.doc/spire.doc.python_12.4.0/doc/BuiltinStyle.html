@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuiltinStyle module &mdash; Spire.Doc for Python 10.4.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=2c0c8a36" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2f7da7c1"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Spire.Doc for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">BuiltinStyle module</a><ul>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle</span></code></a><ul>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BalloonText"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BalloonText</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BlockText"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BlockText</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BodyText"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BodyText</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BodyText1I"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BodyText1I</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BodyText1I2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BodyText1I2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BodyText2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BodyText2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BodyText3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BodyText3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BodyTextInd"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BodyTextInd</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BodyTextInd2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BodyTextInd2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.BodyTextInd3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.BodyTextInd3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Caption"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Caption</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Closing"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Closing</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.CommentReference"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.CommentReference</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.CommentSubject"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.CommentSubject</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.CommentText"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.CommentText</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Date"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Date</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.DefaultParagraphFont"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.DefaultParagraphFont</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.DocumentMap"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.DocumentMap</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.EmailSignature"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.EmailSignature</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Emphasis"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Emphasis</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.EndnoteReference"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.EndnoteReference</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.EndnoteText"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.EndnoteText</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.FollowedHyperlink"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.FollowedHyperlink</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Footer"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Footer</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.FootnoteReference"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.FootnoteReference</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.FootnoteText"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.FootnoteText</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Header"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Header</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading1"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading1</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading4"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading4</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading5"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading5</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading6"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading6</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading7"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading7</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading8"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading8</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Heading9"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Heading9</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlAcronym"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlAcronym</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlAddress"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlAddress</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlCite"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlCite</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlCode"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlCode</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlDefinition"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlDefinition</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlKeyboard"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlKeyboard</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlPreformatted"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlPreformatted</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlSample"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlSample</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlTypewriter"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlTypewriter</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.HtmlVariable"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.HtmlVariable</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Hyperlink"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Hyperlink</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index1"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index1</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index4"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index4</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index5"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index5</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index6"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index6</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index7"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index7</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index8"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index8</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Index9"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Index9</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.IndexHeading"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.IndexHeading</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.LineNumber"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.LineNumber</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.List"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.List</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.List2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.List2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.List3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.List3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.List4"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.List4</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.List5"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.List5</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListBullet"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListBullet</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListBullet2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListBullet2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListBullet3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListBullet3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListBullet4"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListBullet4</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListBullet5"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListBullet5</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListContinue"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListContinue</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListContinue2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListContinue2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListContinue3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListContinue3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListContinue4"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListContinue4</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListContinue5"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListContinue5</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListNumber"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListNumber</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListNumber2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListNumber2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListNumber3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListNumber3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListNumber4"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListNumber4</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ListNumber5"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ListNumber5</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.MacroText"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.MacroText</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.MessageHeader"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.MessageHeader</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.NoList"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.NoList</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.NoStyle"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.NoStyle</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Normal"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Normal</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.NormalIndent"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.NormalIndent</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.NormalWeb"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.NormalWeb</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.NoteHeading"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.NoteHeading</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.PageNumber"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.PageNumber</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.PlainText"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.PlainText</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Salutation"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Salutation</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Signature"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Signature</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Strong"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Strong</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Subtitle"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Subtitle</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.TableOfAuthorities"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.TableOfAuthorities</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.TableOfFigures"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.TableOfFigures</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Title"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Title</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.ToaHeading"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.ToaHeading</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc1"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc1</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc2"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc2</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc3"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc3</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc4"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc4</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc5"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc5</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc6"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc6</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc7"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc7</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc8"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc8</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.Toc9"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.Toc9</span></code></a></li>
+<li><a class="reference internal" href="#BuiltinStyle.BuiltinStyle.User"><code class="docutils literal notranslate"><span class="pre">BuiltinStyle.User</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Spire.Doc for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">BuiltinStyle module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/BuiltinStyle.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-BuiltinStyle">
+<span id="builtinstyle-module"></span><h1>BuiltinStyle module<a class="headerlink" href="#module-BuiltinStyle" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">BuiltinStyle.</span></span><span class="sig-name descname"><span class="pre">BuiltinStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#BuiltinStyle.BuiltinStyle" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum class that defines built-in styles.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BalloonText">
+<span class="sig-name descname"><span class="pre">BalloonText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">153</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BalloonText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BlockText">
+<span class="sig-name descname"><span class="pre">BlockText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">84</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BlockText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BodyText">
+<span class="sig-name descname"><span class="pre">BodyText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">66</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BodyText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BodyText1I">
+<span class="sig-name descname"><span class="pre">BodyText1I</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">77</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BodyText1I" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BodyText1I2">
+<span class="sig-name descname"><span class="pre">BodyText1I2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">78</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BodyText1I2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BodyText2">
+<span class="sig-name descname"><span class="pre">BodyText2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">80</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BodyText2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BodyText3">
+<span class="sig-name descname"><span class="pre">BodyText3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">81</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BodyText3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BodyTextInd">
+<span class="sig-name descname"><span class="pre">BodyTextInd</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">67</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BodyTextInd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BodyTextInd2">
+<span class="sig-name descname"><span class="pre">BodyTextInd2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">82</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BodyTextInd2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.BodyTextInd3">
+<span class="sig-name descname"><span class="pre">BodyTextInd3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">83</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.BodyTextInd3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Caption">
+<span class="sig-name descname"><span class="pre">Caption</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">34</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Caption" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Closing">
+<span class="sig-name descname"><span class="pre">Closing</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">63</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Closing" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.CommentReference">
+<span class="sig-name descname"><span class="pre">CommentReference</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">39</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.CommentReference" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.CommentSubject">
+<span class="sig-name descname"><span class="pre">CommentSubject</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">106</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.CommentSubject" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.CommentText">
+<span class="sig-name descname"><span class="pre">CommentText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">30</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.CommentText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Date">
+<span class="sig-name descname"><span class="pre">Date</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">76</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Date" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.DefaultParagraphFont">
+<span class="sig-name descname"><span class="pre">DefaultParagraphFont</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">65</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.DefaultParagraphFont" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.DocumentMap">
+<span class="sig-name descname"><span class="pre">DocumentMap</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">89</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.DocumentMap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.EmailSignature">
+<span class="sig-name descname"><span class="pre">EmailSignature</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">91</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.EmailSignature" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Emphasis">
+<span class="sig-name descname"><span class="pre">Emphasis</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">88</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Emphasis" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.EndnoteReference">
+<span class="sig-name descname"><span class="pre">EndnoteReference</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">42</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.EndnoteReference" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.EndnoteText">
+<span class="sig-name descname"><span class="pre">EndnoteText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">43</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.EndnoteText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.FollowedHyperlink">
+<span class="sig-name descname"><span class="pre">FollowedHyperlink</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">86</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.FollowedHyperlink" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Footer">
+<span class="sig-name descname"><span class="pre">Footer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Footer" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.FootnoteReference">
+<span class="sig-name descname"><span class="pre">FootnoteReference</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">38</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.FootnoteReference" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.FootnoteText">
+<span class="sig-name descname"><span class="pre">FootnoteText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">29</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.FootnoteText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Header">
+<span class="sig-name descname"><span class="pre">Header</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Header" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading1">
+<span class="sig-name descname"><span class="pre">Heading1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading2">
+<span class="sig-name descname"><span class="pre">Heading2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading3">
+<span class="sig-name descname"><span class="pre">Heading3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading4">
+<span class="sig-name descname"><span class="pre">Heading4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading4" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading5">
+<span class="sig-name descname"><span class="pre">Heading5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading5" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading6">
+<span class="sig-name descname"><span class="pre">Heading6</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading6" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading7">
+<span class="sig-name descname"><span class="pre">Heading7</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading7" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading8">
+<span class="sig-name descname"><span class="pre">Heading8</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading8" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Heading9">
+<span class="sig-name descname"><span class="pre">Heading9</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">9</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Heading9" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlAcronym">
+<span class="sig-name descname"><span class="pre">HtmlAcronym</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">95</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlAcronym" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlAddress">
+<span class="sig-name descname"><span class="pre">HtmlAddress</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">96</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlAddress" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlCite">
+<span class="sig-name descname"><span class="pre">HtmlCite</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">97</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlCite" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlCode">
+<span class="sig-name descname"><span class="pre">HtmlCode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">98</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlCode" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlDefinition">
+<span class="sig-name descname"><span class="pre">HtmlDefinition</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">99</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlDefinition" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlKeyboard">
+<span class="sig-name descname"><span class="pre">HtmlKeyboard</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlKeyboard" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlPreformatted">
+<span class="sig-name descname"><span class="pre">HtmlPreformatted</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">101</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlPreformatted" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlSample">
+<span class="sig-name descname"><span class="pre">HtmlSample</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">102</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlSample" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlTypewriter">
+<span class="sig-name descname"><span class="pre">HtmlTypewriter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">103</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlTypewriter" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.HtmlVariable">
+<span class="sig-name descname"><span class="pre">HtmlVariable</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">104</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.HtmlVariable" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Hyperlink">
+<span class="sig-name descname"><span class="pre">Hyperlink</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">85</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Hyperlink" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index1">
+<span class="sig-name descname"><span class="pre">Index1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index2">
+<span class="sig-name descname"><span class="pre">Index2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">11</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index3">
+<span class="sig-name descname"><span class="pre">Index3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">12</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index4">
+<span class="sig-name descname"><span class="pre">Index4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">13</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index4" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index5">
+<span class="sig-name descname"><span class="pre">Index5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">14</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index5" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index6">
+<span class="sig-name descname"><span class="pre">Index6</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">15</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index6" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index7">
+<span class="sig-name descname"><span class="pre">Index7</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">16</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index7" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index8">
+<span class="sig-name descname"><span class="pre">Index8</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">17</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index8" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Index9">
+<span class="sig-name descname"><span class="pre">Index9</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">18</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Index9" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.IndexHeading">
+<span class="sig-name descname"><span class="pre">IndexHeading</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">33</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.IndexHeading" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.LineNumber">
+<span class="sig-name descname"><span class="pre">LineNumber</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">40</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.LineNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.List">
+<span class="sig-name descname"><span class="pre">List</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">47</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.List" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.List2">
+<span class="sig-name descname"><span class="pre">List2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">50</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.List2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.List3">
+<span class="sig-name descname"><span class="pre">List3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">51</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.List3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.List4">
+<span class="sig-name descname"><span class="pre">List4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">52</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.List4" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.List5">
+<span class="sig-name descname"><span class="pre">List5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">53</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.List5" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListBullet">
+<span class="sig-name descname"><span class="pre">ListBullet</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">48</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListBullet" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListBullet2">
+<span class="sig-name descname"><span class="pre">ListBullet2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">54</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListBullet2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListBullet3">
+<span class="sig-name descname"><span class="pre">ListBullet3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">55</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListBullet3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListBullet4">
+<span class="sig-name descname"><span class="pre">ListBullet4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">56</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListBullet4" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListBullet5">
+<span class="sig-name descname"><span class="pre">ListBullet5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">57</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListBullet5" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListContinue">
+<span class="sig-name descname"><span class="pre">ListContinue</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">68</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListContinue" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListContinue2">
+<span class="sig-name descname"><span class="pre">ListContinue2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">69</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListContinue2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListContinue3">
+<span class="sig-name descname"><span class="pre">ListContinue3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">70</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListContinue3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListContinue4">
+<span class="sig-name descname"><span class="pre">ListContinue4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">71</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListContinue4" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListContinue5">
+<span class="sig-name descname"><span class="pre">ListContinue5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">72</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListContinue5" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListNumber">
+<span class="sig-name descname"><span class="pre">ListNumber</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">49</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListNumber2">
+<span class="sig-name descname"><span class="pre">ListNumber2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">58</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListNumber2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListNumber3">
+<span class="sig-name descname"><span class="pre">ListNumber3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">59</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListNumber3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListNumber4">
+<span class="sig-name descname"><span class="pre">ListNumber4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">60</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListNumber4" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ListNumber5">
+<span class="sig-name descname"><span class="pre">ListNumber5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">61</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ListNumber5" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.MacroText">
+<span class="sig-name descname"><span class="pre">MacroText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">45</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.MacroText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.MessageHeader">
+<span class="sig-name descname"><span class="pre">MessageHeader</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">73</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.MessageHeader" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.NoList">
+<span class="sig-name descname"><span class="pre">NoList</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">107</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.NoList" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.NoStyle">
+<span class="sig-name descname"><span class="pre">NoStyle</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4095</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.NoStyle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Normal">
+<span class="sig-name descname"><span class="pre">Normal</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Normal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.NormalIndent">
+<span class="sig-name descname"><span class="pre">NormalIndent</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">28</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.NormalIndent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.NormalWeb">
+<span class="sig-name descname"><span class="pre">NormalWeb</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">94</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.NormalWeb" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.NoteHeading">
+<span class="sig-name descname"><span class="pre">NoteHeading</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">79</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.NoteHeading" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.PageNumber">
+<span class="sig-name descname"><span class="pre">PageNumber</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">41</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.PageNumber" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.PlainText">
+<span class="sig-name descname"><span class="pre">PlainText</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">90</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.PlainText" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Salutation">
+<span class="sig-name descname"><span class="pre">Salutation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">75</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Salutation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Signature">
+<span class="sig-name descname"><span class="pre">Signature</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">64</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Signature" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Strong">
+<span class="sig-name descname"><span class="pre">Strong</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">87</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Strong" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Subtitle">
+<span class="sig-name descname"><span class="pre">Subtitle</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">74</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Subtitle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.TableOfAuthorities">
+<span class="sig-name descname"><span class="pre">TableOfAuthorities</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">44</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.TableOfAuthorities" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.TableOfFigures">
+<span class="sig-name descname"><span class="pre">TableOfFigures</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">35</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.TableOfFigures" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Title">
+<span class="sig-name descname"><span class="pre">Title</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">62</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Title" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.ToaHeading">
+<span class="sig-name descname"><span class="pre">ToaHeading</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">46</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.ToaHeading" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc1">
+<span class="sig-name descname"><span class="pre">Toc1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">19</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc2">
+<span class="sig-name descname"><span class="pre">Toc2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">20</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc3">
+<span class="sig-name descname"><span class="pre">Toc3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">21</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc4">
+<span class="sig-name descname"><span class="pre">Toc4</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">22</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc4" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc5">
+<span class="sig-name descname"><span class="pre">Toc5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">23</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc5" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc6">
+<span class="sig-name descname"><span class="pre">Toc6</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">24</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc6" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc7">
+<span class="sig-name descname"><span class="pre">Toc7</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc7" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc8">
+<span class="sig-name descname"><span class="pre">Toc8</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">26</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc8" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.Toc9">
+<span class="sig-name descname"><span class="pre">Toc9</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">27</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.Toc9" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="BuiltinStyle.BuiltinStyle.User">
+<span class="sig-name descname"><span class="pre">User</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4094</span></em><a class="headerlink" href="#BuiltinStyle.BuiltinStyle.User" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

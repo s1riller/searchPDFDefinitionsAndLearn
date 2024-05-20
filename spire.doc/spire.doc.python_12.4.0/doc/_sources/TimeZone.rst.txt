@@ -1,0 +1,7 @@
+TimeZone module
+===============
+
+.. automodule:: TimeZone
+   :members:
+   :undoc-members:
+   :show-inheritance:

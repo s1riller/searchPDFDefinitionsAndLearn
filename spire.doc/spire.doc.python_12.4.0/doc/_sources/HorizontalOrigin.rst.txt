@@ -1,0 +1,7 @@
+HorizontalOrigin module
+=======================
+
+.. automodule:: HorizontalOrigin
+   :members:
+   :undoc-members:
+   :show-inheritance:

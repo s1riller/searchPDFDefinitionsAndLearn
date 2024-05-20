@@ -1,0 +1,7 @@
+ImportOptions module
+====================
+
+.. automodule:: ImportOptions
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+SummaryDocumentProperties module
+================================
+
+.. automodule:: SummaryDocumentProperties
+   :members:
+   :undoc-members:
+   :show-inheritance:

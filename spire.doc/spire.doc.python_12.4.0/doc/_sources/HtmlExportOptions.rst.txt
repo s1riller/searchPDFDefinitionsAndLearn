@@ -1,0 +1,7 @@
+HtmlExportOptions module
+========================
+
+.. automodule:: HtmlExportOptions
+   :members:
+   :undoc-members:
+   :show-inheritance:

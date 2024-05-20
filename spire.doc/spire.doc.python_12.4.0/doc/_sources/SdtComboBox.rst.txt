@@ -1,0 +1,7 @@
+SdtComboBox module
+==================
+
+.. automodule:: SdtComboBox
+   :members:
+   :undoc-members:
+   :show-inheritance:

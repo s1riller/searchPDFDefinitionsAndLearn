@@ -1,0 +1,7 @@
+IBody module
+============
+
+.. automodule:: IBody
+   :members:
+   :undoc-members:
+   :show-inheritance:

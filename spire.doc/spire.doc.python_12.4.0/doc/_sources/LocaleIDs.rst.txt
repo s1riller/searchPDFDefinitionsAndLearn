@@ -1,0 +1,7 @@
+LocaleIDs module
+================
+
+.. automodule:: LocaleIDs
+   :members:
+   :undoc-members:
+   :show-inheritance:

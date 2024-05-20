@@ -1,0 +1,7 @@
+RelativeHorizontalPosition module
+=================================
+
+.. automodule:: RelativeHorizontalPosition
+   :members:
+   :undoc-members:
+   :show-inheritance:

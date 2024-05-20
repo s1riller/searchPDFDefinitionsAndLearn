@@ -1,0 +1,7 @@
+IParagraphStyle module
+======================
+
+.. automodule:: IParagraphStyle
+   :members:
+   :undoc-members:
+   :show-inheritance:

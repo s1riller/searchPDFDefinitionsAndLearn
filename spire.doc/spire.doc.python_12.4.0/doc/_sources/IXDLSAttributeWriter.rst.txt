@@ -1,0 +1,7 @@
+IXDLSAttributeWriter module
+===========================
+
+.. automodule:: IXDLSAttributeWriter
+   :members:
+   :undoc-members:
+   :show-inheritance:

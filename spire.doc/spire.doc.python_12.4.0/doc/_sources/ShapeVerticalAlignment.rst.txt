@@ -1,0 +1,7 @@
+ShapeVerticalAlignment module
+=============================
+
+.. automodule:: ShapeVerticalAlignment
+   :members:
+   :undoc-members:
+   :show-inheritance:

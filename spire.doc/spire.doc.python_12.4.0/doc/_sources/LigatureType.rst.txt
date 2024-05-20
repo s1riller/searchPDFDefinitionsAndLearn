@@ -1,0 +1,7 @@
+LigatureType module
+===================
+
+.. automodule:: LigatureType
+   :members:
+   :undoc-members:
+   :show-inheritance:

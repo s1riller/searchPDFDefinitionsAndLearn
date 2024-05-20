@@ -1,0 +1,7 @@
+StructureDocumentTagRow module
+==============================
+
+.. automodule:: StructureDocumentTagRow
+   :members:
+   :undoc-members:
+   :show-inheritance:

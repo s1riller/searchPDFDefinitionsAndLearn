@@ -1,0 +1,7 @@
+NumberFormat module
+===================
+
+.. automodule:: NumberFormat
+   :members:
+   :undoc-members:
+   :show-inheritance:

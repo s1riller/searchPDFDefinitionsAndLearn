@@ -1,0 +1,7 @@
+Bookmark module
+===============
+
+.. automodule:: Bookmark
+   :members:
+   :undoc-members:
+   :show-inheritance:

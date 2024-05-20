@@ -1,0 +1,7 @@
+RowCollection module
+====================
+
+.. automodule:: RowCollection
+   :members:
+   :undoc-members:
+   :show-inheritance:

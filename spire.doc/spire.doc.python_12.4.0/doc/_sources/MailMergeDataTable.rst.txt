@@ -1,0 +1,7 @@
+MailMergeDataTable module
+=========================
+
+.. automodule:: MailMergeDataTable
+   :members:
+   :undoc-members:
+   :show-inheritance:

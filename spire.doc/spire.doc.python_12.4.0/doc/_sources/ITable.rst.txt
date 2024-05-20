@@ -1,0 +1,7 @@
+ITable module
+=============
+
+.. automodule:: ITable
+   :members:
+   :undoc-members:
+   :show-inheritance:

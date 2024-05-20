@@ -1,0 +1,7 @@
+ICompositeObject module
+=======================
+
+.. automodule:: ICompositeObject
+   :members:
+   :undoc-members:
+   :show-inheritance:
